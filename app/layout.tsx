@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const dmSans = DM_Sans({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const magnoSans = localFont({
+  src: "./MagnoSans-Black.woff2",
+  variable: "--font-heading",
 });
 
 export const metadata: Metadata = {
@@ -25,13 +25,13 @@ const RootLayout = ({
   return (
     <html lang="cs">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${dmSans.className} ${magnoSans.variable} antialiased`}
       >
         {children}
+        <footer>
+          aaaaa
+        </footer>
       </body>
-      <footer>
-        aaa
-      </footer>
     </html>
   );
 };

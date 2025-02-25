@@ -5,7 +5,10 @@ const Home = () => {
         aaaa
       </header>
       <main>
-        aaa
+        <h1 className="font-heading">
+          aaaMarketa Gregorová
+        </h1>
+
       </main>
     </div>
   );

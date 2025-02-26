@@ -1,14 +1,11 @@
+import Header from "./components/Header";
+
 const Home = () => {
   return (
-    <div>
-      <header>
-        aaaa
-      </header>
-      <main>
-        <h1 className="font-heading">
-          aaaMarketa Gregorová
-        </h1>
-
+    <div className="bg-light-pink h-full">
+      <Header />
+      <main className="h-full">
+        <div>main</div>
       </main>
     </div>
   );

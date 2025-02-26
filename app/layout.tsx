@@ -23,9 +23,9 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="cs">
+    <html lang="cs" className="h-full">
       <body
-        className={`${dmSans.className} ${magnoSans.variable} antialiased`}
+        className={`${dmSans.className} ${magnoSans.variable} antialiased h-full`}
       >
         {children}
         <footer>

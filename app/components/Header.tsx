@@ -4,14 +4,14 @@ const sections = ["Pro média", "Moje práce", "O mně", "Archiv"];
 
 const Header = () => {
   return (
-    <div className="flex justify-around relative font-heading text-dark-pink h-20 items-center">
+    <header className="flex justify-around relative font-heading text-dark-pink h-20 items-center">
       <div className="text-[40px] flex">Markéta Gregorová</div>
 
       <div
         className="flex items-center gap-[40px] h-[49px] w-[477px] px-[30px] py-[21px]"
       >
         {sections.map((section) => (
-          <div className="text-[30px]">{section}</div>
+          <div className="text-[30px]" key={section}>{section}</div>
         ))}
       </div>
 
@@ -22,7 +22,7 @@ const Header = () => {
         <Image src="/facebook.svg" height={21} width={9} alt="facebook icon" />
       </div>
 
-    </div>
+    </header>
   );
 };
 

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Footer from "./components/Footer";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -23,14 +24,12 @@ const RootLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <html lang="cs" className="h-full">
+    <html lang="cs" className="h-screen">
       <body
-        className={`${dmSans.className} ${magnoSans.variable} antialiased h-full`}
+        className={`${dmSans.className} ${magnoSans.variable} antialiased h-screen flex flex-col`}
       >
         {children}
-        <footer>
-          aaaaa
-        </footer>
+        <Footer />
       </body>
     </html>
   );

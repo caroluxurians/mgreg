@@ -3,39 +3,47 @@ import Header from "./components/Header";
 
 const Home = () => {
   return (
-    <div className="relative bg-light-pink flex-1 flex flex-col">
+    <div className="h-screen flex flex-col">
       <Header />
-      <main className="flex flex-1 justify-center items-center relative">
-        <div className="text-[20px] absolute top-[250px] left-[100px]">
+      <main
+        className="flex flex-1 justify-center items-center relative overflow-hidden sm:px-[100px]"
+        style={{ backgroundImage: "url('/gradient-large.png')" }}
+      >
+        <div className="hidden sm:block text-white font-medium leading-none text-[25px] absolute top-[250px] left-[100px]">
           Pirátská poslankyně<br />
           v Evropském parlamentu,<br />
           chránící vaše občanské svobody.
         </div>
-        <div className="relative w-[567px] h-[1000px] 2xl:w-[683px] 2xl:h-[1206px] flex justify-center items-center">
-          <Image
-            src="/ellipse.png"
-            height={300}
-            width={300}
-            alt="ellipse behind Markéta"
-            className="absolute top-[75px]"
-          />
+
+        <div className="flex justify-center sm:hidden">
           <Image
             src="/marketa-small.png"
-            height={1206}
-            width={683}
+            height={686}
+            width={389}
             unoptimized
             alt="Markéta Gregorová foto"
-            sizes="(max-width: 768px) 250px, (max-width: 1440px) 350px, 500px"
+            className="absolute top-[40px]"
+          />
+
+        </div>
+        <div
+          className="hidden sm:flex relative w-[567px] h-[1000px] 2xl:w-[683px] 2xl:h-[1206px] justify-center items-center"
+        >
+          <Image
+            src="/marketa-ellipse.png"
+            height={904}
+            width={512}
+            unoptimized
+            alt="Markéta Gregorová foto"
             className="absolute
-             top-[50px] sm:top-[80px] lg:top-[40px]
-             w-[250px] sm:w-[350px] lg:w-[500px]"
+            top-[180px]
+             sm:top-[240px]"
 
           />
-          <h1 className="absolute top-[420px] 2xl:top-[735px] text-[200px] 2xl:text-[200px] font-heading text-dark-pink whitespace-nowrap">
+          <h1 className="absolute top-[600px] text-[250px] font-heading text-dark-pink whitespace-nowrap">
             Markéta Gregorová
           </h1>
         </div>
-
       </main>
     </div>
   );

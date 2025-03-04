@@ -8,29 +8,29 @@ const Header = () => {
     <header
       className="flex flex-col sm:flex-row
       justify-between items-center
-      h-[9.4rem]
       relative font-heading bg-light-pink text-dark-pink sm:h-20
       2xl:px-[100px]"
     >
       <div
-        className="text-[4rem] mx-[1.25rem] mt-[2.25rem] mb-[23px]
-      sm:text-[40px]
-      leading-none tracking-[0.4px]"
+        className="text-[62px]/[0.62px] mx-5 mt-9 pb-[11.5px]
+      sm:text-[40px]/[0.4px]
+      leading-none"
       >
         Markéta Gregorová
       </div>
 
       <div
         className="flex items-center leading-none
-        px-[2.15rem] gap-[11px] tracking-[0.48px]
-       sm:tracking-[0.6px] sm:h-[49px] sm:w-[477px] sm:gap-[40px] sm:px-[30px] sm:py-[21px]"
+        text-[24px]/[0.48px] sm:text-[30px]/[0.6px]
+        gap-[11px]
+        sm:h-[49px] sm:w-[477px] sm:gap-[40px] sm:px-[30px] sm:py-[21px]"
       >
         {sectionsMobile.map((section) => (
-          <div className="sm:hidden text-[1.5rem]" key={section}>{section}</div>
+          <div className="flex sm:hidden" key={section}>{section}</div>
         ))}
 
         {sectionsDesktop.map((section) => (
-          <div className="hidden sm:flex text-[1.5rem] sm:text-[30px]" key={section}>{section}</div>
+          <div className="hidden sm:flex" key={section}>{section}</div>
         ))}
       </div>
 

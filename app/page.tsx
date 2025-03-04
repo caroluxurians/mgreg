@@ -11,10 +11,18 @@ const Home = () => {
           height={686}
           width={389}
           alt="Markéta Gregorová foto"
-          className="ml-2 z-2"
+          className="ml-2 z-3"
           unoptimized
         />
-        <div className="absolute rounded-full top-10 w-[516px] h-[516px] shadow-[0_0_40px_rgba(119,14,61,0.4)]" />
+        <div className="absolute bg-light-pink z-2 rounded-full top-10 w-[516px] h-[516px] shadow-[0_0_40px_rgba(119,14,61,0.4)]" />
+        <Image
+          src="/cat-happy.svg"
+          width={65}
+          height={65}
+          alt="happy cat"
+          className="absolute top-8 right-18 rotate-30 z-1"
+          unoptimized
+        />
       </main>
       <div className="text-center sm:hidden bg-light-pink pt-4 mb-8 text-[15px] font-medium text-dark-pink">
         Pirátská poslankyně v Evropském parlamentu,<br />

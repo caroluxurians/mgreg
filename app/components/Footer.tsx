@@ -3,7 +3,10 @@ import TomasCard from "./TomasCard";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark-pink flex flex-col h-[200px] sm:h-[250px] text-light-pink sm:grid sm:grid-cols-[2fr_2fr_2fr] items-center sm:px-[100px]">
+    <footer
+      className="bg-dark-pink flex flex-col items-center h-[200px] text-light-pink
+      sm:h-[250px] sm:grid sm:grid-cols-[2fr_2fr_2fr] sm:px-[100px]"
+    >
       <MarketaCard />
       <TomasCard />
       <div className="hidden sm:grid text-[20px] leading-[25px]">

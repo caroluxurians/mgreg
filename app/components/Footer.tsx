@@ -1,4 +1,5 @@
 import MarketaCard from "./MarketaCard";
+import SocialsSet from "./SocialsSet";
 import TomasCard from "./TomasCard";
 
 const Footer = () => {
@@ -9,6 +10,7 @@ const Footer = () => {
     >
       <MarketaCard />
       <TomasCard />
+      <SocialsSet color="light" />
       <div className="grid text-[14px]/[19px] sm:text-[20px]/[25px] pl-22">
         <span>BRUXELLES</span>
         <span>Parlement européen</span>

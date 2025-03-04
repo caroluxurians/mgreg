@@ -34,7 +34,7 @@ const Header = () => {
         ))}
       </div>
 
-      <SocialsSet />
+      <SocialsSet color="dark" />
 
     </header>
   );

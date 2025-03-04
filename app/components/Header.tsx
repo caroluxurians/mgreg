@@ -34,7 +34,7 @@ const Header = () => {
         ))}
       </div>
 
-      <SocialsSet color="dark" />
+      <SocialsSet color="dark" classNames="hidden sm:inline-flex" />
 
     </header>
   );

@@ -8,8 +8,8 @@ const MarketaCard = () => {
           src="/marketa-icon.png"
           height={80}
           width={80}
-          className="h-[65px] w-[65px] sm:h-[80px] sm:w-[80px]"
           alt="ikona Markéty"
+          className="h-[65px] w-[65px] sm:h-[80px] sm:w-[80px]"
           unoptimized
         />
       </div>

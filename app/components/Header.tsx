@@ -1,4 +1,4 @@
-import Image from "next/image";
+import SocialsSet from "./SocialsSet";
 
 const sectionsMobile = ["Pro média", "Moje práce", "O mně", "Videa", "Články"];
 const sectionsDesktop = ["Pro média", "Moje práce", "O mně", "Archiv"];
@@ -34,12 +34,7 @@ const Header = () => {
         ))}
       </div>
 
-      <div className="hidden sm:inline-flex flex-start gap-[30px] w-[173.54] h-[21.38]">
-        <Image src="/instagram.svg" height={21} width={21} alt="instagram icon" />
-        <Image src="/x.svg" height={21.34} width={23} alt="x icon" />
-        <Image src="/youtube.svg" height={21.38} width={30.54} alt="youtube icon" />
-        <Image src="/facebook.svg" height={21} width={9} alt="facebook icon" />
-      </div>
+      <SocialsSet />
 
     </header>
   );

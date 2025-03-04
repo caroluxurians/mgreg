@@ -26,7 +26,7 @@ const RootLayout = ({
   return (
     <html lang="cs" className="h-screen">
       <body
-        className={`${dmSans.className} ${magnoSans.variable} antialiased min-h-[852px] sm:h-screen flex flex-col`}
+        className={`${dmSans.className} ${magnoSans.variable} antialiased sm:h-screen flex flex-col`}
       >
         {children}
         <Footer />

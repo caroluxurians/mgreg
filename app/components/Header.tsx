@@ -6,14 +6,14 @@ const sectionsDesktop = ["Pro média", "Moje práce", "O mně", "Archiv"];
 const Header = () => {
   return (
     <header
-      className="flex flex-col sm:flex-row
+      className="flex flex-col md:flex-row
       justify-between items-center
-      relative font-heading bg-light-pink text-dark-pink sm:h-20
+      relative font-heading bg-light-pink text-dark-pink md:h-20
       2xl:px-[100px]"
     >
       <div
         className="text-[62px]/[0.62px] mx-5 mt-9 pb-[11.5px]
-      sm:text-[40px]/[0.4px]
+      md:text-[40px]/[0.4px]
       leading-none"
       >
         Markéta Gregorová
@@ -21,20 +21,20 @@ const Header = () => {
 
       <div
         className="flex items-center leading-none
-        text-[24px]/[0.48px] sm:text-[30px]/[0.6px]
+        text-[24px]/[0.48px] md:text-[30px]/[0.6px]
         gap-[11px]
-        sm:h-[49px] sm:w-[477px] sm:gap-[40px] sm:px-[30px] sm:py-[21px]"
+        md:h-[49px] md:w-[477px] md:gap-[40px] md:px-[30px] md:py-[21px]"
       >
         {sectionsMobile.map((section) => (
-          <div className="flex sm:hidden" key={section}>{section}</div>
+          <div className="flex md:hidden" key={section}>{section}</div>
         ))}
 
         {sectionsDesktop.map((section) => (
-          <div className="hidden sm:flex" key={section}>{section}</div>
+          <div className="hidden md:flex" key={section}>{section}</div>
         ))}
       </div>
 
-      <SocialsSet color="dark" classNames="hidden sm:inline-flex" />
+      <SocialsSet color="dark" classNames="hidden md:inline-flex" />
 
     </header>
   );

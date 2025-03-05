@@ -3,9 +3,11 @@ import Header from "./components/Header";
 
 const Home = () => {
   return (
-    <div className="h-screen max-h-screen flex flex-col bg-light-pink ">
+    <div className="h-screen max-h-screen flex flex-col bg-light-pink">
       <Header />
-      <main className="relative flex-1 flex flex-col justify-start items-center mb-3 overflow-hidden pt-14">
+      <main
+        className="relative flex-1 flex flex-col justify-start items-center mb-3 overflow-hidden pt-14"
+      >
         <Image
           src="/marketa-small.png"
           height={686}
@@ -15,16 +17,16 @@ const Home = () => {
           unoptimized
         />
         <div className="absolute bg-light-pink z-2 rounded-full top-10 w-[516px] h-[516px] shadow-[0_0_40px_rgba(119,14,61,0.4)]" />
-        <Image
+        {/* <Image
           src="/cat-happy.svg"
           width={65}
           height={65}
           alt="happy cat"
           className="absolute top-8 right-18 rotate-30 z-1"
           unoptimized
-        />
+        /> */}
       </main>
-      <div className="text-center sm:hidden bg-light-pink pt-4 mb-8 text-[15px] font-medium text-dark-pink">
+      <div className="text-center md:hidden bg-light-pink pt-4 mb-8 text-[15px] sm:text-[19px] font-medium text-dark-pink">
         Pirátská poslankyně v Evropském parlamentu,<br />
         chránící vaše občanské svobody.
       </div>

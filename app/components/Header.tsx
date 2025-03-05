@@ -13,7 +13,7 @@ const Header = () => {
       2xl:px-[100px]"
     >
       <div
-        className="text-[62px] tracking-[0.62px] mx-5 mt-9 sm:mt-7 md:mx-7 pb-[11.5px]
+        className="text-[62px] tracking-[0.62px] mx-5 mt-9 sm:mt-7 md:mx-7 pb-[11.5px] md:p-0 md:m-0
         md:text-[40px] md:tracking-[0.4px]
         leading-none"
       >
@@ -24,7 +24,7 @@ const Header = () => {
         className="flex items-center leading-none
         text-[24px] tracking-[0.48px] md:text-[30px] md:tracking-[0.6px]
         gap-[11px] sm:gap-4
-          md:gap-9 md:pr-7 md:pt-10 md:py-[21px] md:items-end"
+          md:gap-9 md:pr-7 md:py-[21px] md:items-end"
       >
         {sectionsMobile.map((section) => (
           <div className="flex md:hidden" key={section}>{section}</div>
@@ -35,7 +35,7 @@ const Header = () => {
         ))}
       </div>
 
-      <SocialsSet color="dark" classNames="hidden lg:inline-flex" />
+      <SocialsSet color="dark" classNames="hidden lg:flex lg:pr-7" />
 
     </header>
   );

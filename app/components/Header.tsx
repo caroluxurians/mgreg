@@ -12,17 +12,17 @@ const Header = () => {
       2xl:px-[100px]"
     >
       <div
-        className="text-[62px]/[0.62px] mx-5 mt-9 pb-[11.5px]
-      md:text-[40px]/[0.4px]
-      leading-none"
+        className="text-[62px] tracking-[0.62px] mx-5 mt-9 sm:mt-7 pb-[11.5px]
+        md:text-[40px] md:tracking-[0.4px]
+        leading-none"
       >
         Markéta Gregorová
       </div>
 
       <div
         className="flex items-center leading-none
-        text-[24px]/[0.48px] md:text-[30px]/[0.6px]
-        gap-[11px]
+        text-[24px] tracking-[0.48px] md:text-[30px] md:tracking-[0.6px]
+        gap-[11px] sm:gap-4
         md:h-[49px] md:w-[477px] md:gap-[40px] md:px-[30px] md:py-[21px]"
       >
         {sectionsMobile.map((section) => (

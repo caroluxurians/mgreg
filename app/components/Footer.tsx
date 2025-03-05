@@ -6,12 +6,13 @@ const Footer = () => {
   return (
     <footer
       className="bg-dark-pink flex flex-col gap-9 items-start text-light-pink pb-10 pl-7 sm:pl-14
-      md:h-[250px] md:grid md:grid-cols-[2fr_2fr_2fr] md:px-[100px]"
+      md:grid md:grid-cols-[3fr_2fr] md:px-9 md:gap-12
+      lg:h-[250px] lg:grid lg:grid-cols-[2fr_2fr_2fr] lg:px-[100px]"
     >
       <MarketaCard />
       <TomasCard />
-      <SocialsSet color="light" classNames="flex md:hidden pl-22" />
-      <div className="grid text-[14px]/[19px] sm:text-[17px]/[22px] md:text-[20px]/[25px] pl-22">
+      <SocialsSet color="light" classNames="flex lg:hidden pl-22 md:pl-0 md:order-4" />
+      <div className="md:order-2 grid text-[14px]/[19px] sm:text-[17px]/[22px] lg:text-[20px]/[25px] pl-22 md:pl-0 md:pt-8">
         <span>BRUXELLES</span>
         <span>Parlement européen</span>
         <span>Bât. Altiero Spinelli, 08G101</span>

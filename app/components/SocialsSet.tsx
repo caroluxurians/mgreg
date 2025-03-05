@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SocialsSet = ({ color, classNames = "" }: { color: string, classNames?: string }) => {
   return (
-    <div className={`${classNames} flex-start gap-[30px]`}>
+    <div className={`${classNames} gap-[30px]`}>
       <Image src={`/instagram-${color}.svg`} height={21} width={21} alt="instagram icon" />
       <Image src={`/x-${color}.svg`} height={21.34} width={23} alt="x icon" />
       <Image src={`/youtube-${color}.svg`} height={21.38} width={30.54} alt="youtube icon" />

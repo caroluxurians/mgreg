@@ -16,7 +16,7 @@ const Home = () => {
           className="ml-2 z-3"
           unoptimized
         />
-        <div className="absolute bg-light-pink z-2 rounded-full top-10 w-[516px] h-[516px] shadow-[0_0_40px_rgba(119,14,61,0.4)]" />
+        <div className="absolute bg-light-pink z-2 rounded-full top-10 w-[516px] h-[516px] shadow-[0_0_40px_rgba(119,14,61,0.4)] md:shadow-[0_0_40px_rgba(119,14,61,0.8)]" />
         {/* <Image
           src="/cat-happy.svg"
           width={65}
@@ -26,7 +26,7 @@ const Home = () => {
           unoptimized
         /> */}
       </main>
-      <div className="text-center md:hidden bg-light-pink pt-4 mb-8 text-[15px] sm:text-[19px] font-medium text-dark-pink">
+      <div className="text-center lg:hidden bg-light-pink pt-4 mb-8 text-[15px] sm:text-[19px] md:text-[22px] md:pt-6 md:mb-12 font-medium text-dark-pink">
         Pirátská poslankyně v Evropském parlamentu,<br />
         chránící vaše občanské svobody.
       </div>

@@ -9,23 +9,23 @@ const TomasCard = () => {
           height={80}
           width={80}
           alt="ikona Tomáše"
-          className="h-[65px] w-[65px] sm:h-[70px] sm:w-[70px] lg:h-[80px] lg:w-[80px]"
+          className="h-[65px] w-[65px] sm:h-[70px] sm:w-[70px] xl:h-[80px] xl:w-[80px]"
           unoptimized
         />
       </div>
-      <div className="flex flex-col gap-1 md:gap-3 lg:gap-[25px]">
+      <div className="flex flex-col gap-1 md:gap-3 xl:gap-[25px]">
         <div className="flex flex-col">
-          <div className="text-[20px]/[19px] sm:text-[22px]/[20px] lg:text-[24px]/[25px] font-bold">
+          <div className="text-[20px]/[19px] sm:text-[22px]/[20px] xl:text-[24px]/[25px] font-bold">
             Tomáš Polák
           </div>
-          <div className="text-[14px]/[19px] sm:text-[17px]/[25px] lg:text-[20px]/[25px]">
+          <div className="text-[14px]/[19px] sm:text-[17px]/[25px] xl:text-[20px]/[25px]">
             PR specialista
           </div>
         </div>
-        <div className="text-[14px]/[25px] sm:text-[17px]/[27px] lg:text-[20px]/[25px]">
+        <div className="text-[14px]/[25px] sm:text-[17px]/[27px] xl:text-[20px]/[25px]">
           mediální vystoupení a komentáře
         </div>
-        <div className="text-[14px]/[19px] sm:text-[17px]/[23px] lg:text-[20px]/[25px] underline">
+        <div className="text-[14px]/[19px] sm:text-[17px]/[23px] xl:text-[20px]/[25px] underline">
           <div>
             tomas.Polak@europarl.europa.eu
           </div>

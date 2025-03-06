@@ -3,20 +3,37 @@ import Header from "./components/Header";
 
 const Home = () => {
   return (
-    <div className="h-screen max-h-screen flex flex-col bg-light-pink">
+    <div className="h-screen max-h-screen lg:min-h-screen flex flex-col bg-light-pink">
       <Header />
       <main
-        className="relative flex-1 flex flex-col justify-start items-center mb-3 overflow-hidden pt-14"
+        className="relative flex-1 flex flex-col justify-start items-center mb-3 lg:mb-0 overflow-hidden pt-14 lg:pt-12"
       >
         <Image
           src="/marketa-small.png"
           height={686}
           width={389}
-          alt="Markéta Gregorová foto"
-          className="ml-2 z-3"
+          alt="Markéta Gregorová foto sm"
+          className="ml-2 z-3 lg:hidden"
           unoptimized
         />
-        <div className="absolute bg-light-pink z-2 rounded-full top-10 w-[516px] h-[516px] shadow-[0_0_40px_rgba(119,14,61,0.4)] md:shadow-[0_0_40px_rgba(119,14,61,0.8)]" />
+
+        <div className="absolute bg-light-pink z-2 rounded-full top-10 lg:top-6 w-[516px] h-[516px] lg:w-[470px] lg:h-[470px] xl:w-[645px] xl:h-[645px] shadow-[0_0_40px_rgba(119,14,61,0.4)] md:shadow-[0_0_40px_rgba(119,14,61,0.8)]" />
+        <Image
+          src="/marketa-large.png"
+          height={804}
+          width={455}
+          alt="Markéta Gregorová foto md"
+          className="ml-14 z-3 hidden lg:block xl:hidden"
+          unoptimized
+        />
+        <Image
+          src="/marketa-large.png"
+          height={1206}
+          width={683}
+          alt="Markéta Gregorová foto lg"
+          className="hidden xl:block ml-2 z-3"
+          unoptimized
+        />
         {/* <Image
           src="/cat-happy.svg"
           width={65}
@@ -25,6 +42,9 @@ const Home = () => {
           className="absolute top-8 right-18 rotate-30 z-1"
           unoptimized
         /> */}
+        <div className="hidden lg:block text-[170px] font-heading text-dark-pink whitespace-nowrap z-5 absolute top-110">
+          Markéta Gregorová
+        </div>
       </main>
       <div className="text-center lg:hidden bg-light-pink pt-4 mb-8 text-[15px] sm:text-[19px] md:text-[22px] md:pt-6 md:mb-12 font-medium text-dark-pink">
         Pirátská poslankyně v Evropském parlamentu,<br />

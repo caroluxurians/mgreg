@@ -3,27 +3,34 @@ import Header from "./components/Header";
 
 const Home = () => {
   return (
-    <div className="h-screen max-h-screen lg:min-h-screen flex flex-col bg-light-pink">
+    <div className="h-screen max-h-screen lg:h-[620px] flex flex-col bg-light-pink">
       <Header />
       <main
         className="relative flex-1 flex flex-col justify-start items-center mb-3 lg:mb-0 overflow-hidden pt-14 lg:pt-12"
       >
+        <div className="hidden lg:flex lg:flex-col text-white
+         font-medium leading-none text-[17px] absolute top-44 left-8 gap-1.5"
+        >
+          <span> Pirátská poslankyně</span>
+          <span>v Evropském parlamentu,</span>
+          <span>chránící vaše občanské svobody.</span>
+        </div>
         <Image
           src="/marketa-small.png"
           height={686}
           width={389}
           alt="Markéta Gregorová foto sm"
-          className="ml-2 z-3 lg:hidden"
+          className="ml-2 lg:ml-16 z-3 xl:hidden"
           unoptimized
         />
 
-        <div className="absolute bg-light-pink z-2 rounded-full top-10 lg:top-6 w-[516px] h-[516px] lg:w-[470px] lg:h-[470px] xl:w-[645px] xl:h-[645px] shadow-[0_0_40px_rgba(119,14,61,0.4)] md:shadow-[0_0_40px_rgba(119,14,61,0.8)]" />
+        <div className="absolute bg-light-pink z-2 rounded-full top-10 lg:top-4 lg:ml-4 w-[516px] h-[516px] lg:w-[380px] lg:h-[380px] xl:w-[645px] xl:h-[645px] shadow-[0_0_40px_rgba(119,14,61,0.4)] md:shadow-[0_0_40px_rgba(119,14,61,0.8)]" />
         <Image
-          src="/marketa-large.png"
+          src="/marketa-small.png"
           height={804}
           width={455}
           alt="Markéta Gregorová foto md"
-          className="ml-14 z-3 hidden lg:block xl:hidden"
+          className="ml-14 z-3 hidden xl:block 2xl:hidden"
           unoptimized
         />
         <Image
@@ -31,7 +38,7 @@ const Home = () => {
           height={1206}
           width={683}
           alt="Markéta Gregorová foto lg"
-          className="hidden xl:block ml-2 z-3"
+          className="hidden 2xl:block ml-2 z-3"
           unoptimized
         />
         {/* <Image
@@ -42,7 +49,7 @@ const Home = () => {
           className="absolute top-8 right-18 rotate-30 z-1"
           unoptimized
         /> */}
-        <div className="hidden lg:block text-[170px] font-heading text-dark-pink whitespace-nowrap z-5 absolute top-110">
+        <div className="hidden lg:block text-[150px] font-heading text-dark-pink whitespace-nowrap z-5 absolute top-80">
           Markéta Gregorová
         </div>
       </main>

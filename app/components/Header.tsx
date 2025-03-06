@@ -10,6 +10,7 @@ const Header = () => {
       justify-between items-center
       relative font-heading bg-transparent text-dark-pink
       md:h-20 md:pt-4
+      lg:pt-0
       2xl:px-[100px]"
     >
       <div
@@ -24,7 +25,8 @@ const Header = () => {
         className="flex items-center leading-none
         text-[24px] tracking-[0.48px] md:text-[30px] md:tracking-[0.6px]
         gap-[11px] sm:gap-4
-          md:gap-9 md:pr-7 md:py-[21px] md:items-end"
+        md:gap-9 md:pr-7 md:items-end
+        lg:gap-6 lg:text-[26px] lg:tracking-[0.6px]"
       >
         {sectionsMobile.map((section) => (
           <div className="flex md:hidden" key={section}>{section}</div>

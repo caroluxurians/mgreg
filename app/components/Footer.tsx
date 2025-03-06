@@ -13,7 +13,7 @@ const Footer = () => {
       <MarketaCard />
       <TomasCard />
       <SocialsSet color="light" classNames="flex xl:hidden pl-22 md:pl-0 md:order-4" />
-      <div className="md:order-2 grid text-[14px]/[19px] sm:text-[17px]/[22px] xl:text-[20px]/[25px] pl-22 md:pl-0 md:pt-8">
+      <div className="md:order-2 grid text-[14px]/[19px] sm:text-[17px]/[22px] xl:text-[20px]/[25px] pl-22 md:pl-0 md:pt-8 lg:pt-4">
         <span>BRUXELLES</span>
         <span>Parlement européen</span>
         <span>Bât. Altiero Spinelli, 08G101</span>

@@ -6,10 +6,10 @@ const Home = () => {
     <div className="h-screen max-h-screen lg:h-[620px] xl:h-[600px] 2xl:h-[660px] flex flex-col bg-light-pink">
       <Header />
       <main
-        className="relative flex-1 flex flex-col justify-start items-center mb-3 lg:mb-0 overflow-hidden pt-14 lg:pt-12 2xl:pt-10"
+        className="relative flex-1 flex flex-col justify-start items-center mb-3 lg:mb-0 overflow-hidden pt-14 lg:pt-12 2xl:pt-10 2xl:w-[1267px] 2xl:mx-auto"
       >
         <div className="hidden lg:flex lg:flex-col text-white
-         font-medium leading-none text-[17px] 2xl:text-[22px] absolute top-44 left-8 gap-1.5 xl:left-28 2xl:left-35"
+         font-medium leading-none text-[17px] 2xl:text-[22px] absolute top-44 left-8 gap-1.5 xl:left-28 2xl:left-0"
         >
           <span>Pirátská poslankyně</span>
           <span>v Evropském parlamentu,</span>

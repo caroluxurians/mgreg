@@ -17,9 +17,9 @@ const Header = () => {
       >
         <div
           className="text-[62px] tracking-[0.62px] mx-5 mt-9 sm:mt-7 md:mx-7 pb-[11.5px] md:p-0 md:m-0
-        md:text-[40px] md:tracking-[0.4px]
-    2xl:mx-0
-        leading-none"
+          md:text-[40px] md:tracking-[0.4px]
+          2xl:mx-0
+          leading-none"
         >
           Markéta Gregorová
         </div>
@@ -29,7 +29,8 @@ const Header = () => {
         text-[24px] tracking-[0.48px] md:text-[30px] md:tracking-[0.6px]
         gap-[11px] sm:gap-4
         md:gap-9 md:pr-7 md:items-end
-        lg:gap-6 lg:text-[26px] lg:tracking-[0.6px]"
+        lg:gap-6 lg:text-[26px] lg:tracking-[0.6px]
+        2xl:text-[30px] 2xl:tracking-[0.6px] 2xl:gap-10"
         >
           {sectionsMobile.map((section) => (
             <div className="flex md:hidden" key={section}>{section}</div>

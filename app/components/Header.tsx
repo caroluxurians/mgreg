@@ -11,7 +11,7 @@ const Header = () => {
       relative font-heading bg-transparent text-dark-pink
       md:h-20 md:pt-4
       lg:pt-0
-      xl:h-auto xl:pt-4 xl:px-25
+      xl:h-auto xl:pt-4 xl:px-20
       2xl:px-[100px]"
     >
       <div

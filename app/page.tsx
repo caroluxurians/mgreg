@@ -3,13 +3,13 @@ import Header from "./components/Header";
 
 const Home = () => {
   return (
-    <div className="h-screen max-h-screen lg:h-[620px] flex flex-col bg-light-pink">
+    <div className="h-screen max-h-screen lg:h-[620px] xl:h-[600px] flex flex-col bg-light-pink">
       <Header />
       <main
         className="relative flex-1 flex flex-col justify-start items-center mb-3 lg:mb-0 overflow-hidden pt-14 lg:pt-12"
       >
         <div className="hidden lg:flex lg:flex-col text-white
-         font-medium leading-none text-[17px] absolute top-44 left-8 gap-1.5 xl:left-32"
+         font-medium leading-none text-[17px] absolute top-44 left-8 gap-1.5 xl:left-28"
         >
           <span>Pirátská poslankyně</span>
           <span>v Evropském parlamentu,</span>
@@ -24,11 +24,11 @@ const Home = () => {
           unoptimized
         />
 
-        <div className="absolute bg-light-pink z-2 rounded-full top-10 lg:top-4 lg:ml-4 xl:ml-2 w-[516px] h-[516px] lg:w-[380px] lg:h-[380px] xl:w-[400px] xl:h-[400px] shadow-[0_0_40px_rgba(119,14,61,0.4)] md:shadow-[0_0_40px_rgba(119,14,61,0.8)]" />
+        <div className="absolute bg-light-pink z-2 rounded-full top-10 lg:top-4 lg:ml-4 xl:ml-2 w-[516px] h-[516px] lg:w-[380px] lg:h-[380px] xl:w-[370px] xl:h-[370px] shadow-[0_0_40px_rgba(119,14,61,0.4)] md:shadow-[0_0_40px_rgba(119,14,61,0.8)]" />
         <Image
           src="/marketa-small.png"
-          height={755}
-          width={428}
+          height={679}
+          width={385}
           alt="Markéta Gregorová foto md"
           className="ml-14 z-3 hidden xl:block 2xl:hidden"
           unoptimized
@@ -49,7 +49,7 @@ const Home = () => {
           className="absolute top-8 right-18 rotate-30 z-1"
           unoptimized
         /> */}
-        <div className="hidden lg:block text-[150px] xl:text-[190px] font-heading text-dark-pink whitespace-nowrap z-5 absolute top-80">
+        <div className="hidden lg:block text-[150px] xl:text-[198px] 2xl:text-[190px] font-heading text-dark-pink whitespace-nowrap z-5 absolute top-80 xl:top-70">
           Markéta Gregorová
         </div>
       </main>

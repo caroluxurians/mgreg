@@ -1,6 +1,6 @@
 import SocialsSet from "./SocialsSet";
 
-const sectionsMobile = ["Pro média", "Moje práce", "O mně", "Videa", "Články"];
+export const sectionsMobile = ["Pro média", "Moje práce", "O mně", "Videa", "Články"];
 const sectionsDesktop = ["Pro média", "Moje práce", "O mně", "Archiv"];
 
 const Header = () => {

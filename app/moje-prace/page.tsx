@@ -9,34 +9,47 @@ const MojePrace = () => {
       <HeaderMobile />
       <main className="flex flex-col">
 
-        <div className="h-screen max-h-screen flex flex-col pt-7 gap-5 px-5">
-          <div className="font-heading flex flex-col text-[30px]/[30px]">
-            <span>Ve svém mandátu se zaměřuji</span>
-            <span>především na naši bezpečnost</span>
-            <span>a naše digitální svobody.</span>
+        <div className="h-screen max-h-screen flex flex-col pt-7 gap-5 px-5 sm:grid sm:grid-cols-[3fr_2fr]">
+          <div className="flex flex-col gap-5">
+            <div className="font-heading flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px]">
+              <span>Ve svém mandátu se zaměřuji</span>
+              <span>především na naši bezpečnost</span>
+              <span>a naše digitální svobody.</span>
+            </div>
+
+            <div className="text-[14px]">
+              Od roku 2019 se věnuji regionu <br />
+              Východního partnerství, včetně Ukrajiny,<br />
+              hájím lidská práva ve světě a zaměřuji <br />
+              se na stále ještě opomíjený vliv nových<br />
+              technologií na naši bezpečnost a demokracii:<br />
+              ať již v podobě zbraní dvojího užití,<br />
+              dezinformací, cizího vměšování<br />
+              či umělé inteligence. Zároveň se snažím <br />
+              uhájit decentralizovaný, anonymní<br />
+              a svobodný Internet, kde není prolamováno<br />
+              soukromí běžných občanů.<br />
+            </div>
           </div>
-          <div className="text-[14px]">
-            Od roku 2019 se věnuji regionu <br />
-            Východního partnerství, včetně Ukrajiny,<br />
-            hájím lidská práva ve světě a zaměřuji <br />
-            se na stále ještě opomíjený vliv nových<br />
-            technologií na naši bezpečnost a demokracii:<br />
-            ať již v podobě zbraní dvojího užití,<br />
-            dezinformací, cizího vměšování<br />
-            či umělé inteligence. Zároveň se snažím <br />
-            uhájit decentralizovaný, anonymní<br />
-            a svobodný Internet, kde není prolamováno<br />
-            soukromí běžných občanů.<br />
-          </div>
+
           <Image
             src="/marketa-icon-large.png"
             height={309}
             width={309}
             alt="Markéta large icon"
-            className="mx-auto mt-5"
+            className="block sm:hidden mx-auto mt-5"
+            unoptimized
+          />
+          <Image
+            src="/marketa-icon-large.png"
+            height={220}
+            width={220}
+            alt="Markéta large icon"
+            className="hidden sm:block mt-4"
             unoptimized
           />
         </div>
+
         <div className="flex flex-col bg-beige py-16 gap-6">
           <div className="font-heading text-[30px]/[34px] text-center">
             V Evropském parlamentu proto ve<br />

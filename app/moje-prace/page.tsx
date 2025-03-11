@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeaderMobile from "../components/HeaderMobile";
 import LabelDark from "../components/LabelDark";
+import LabelTransparent from "../components/LabelTransparent";
 
 const MojePrace = () => {
   return (
@@ -57,12 +58,8 @@ const MojePrace = () => {
           </div>
 
           <div className="flex flex-col items-center gap-3">
-            <div className="w-auto text-[15px] sm:text-[24px] italic border border-white rounded-full px-5 py-1">
-              Delegace pro vztahy EU s Čínou
-            </div>
-            <div className="w-auto text-[15px] sm:text-[24px] italic border border-white rounded-full px-5 py-1">
-              Delegace pro vztahy se zeměmi Euronest
-            </div>
+            <LabelTransparent content="Delegace pro vztahy EU s Čínou" />
+            <LabelTransparent content="Delegace pro vztahy se zeměmi Euronest" />
           </div>
 
           <div className="text-[14px] mx-5 text-center">

@@ -8,21 +8,27 @@ type HeaderProps = {
   display: string
   sectionsTextSize?: string
   headingTextSize?: string
+  wrapperStyles?: string
 }
 
-const Header = ({ display, sectionsTextSize = "md:text-[30px] md:tracking-[0.6px]", headingTextSize = "md:text-[40px] md:tracking-[0.6px]" }: HeaderProps) => {
+const Header = ({
+  display,
+  sectionsTextSize = "md:text-[25px] md:tracking-[0.5px]",
+  headingTextSize = "md:text-[30px] md:tracking-[0.3px]",
+  wrapperStyles = "md:mt-6 md:mx-auto md:w-[650px]"
+}: HeaderProps) => {
   return (
     <header className={classNames(`${display} w-full`)}>
       <div
-        className="flex flex-col md:flex-row
+        className={classNames(`flex flex-col md:flex-row
         justify-between items-center
         relative font-heading bg-transparent text-dark-pink
         mx-5 mt-9 gap-3
         sm:mt-7
-        md:mx-10 md:mt-6 md:w-full
+        ${wrapperStyles}
         lg:pt-0
         xl:h-auto xl:pt-4 xl:px-20
-        2xl:w-[1267px] 2xl:mx-auto 2xl:px-0"
+        2xl:w-[1267px] 2xl:mx-auto 2xl:px-0`)}
       >
         <div
           className={classNames(`text-[62px] tracking-[0.62px]

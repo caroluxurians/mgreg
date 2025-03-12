@@ -10,8 +10,6 @@ const MojePrace = () => {
       <HeaderMobile />
       <Header
         display="hidden md:flex"
-        sectionsTextSize="md:text-[24px] md:tracking-[0.4px]"
-        headingTextSize="md:text-[30px] md:tracking-[0.3px]"
       />
       <main className="flex flex-col">
 
@@ -28,7 +26,7 @@ const MojePrace = () => {
                 <span>a naše digitální svobody.</span>
               </div>
 
-              <div className="text-[14px] sm:text-[16px]">
+              <div className="text-[14px] sm:text-[16px] block md:hidden">
                 Od roku 2019 se věnuji regionu <br />
                 Východního partnerství, včetně Ukrajiny,<br />
                 hájím lidská práva ve světě a zaměřuji <br />
@@ -41,13 +39,26 @@ const MojePrace = () => {
                 a svobodný Internet, kde není prolamováno<br />
                 soukromí běžných občanů.<br />
               </div>
+              <div className="text-[14px] sm:text-[16px] hidden md:block">
+                Od roku 2019 se věnuji regionu Východního <br />
+                partnerství, včetně Ukrajiny, hájím lidská práva<br />
+                ve světě a zaměřuji se na stále ještě opomíjený vliv <br />
+                nových technologií na naši bezpečnost a demokracii: <br />
+                ať již v podobě zbraní dvojího užití, dezinformací,<br />
+                cizího vměšování či umělé inteligence. Zároveň<br />
+                se snažím uhájit decentralizovaný, anonymní<br />
+                a svobodný Internet, kde není prolamováno<br />
+                soukromí běžných občanů.<br />
+
+              </div>
             </div>
+
             <Image
               src="/marketa-icon-large.png"
               height={309}
               width={309}
               alt="Markéta large icon"
-              className="block sm:hidden md:block mx-auto mt-5"
+              className="block mx-auto sm:hidden md:block md:ml-2 md:mt-1"
               unoptimized
             />
             <Image
@@ -62,7 +73,7 @@ const MojePrace = () => {
         </div>
 
         <div className="flex flex-col bg-beige py-16 gap-6 sm:py-10">
-          <div className="font-heading text-[30px]/[34px] sm:text-[35px]/[39px] text-center">
+          <div className="font-heading text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] text-center">
             V Evropském parlamentu proto ve<br />
             volebním období 2025-2029<br />
             působím v následujících výborech:<br />

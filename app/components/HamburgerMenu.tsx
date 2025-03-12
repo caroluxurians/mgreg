@@ -26,7 +26,7 @@ const HamburgerMenu = () => {
       <div className={classNames(!isOpen && "hidden", "absolute z-5 right-5 top-17 font-heading text-[17px] tracking-[0.34px] flex flex-col text-end")}>
         <div>
           {sectionsMobile.map((section) => (
-            <div className="hover:text-white">{section}</div>
+            <div key={section} className="hover:text-white">{section}</div>
           ))}
         </div>
 

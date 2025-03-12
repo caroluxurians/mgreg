@@ -2,17 +2,27 @@ import Image from "next/image";
 import HeaderMobile from "../components/HeaderMobile";
 import LabelDark from "../components/LabelDark";
 import LabelTransparent from "../components/LabelTransparent";
+import Header from "../components/Header";
 
 const MojePrace = () => {
   return (
     <div className="bg-light-pink text-dark-pink">
       <HeaderMobile />
+      <Header
+        display="hidden md:flex"
+        sectionsTextSize="md:text-[24px] md:tracking-[0.4px]"
+        headingTextSize="md:text-[30px] md:tracking-[0.3px]"
+      />
       <main className="flex flex-col">
 
         <div className="sm:flex sm:justify-center">
-          <div className="h-screen max-h-screen flex flex-col pt-7 gap-5 px-5 sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:px-10 sm:gap-0 sm:pb-10 sm:w-[640px]">
+          <div
+            className="h-screen max-h-screen flex flex-col pt-7 gap-5 px-5 
+            sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:px-10 sm:gap-0 sm:pb-10 sm:w-[640px] 
+            md:w-[730px] md:pt-10"
+          >
             <div className="flex flex-col gap-5">
-              <div className="font-heading flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px]">
+              <div className="font-heading flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px]">
                 <span>Ve svém mandátu se zaměřuji</span>
                 <span>především na naši bezpečnost</span>
                 <span>a naše digitální svobody.</span>
@@ -37,7 +47,7 @@ const MojePrace = () => {
               height={309}
               width={309}
               alt="Markéta large icon"
-              className="block sm:hidden mx-auto mt-5"
+              className="block sm:hidden md:block mx-auto mt-5"
               unoptimized
             />
             <Image
@@ -45,7 +55,7 @@ const MojePrace = () => {
               height={220}
               width={220}
               alt="Markéta large icon"
-              className="hidden sm:block mt-4 sm:mr-4"
+              className="hidden sm:block md:hidden mt-4 sm:mr-4"
               unoptimized
             />
           </div>

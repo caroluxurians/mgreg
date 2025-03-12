@@ -1,36 +1,46 @@
+import classNames from "classnames";
 import SocialsSet from "./SocialsSet";
 
 export const sectionsMobile = ["Pro média", "Moje práce", "O mně", "Videa", "Články"];
 const sectionsDesktop = ["Pro média", "Moje práce", "O mně", "Archiv"];
 
-const Header = () => {
+type HeaderProps = {
+  display: string
+  sectionsTextSize?: string
+  headingTextSize?: string
+}
+
+const Header = ({ display, sectionsTextSize = "md:text-[30px] md:tracking-[0.6px]", headingTextSize = "md:text-[40px] md:tracking-[0.6px]" }: HeaderProps) => {
   return (
-    <header className="w-full">
+    <header className={classNames(`${display} w-full`)}>
       <div
         className="flex flex-col md:flex-row
-      justify-between items-center
-      relative font-heading bg-transparent text-dark-pink
-      md:h-20 md:pt-4
-      lg:pt-0
-      xl:h-auto xl:pt-4 xl:px-20
-     2xl:w-[1267px] 2xl:mx-auto 2xl:px-0"
+        justify-between items-center
+        relative font-heading bg-transparent text-dark-pink
+        mx-5 mt-9 gap-3
+        sm:mt-7
+        md:mx-10 md:mt-6 md:w-full
+        lg:pt-0
+        xl:h-auto xl:pt-4 xl:px-20
+        2xl:w-[1267px] 2xl:mx-auto 2xl:px-0"
       >
         <div
-          className="text-[62px] tracking-[0.62px] mx-5 mt-9 sm:mt-7 md:mx-7 pb-[11.5px] md:p-0 md:m-0
-          md:text-[40px] md:tracking-[0.4px]
+          className={classNames(`text-[62px] tracking-[0.62px]
+          sm:text-[68px] sm:tracking-[0.68px]
+          ${headingTextSize}
           2xl:mx-0
-          leading-none"
+          leading-none`)}
         >
           Markéta Gregorová
         </div>
 
         <div
-          className="flex items-center leading-none
-        text-[24px] tracking-[0.48px] md:text-[30px] md:tracking-[0.6px]
+          className={classNames(`flex items-center leading-none
+        text-[24px] tracking-[0.48px]
         gap-[11px] sm:gap-4
-        md:gap-9 md:pr-7 md:items-end
+        md:gap-6 md:items-end ${sectionsTextSize}
         lg:gap-6 lg:text-[26px] lg:tracking-[0.6px]
-        2xl:text-[30px] 2xl:tracking-[0.6px] 2xl:gap-10"
+        2xl:text-[30px] 2xl:tracking-[0.6px] 2xl:gap-10`)}
         >
           {sectionsMobile.map((section) => (
             <div className="flex md:hidden" key={section}>{section}</div>

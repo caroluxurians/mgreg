@@ -15,13 +15,15 @@ const MojePrace = () => {
 
         <div className="sm:flex sm:justify-center">
           <div
-            className="h-screen max-h-screen flex flex-col pt-7 gap-5 px-5
-            sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:px-10 sm:gap-0 sm:pb-10 sm:w-[640px]
-            md:w-[730px] md:pt-10
-            lg:w-[1000px] lg:pt-14 lg:pb-18"
+            className="h-screen max-h-screen flex flex-col pt-7 gap-5
+            w-[350px] mx-auto
+            sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:gap-0 sm:pb-10 sm:w-[560px]
+            md:w-[700px] md:pt-10
+            lg:w-[900px] lg:pt-0 lg:pb-0 lg:mt-14 lg:mb-18
+            xl:w-[1100px] xl:grid-cols-[5fr_3fr]"
           >
             <div className="flex flex-col gap-5">
-              <div className="font-heading flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px] lg:text-[50px]/[57px]">
+              <div className="font-heading flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px]">
                 <span>Ve svém mandátu se zaměřuji</span>
                 <span>především na naši bezpečnost</span>
                 <span>a naše digitální svobody.</span>
@@ -67,7 +69,7 @@ const MojePrace = () => {
               height={309}
               width={309}
               alt="Markéta large icon"
-              className="block mx-auto sm:hidden md:block md:ml-2 md:mt-1 lg:w-[368px] lg:h-[368px] lg:ml-0 lg:mt-2"
+              className="block mx-auto sm:hidden md:block md:ml-2 md:mt-1 md:w-[270px] md:h-[270px] lg:w-[360px] lg:h-[360px] lg:ml-0 lg:mt-2 xl:h-[410px] xl:w-[410px]"
               unoptimized
             />
             <Image
@@ -82,7 +84,7 @@ const MojePrace = () => {
         </div>
 
         <div className="flex flex-col bg-beige py-16 gap-6 sm:py-10 md:pt-15 md:pb-20">
-          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[57px]">
+          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px]">
             V Evropském parlamentu proto ve<br />
             volebním období 2025-2029<br />
             působím v následujících výborech:<br />
@@ -100,7 +102,7 @@ const MojePrace = () => {
 
         <div className="flex flex-col bg-light-pink gap-7 py-16 sm:pt-10 sm:pb-12 sm:gap-6 lg:gap-7 lg:pt-14 lg:pb-22">
 
-          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[57px]">
+          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px]">
             Zároveň jsem<br /> místopředsedkyní
           </div>
 

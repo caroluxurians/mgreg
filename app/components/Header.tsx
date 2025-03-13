@@ -15,7 +15,7 @@ const Header = ({
   display,
   sectionsTextSize = "md:text-[25px] md:tracking-[0.5px]",
   headingTextSize = "md:text-[30px] md:tracking-[0.3px]",
-  wrapperStyles = "md:mt-6 md:mx-auto md:w-[650px]",
+  wrapperStyles = "md:mt-6 md:mx-auto md:w-[650px] lg:w-[920px]",
 }: HeaderProps) => {
   return (
     <header className={classNames(`${display} w-full`)}>
@@ -57,7 +57,7 @@ const Header = ({
           ))}
         </div>
 
-        <SocialsSet color="dark" classNames="hidden lg:flex lg:pr-7 2xl:pr-0" />
+        <SocialsSet color="dark" classNames="hidden lg:flex 2xl:pr-0" />
       </div>
 
     </header>

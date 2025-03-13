@@ -17,10 +17,11 @@ const MojePrace = () => {
           <div
             className="h-screen max-h-screen flex flex-col pt-7 gap-5 px-5
             sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:px-10 sm:gap-0 sm:pb-10 sm:w-[640px]
-            md:w-[730px] md:pt-10"
+            md:w-[730px] md:pt-10
+            lg:w-[1000px] lg:pt-14 lg:pb-14"
           >
             <div className="flex flex-col gap-5">
-              <div className="font-heading flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px]">
+              <div className="font-heading flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px] lg:text-[50px]/[57px]">
                 <span>Ve svém mandátu se zaměřuji</span>
                 <span>především na naši bezpečnost</span>
                 <span>a naše digitální svobody.</span>
@@ -39,7 +40,7 @@ const MojePrace = () => {
                 a svobodný Internet, kde není prolamováno<br />
                 soukromí běžných občanů.<br />
               </div>
-              <div className="text-[14px] sm:text-[16px] hidden md:block">
+              <div className="text-[14px] sm:text-[16px] hidden md:block lg:hidden">
                 Od roku 2019 se věnuji regionu Východního <br />
                 partnerství, včetně Ukrajiny, hájím lidská práva<br />
                 ve světě a zaměřuji se na stále ještě opomíjený vliv <br />
@@ -49,7 +50,15 @@ const MojePrace = () => {
                 se snažím uhájit decentralizovaný, anonymní<br />
                 a svobodný Internet, kde není prolamováno<br />
                 soukromí běžných občanů.<br />
-
+              </div>
+              <div className="hidden lg:block lg:text-[18px]">
+                Od roku 2019 se věnuji regionu Východního partnerství,<br />
+                včetně Ukrajiny, hájím lidská práva ve světě a zaměřuji se<br />
+                na stále ještě opomíjený vliv nových technologií na naši<br />
+                bezpečnost a demokracii: ať již v podobě zbraní dvojího užití,<br />
+                dezinformací, cizího vměšování či umělé inteligence. Zároveň<br />
+                se snažím uhájit decentralizovaný, anonymní a svobodný<br />
+                Internet, kde není prolamováno soukromí běžných občanů.<br />
               </div>
             </div>
 
@@ -58,7 +67,7 @@ const MojePrace = () => {
               height={309}
               width={309}
               alt="Markéta large icon"
-              className="block mx-auto sm:hidden md:block md:ml-2 md:mt-1"
+              className="block mx-auto sm:hidden md:block md:ml-2 md:mt-1 lg:w-[368px] lg:h-[368px] lg:ml-0 lg:mt-2"
               unoptimized
             />
             <Image
@@ -72,23 +81,26 @@ const MojePrace = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-beige py-16 gap-6 sm:py-10">
-          <div className="font-heading text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] text-center">
+        <div className="flex flex-col bg-beige py-16 gap-6 sm:py-10 md:pt-10 md:pb-16">
+          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[57px]">
             V Evropském parlamentu proto ve<br />
             volebním období 2025-2029<br />
             působím v následujících výborech:<br />
           </div>
-          <div className="text-white flex flex-col items-center gap-3 mx-4 sm:gap-4">
-            <LabelDark content="INTA — Mezinárodní obchod" />
-            <LabelDark content="ITRE — Průmysl, energetika a obchod" />
-            <LabelDark content=" AFCO — Ústavní záležitosti" />
-            <LabelDark content=" LIBE — Občanské svobody a spravedlnost" />
+          <div className="text-white lg:mx-auto mx-4 sm:gap-4 md:mx-auto lg:gap-0">
+            <div className="flex flex-col items-center md:flex-row md:flex-wrap justify-center md:w-[700px] lg:w-[770px] gap-3">
+              <LabelDark content="INTA — Mezinárodní obchod" />
+              <LabelDark content="ITRE — Průmysl, energetika a obchod" />
+              <LabelDark content=" AFCO — Ústavní záležitosti" />
+              <LabelDark content=" LIBE — Občanské svobody a spravedlnost" />
+            </div>
+
           </div>
         </div>
 
         <div className="flex flex-col bg-light-pink gap-7 py-16 sm:pt-10 sm:pb-12 sm:gap-6">
 
-          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px]">
+          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[57px]">
             Zároveň jsem<br /> místopředsedkyní
           </div>
 

@@ -11,7 +11,7 @@ const Footer = () => {
       <div
         className="bg-dark-pink flex flex-col gap-9 items-start text-light-pink pb-10 pl-7 sm:pl-14
       md:grid md:grid-cols-[3fr_2fr] md:px-9 md:gap-12
-      lg:grid lg:w-[800px] lg:mx-auto lg:px-0
+      lg:grid lg:w-[800px] lg:mx-auto lg:px-0 lg:pt-4
       xl:grid-cols-[3fr_3fr_2fr] xl:gap-2 xl:w-[1067px] xl:mx-auto
       xl:h-[188px] xl:grid
       2xl:h-[200px] 2xl:grid-cols-[3fr_3fr_2fr] 2xl:w-[1267px]"

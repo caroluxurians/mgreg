@@ -18,7 +18,7 @@ const MojePrace = () => {
             className="h-screen max-h-screen flex flex-col pt-7 gap-5 px-5
             sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:px-10 sm:gap-0 sm:pb-10 sm:w-[640px]
             md:w-[730px] md:pt-10
-            lg:w-[1000px] lg:pt-14 lg:pb-14"
+            lg:w-[1000px] lg:pt-14 lg:pb-18"
           >
             <div className="flex flex-col gap-5">
               <div className="font-heading flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px] lg:text-[50px]/[57px]">
@@ -81,7 +81,7 @@ const MojePrace = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-beige py-16 gap-6 sm:py-10 md:pt-10 md:pb-16">
+        <div className="flex flex-col bg-beige py-16 gap-6 sm:py-10 md:pt-15 md:pb-20">
           <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[57px]">
             V Evropském parlamentu proto ve<br />
             volebním období 2025-2029<br />
@@ -98,22 +98,28 @@ const MojePrace = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-light-pink gap-7 py-16 sm:pt-10 sm:pb-12 sm:gap-6">
+        <div className="flex flex-col bg-light-pink gap-7 py-16 sm:pt-10 sm:pb-12 sm:gap-6 lg:gap-7 lg:pt-14 lg:pb-22">
 
           <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[57px]">
             Zároveň jsem<br /> místopředsedkyní
           </div>
 
-          <div className="flex flex-col items-center gap-3 sm:gap-4">
+          <div className="flex flex-col items-center gap-3 sm:gap-4 lg:flex-row mx-auto">
             <LabelTransparent content="Delegace pro vztahy EU s Čínou" />
             <LabelTransparent content="Delegace pro vztahy se zeměmi Euronest" />
           </div>
 
-          <div className="text-[14px] mx-5 text-center sm:text-[16px]/[26px]">
+          <div className="text-[14px] mx-5 text-center sm:text-[16px]/[26px] md:hidden">
             a členkou delegací pro vztahy s Ruskem,<br />
             Běloruskem, Arménií, Azerbajdžánem a Gruzií. <br />
             Výstupy na plénu, odpracovanou legislativu<br />
             i interpelace na Komisi či Radu si můžete<br />
+            prohlédnout na mém p<span className="underline decoration-dark-pink">rofilu</span>.<br />
+          </div>
+          <div className="hidden md:block text-center md:text-[16px]/[26px]">
+            a členkou delegací pro vztahy s Ruskem, Běloruskem, Arménií,<br />
+            Azerbajdžánem a Gruzií. Výstupy na plénu, odpracovanou<br />
+            legislativu i interpelace na Komisi či Radu si můžete<br />
             prohlédnout na mém p<span className="underline decoration-dark-pink">rofilu</span>.<br />
           </div>
         </div>

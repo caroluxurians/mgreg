@@ -15,8 +15,8 @@ const MojePrace = () => {
 
         <div className="sm:flex sm:justify-center">
           <div
-            className="h-screen max-h-screen flex flex-col pt-7 gap-5 px-5 
-            sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:px-10 sm:gap-0 sm:pb-10 sm:w-[640px] 
+            className="h-screen max-h-screen flex flex-col pt-7 gap-5 px-5
+            sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:px-10 sm:gap-0 sm:pb-10 sm:w-[640px]
             md:w-[730px] md:pt-10"
           >
             <div className="flex flex-col gap-5">
@@ -88,7 +88,7 @@ const MojePrace = () => {
 
         <div className="flex flex-col bg-light-pink gap-7 py-16 sm:pt-10 sm:pb-12 sm:gap-6">
 
-          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] ">
+          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px]">
             Zároveň jsem<br /> místopředsedkyní
           </div>
 

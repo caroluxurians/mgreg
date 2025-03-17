@@ -5,6 +5,9 @@
   --color-foreground: var(--foreground);
   --color-light-pink: #E9B4D3;
   --color-dark-pink: #660732;
+  /* footer, ÚVODNÍ ODSTAVCE & ODSTAVCE */
+  --color-medium-pink: #770E3D;
+  /* nadpisy, ÚVODNÍ ODSTAVCE & ODSTAVCE, podtřžítka, ikony socek */
   --color-beige: #F4DFDF;
   --breakpoint-3xl: 1920px;
 

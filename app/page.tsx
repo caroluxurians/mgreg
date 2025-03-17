@@ -55,7 +55,7 @@ const Home = () => {
           className="absolute top-8 right-18 rotate-30 z-1"
           unoptimized
         /> */}
-        <div className="hidden lg:block text-[150px] xl:text-[198px] 2xl:text-[235px] font-heading text-dark-pink whitespace-nowrap z-5 absolute top-80 xl:top-70 2xl:top-75">
+        <div className="hidden lg:block text-[150px] xl:text-[198px] 2xl:text-[235px] font-heading text-medium-pink whitespace-nowrap z-5 absolute top-80 xl:top-70 2xl:top-75">
           Markéta Gregorová
         </div>
       </main>

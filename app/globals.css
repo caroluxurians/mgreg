@@ -8,6 +8,8 @@
   /* footer, ÚVODNÍ ODSTAVCE & ODSTAVCE */
   --color-medium-pink: #770E3D;
   /* nadpisy, ÚVODNÍ ODSTAVCE & ODSTAVCE, podtřžítka, ikony socek */
+  --color-red-hue-pink: #8F134C;
+  /* bonusová reddish pink pro lineární oddělovače ale rozhodně ne všechny*/
   --color-beige: #F4DFDF;
   --breakpoint-3xl: 1920px;
 

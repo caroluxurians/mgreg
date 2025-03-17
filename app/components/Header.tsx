@@ -22,7 +22,7 @@ const Header = ({
       <div
         className={classNames(`flex flex-col md:flex-row
         justify-between items-center
-        relative font-heading bg-transparent text-dark-pink
+        relative font-heading bg-transparent text-medium-pink
         mx-5 mt-9 gap-3
         sm:mt-7
         ${wrapperStyles}

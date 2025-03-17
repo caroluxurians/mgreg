@@ -6,7 +6,7 @@ import Header from "../components/Header";
 
 const MojePrace = () => {
   return (
-    <div className="bg-light-pink text-dark-pink">
+    <div className="bg-light-pink">
       <HeaderMobile />
       <Header
         display="hidden md:flex"
@@ -25,13 +25,13 @@ const MojePrace = () => {
             3xl:w-[1800x]"
           >
             <div className="flex flex-col gap-5 2xl:gap-7">
-              <div className="font-heading flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px]">
+              <div className="font-heading text-medium-pink flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px]">
                 <span>Ve svém mandátu se zaměřuji</span>
                 <span>především na naši bezpečnost</span>
                 <span>a naše digitální svobody.</span>
               </div>
 
-              <div className="text-[14px] sm:text-[16px] block md:hidden">
+              <div className="text-dark-pink text-[14px] sm:text-[16px] block md:hidden">
                 Od roku 2019 se věnuji regionu <br />
                 Východního partnerství, včetně Ukrajiny,<br />
                 hájím lidská práva ve světě a zaměřuji <br />
@@ -44,7 +44,7 @@ const MojePrace = () => {
                 a svobodný Internet, kde není prolamováno<br />
                 soukromí běžných občanů.<br />
               </div>
-              <div className="text-[14px] sm:text-[16px] hidden md:block lg:hidden">
+              <div className="text-medium-pink text-[14px] sm:text-[16px] hidden md:block lg:hidden">
                 Od roku 2019 se věnuji regionu Východního <br />
                 partnerství, včetně Ukrajiny, hájím lidská práva<br />
                 ve světě a zaměřuji se na stále ještě opomíjený vliv <br />
@@ -55,7 +55,7 @@ const MojePrace = () => {
                 a svobodný Internet, kde není prolamováno<br />
                 soukromí běžných občanů.<br />
               </div>
-              <div className="hidden lg:block lg:text-[18px] 2xl:text-[20px]/[32px] 3xl:text-[24px]/[35px]">
+              <div className="text-dark-pink hidden lg:block lg:text-[18px] 2xl:text-[20px]/[32px] 3xl:text-[24px]/[35px]">
                 Od roku 2019 se věnuji regionu Východního partnerství,<br />
                 včetně Ukrajiny, hájím lidská práva ve světě a zaměřuji se<br />
                 na stále ještě opomíjený vliv nových technologií na naši<br />
@@ -86,7 +86,7 @@ const MojePrace = () => {
         </div>
 
         <div className="flex flex-col bg-beige py-16 gap-6 sm:py-10 md:pt-15 md:pb-20 xl:gap-8 xl:pb-27 2xl:gap-10 2xl:pt-17 2xl:pb-30">
-          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px]">
+          <div className="font-heading text-medium-pink text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px]">
             V Evropském parlamentu proto ve<br />
             volebním období 2025-2029<br />
             působím v následujících výborech:<br />
@@ -104,7 +104,7 @@ const MojePrace = () => {
 
         <div className="flex flex-col bg-light-pink gap-7 py-16 sm:pt-10 sm:pb-12 sm:gap-6 lg:gap-7 lg:pt-14 lg:pb-22 xl:gap-8 xl:pt-16 xl:pb-26 2xl:pt-20 2xl:pb-30 2xl:gap-9">
 
-          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[100px] 3xl:text-[100px]/[109px]">
+          <div className="font-heading text-medium-pink text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[100px] 3xl:text-[100px]/[109px]">
             Zároveň jsem<br /> místopředsedkyní
           </div>
 
@@ -113,18 +113,18 @@ const MojePrace = () => {
             <LabelTransparent content="Delegace pro vztahy se zeměmi Euronest" />
           </div>
 
-          <div className="text-[14px] mx-5 text-center sm:text-[16px]/[26px] md:hidden">
+          <div className="text-medium-pink text-[14px] mx-5 text-center sm:text-[16px]/[26px] md:hidden">
             a členkou delegací pro vztahy s Ruskem,<br />
             Běloruskem, Arménií, Azerbajdžánem a Gruzií. <br />
             Výstupy na plénu, odpracovanou legislativu<br />
             i interpelace na Komisi či Radu si můžete<br />
-            prohlédnout na mém p<span className="underline decoration-dark-pink">rofilu</span>.<br />
+            prohlédnout na mém p<span className="underline decoration-medium-pink">rofilu</span>.<br />
           </div>
-          <div className="hidden md:block text-center md:text-[16px]/[26px] lg:text-[18px] 2xl:text-[20px]/[32px] 3xl:text-[24px]/[35px]">
+          <div className="text-medium-pink hidden md:block text-center md:text-[16px]/[26px] lg:text-[18px] 2xl:text-[20px]/[32px] 3xl:text-[24px]/[35px]">
             a členkou delegací pro vztahy s Ruskem, Běloruskem, Arménií,<br />
             Azerbajdžánem a Gruzií. Výstupy na plénu, odpracovanou<br />
             legislativu i interpelace na Komisi či Radu si můžete<br />
-            prohlédnout na mém p<span className="underline decoration-dark-pink">rofilu</span>.<br />
+            prohlédnout na mém p<span className="underline decoration-medium-pink">rofilu</span>.<br />
           </div>
         </div>
       </main>

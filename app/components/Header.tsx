@@ -14,8 +14,8 @@ type HeaderProps = {
 const Header = ({
   display,
   sectionsTextSize = "md:text-[25px] md:tracking-[0.5px]",
-  headingTextSize = "md:text-[30px] md:tracking-[0.3px]",
-  wrapperStyles = "md:mt-6 md:mx-auto md:w-[700px] lg:w-[900px] xl:w-[1100px]",
+  headingTextSize = "md:text-[30px] md:tracking-[0.3px] xl:text-[40px] xl:tracking-[0.4px]",
+  wrapperStyles = "md:mt-6 md:mx-auto md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400]",
 }: HeaderProps) => {
   return (
     <header className={classNames(`${display} w-full`)}>
@@ -46,6 +46,7 @@ const Header = ({
         gap-[11px] sm:gap-4
         md:gap-6 md:items-end ${sectionsTextSize}
         lg:gap-6 lg:text-[26px] lg:tracking-[0.6px]
+        xl:gap-7 xl:text-[30px] xl:tracking-[0.8px]
         2xl:text-[30px] 2xl:tracking-[0.6px] 2xl:gap-10`)}
         >
           {sectionsMobile.map((section) => (

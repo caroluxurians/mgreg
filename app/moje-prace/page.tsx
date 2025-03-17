@@ -21,7 +21,8 @@ const MojePrace = () => {
             md:w-[700px] md:pt-10
             lg:w-[900px] lg:pt-0 lg:pb-0 lg:mt-14 lg:mb-18
             xl:w-[1100px] xl:grid-cols-[5fr_3fr]
-            2xl:w-[1400px] 2xl:grid-cols-[5fr_4fr] 2xl:mt-18 2xl:mb-20"
+            2xl:w-[1400px] 2xl:grid-cols-[5fr_4fr] 2xl:mt-18 2xl:mb-20
+            3xl:w-[1800x]"
           >
             <div className="flex flex-col gap-5 2xl:gap-7">
               <div className="font-heading flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px]">

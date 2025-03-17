@@ -15,7 +15,7 @@ const Header = ({
   display,
   sectionsTextSize = "md:text-[25px] md:tracking-[0.5px]",
   headingTextSize = "md:text-[30px] md:tracking-[0.3px] xl:text-[40px] xl:tracking-[0.4px]",
-  wrapperStyles = "md:mt-6 md:mx-auto md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400]",
+  wrapperStyles = "md:mt-6 md:mx-auto md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400px] 3xl:w-[1800px]",
 }: HeaderProps) => {
   return (
     <header className={classNames(`${display} w-full`)}>

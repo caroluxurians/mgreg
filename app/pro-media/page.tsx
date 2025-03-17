@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import HeaderMobile from "../components/HeaderMobile";
-import MarketaContactCard from "./MarketaContactCard";
+import ContactCard from "./ContactCard";
 
 const ProMedia = () => {
   return (
@@ -21,7 +21,18 @@ const ProMedia = () => {
             qui dolorem eum fugiat.<br />
           </div>
 
-          <MarketaContactCard />
+          <ContactCard
+            imageSrc="/marketa-contact-card.png"
+            name="Markéta Gregorová"
+            title="Europoslankyně"
+            alt="Markéta kontaktní karta"
+          />
+          <ContactCard
+            imageSrc="/tomas-contact-card.png"
+            name="Tomáš Polák"
+            title="PR specialist"
+            alt="Tomáš kontaktní karta"
+          />
 
         </div>
 

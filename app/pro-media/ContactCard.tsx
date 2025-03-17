@@ -1,26 +1,33 @@
 import Image from "next/image";
 
-const MarketaContactCard = () => {
+type ContactCardProps = {
+  imageSrc: string
+  name: string
+  title: string
+  alt: string
+};
+
+const ContactCard = ({ imageSrc, name, title, alt }: ContactCardProps) => {
   return (
     <div className="flex w-[270px] h-auto relative border mx-auto">
       <Image
-        src="/marketa-contact-card.png"
+        src={`${imageSrc}`}
         height={432}
         width={325}
-        alt="Markéta kontaktní karta"
+        alt={alt}
         unoptimized
         className="rounded-[30px] w-full h-auto"
       />
-      <div className="absolute top-6 left-6 flex flex-col">
+      <div className="absolute top-5 left-6 flex flex-col">
         <div className="font-heading text-beige text-[40px]/[40px]">
-          Markéta Gregorová
+          {name}
         </div>
         <div className="text-light-pink text-[18px]/[22px]">
-          Europoslankyně
+          {title}
         </div>
       </div>
     </div>
   );
 };
 
-export default MarketaContactCard;
+export default ContactCard;

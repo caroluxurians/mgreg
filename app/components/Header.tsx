@@ -47,7 +47,8 @@ const Header = ({
         md:gap-6 md:items-end ${sectionsTextSize}
         lg:gap-6 lg:text-[26px] lg:tracking-[0.6px]
         xl:gap-7 xl:text-[30px] xl:tracking-[0.8px]
-        2xl:text-[30px] 2xl:tracking-[0.6px] 2xl:gap-10`)}
+        2xl:text-[30px] 2xl:tracking-[0.3px] 2xl:gap-10 
+        3xl:`)}
         >
           {sectionsMobile.map((section) => (
             <div className="flex md:hidden" key={section}>{section}</div>

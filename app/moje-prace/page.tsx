@@ -21,10 +21,10 @@ const MojePrace = () => {
             md:w-[700px] md:pt-10
             lg:w-[900px] lg:pt-0 lg:pb-0 lg:mt-14 lg:mb-18
             xl:w-[1100px] xl:grid-cols-[5fr_3fr]
-            2xl:w-[1400px]"
+            2xl:w-[1400px] 2xl:grid-cols-[5fr_4fr] 2xl:mt-18 2xl:mb-20"
           >
-            <div className="flex flex-col gap-5">
-              <div className="font-heading flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px]">
+            <div className="flex flex-col gap-5 2xl:gap-7">
+              <div className="font-heading flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px]">
                 <span>Ve svém mandátu se zaměřuji</span>
                 <span>především na naši bezpečnost</span>
                 <span>a naše digitální svobody.</span>
@@ -54,7 +54,7 @@ const MojePrace = () => {
                 a svobodný Internet, kde není prolamováno<br />
                 soukromí běžných občanů.<br />
               </div>
-              <div className="hidden lg:block lg:text-[18px]">
+              <div className="hidden lg:block lg:text-[18px] 2xl:text-[20px]/[32px] 3xl:text-[24px]/[35px]">
                 Od roku 2019 se věnuji regionu Východního partnerství,<br />
                 včetně Ukrajiny, hájím lidská práva ve světě a zaměřuji se<br />
                 na stále ještě opomíjený vliv nových technologií na naši<br />
@@ -70,7 +70,7 @@ const MojePrace = () => {
               height={309}
               width={309}
               alt="Markéta large icon"
-              className="block mx-auto sm:hidden md:block md:ml-2 md:mt-1 md:w-[270px] md:h-[270px] lg:w-[360px] lg:h-[360px] lg:ml-0 lg:mt-2 xl:h-[410px] xl:w-[410px]"
+              className="block mx-auto sm:hidden md:block md:ml-2 md:mt-1 md:w-[270px] md:h-[270px] lg:w-[360px] lg:h-[360px] lg:ml-0 lg:mt-2 xl:h-[410px] xl:w-[410px] 2xl:w-[520px] 2xl:h-[520px] 2xl:ml-22"
               unoptimized
             />
             <Image
@@ -84,14 +84,14 @@ const MojePrace = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-beige py-16 gap-6 sm:py-10 md:pt-15 md:pb-20 xl:gap-8 xl:pb-27">
-          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px]">
+        <div className="flex flex-col bg-beige py-16 gap-6 sm:py-10 md:pt-15 md:pb-20 xl:gap-8 xl:pb-27 2xl:gap-10 2xl:pt-17 2xl:pb-30">
+          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px]">
             V Evropském parlamentu proto ve<br />
             volebním období 2025-2029<br />
             působím v následujících výborech:<br />
           </div>
           <div className="text-white lg:mx-auto mx-4 sm:gap-4 md:mx-auto lg:gap-0">
-            <div className="flex flex-col items-center md:flex-row md:flex-wrap justify-center md:w-[700px] lg:w-[770px] gap-3 xl:gap-5">
+            <div className="flex flex-col items-center md:flex-row md:flex-wrap justify-center md:w-[700px] lg:w-[770px] gap-3 xl:gap-5 2xl:gap-6">
               <LabelDark content="INTA — Mezinárodní obchod" />
               <LabelDark content="ITRE — Průmysl, energetika a obchod" />
               <LabelDark content=" AFCO — Ústavní záležitosti" />
@@ -101,13 +101,13 @@ const MojePrace = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-light-pink gap-7 py-16 sm:pt-10 sm:pb-12 sm:gap-6 lg:gap-7 lg:pt-14 lg:pb-22 xl:gap-8 xl:pt-16 xl:pb-26">
+        <div className="flex flex-col bg-light-pink gap-7 py-16 sm:pt-10 sm:pb-12 sm:gap-6 lg:gap-7 lg:pt-14 lg:pb-22 xl:gap-8 xl:pt-16 xl:pb-26 2xl:pt-20 2xl:pb-30 2xl:gap-9">
 
-          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px]">
+          <div className="font-heading text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[100px] 3xl:text-[100px]/[109px]">
             Zároveň jsem<br /> místopředsedkyní
           </div>
 
-          <div className="flex flex-col items-center gap-3 sm:gap-4 lg:flex-row mx-auto xl:gap-5">
+          <div className="flex flex-col items-center gap-3 sm:gap-4 lg:flex-row mx-auto xl:gap-5 2xl:gap-7 3xl:gap-10">
             <LabelTransparent content="Delegace pro vztahy EU s Čínou" />
             <LabelTransparent content="Delegace pro vztahy se zeměmi Euronest" />
           </div>
@@ -119,7 +119,7 @@ const MojePrace = () => {
             i interpelace na Komisi či Radu si můžete<br />
             prohlédnout na mém p<span className="underline decoration-dark-pink">rofilu</span>.<br />
           </div>
-          <div className="hidden md:block text-center md:text-[16px]/[26px] lg:text-[18px]">
+          <div className="hidden md:block text-center md:text-[16px]/[26px] lg:text-[18px] 2xl:text-[20px]/[32px] 3xl:text-[24px]/[35px]">
             a členkou delegací pro vztahy s Ruskem, Běloruskem, Arménií,<br />
             Azerbajdžánem a Gruzií. Výstupy na plénu, odpracovanou<br />
             legislativu i interpelace na Komisi či Radu si můžete<br />

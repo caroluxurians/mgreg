@@ -3,16 +3,16 @@ import SocialsSet from "./SocialsSet";
 export const sectionsMobile = ["Pro média", "Moje práce", "O mně", "Videa", "Články"];
 const sectionsDesktop = ["Pro média", "Moje práce", "O mně", "Archiv"];
 
-const Header = () => {
+const HeaderLanding = () => {
   return (
-    <header className="w-full hidden md:flex">
+    <header className="flex justify-center bg-light-pink">
       <div
         className="flex flex-col md:flex-row
         justify-between items-center
         relative font-heading bg-transparent text-medium-pink
         mx-5 mt-9 gap-3
         sm:mt-7
-        md:mt-6 md:mx-auto md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400px] 3xl:w-[1800px]
+        md:mx-10 md:w-full
         lg:pt-0
         xl:h-auto
         2xl:w-[1267px] 2xl:mx-auto 2xl:px-0"
@@ -20,7 +20,7 @@ const Header = () => {
         <div
           className="text-[62px] tracking-[0.62px]
           sm:text-[68px] sm:tracking-[0.68px]
-          md:text-[30px] md:tracking-[0.3px] xl:text-[40px] xl:tracking-[0.4px]
+          md:text-[40px] md:tracking-[0.6px]
           2xl:mx-0
           leading-none"
         >
@@ -31,7 +31,7 @@ const Header = () => {
           className="flex items-center leading-none
         text-[24px] tracking-[0.48px]
         gap-[11px] sm:gap-4
-        md:gap-6 md:items-end md:text-[25px] md:tracking-[0.5px]
+        md:gap-6 md:items-end md:text-[30px] md:tracking-[0.6px]
         lg:gap-6 lg:text-[26px] lg:tracking-[0.6px]
         xl:gap-7 xl:text-[30px] xl:tracking-[0.8px]
         2xl:text-[30px] 2xl:tracking-[0.3px] 2xl:gap-10
@@ -53,7 +53,7 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderLanding;
 
 /*
 <div className="text-[40px] absolute left-[130px] top-[38px]">Markéta Gregorová</div>

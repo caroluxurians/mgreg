@@ -1,16 +1,14 @@
 import Image from "next/image";
-import HeaderMobile from "../components/HeaderMobile";
-import LabelDark from "../components/LabelDark";
-import LabelTransparent from "../components/LabelTransparent";
-import Header from "../components/Header";
+import LabelDark from "../../components/LabelDark";
+import LabelTransparent from "../../components/LabelTransparent";
+import Header from "../../components/Header";
+import HeaderMobile from "../../components/HeaderMobile";
 
 const MojePrace = () => {
   return (
     <div className="bg-light-pink">
       <HeaderMobile />
-      <Header
-        display="hidden md:flex"
-      />
+      <Header />
       <main className="flex flex-col">
 
         <div className="sm:flex sm:justify-center">

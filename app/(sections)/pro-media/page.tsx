@@ -7,9 +7,7 @@ const ProMedia = () => {
   return (
     <div className="bg-light-pink text-medium-pink">
       <HeaderMobile />
-      <Header
-        display="hidden md:flex"
-      />
+      <Header />
       <main className="flex flex-col">
         <div className="w-[350px] mx-auto">
           <div className="border-b border-red-pink mb-3">

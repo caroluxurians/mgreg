@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import HeaderMobile from "../components/HeaderMobile";
+import Header from "../../components/Header";
+import HeaderMobile from "../../components/HeaderMobile";
 import ClickUsSticker from "./ClickUsSticker";
 import ContactCard from "./ContactCard";
 

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
-import Footer from "./components/Footer";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -29,7 +28,6 @@ const RootLayout = ({
         className={`${dmSans.className} ${magnoSans.variable} antialiased sm:h-screen flex flex-col`}
       >
         {children}
-        <Footer />
       </body>
     </html>
   );

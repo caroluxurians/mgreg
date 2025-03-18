@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HeaderLanding from "./components/HeaderLanding";
+import Footer from "./components/Footer";
 
 const Home = () => {
   return (
@@ -129,6 +130,7 @@ const Home = () => {
       </main>
     */}
       </div>
+      <Footer background="bg-dark-pink" />
     </>
   );
 };

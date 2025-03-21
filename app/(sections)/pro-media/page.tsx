@@ -1,8 +1,8 @@
 import Header from "../../components/Header";
 import HeaderMobile from "../../components/HeaderMobile";
-import ClickUsSticker from "./ClickUsSticker";
 import ContactCard from "./ContactCard";
 import PressRelease from "./PressRelease";
+import Sticker from "./Sticker";
 
 const ProMedia = () => {
   return (
@@ -24,7 +24,16 @@ const ProMedia = () => {
           </div>
           <div className="flex flex-col gap-5 mb-8 relative">
             <div className="flex absolute z-3 right-10 -top-18">
-              <ClickUsSticker />
+              <Sticker
+                backgroundColor="bg-dark-pink"
+                textColor="text-beige"
+                content={(
+                  <>
+                    klikněte <br />
+                    na nás
+                  </>
+                )}
+              />
             </div>
             <ContactCard
               imageSrc="/marketa-contact-card.png"
@@ -40,6 +49,7 @@ const ProMedia = () => {
             />
           </div>
         </div>
+
         <div className="bg-beige py-10">
           <div className="w-[350px] mx-auto">
             <div className="border-b border-red-pink mb-3">
@@ -54,6 +64,14 @@ const ProMedia = () => {
               <PressRelease index={4} />
             </div>
             <div className="bg-medium-pink rounded-full text-white italic font-semibold text-[13px] text-center w-fit px-4 py-1 mx-auto mt-8">více tiskových zpráv</div>
+          </div>
+        </div>
+
+        <div className="w-[350px] mx-auto">
+          <div className="border-b border-red-pink mb-3">
+            <h2 className="font-heading text-[35px] mt-3 pb-1">
+              Galerie
+            </h2>
           </div>
         </div>
       </main>

@@ -3,6 +3,7 @@ import HeaderMobile from "../../components/HeaderMobile";
 import ContactCard from "./ContactCard";
 import PressRelease from "./PressRelease";
 import Sticker from "./Sticker";
+import GalleryTemplate from "./GalleryTemplate";
 
 const ProMedia = () => {
   return (
@@ -50,7 +51,7 @@ const ProMedia = () => {
           </div>
         </div>
 
-        <div className="bg-beige py-10">
+        <div className="bg-beige py-10 mb-5">
           <div className="w-[350px] mx-auto">
             <div className="border-b border-red-pink mb-3">
               <h2 className="font-heading text-[35px] mt-3 pb-1">
@@ -67,11 +68,31 @@ const ProMedia = () => {
           </div>
         </div>
 
-        <div className="w-[350px] mx-auto">
-          <div className="border-b border-red-pink mb-3">
-            <h2 className="font-heading text-[35px] mt-3 pb-1">
+        <div className="w-[350px] mx-auto mb-10">
+          <div className="border-b border-red-pink mb-10">
+            <h2 className="font-heading text-[35px] mt-3 pb-3">
               Galerie
             </h2>
+          </div>
+          <div className="grid gap-5 relative">
+            <div className="flex absolute z-3 right-10 -top-28">
+              <Sticker
+                backgroundColor="bg-[#005F66]"
+                textColor="text-light-pink"
+                content={(
+                  <>
+                    volně ke<br />
+                    stažení
+                  </>
+                )}
+              />
+            </div>
+            <GalleryTemplate title="Ukrajina" />
+            <GalleryTemplate title="Evropský parlament" />
+            <GalleryTemplate title="Delší sdělení na dva řádky" />
+            <GalleryTemplate title="Delší sdělení na dva řádky" />
+            <GalleryTemplate title="Delší sdělení na dva řádky" />
+            <GalleryTemplate title="Delší sdělení na dva řádky" />
           </div>
         </div>
       </main>

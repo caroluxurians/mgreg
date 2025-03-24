@@ -11,7 +11,7 @@ const ProMedia = () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="w-[350px] mx-auto sm:w-[560px] relative sm:mb-10 md:w-[700px] md:mb-16">
+        <div className="w-[350px] mx-auto sm:w-[560px] relative sm:mb-10 md:w-[700px] md:mb-16 lg:w-[900px]">
           <div className="border-b border-red-pink mb-3 sm:mt-6 sm:mb-4 relative">
             <h2 className="font-heading text-[35px] sm:text-[40px] md:text-[60px]">
               Kontakty
@@ -61,13 +61,13 @@ const ProMedia = () => {
         </div>
 
         <div className="bg-beige pt-8 pb-12 mb-8 sm:pt-10 sm:pb-16">
-          <div className="w-[350px] mx-auto sm:w-[560px] sm:flex sm:flex-col sm:items-center md:w-[700px]">
+          <div className="w-[350px] mx-auto sm:w-[560px] sm:flex sm:flex-col sm:items-center md:w-[700px] lg:w-[900px]">
             <div className="border-b border-red-pink mb-3 md:mb-2">
-              <h2 className="font-heading text-[35px] sm:text-[40px] sm:w-[560px] md:w-[700px] md:text-[60px]">
+              <h2 className="font-heading text-[35px] sm:text-[40px] sm:w-[560px] md:w-[700px] md:text-[60px] lg:w-[900px]">
                 Tiskové zprávy
               </h2>
             </div>
-            <div className="mb-8 sm:w-[500px] sm:mb-10 md:w-[700px] md:grid md:grid-cols-2 md:gap-x-8 md:mb-12">
+            <div className="mb-8 sm:w-[500px] sm:mb-10 md:w-[700px] md:grid md:grid-cols-2 md:gap-x-8 md:mb-12 lg:w-[900px]">
               <PressRelease index={1} />
               <PressRelease index={2} />
               <PressRelease index={3} />
@@ -79,7 +79,7 @@ const ProMedia = () => {
           </div>
         </div>
 
-        <div className="w-[350px] mx-auto mb-10 relative sm:w-[560px] sm:mb-16 md:w-[700px]">
+        <div className="w-[350px] mx-auto mb-10 relative sm:w-[560px] sm:mb-16 md:w-[700px] lg:w-[900px]">
           <div className="border-b border-red-pink mb-10 relative">
             <h2 className="font-heading text-[35px] sm:text-[40px] md:text-[60px]">
               Galerie
@@ -98,7 +98,7 @@ const ProMedia = () => {
                 )}
               />
             </div>
-            <div className="flex flex-col gap-4 mx-auto sm:grid sm:grid-cols-2 sm:gap-4 ">
+            <div className="flex flex-col gap-4 mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
               <GalleryTemplate title="Ukrajina" />
               <GalleryTemplate title="Evropský parlament" />
               <GalleryTemplate title="Delší sdělení na dva řádky" />

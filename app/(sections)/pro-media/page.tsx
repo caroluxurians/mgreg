@@ -32,7 +32,7 @@ const ProMedia = () => {
               qui dolorem eum fugiat.
             </div>
             <div className="flex flex-col gap-5 mb-8 sm:flex-row md:mb-0">
-              <div className="flex absolute z-3 right-10 top-42 sm:top-7 md:top-14 md:right-6">
+              <div className="flex absolute z-3 right-10 top-42 sm:top-7 md:top-13 md:right-10">
                 <Sticker
                   backgroundColor="bg-medium-pink"
                   textColor="text-beige"
@@ -62,18 +62,18 @@ const ProMedia = () => {
 
         <div className="bg-beige pt-8 pb-12 mb-8 sm:pt-10 sm:pb-16">
           <div className="w-[350px] mx-auto sm:w-[560px] sm:flex sm:flex-col sm:items-center md:w-[700px]">
-            <div className="border-b border-red-pink mb-3">
+            <div className="border-b border-red-pink mb-3 md:mb-2">
               <h2 className="font-heading text-[35px] sm:text-[40px] sm:w-[560px] md:w-[700px] md:text-[60px]">
                 Tiskové zprávy
               </h2>
             </div>
-            <div className="sm:w-[500px]">
+            <div className="mb-8 sm:w-[500px] sm:mb-10 md:w-[700px] md:grid md:grid-cols-2 md:gap-x-8 md:mb-12">
               <PressRelease index={1} />
               <PressRelease index={2} />
               <PressRelease index={3} />
               <PressRelease index={4} />
             </div>
-            <div className="bg-medium-pink rounded-full text-white italic font-semibold text-[13px] text-center w-fit px-4 py-1 mx-auto mt-8 sm:text-[16px] sm:px-5 sm:py-1.5">
+            <div className="bg-medium-pink rounded-full text-white italic font-semibold text-[13px] text-center w-fit px-4 py-1 mx-auto sm:text-[16px] sm:px-5 sm:py-1.5 md:text-[18px]">
               více tiskových zpráv
             </div>
           </div>

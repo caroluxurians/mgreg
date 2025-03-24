@@ -9,20 +9,20 @@ type ContactCardProps = {
 
 const ContactCard = ({ imageSrc, name, title, alt }: ContactCardProps) => {
   return (
-    <div className="flex w-[270px] h-auto relative mx-auto">
+    <div className="flex w-[270px] h-auto relative mx-auto md:w-[200px]">
       <Image
         src={`${imageSrc}`}
         height={432}
         width={325}
         alt={alt}
         unoptimized
-        className="rounded-[30px] w-full h-auto"
+        className="rounded-[30px] w-full h-auto md:rounded-[20px]"
       />
-      <div className="absolute top-5 left-6 flex flex-col">
-        <div className="font-heading text-beige text-[40px]/[40px]">
+      <div className="absolute top-5 left-6 flex flex-col md:top-4 md:left-4">
+        <div className="font-heading text-beige text-[40px]/[40px] md:text-[30px]/[30px]">
           {name}
         </div>
-        <div className="text-light-pink text-[18px]/[22px]">
+        <div className="text-light-pink text-[18px]/[22px] md:text-[14px]/[16px]">
           {title}
         </div>
       </div>

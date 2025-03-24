@@ -11,50 +11,59 @@ const ProMedia = () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="w-[350px] mx-auto sm:w-[560px] relative sm:mb-10">
-          <div className="border-b border-red-pink mb-3 sm:mb-4 relative">
-            <h2 className="font-heading text-[35px] mt-3 pb-1 sm:mt-6 sm:text-[40px]">
+        <div className="w-[350px] mx-auto sm:w-[560px] relative sm:mb-10 md:w-[700px] md:mb-16">
+          <div className="border-b border-red-pink mb-3 sm:mt-6 sm:mb-4 relative">
+            <h2 className="font-heading text-[35px] sm:text-[40px] md:text-[60px]">
               Kontakty
             </h2>
           </div>
-          <div className="text-[14px]/[24px] sm:text-[16px]/[26px] mb-16 sm:mb-8">
-            Fusce aliquam vestibulum ipsum. Quis autem vel<br />
-            eum iure repreh enderit qui in ea voluptate velit<br />
-            esse quam nihil molestiae consequatur, vel illum<br />
-            qui dolorem eum fugiat.<br />
-          </div>
-          <div className="flex flex-col gap-5 mb-8 sm:flex-row">
-            <div className="flex absolute z-3 right-10 top-42 sm:top-7">
-              <Sticker
-                backgroundColor="bg-dark-pink"
-                textColor="text-beige"
-                content={(
-                  <>
-                    klikněte <br />
-                    na nás
-                  </>
-                )}
+
+          <div className="md:flex md:gap-4">
+            <div className="text-[14px]/[24px] sm:text-[16px]/[26px] mb-16 sm:mb-8 md:hidden">
+              Fusce aliquam vestibulum ipsum. Quis autem vel<br />
+              eum iure repreh enderit qui in ea voluptate velit<br />
+              esse quam nihil molestiae consequatur, vel illum<br />
+              qui dolorem eum fugiat.<br />
+            </div>
+            <div className="hidden md:block text-[16px]/[26px] w-55">
+              Fusce aliquam vestibulum ipsum. Quis autem vel
+              eum iure repreh enderit qui in ea voluptate velit
+              esse quam nihil molestiae consequatur, vel illum
+              qui dolorem eum fugiat.
+            </div>
+            <div className="flex flex-col gap-5 mb-8 sm:flex-row md:mb-0">
+              <div className="flex absolute z-3 right-10 top-42 sm:top-7 md:top-14 md:right-6">
+                <Sticker
+                  backgroundColor="bg-medium-pink"
+                  textColor="text-beige"
+                  content={(
+                    <>
+                      klikněte <br />
+                      na nás
+                    </>
+                  )}
+                />
+              </div>
+              <ContactCard
+                imageSrc="/marketa-contact-card.png"
+                name="Markéta Gregorová"
+                title="Europoslankyně"
+                alt="Markéta kontaktní karta"
+              />
+              <ContactCard
+                imageSrc="/tomas-contact-card.png"
+                name="Tomáš Polák"
+                title="PR specialist"
+                alt="Tomáš kontaktní karta"
               />
             </div>
-            <ContactCard
-              imageSrc="/marketa-contact-card.png"
-              name="Markéta Gregorová"
-              title="Europoslankyně"
-              alt="Markéta kontaktní karta"
-            />
-            <ContactCard
-              imageSrc="/tomas-contact-card.png"
-              name="Tomáš Polák"
-              title="PR specialist"
-              alt="Tomáš kontaktní karta"
-            />
           </div>
         </div>
 
         <div className="bg-beige pt-8 pb-12 mb-8 sm:pt-10 sm:pb-16">
-          <div className="w-[350px] mx-auto sm:w-[560px] sm:flex sm:flex-col sm:items-center">
+          <div className="w-[350px] mx-auto sm:w-[560px] sm:flex sm:flex-col sm:items-center md:w-[700px]">
             <div className="border-b border-red-pink mb-3">
-              <h2 className="font-heading text-[35px] mt-3 pb-1 sm:text-[40px] sm:w-[560px]">
+              <h2 className="font-heading text-[35px] sm:text-[40px] sm:w-[560px] md:w-[700px] md:text-[60px]">
                 Tiskové zprávy
               </h2>
             </div>
@@ -70,9 +79,9 @@ const ProMedia = () => {
           </div>
         </div>
 
-        <div className="w-[350px] mx-auto mb-10 relative sm:w-[560px] sm:mb-16">
+        <div className="w-[350px] mx-auto mb-10 relative sm:w-[560px] sm:mb-16 md:w-[700px]">
           <div className="border-b border-red-pink mb-10 relative">
-            <h2 className="font-heading text-[35px] mt-3 pb-3 sm:text-[40px] ">
+            <h2 className="font-heading text-[35px] sm:text-[40px] md:text-[60px]">
               Galerie
             </h2>
           </div>

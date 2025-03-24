@@ -86,7 +86,7 @@ const ProMedia = () => {
             </h2>
           </div>
           <div className="grid gap-5">
-            <div className="flex absolute z-3 right-3 top-2">
+            <div className="flex absolute z-3 right-3 top-2 md:top-4">
               <Sticker
                 backgroundColor="bg-[#005F66]"
                 textColor="text-light-pink"

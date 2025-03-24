@@ -51,7 +51,7 @@ const ProMedia = () => {
           </div>
         </div>
 
-        <div className="bg-beige py-10 mb-5">
+        <div className="bg-beige pt-8 pb-12 mb-8 sm:pt-10 sm:pb-16">
           <div className="w-[350px] mx-auto sm:w-[560px] sm:flex sm:flex-col sm:items-center">
             <div className="border-b border-red-pink mb-3">
               <h2 className="font-heading text-[35px] mt-3 pb-1 sm:text-[40px] sm:w-[560px]">
@@ -64,13 +64,15 @@ const ProMedia = () => {
               <PressRelease index={3} />
               <PressRelease index={4} />
             </div>
-            <div className="bg-medium-pink rounded-full text-white italic font-semibold text-[13px] text-center w-fit px-4 py-1 mx-auto mt-8">více tiskových zpráv</div>
+            <div className="bg-medium-pink rounded-full text-white italic font-semibold text-[13px] text-center w-fit px-4 py-1 mx-auto mt-8 sm:text-[16px] sm:px-5 sm:py-1.5">
+              více tiskových zpráv
+            </div>
           </div>
         </div>
 
-        <div className="w-[350px] mx-auto mb-10 relative">
+        <div className="w-[350px] mx-auto mb-10 relative sm:w-[560px] sm:mb-16">
           <div className="border-b border-red-pink mb-10 relative">
-            <h2 className="font-heading text-[35px] mt-3 pb-3 sm:text-[40px]">
+            <h2 className="font-heading text-[35px] mt-3 pb-3 sm:text-[40px] ">
               Galerie
             </h2>
           </div>
@@ -87,12 +89,14 @@ const ProMedia = () => {
                 )}
               />
             </div>
-            <GalleryTemplate title="Ukrajina" />
-            <GalleryTemplate title="Evropský parlament" />
-            <GalleryTemplate title="Delší sdělení na dva řádky" />
-            <GalleryTemplate title="Delší sdělení na dva řádky" />
-            <GalleryTemplate title="Delší sdělení na dva řádky" />
-            <GalleryTemplate title="Delší sdělení na dva řádky" />
+            <div className="flex flex-col gap-4 mx-auto sm:grid sm:grid-cols-2 sm:gap-4 ">
+              <GalleryTemplate title="Ukrajina" />
+              <GalleryTemplate title="Evropský parlament" />
+              <GalleryTemplate title="Delší sdělení na dva řádky" />
+              <GalleryTemplate title="Delší sdělení na dva řádky" />
+              <GalleryTemplate title="Delší sdělení na dva řádky" />
+              <GalleryTemplate title="Delší sdělení na dva řádky" />
+            </div>
           </div>
         </div>
       </main>

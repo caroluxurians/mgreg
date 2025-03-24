@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const GalleryTemplate = ({ imageSrc = "/gallery-template-image.png", title }: { imageSrc?: string, title: string }) => {
   return (
-    <div className="flex w-[270px] h-auto relative mx-auto">
+    <div className="flex w-[270px] h-auto relative sm:w-[260px]">
       <Image
         src={imageSrc}
         height={265}

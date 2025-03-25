@@ -11,7 +11,7 @@ const ProMedia = () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="w-[350px] mx-auto mt-4 sm:mt-0 sm:w-[560px] relative sm:mb-10 md:w-[700px] md:mb-16 lg:w-[900px] xl:w-[1100px] xl:mb-26">
+        <div className="w-[350px] mx-auto mt-4 sm:mt-0 sm:w-[560px] relative sm:mb-10 md:w-[700px] md:mb-16 lg:w-[900px] xl:w-[1100px] xl:mb-26 2xl:w-[1400px]">
 
           <div className="border-b border-red-pink mb-4 sm:mt-6 sm:mb-4 relative lg:mb-4 xl:mb-6">
             <h2 className="font-heading text-[35px] pb-2 sm:text-[40px] md:text-[60px] lg:pb-1 xl:text-[80px] xl:pb-2">
@@ -19,7 +19,7 @@ const ProMedia = () => {
             </h2>
           </div>
 
-          <div className="md:flex md:gap-4 lg:gap-7 ">
+          <div className="md:flex md:gap-4 lg:gap-7">
             <div className="text-[14px]/[24px] sm:text-[16px]/[26px] mb-16 sm:mb-8 md:hidden">
               Fusce aliquam vestibulum ipsum. Quis autem vel<br />
               eum iure repreh enderit qui in ea voluptate velit<br />
@@ -62,14 +62,14 @@ const ProMedia = () => {
         </div>
 
         <div className="bg-beige pt-8 pb-12 mb-8 sm:pt-10 sm:pb-16 xl:pt-16 xl:pb-26">
-          <div className="w-[350px] mx-auto sm:w-[560px] sm:flex sm:flex-col sm:items-center md:w-[700px] lg:w-[900px] xl:w-[1100px]">
+          <div className="w-[350px] mx-auto sm:w-[560px] sm:flex sm:flex-col sm:items-center md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400px]">
 
             <div className="border-b border-red-pink mb-3 md:mb-2">
-              <h2 className="font-heading text-[35px] pb-2 sm:text-[40px] sm:w-[560px] md:w-[700px] md:text-[60px] lg:w-[900px] xl:w-[1100px] xl:text-[80px]">
+              <h2 className="font-heading text-[35px] pb-2 sm:text-[40px] sm:w-[560px] md:w-[700px] md:text-[60px] lg:w-[900px] xl:w-[1100px] xl:text-[80px] 2xl:w-[1400px]">
                 Tiskové zprávy
               </h2>
             </div>
-            <div className="mb-8 sm:w-[500px] sm:mb-10 md:w-[700px] md:grid md:grid-cols-2 md:gap-x-8 md:mb-12 lg:w-[900px] lg:gap-x-16 xl:w-[1100px] xl:mb-16">
+            <div className="mb-8 sm:w-[500px] sm:mb-10 md:w-[700px] md:grid md:grid-cols-2 md:gap-x-8 md:mb-12 lg:w-[900px] lg:gap-x-16 xl:w-[1100px] xl:mb-16 2xl:w-[1400px]">
               <PressRelease index={1} />
               <PressRelease index={2} />
               <PressRelease index={3} />
@@ -81,7 +81,7 @@ const ProMedia = () => {
           </div>
         </div>
 
-        <div className="w-[350px] mx-auto mb-10 relative sm:w-[560px] sm:mb-16 md:w-[700px] lg:w-[900px] lg:mb-20 xl:w-[1100px] xl:mb-32">
+        <div className="w-[350px] mx-auto mb-10 relative sm:w-[560px] sm:mb-16 md:w-[700px] lg:w-[900px] lg:mb-20 xl:w-[1100px] xl:mb-32 2xl:w-[1400px]">
 
           <div className="border-b border-red-pink mb-8 sm:mb-10 relative lg:mb-8 xl:mb-10">
             <h2 className="font-heading text-[35px] pb-2 sm:text-[40px] md:text-[60px] lg:pb-2 xl:text-[80px]">

@@ -91,7 +91,7 @@ const ProMedia = () => {
           </div>
 
           <div className="grid gap-5">
-            <div className="flex absolute z-3 right-3 -top-2 sm:top-0 sm:right-7 md:top-7 md:right-10 lg:top-7 lg:right-14 xl:top-11">
+            <div className="flex absolute z-3 right-3 -top-2 sm:top-0 sm:right-7 md:top-7 md:right-10 lg:top-7 lg:right-14 xl:top-11 2xl:right-22 2xl:top-9">
               <Sticker
                 backgroundColor="bg-[#005F66]"
                 textColor="text-light-pink"
@@ -103,7 +103,7 @@ const ProMedia = () => {
                 )}
               />
             </div>
-            <div className="flex flex-col gap-4 mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-4 xl:gap-5">
+            <div className="flex flex-col gap-4 mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-4 xl:gap-5 2xl:gap-7">
               <GalleryTemplate title="Ukrajina" />
               <GalleryTemplate title="Evropský parlament" />
               <GalleryTemplate title="Delší sdělení na dva řádky" />

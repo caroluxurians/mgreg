@@ -12,10 +12,10 @@ const Header = () => {
         relative font-heading bg-transparent text-medium-pink
         mx-5 mt-9 gap-3
         sm:mt-7
-        md:mt-6 md:mx-auto md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400px] 3xl:w-[1800px]
+        md:mt-6 md:mx-auto md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400px] 3xl:w-[1660px]
         lg:pt-0
         xl:h-auto
-        2xl:w-[1267px] 2xl:mx-auto 2xl:px-0"
+       2xl:mx-auto 2xl:px-0"
       >
         <div
           className="text-[62px] tracking-[0.62px]

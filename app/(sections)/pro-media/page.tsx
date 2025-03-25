@@ -11,29 +11,29 @@ const ProMedia = () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="w-[350px] mx-auto mt-4 sm:mt-0 sm:w-[560px] relative sm:mb-10 md:w-[700px] md:mb-16 lg:w-[900px] xl:w-[1100px] xl:mb-26 2xl:w-[1400px]">
+        <div className="w-[350px] mx-auto mt-4 sm:mt-0 sm:w-[560px] relative sm:mb-10 md:w-[700px] md:mb-16 lg:w-[900px] xl:w-[1100px] xl:mb-26 2xl:w-[1400px] 2xl:mb-32">
 
-          <div className="border-b border-red-pink mb-4 sm:mt-6 sm:mb-4 relative md:mb-5 lg:mb-4 xl:mb-6">
+          <div className="border-b border-red-pink mb-4 sm:mt-6 sm:mb-4 relative md:mb-5 lg:mb-4 xl:mb-6 2xl:mb-8">
             <h2 className="font-heading text-[35px] pb-2 sm:text-[40px] md:text-[60px] lg:pb-1 xl:text-[80px] xl:pb-2 2xl:text-[90px]">
               Kontakty
             </h2>
           </div>
 
-          <div className="md:flex md:gap-4 lg:gap-7">
+          <div className="md:flex md:gap-4 lg:gap-7 2xl:gap-28">
             <div className="text-[14px]/[24px] mb-18 sm:text-[16px]/[26px] sm:mb-8 md:hidden">
               Fusce aliquam vestibulum ipsum. Quis autem vel<br />
               eum iure repreh enderit qui in ea voluptate velit<br />
               esse quam nihil molestiae consequatur, vel illum<br />
               qui dolorem eum fugiat.<br />
             </div>
-            <div className="hidden md:block text-[16px]/[26px] w-55 lg:w-80 lg:pr-7 xl:text-[20px]/[30px] xl:w-90 xl:mr-10 2xl:text-[22px]/[32px]">
+            <div className="hidden md:block text-[16px]/[26px] w-55 lg:w-80 lg:pr-7 xl:text-[20px]/[30px] xl:w-90 xl:mr-10 2xl:text-[22px]/[34px] 2xl:w-120">
               Fusce aliquam vestibulum ipsum. Quis autem vel
               eum iure repreh enderit qui in ea voluptate velit
               esse quam nihil molestiae consequatur, vel illum
               qui dolorem eum fugiat.
             </div>
             <div className="flex flex-col gap-6 mb-8 sm:flex-row md:mb-0 md:mt-1 lg:mt-2 xl:gap-8">
-              <div className="flex absolute z-3 right-10 top-42 sm:top-7 sm:right-7 md:top-17 md:right-10 lg:top-16 lg:right-7 xl:top-22 xl:right-10">
+              <div className="flex absolute z-3 right-10 top-42 sm:top-7 sm:right-7 md:top-17 md:right-10 lg:top-16 lg:right-7 xl:top-22 xl:right-10 2xl:right-20">
                 <Sticker
                   backgroundColor="bg-medium-pink"
                   textColor="text-beige"
@@ -62,7 +62,7 @@ const ProMedia = () => {
           </div>
         </div>
 
-        <div className="bg-beige pt-8 pb-12 mb-8 sm:pt-10 sm:pb-16 xl:pt-16 xl:pb-26">
+        <div className="bg-beige pt-8 pb-12 mb-8 sm:pt-10 sm:pb-16 xl:pt-16 xl:pb-26 2xl:pb-32 2xl:pt-18">
           <div className="w-[350px] mx-auto sm:w-[560px] sm:flex sm:flex-col sm:items-center md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400px]">
 
             <div className="border-b border-red-pink mb-3 md:mb-2">
@@ -70,13 +70,13 @@ const ProMedia = () => {
                 Tiskové zprávy
               </h2>
             </div>
-            <div className="mb-8 sm:w-[500px] sm:mb-10 md:w-[700px] md:grid md:grid-cols-2 md:gap-x-8 md:mb-12 lg:w-[900px] lg:gap-x-16 xl:w-[1100px] xl:mb-16 2xl:w-[1400px]">
+            <div className="mb-8 sm:w-[500px] sm:mb-10 md:w-[700px] md:grid md:grid-cols-2 md:gap-x-8 md:mb-12 lg:w-[900px] lg:gap-x-16 xl:w-[1100px] xl:mb-16 2xl:w-[1400px] 2xl:mb-20">
               <PressRelease index={1} />
               <PressRelease index={2} />
               <PressRelease index={3} />
               <PressRelease index={4} />
             </div>
-            <div className="bg-medium-pink rounded-full text-white italic font-semibold text-[13px] text-center w-fit px-4 py-1 mx-auto sm:text-[16px] sm:px-5 sm:py-1.5 md:text-[18px]">
+            <div className="bg-medium-pink rounded-full text-white italic font-semibold text-[13px] text-center w-fit px-4 py-1 mx-auto sm:text-[16px] sm:px-5 sm:py-1.5 md:text-[18px] 2xl:text-[20px] 2xl:px-7 2xl:py-2">
               více tiskových zpráv
             </div>
           </div>

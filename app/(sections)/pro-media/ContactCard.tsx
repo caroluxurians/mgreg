@@ -9,7 +9,7 @@ type ContactCardProps = {
 
 const ContactCard = ({ imageSrc, name, title, alt }: ContactCardProps) => {
   return (
-    <div className="flex w-[270px] h-auto relative mx-auto md:w-[200px] lg:w-[250px]">
+    <div className="flex w-[270px] h-auto relative mx-auto md:w-[200px] lg:w-[250px] xl:w-[300px]">
       <Image
         src={`${imageSrc}`}
         height={432}

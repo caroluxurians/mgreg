@@ -9,7 +9,7 @@ type ContactCardProps = {
 
 const ContactCard = ({ imageSrc, name, title, alt }: ContactCardProps) => {
   return (
-    <div className="flex w-[270px] h-auto relative mx-auto md:w-[200px] lg:w-[250px] xl:w-[300px]">
+    <div className="flex w-[270px] h-auto relative mx-auto md:w-[200px] lg:w-[250px] xl:w-[300px] 2xl:w-[325px]">
       <Image
         src={`${imageSrc}`}
         height={432}
@@ -18,11 +18,11 @@ const ContactCard = ({ imageSrc, name, title, alt }: ContactCardProps) => {
         unoptimized
         className="rounded-[30px] w-full h-auto md:rounded-[20px]"
       />
-      <div className="absolute top-5 left-6 flex flex-col md:top-4 md:left-4 xl:top-5 xl:left-6">
-        <div className="font-heading text-beige text-[40px]/[40px] md:text-[30px]/[30px] lg:text-[38px]/[38px] xl:text-[46px]/[46px]">
+      <div className="absolute top-5 left-6 flex flex-col md:top-4 md:left-4 xl:top-5 xl:left-6 2xl:top-6 2xl:left-7">
+        <div className="font-heading text-beige text-[40px]/[40px] md:text-[30px]/[30px] lg:text-[38px]/[38px] xl:text-[46px]/[46px] 2xl:text-[50px]/[50px]">
           {name}
         </div>
-        <div className="text-light-pink text-[18px]/[22px] md:text-[14px]/[16px] lg:text-[16px]/[18px] xl:text-[18px]/[24px]">
+        <div className="text-light-pink text-[18px]/[22px] md:text-[14px]/[16px] lg:text-[16px]/[18px] xl:text-[18px]/[24px] 2xl:text-[20px]/[30px]">
           {title}
         </div>
       </div>

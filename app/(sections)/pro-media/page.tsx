@@ -67,7 +67,7 @@ const ProMedia = () => {
                 Tiskové zprávy
               </h2>
             </div>
-            <div className="mb-8 sm:w-[500px] sm:mb-10 md:w-[700px] md:grid md:grid-cols-2 md:gap-x-8 md:mb-12 lg:w-[900px]">
+            <div className="mb-8 sm:w-[500px] sm:mb-10 md:w-[700px] md:grid md:grid-cols-2 md:gap-x-8 md:mb-12 lg:w-[900px] lg:gap-x-16">
               <PressRelease index={1} />
               <PressRelease index={2} />
               <PressRelease index={3} />
@@ -79,14 +79,14 @@ const ProMedia = () => {
           </div>
         </div>
 
-        <div className="w-[350px] mx-auto mb-10 relative sm:w-[560px] sm:mb-16 md:w-[700px] lg:w-[900px]">
-          <div className="border-b border-red-pink mb-10 relative">
-            <h2 className="font-heading text-[35px] sm:text-[40px] md:text-[60px]">
+        <div className="w-[350px] mx-auto mb-10 relative sm:w-[560px] sm:mb-16 md:w-[700px] lg:w-[900px] lg:mb-20">
+          <div className="border-b border-red-pink mb-10 relative lg:mb-8">
+            <h2 className="font-heading text-[35px] sm:text-[40px] md:text-[60px] lg:pb-2">
               Galerie
             </h2>
           </div>
           <div className="grid gap-5">
-            <div className="flex absolute z-3 right-3 top-2 md:top-4">
+            <div className="flex absolute z-3 right-3 top-2 md:top-4 lg:top-7 lg:right-14">
               <Sticker
                 backgroundColor="bg-[#005F66]"
                 textColor="text-light-pink"
@@ -98,13 +98,15 @@ const ProMedia = () => {
                 )}
               />
             </div>
-            <div className="flex flex-col gap-4 mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-3">
+            <div className="flex flex-col gap-4 mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
               <GalleryTemplate title="Ukrajina" />
               <GalleryTemplate title="Evropský parlament" />
               <GalleryTemplate title="Delší sdělení na dva řádky" />
               <GalleryTemplate title="Delší sdělení na dva řádky" />
               <GalleryTemplate title="Delší sdělení na dva řádky" />
               <GalleryTemplate title="Delší sdělení na dva řádky" />
+              <GalleryTemplate title="Delší sdělení na dva řádky" styles="hidden lg:flex" />
+              <GalleryTemplate title="Delší sdělení na dva řádky" styles="hidden lg:flex" />
             </div>
           </div>
         </div>

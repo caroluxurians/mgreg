@@ -19,10 +19,10 @@ const ContactCard = ({ imageSrc, name, title, alt }: ContactCardProps) => {
         className="rounded-[30px] w-full h-auto md:rounded-[20px]"
       />
       <div className="absolute top-5 left-6 flex flex-col md:top-4 md:left-4">
-        <div className="font-heading text-beige text-[40px]/[40px] md:text-[30px]/[30px]">
+        <div className="font-heading text-beige text-[40px]/[40px] md:text-[30px]/[30px] lg:text-[38px]/[38px]">
           {name}
         </div>
-        <div className="text-light-pink text-[18px]/[22px] md:text-[14px]/[16px]">
+        <div className="text-light-pink text-[18px]/[22px] md:text-[14px]/[16px] lg:text-[16px]/[18px]">
           {title}
         </div>
       </div>

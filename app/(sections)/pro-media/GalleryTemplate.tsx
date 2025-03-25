@@ -1,8 +1,15 @@
+import classNames from "classnames";
 import Image from "next/image";
 
-const GalleryTemplate = ({ imageSrc = "/gallery-template-image.png", title }: { imageSrc?: string, title: string }) => {
+type GalleryTemplateProps = {
+  imageSrc?: string
+  title: string
+  styles?: string
+};
+
+const GalleryTemplate = ({ imageSrc = "/gallery-template-image.png", title, styles = "" }: GalleryTemplateProps) => {
   return (
-    <div className="flex w-[270px] h-auto relative sm:w-[260px]">
+    <div className={classNames(`flex w-[270px] h-auto relative sm:w-[260px] lg:w-[210px] ${styles}`)}>
       <Image
         src={imageSrc}
         height={265}
@@ -10,7 +17,7 @@ const GalleryTemplate = ({ imageSrc = "/gallery-template-image.png", title }: { 
         alt="gallery image"
         unoptimized
       />
-      <div className="text-white font-heading text-[35px]/[35px] absolute bottom-4 left-6 max-w-35">
+      <div className="text-white font-heading text-[35px]/[35px] absolute bottom-4 left-6 max-w-35 lg:text-[26px]/[26px] lg:max-w-26 lg:left-5 lg:bottom-3.5">
         {title}
       </div>
     </div>

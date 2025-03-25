@@ -20,9 +20,9 @@ const MojePrace = () => {
             lg:w-[900px] lg:pt-0 lg:pb-0 lg:mt-14 lg:mb-18
             xl:w-[1100px] xl:grid-cols-[5fr_3fr]
             2xl:w-[1400px] 2xl:grid-cols-[5fr_4fr] 2xl:mt-18 2xl:mb-20
-            3xl:w-[1800x]"
+            3xl:w-[1660px] 3xl:mb-28"
           >
-            <div className="flex flex-col gap-5 2xl:gap-7">
+            <div className="flex flex-col gap-5 2xl:gap-7 3xl:gap-10">
               <div className="font-heading text-medium-pink flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px]">
                 <span>Ve svém mandátu se zaměřuji</span>
                 <span>především na naši bezpečnost</span>
@@ -69,7 +69,7 @@ const MojePrace = () => {
               height={309}
               width={309}
               alt="Markéta large icon"
-              className="block mx-auto sm:hidden md:block md:ml-2 md:mt-1 md:w-[270px] md:h-[270px] lg:w-[360px] lg:h-[360px] lg:ml-0 lg:mt-2 xl:h-[410px] xl:w-[410px] 2xl:w-[520px] 2xl:h-[520px] 2xl:ml-22"
+              className="block mx-auto sm:hidden md:block md:ml-2 md:mt-1 md:w-[270px] md:h-[270px] lg:w-[360px] lg:h-[360px] lg:ml-0 lg:mt-2 xl:h-[410px] xl:w-[410px] 2xl:w-[520px] 2xl:h-[520px] 2xl:ml-22  3xl:w-[642px] 3xl:h-[642px]"
               unoptimized
             />
             <Image
@@ -83,14 +83,14 @@ const MojePrace = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-beige py-16 gap-6 sm:py-10 md:pt-15 md:pb-20 xl:gap-8 xl:pb-27 2xl:gap-10 2xl:pt-17 2xl:pb-30">
+        <div className="flex flex-col bg-beige py-16 gap-6 sm:py-10 md:pt-15 md:pb-20 xl:gap-8 xl:pb-27 2xl:gap-10 2xl:pt-17 2xl:pb-30 3xl:pt-24 3xl:pb-44 3xl:gap-12">
           <div className="font-heading text-medium-pink text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px]">
             V Evropském parlamentu proto ve<br />
             volebním období 2025-2029<br />
             působím v následujících výborech:<br />
           </div>
           <div className="text-white lg:mx-auto mx-4 sm:gap-4 md:mx-auto lg:gap-0">
-            <div className="flex flex-col items-center md:flex-row md:flex-wrap justify-center md:w-[700px] lg:w-[770px] gap-3 xl:gap-5 2xl:gap-6">
+            <div className="flex flex-col items-center md:flex-row md:flex-wrap justify-center md:w-[700px] lg:w-[770px] gap-3 xl:gap-5 2xl:gap-6 xl:w-[900px]">
               <LabelDark content="INTA — Mezinárodní obchod" />
               <LabelDark content="ITRE — Průmysl, energetika a obchod" />
               <LabelDark content=" AFCO — Ústavní záležitosti" />
@@ -100,7 +100,7 @@ const MojePrace = () => {
           </div>
         </div>
 
-        <div className="flex flex-col bg-light-pink gap-7 py-16 sm:pt-10 sm:pb-12 sm:gap-6 lg:gap-7 lg:pt-14 lg:pb-22 xl:gap-8 xl:pt-16 xl:pb-26 2xl:pt-20 2xl:pb-30 2xl:gap-9">
+        <div className="flex flex-col bg-light-pink gap-7 py-16 sm:pt-10 sm:pb-12 sm:gap-6 lg:gap-7 lg:pt-14 lg:pb-22 xl:gap-8 xl:pt-16 xl:pb-26 2xl:pt-20 2xl:pb-30 2xl:gap-9 3xl:pt-31 3xl:pb-40">
 
           <div className="font-heading text-medium-pink text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[100px] 3xl:text-[100px]/[109px]">
             Zároveň jsem<br /> místopředsedkyní

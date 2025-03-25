@@ -12,27 +12,27 @@ const ProMedia = () => {
       <Header />
       <main className="flex flex-col">
         <div className="w-[350px] mx-auto sm:w-[560px] relative sm:mb-10 md:w-[700px] md:mb-16 lg:w-[900px]">
-          <div className="border-b border-red-pink mb-3 sm:mt-6 sm:mb-4 relative">
-            <h2 className="font-heading text-[35px] sm:text-[40px] md:text-[60px]">
+          <div className="border-b border-red-pink mb-3 sm:mt-6 sm:mb-4 relative lg:mb-4">
+            <h2 className="font-heading text-[35px] sm:text-[40px] md:text-[60px] lg:pb-1">
               Kontakty
             </h2>
           </div>
 
-          <div className="md:flex md:gap-4">
+          <div className="md:flex md:gap-4 lg:gap-7">
             <div className="text-[14px]/[24px] sm:text-[16px]/[26px] mb-16 sm:mb-8 md:hidden">
               Fusce aliquam vestibulum ipsum. Quis autem vel<br />
               eum iure repreh enderit qui in ea voluptate velit<br />
               esse quam nihil molestiae consequatur, vel illum<br />
               qui dolorem eum fugiat.<br />
             </div>
-            <div className="hidden md:block text-[16px]/[26px] w-55">
+            <div className="hidden md:block text-[16px]/[26px] w-55 lg:w-80 lg:pr-7">
               Fusce aliquam vestibulum ipsum. Quis autem vel
               eum iure repreh enderit qui in ea voluptate velit
               esse quam nihil molestiae consequatur, vel illum
               qui dolorem eum fugiat.
             </div>
-            <div className="flex flex-col gap-5 mb-8 sm:flex-row md:mb-0">
-              <div className="flex absolute z-3 right-10 top-42 sm:top-7 md:top-13 md:right-10">
+            <div className="flex flex-col gap-5 mb-8 sm:flex-row md:mb-0 lg:mt-2">
+              <div className="flex absolute z-3 right-10 top-42 sm:top-7 md:top-13 md:right-10 lg:top-16 lg:right-7">
                 <Sticker
                   backgroundColor="bg-medium-pink"
                   textColor="text-beige"

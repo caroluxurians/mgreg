@@ -1,8 +1,9 @@
+import classNames from "classnames";
 import Image from "next/image";
 
-const TimelineBulletPoint = ({ shape }: { shape: string }) => {
+const TimelineBulletPoint = ({ shape, styles = "" }: { shape: string, styles?: string }) => {
   return (
-    <div className="flex items-center h-20">
+    <div className={classNames(`flex items-center h-20 ${styles}`)}>
       <div className="flex items-center gap-3">
         <div className="font-heading text-[30px]">
           2012

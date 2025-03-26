@@ -41,16 +41,16 @@ const OMne = () => {
 
         <div className="bg-beige text-medium-pink pt-6 pb-6">
 
-          <div className="grid grid-cols-[2fr_3fr] gap-2 w-[350px]">
+          <div className="grid grid-cols-[2fr_3fr] w-[350px]">
 
             <div className="pt-10 pb-12 grid grid-cols-2 relative">
-              <div className="flex flex-col h-130 justify-between pb-12 absolute top-8 left-6">
+              <div className="flex flex-col h-240 sm:justify-between pb-12 absolute top-8 left-6">
                 <TimelineBulletPoint shape="ellipse" />
-                <TimelineBulletPoint shape="circle" />
-                <TimelineBulletPoint shape="ellipse" />
-                <TimelineBulletPoint shape="circle" />
+                <TimelineBulletPoint shape="circle" styles="mt-15" />
+                <TimelineBulletPoint shape="ellipse" styles="mt-61" />
+                <TimelineBulletPoint shape="circle" styles="mt-15" />
               </div>
-              <div className="w-1 h-130 bg-red-pink absolute left-28 relative">
+              <div className="w-1 h-240 bg-red-pink absolute left-28 relative">
                 <div className="w-6 absolute -top-5 -left-2.5">
                   <Image
                     src="/cat-timeline-icon.svg"
@@ -72,7 +72,7 @@ const OMne = () => {
             </div>
 
             <div>
-              <div className="flex flex-col h-130 justify-between">
+              <div className="flex flex-col h-240 justify-around pt-8">
                 <TimelineEvent eventName="Vstup do České pirátské strany" eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012." />
                 <TimelineEvent eventName="Lorem ipsum stup do České pirátské strany" eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012." />
                 <TimelineEvent eventName="Vstup do České pirátské strany" eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012." />

@@ -10,6 +10,7 @@
   /* nadpisy, ÚVODNÍ ODSTAVCE & ODSTAVCE, podtřžítka, ikony socek */
   --color-red-pink: #8F134C;
   /* bonusová reddish pink pro lineární oddělovače ale rozhodně ne všechny*/
+  --color-red-pink-light: #E4A2C9;
   --color-beige: #F4DFDF;
   --breakpoint-3xl: 120rem;
 

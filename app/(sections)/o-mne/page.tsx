@@ -84,7 +84,17 @@ const OMne = () => {
           </div>
         </div>
 
-        <div className="bg-red-pink pt-8 pb-6">
+        <div className="bg-red-pink pt-14 pb-10 relative overflow-hidden">
+          <div className="w-20 absolute top-0 left-0">
+            <Image
+              src="/cat-curious.svg"
+              height={258}
+              width={270}
+              alt="curious cat"
+              unoptimized
+              className="transform rotate-180 absolute -top-4 left-10 overflow-hidden"
+            />
+          </div>
           <div className="w-[350px] text-light-pink mx-auto flex flex-col items-center gap-4">
             <div className="font-heading text-red-pink-light text-[30px]/[30px]">
               Finance

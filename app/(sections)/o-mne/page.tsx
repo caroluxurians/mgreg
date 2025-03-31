@@ -84,25 +84,32 @@ const OMne = () => {
           </div>
         </div>
 
-        <div className="bg-red-pink pt-14 pb-10 relative overflow-hidden">
+        <div className="bg-red-pink pt-26 pb-66 relative overflow-hidden">
           <div className="w-20 absolute top-0 left-0">
             <Image
               src="/cat-curious.svg"
-              height={258}
-              width={270}
+              height={223.04}
+              width={213.5}
               alt="curious cat"
-              unoptimized
-              className="transform rotate-180 absolute -top-4 left-10 overflow-hidden"
+              className="transform rotate-180 absolute -top-3.5 left-10 overflow-hidden"
             />
           </div>
-          <div className="w-[350px] text-light-pink mx-auto flex flex-col items-center gap-4">
+          <div className="w-[350px] text-light-pink mx-auto flex flex-col items-center gap-4 relative">
             <div className="font-heading text-red-pink-light text-[30px]/[30px]">
               Finance
             </div>
-            <div className="text-center text-[14px]/[24px]">
+            <div className="text-center text-[14px]/[24px] w-74">
               Naše delegace Pirátů v Evropském parlamentu byla, je a bude ohledně svých výdajů vždy absolutně transparentní. K čemu je rozpočet na všeobecné výdaje, jak ho využíváe a jaké je aktuální čerpání? Vše naleznete přehledně na
             </div>
             <LabelDark content="stránkách Pirátů" />
+          </div>
+          <div className="w-40 absolute right-7 bottom-6">
+            <Image
+              src="/cat-transparency.svg"
+              height={463}
+              width={361}
+              alt="happy cat with transparency label"
+            />
           </div>
         </div>
       </main>

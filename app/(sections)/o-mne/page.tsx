@@ -113,26 +113,29 @@ const OMne = () => {
           </div>
         </div>
 
-        <div className="bg-red-pink pt-26 pb-66 relative overflow-hidden">
-          <div className="w-20 absolute top-0 left-0">
+        <div className="bg-red-pink pt-22 pb-66 relative overflow-hidden sm:pt-26 sm:pb-76">
+          <div className="w-20 absolute top-0 left-0 sm:w-36">
             <Image
-              src="/cat-curious.svg"
+              src="/cat-curious-upsidedown.svg"
               height={223.04}
               width={213.5}
               alt="curious cat"
-              className="transform rotate-180 absolute -top-3.5 left-10 overflow-hidden"
+              className="absolute -top-3 left-10 overflow-hidden sm:-top-5"
             />
           </div>
-          <div className="w-[350px] text-light-pink mx-auto flex flex-col items-center gap-4 relative">
-            <div className="font-heading text-red-pink-light text-[30px]/[30px]">
+          <div className="w-[350px] text-light-pink mx-auto flex flex-col items-center gap-4 relative sm:w-[560px] sm:gap-6">
+            <div className="font-heading text-red-pink-light text-[30px]/[30px] sm:text-[40px]">
               Finance
             </div>
-            <div className="text-center text-[14px]/[24px] w-74">
-              Naše delegace Pirátů v Evropském parlamentu byla, je a bude ohledně svých výdajů vždy absolutně transparentní. K čemu je rozpočet na všeobecné výdaje, jak ho využíváe a jaké je aktuální čerpání? Vše naleznete přehledně na
+            <div className="text-center text-[14px]/[24px] sm:text-[16px]/[26px] sm:w-auto">
+              Naše delegace Pirátů v Evropském parlamentu byla,<br />
+              je a bude ohledně svých výdajů vždy absolutně< br /> transparentní. K čemu je rozpočet na všeobecné< br />
+              výdaje, jak ho využíváe a jaké je aktuální čerpání?< br />
+              Vše naleznete přehledně na
             </div>
             <LabelDark content="stránkách Pirátů" />
           </div>
-          <div className="w-40 absolute right-7 bottom-6">
+          <div className="w-40 absolute right-7 bottom-6 sm:w-52 sm:bottom-7 sm:right-11">
             <Image
               src="/cat-transparency.svg"
               height={463}

@@ -9,7 +9,7 @@ const OMne = () => {
   return (
     <div className="bg-medium-pink">
       <HeaderMobile textColor="text-beige" borderColor="border-beige" />
-      <Header />
+      <Header titleColor="text-beige" sectionsColor="text-light-pink" colorTheme="light" />
       <main>
         <div>
           <div className="w-[350px] sm:w-[560px] md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400px] 3xl:w-[1660px] mx-auto mt-5 mb-8 flex flex-col sm:grid sm:grid-cols-[3fr_2fr]">

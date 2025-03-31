@@ -1,15 +1,16 @@
+import classNames from "classnames";
 import SocialsSet from "./SocialsSet";
 
 export const sectionsMobile = ["Pro média", "Moje práce", "O mně", "Videa", "Články"];
 const sectionsDesktop = ["Pro média", "Moje práce", "O mně", "Archiv"];
 
-const Header = () => {
+const Header = ({ titleColor = "text-medium-pink", sectionsColor = "text-medium-pink", colorTheme = "dark" }: { titleColor?: string, sectionsColor?: string, colorTheme?: string }) => {
   return (
     <header className="w-full hidden md:flex">
       <div
         className="flex flex-col md:flex-row
         justify-between items-center
-        relative font-heading bg-transparent text-medium-pink
+        relative font-heading bg-transparent
         mx-5 mt-9 gap-3
         sm:mt-7
         md:mt-6 md:mx-auto md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400px] 3xl:w-[1660px]
@@ -18,24 +19,24 @@ const Header = () => {
        2xl:mx-auto 2xl:px-0"
       >
         <div
-          className="text-[62px] tracking-[0.62px]
+          className={classNames(`${titleColor} text-[62px] tracking-[0.62px]
           sm:text-[68px] sm:tracking-[0.68px]
           md:text-[30px] md:tracking-[0.3px] xl:text-[40px] xl:tracking-[0.4px]
           2xl:mx-0
-          leading-none"
+          leading-none`)}
         >
           Markéta Gregorová
         </div>
 
         <div
-          className="flex items-center leading-none
+          className={classNames(`${sectionsColor} flex items-center leading-none
         text-[24px] tracking-[0.48px]
         gap-[11px] sm:gap-4
         md:gap-6 md:items-end md:text-[25px] md:tracking-[0.5px]
         lg:gap-6 lg:text-[26px] lg:tracking-[0.6px]
         xl:gap-7 xl:text-[30px] xl:tracking-[0.8px]
         2xl:text-[30px] 2xl:tracking-[0.3px] 2xl:gap-10
-        3xl:"
+        3xl:`)}
         >
           {sectionsMobile.map((section) => (
             <div className="flex md:hidden" key={section}>{section}</div>
@@ -45,8 +46,9 @@ const Header = () => {
             <div className="hidden md:flex" key={section}>{section}</div>
           ))}
         </div>
+        <SocialsSet color={colorTheme} classNames="hidden lg:flex 2xl:pr-0" />
 
-        <SocialsSet color="dark" classNames="hidden lg:flex 2xl:pr-0" />
+
       </div>
 
     </header>

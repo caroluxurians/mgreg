@@ -3,6 +3,7 @@ import HeaderMobile from "@/app/components/HeaderMobile";
 import Image from "next/image";
 import TimelineBulletPoint from "./TimelineBulletPoint";
 import TimelineEvent from "./TimelineEvent";
+import LabelDark from "@/app/components/LabelDark";
 
 const OMne = () => {
   return (
@@ -80,6 +81,18 @@ const OMne = () => {
               </div>
 
             </div>
+          </div>
+        </div>
+
+        <div className="bg-red-pink pt-8 pb-6">
+          <div className="w-[350px] text-light-pink mx-auto flex flex-col items-center gap-4">
+            <div className="font-heading text-red-pink-light text-[30px]/[30px]">
+              Finance
+            </div>
+            <div className="text-center text-[14px]/[24px]">
+              Naše delegace Pirátů v Evropském parlamentu byla, je a bude ohledně svých výdajů vždy absolutně transparentní. K čemu je rozpočet na všeobecné výdaje, jak ho využíváe a jaké je aktuální čerpání? Vše naleznete přehledně na
+            </div>
+            <LabelDark content="stránkách Pirátů" />
           </div>
         </div>
       </main>

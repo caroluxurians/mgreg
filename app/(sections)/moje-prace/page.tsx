@@ -23,7 +23,7 @@ const MojePrace = () => {
             3xl:w-[1660px] 3xl:mb-28"
           >
             <div className="flex flex-col gap-5 2xl:gap-7 3xl:gap-10">
-              <div className="font-heading text-medium-pink flex flex-col text-[30px]/[30px] sm:text-[35px]/[37px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px]">
+              <div className="font-heading title-font-size text-medium-pink flex flex-col">
                 <span>Ve svém mandátu se zaměřuji</span>
                 <span>především na naši bezpečnost</span>
                 <span>a naše digitální svobody.</span>
@@ -84,7 +84,7 @@ const MojePrace = () => {
         </div>
 
         <div className="flex flex-col bg-beige py-16 gap-6 sm:py-10 md:pt-15 md:pb-20 xl:gap-8 xl:pb-27 2xl:gap-10 2xl:pt-17 2xl:pb-30 3xl:pt-24 3xl:pb-44 3xl:gap-12">
-          <div className="font-heading text-medium-pink text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px]">
+          <div className="font-heading title-font-size text-medium-pink text-center">
             V Evropském parlamentu proto ve<br />
             volebním období 2025-2029<br />
             působím v následujících výborech:<br />
@@ -102,7 +102,7 @@ const MojePrace = () => {
 
         <div className="flex flex-col bg-light-pink gap-7 py-16 sm:pt-10 sm:pb-12 sm:gap-6 lg:gap-7 lg:pt-14 lg:pb-22 xl:gap-8 xl:pt-16 xl:pb-26 2xl:pt-20 2xl:pb-30 2xl:gap-9 3xl:pt-31 3xl:pb-40">
 
-          <div className="font-heading text-medium-pink text-center text-[30px]/[34px] sm:text-[35px]/[39px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[100px] 3xl:text-[100px]/[109px]">
+          <div className="font-heading title-font-size text-medium-pink text-center">
             Zároveň jsem<br /> místopředsedkyní
           </div>
 

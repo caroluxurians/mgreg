@@ -43,6 +43,12 @@
   }
 }
 
+@layer utilities {
+  .title-font-size {
+    @apply text-[30px]/[36px] sm:text-[35px]/[41px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px];
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

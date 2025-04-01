@@ -47,6 +47,10 @@
   .title-font-size {
     @apply text-[30px]/[36px] sm:text-[35px]/[41px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px];
   }
+
+  .paragraph-font-size {
+    @apply text-[14px] sm:text-[16px] md:text-[16px]/[26px] lg:text-[18px]/[28px] 2xl:text-[20px]/[32px] 3xl:text-[24px]/[35px];
+  }
 }
 
 :root {

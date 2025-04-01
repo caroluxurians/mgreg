@@ -15,7 +15,7 @@ const OMne = () => {
           <div className="w-[350px] sm:w-[560px] md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400px] 3xl:w-[1660px] mx-auto mt-5 mb-8 flex flex-col sm:grid sm:grid-cols-[3fr_2fr]">
             <div>
 
-              <div className="font-heading text-red-pink-light mb-3 text-[30px]/[36px] sm:text-[35px]/[41px] md:text-[40px]/[47px] lg:text-[50px]/[55px] xl:text-[70px]/[72px] 2xl:text-[90px]/[95px] 3xl:text-[100px]/[109px]">
+              <div className="font-heading title-font-size text-red-pink-light mb-3">
                 Jsem Markéta Gregorová.< br />Členkou České pirátské strany< br /> jsem od roku 2012,
               </div>
               <div className="w-60 flex ml-25 mb-6 sm:hidden">

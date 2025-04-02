@@ -101,37 +101,3 @@ const MojePrace = () => {
 };
 
 export default MojePrace;
-
-/* <div className="text-dark-pink text-[14px] sm:text-[16px] block md:hidden">
-                Od roku 2019 se věnuji regionu <br />
-                Východního partnerství, včetně Ukrajiny,<br />
-                hájím lidská práva ve světě a zaměřuji <br />
-                se na stále ještě opomíjený vliv nových<br />
-                technologií na naši bezpečnost a demokracii:<br />
-                ať již v podobě zbraní dvojího užití,<br />
-                dezinformací, cizího vměšování<br />
-                či umělé inteligence. Zároveň se snažím <br />
-                uhájit decentralizovaný, anonymní<br />
-                a svobodný Internet, kde není prolamováno<br />
-                soukromí běžných občanů.<br />
-              </div>
-              <div className="text-medium-pink text-[14px] sm:text-[16px] hidden md:block lg:hidden">
-                Od roku 2019 se věnuji regionu Východního <br />
-                partnerství, včetně Ukrajiny, hájím lidská práva<br />
-                ve světě a zaměřuji se na stále ještě opomíjený vliv <br />
-                nových technologií na naši bezpečnost a demokracii: <br />
-                ať již v podobě zbraní dvojího užití, dezinformací,<br />
-                cizího vměšování či umělé inteligence. Zároveň<br />
-                se snažím uhájit decentralizovaný, anonymní<br />
-                a svobodný Internet, kde není prolamováno<br />
-                soukromí běžných občanů.<br />
-              </div>
-              <div className="text-dark-pink hidden lg:block lg:text-[18px] 2xl:text-[20px]/[32px] 3xl:text-[24px]/[35px]">
-                Od roku 2019 se věnuji regionu Východního partnerství,<br />
-                včetně Ukrajiny, hájím lidská práva ve světě a zaměřuji se<br />
-                na stále ještě opomíjený vliv nových technologií na naši<br />
-                bezpečnost a demokracii: ať již v podobě zbraní dvojího užití,<br />
-                dezinformací, cizího vměšování či umělé inteligence. Zároveň<br />
-                se snažím uhájit decentralizovaný, anonymní a svobodný<br />
-                Internet, kde není prolamováno soukromí běžných občanů.<br />
-              </div> */

@@ -5,7 +5,7 @@ const TimelineBulletPoint = ({ shape, styles = "" }: { shape: string, styles?: s
   return (
     <div className={classNames(`flex items-center h-20 ${styles}`)}>
       <div className="flex items-center gap-3">
-        <div className="font-heading text-[30px] sm:text-[34px]">
+        <div className="font-heading text-[30px] sm:text-[34px] md:text-[40px]">
           2012
         </div>
         <div className="w-2.5">
@@ -16,7 +16,7 @@ const TimelineBulletPoint = ({ shape, styles = "" }: { shape: string, styles?: s
 
         </div>
       </div>
-      <div className="w-8 h-1 bg-red-pink sm:w-10">
+      <div className="w-8 h-1 bg-red-pink sm:w-10 md:w-12">
       </div>
     </div>
   );

@@ -12,9 +12,8 @@ const OMne = () => {
       <Header titleColor="text-beige" sectionsColor="text-light-pink" colorTheme="light" />
       <main>
         <div>
-          <div className="w-[350px] sm:w-[560px] md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400px] 3xl:w-[1660px] mx-auto mt-5 mb-8 flex flex-col sm:grid sm:grid-cols-[3fr_2fr]">
+          <div className="main-width mx-auto mt-5 mb-8 flex flex-col sm:grid sm:grid-cols-[3fr_2fr] sm:mb-10 md:mt-6 md:mb-12">
             <div>
-
               <div className="font-heading title-font-size text-red-pink-light mb-3">
                 Jsem Markéta Gregorová.< br />Členkou České pirátské strany< br /> jsem od roku 2012,
               </div>
@@ -27,8 +26,7 @@ const OMne = () => {
                   alt="image of Marketa standing by the lectern"
                 />
               </div>
-
-              <div className="text-white flex flex-col gap-4 text-[14px]/[24px] sm:w-70 sm:text-[16px]/[26px]">
+              <div className="text-white paragraph-font-size flex flex-col w-76 gap-4 sm:w-70 md:w-88">
                 <div>
                   v letech 2018 až 2020 jsem působila jako předsedkyně Evropské pirátské strany. Od roku 2019 pracuji jako poslankyně Evropského parlamentu. V roce 2024 jsem svůj mandát obhájila.
                 </div>
@@ -40,8 +38,7 @@ const OMne = () => {
                 </div>
               </div>
             </div>
-
-            <div className="hidden w-64 flex sm:block pt-10 md:w-68">
+            <div className="hidden w-64 flex pt-10 sm:block md:w-70 md:mr-4">
               <Image
                 src="/o-mne-marketa.png"
                 height={681}
@@ -53,16 +50,14 @@ const OMne = () => {
           </div>
         </div>
 
-        <div className="bg-beige text-medium-pink pt-6 pb-6">
-
-          <div className="grid grid-cols-[2fr_3fr] w-[350px] sm:w-[560px] sm:mx-auto sm:grid-cols-[1fr_3fr] sm:gap-3">
-
+        <div className="bg-beige text-medium-pink pt-6 pb-6 sm:pt-10 sm:pb-10">
+          <div className="main-width grid grid-cols-[2fr_3fr] sm:mx-auto sm:grid-cols-[1fr_3fr] sm:gap-3 md:grid-cols-[1fr_2fr_2fr] md:gap-6">
             <div className="pt-10 pb-12 grid grid-cols-2 relative">
-              <div className="flex flex-col h-240 sm:justify-between pb-12 absolute top-8 left-6 sm:top-12 sm:left-6 sm:pb-40">
+              <div className="flex flex-col h-240 sm:justify-between pb-12 absolute top-8 left-6 sm:top-12 sm:left-6 sm:pb-40 md:left-2">
                 <TimelineBulletPoint shape="ellipse" />
-                <TimelineBulletPoint shape="circle" styles="mt-15 sm:mt-0" />
-                <TimelineBulletPoint shape="ellipse" styles="mt-61 sm:mt-0" />
-                <TimelineBulletPoint shape="circle" styles="mt-15 sm:mt-0" />
+                <TimelineBulletPoint shape="circle" styles="mt-20 sm:mt-0" />
+                <TimelineBulletPoint shape="ellipse" styles="mt-60 sm:mt-0" />
+                <TimelineBulletPoint shape="circle" styles="mt-20 sm:mt-0" />
               </div>
               <div className="w-1 h-240 bg-red-pink absolute left-28 relative sm:left-32 sm:h-260">
                 <div className="w-6 absolute -top-5 -left-2.5 sm:w-8 sm:-left-3.5">
@@ -85,36 +80,48 @@ const OMne = () => {
               </div>
             </div>
 
-            <div>
-              <div className="flex flex-col h-260 justify-around pt-8 sm:pt-12">
-                <TimelineEvent
-                  eventName="Vstup do České pirátské strany"
-                  eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
-                  styles="mb-31"
-                />
-                <TimelineEvent
-                  eventName="Lorem ipsum stup do České pirátské strany"
-                  eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
+            <div className="flex flex-col h-260 justify-around pt-5 pb-14 sm:pt-14 md:ml-5">
+              <TimelineEvent
+                eventName="Vstup do České pirátské strany"
+                eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
+                styles="sm:mb-36 md:mb-34"
+              />
+              <TimelineEvent
+                eventName="Lorem ipsum stup do České pirátské strany"
+                eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
+                styles="sm:mb-16 md:mb-4"
+              />
+              <TimelineEvent
+                eventName="Vstup do České pirátské strany"
+                eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
+                styles="sm:mb-32 md:mb-32"
+              />
+              <TimelineEvent
+                eventName="Lorem ipsum stup do České pirátské strany"
+                eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
+                styles="sm:mb-8"
+              />
+            </div>
 
-                />
-                <TimelineEvent
-                  eventName="Vstup do České pirátské strany"
-                  eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
-                  styles="sm:mb-32"
-                />
-                <TimelineEvent
-                  eventName="Lorem ipsum stup do České pirátské strany"
-                  eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
-                  styles="sm:mb-8"
-                />
+            <div className="hidden md:flex flex-col justify-around md:mb-20">
+              <div className="md:w-52">
+                <Image src="/timeline-placeholder-image-odd.png" height={277.36} width={458.16} alt="timeline image" />
               </div>
-
+              <div>
+                <Image src="/timeline-placeholder-image-even.png" height={277.36} width={458.16} alt="timeline image" />
+              </div>
+              <div>
+                <Image src="/timeline-placeholder-image-odd.png" height={277.36} width={458.16} alt="timeline image" />
+              </div>
+              <div>
+                <Image src="/timeline-placeholder-image-even.png" height={277.36} width={458.16} alt="timeline image" />
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-red-pink pt-22 pb-66 relative overflow-hidden sm:pt-26 sm:pb-76">
-          <div className="w-20 absolute top-0 left-0 sm:w-36">
+        <div className="bg-red-pink pt-22 pb-66 relative overflow-hidden sm:pt-26 sm:pb-76 md:pb-84">
+          <div className="w-20 absolute top-0 left-0 sm:w-36 md:w-40">
             <Image
               src="/cat-curious-upsidedown.svg"
               height={223.04}
@@ -123,19 +130,19 @@ const OMne = () => {
               className="absolute -top-3 left-10 overflow-hidden sm:-top-5"
             />
           </div>
-          <div className="w-[350px] text-light-pink mx-auto flex flex-col items-center gap-4 relative sm:w-[560px] sm:gap-6">
-            <div className="font-heading text-red-pink-light text-[30px]/[30px] sm:text-[40px]">
+          <div className="main-width text-light-pink mx-auto flex flex-col items-center gap-4 relative  sm:gap-6">
+            <div className="font-heading text-red-pink-light text-[30px]/[30px] sm:text-[40px] md:text-[46px]">
               Finance
             </div>
-            <div className="text-center text-[14px]/[24px] sm:text-[16px]/[26px] sm:w-auto">
+            <div className="text-center paragraph-font-size">
               Naše delegace Pirátů v Evropském parlamentu byla,<br />
               je a bude ohledně svých výdajů vždy absolutně< br /> transparentní. K čemu je rozpočet na všeobecné< br />
-              výdaje, jak ho využíváe a jaké je aktuální čerpání?< br />
+              výdaje, jak ho využíváme a jaké je aktuální čerpání?< br />
               Vše naleznete přehledně na
             </div>
             <LabelDark content="stránkách Pirátů" />
           </div>
-          <div className="w-40 absolute right-7 bottom-6 sm:w-52 sm:bottom-7 sm:right-11">
+          <div className="w-40 absolute right-7 bottom-6 sm:w-52 sm:bottom-7 sm:right-11 md:w-58 md:bottom-8 md:right-14">
             <Image
               src="/cat-transparency.svg"
               height={463}

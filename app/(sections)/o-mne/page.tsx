@@ -53,7 +53,7 @@ const OMne = () => {
           </div>
         </div>
 
-        <div className="bg-beige text-medium-pink pt-6 pb-6 sm:pt-10 sm:pb-10">
+        <div className="bg-beige text-medium-pink pt-6 pb-6 sm:pt-10 sm:pb-10 lg:pb-16">
           <div className="main-width grid grid-cols-[2fr_3fr] sm:mx-auto sm:grid-cols-[1fr_3fr] sm:gap-3 md:grid-cols-[1fr_2fr_2fr] md:gap-6 lg:grid-cols-[1fr_3fr_2fr]">
             <div className="pt-10 pb-12 grid grid-cols-2 relative">
               <div className="flex flex-col h-240 pb-12 absolute top-8 left-6 
@@ -72,13 +72,12 @@ const OMne = () => {
                     alt="start of the timeline icon shaped like a cat"
                   />
                 </div>
-                <div className="w-6 absolute -bottom-5 -left-2.5 sm:w-8 sm:-left-3.5 lg:w-10 lg:-bottom-10 lg:-left-4.5">
+                <div className="w-6 absolute -bottom-5 -left-2.5 sm:w-8 sm:-left-3.5 lg:w-10 lg:-bottom-8 lg:-left-4.5">
                   <Image
                     src="/cat-timeline-icon.svg"
                     height={54}
                     width={52}
                     alt="end of the timeline icon shaped like a cat"
-                    className="transform rotate-180"
                   />
                 </div>
               </div>

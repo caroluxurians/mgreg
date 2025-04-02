@@ -12,9 +12,12 @@ const OMne = () => {
       <Header titleColor="text-beige" sectionsColor="text-light-pink" colorTheme="light" />
       <main>
         <div>
-          <div className="main-width mx-auto mt-5 mb-8 flex flex-col sm:grid sm:grid-cols-[3fr_2fr] sm:mb-10 md:mt-6 md:mb-12">
+          <div className="main-width mx-auto mt-5 mb-8 flex     flex-col sm:grid sm:grid-cols-[3fr_2fr] 
+            sm:mt-7 sm:mb-10
+            md:mt-10 md:mb-12
+            lg:mt-14 lg:mb-18">
             <div>
-              <div className="font-heading title-font-size text-red-pink-light mb-3">
+              <div className="font-heading title-font-size text-red-pink-light mb-3 lg:mb-4">
                 Jsem Markéta Gregorová.< br />Členkou České pirátské strany< br /> jsem od roku 2012,
               </div>
               <div className="w-60 flex ml-25 mb-6 sm:hidden">
@@ -26,7 +29,7 @@ const OMne = () => {
                   alt="image of Marketa standing by the lectern"
                 />
               </div>
-              <div className="text-white paragraph-font-size flex flex-col w-76 gap-4 sm:w-70 md:w-88">
+              <div className="text-white paragraph-font-size flex flex-col w-76 gap-4 sm:w-70 md:w-88 lg:w-110">
                 <div>
                   v letech 2018 až 2020 jsem působila jako předsedkyně Evropské pirátské strany. Od roku 2019 pracuji jako poslankyně Evropského parlamentu. V roce 2024 jsem svůj mandát obhájila.
                 </div>
@@ -38,7 +41,7 @@ const OMne = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden w-64 flex pt-10 sm:block md:w-70 md:mr-4">
+            <div className="hidden w-64 flex pt-10 sm:block md:w-70 md:mr-4 lg:w-94 lg:mr-2 xl:w-110 2xl:w-136 3xl:w-160">
               <Image
                 src="/o-mne-marketa.png"
                 height={681}
@@ -53,14 +56,15 @@ const OMne = () => {
         <div className="bg-beige text-medium-pink pt-6 pb-6 sm:pt-10 sm:pb-10">
           <div className="main-width grid grid-cols-[2fr_3fr] sm:mx-auto sm:grid-cols-[1fr_3fr] sm:gap-3 md:grid-cols-[1fr_2fr_2fr] md:gap-6">
             <div className="pt-10 pb-12 grid grid-cols-2 relative">
-              <div className="flex flex-col h-240 sm:justify-between pb-12 absolute top-8 left-6 sm:top-12 sm:left-6 sm:pb-40 md:left-2">
+              <div className="flex flex-col h-240 pb-12 absolute top-8 left-6 
+              sm:justify-between sm:top-12 sm:left-6 sm:pb-40 md:left-2 lg:h-310 lg:left-0">
                 <TimelineBulletPoint shape="ellipse" />
                 <TimelineBulletPoint shape="circle" styles="mt-20 sm:mt-0" />
                 <TimelineBulletPoint shape="ellipse" styles="mt-60 sm:mt-0" />
                 <TimelineBulletPoint shape="circle" styles="mt-20 sm:mt-0" />
               </div>
-              <div className="w-1 h-240 bg-red-pink absolute left-28 relative sm:left-32 sm:h-260">
-                <div className="w-6 absolute -top-5 -left-2.5 sm:w-8 sm:-left-3.5">
+              <div className="w-1 h-240 bg-red-pink absolute left-28 relative sm:left-32 sm:h-260 lg:h-350 lg:left-37">
+                <div className="w-6 absolute -top-5 -left-2.5 sm:w-8 sm:-left-3.5 lg:w-10 lg:-top-10 lg:-left-4.5">
                   <Image
                     src="/cat-timeline-icon.svg"
                     height={54}
@@ -68,7 +72,7 @@ const OMne = () => {
                     alt="start of the timeline icon shaped like a cat"
                   />
                 </div>
-                <div className="w-6 absolute -bottom-5 -left-2.5 sm:w-8 sm:-left-3.5">
+                <div className="w-6 absolute -bottom-5 -left-2.5 sm:w-8 sm:-left-3.5 lg:w-10 lg:-bottom-10 lg:-left-4.5">
                   <Image
                     src="/cat-timeline-icon.svg"
                     height={54}

@@ -13,10 +13,10 @@ const MojePrace = () => {
 
         <div className="sm:flex sm:justify-center">
           <div
-            className="h-screen main-width max-h-screen flex flex-col pt-7 gap-5 mx-auto
-            sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:gap-0 sm:pb-10 
-            md:pt-10
-            lg:pt-0 lg:pb-0 lg:mt-14 lg:mb-18
+            className="h-screen main-width max-h-screen flex flex-col mt-7 gap-5 mx-auto -mb-20
+            sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:gap-0 sm:mb-10 
+            md:mt-10
+            lg:mt-14 lg:mb-18
             xl:grid-cols-[5fr_3fr]
             2xl:grid-cols-[5fr_4fr] 2xl:mt-18 2xl:mb-20
             3xl:mb-28"

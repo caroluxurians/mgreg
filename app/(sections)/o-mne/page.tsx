@@ -124,8 +124,8 @@ const OMne = () => {
           </div>
         </div>
 
-        <div className="bg-red-pink pt-22 pb-66 relative overflow-hidden sm:pt-26 sm:pb-76 md:pb-84">
-          <div className="w-20 absolute top-0 left-0 sm:w-36 md:w-40">
+        <div className="bg-red-pink pt-22 pb-66 relative overflow-hidden sm:pt-26 sm:pb-76 md:pb-84 lg:pb-26">
+          <div className="w-20 absolute top-0 left-0 sm:w-36 md:w-40 lg:w-36 lg:left-14">
             <Image
               src="/cat-curious-upsidedown.svg"
               height={223.04}
@@ -146,7 +146,7 @@ const OMne = () => {
             </div>
             <LabelDark content="stránkách Pirátů" />
           </div>
-          <div className="w-40 absolute right-7 bottom-6 sm:w-52 sm:bottom-7 sm:right-11 md:w-58 md:bottom-8 md:right-14">
+          <div className="w-40 absolute right-7 bottom-6 sm:w-52 sm:bottom-7 sm:right-11 md:w-58 md:bottom-8 md:right-14 lg:w-52 lg:top-20 lg:right-10">
             <Image
               src="/cat-transparency.svg"
               height={463}

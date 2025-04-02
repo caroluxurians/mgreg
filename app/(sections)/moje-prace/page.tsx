@@ -13,14 +13,13 @@ const MojePrace = () => {
 
         <div className="sm:flex sm:justify-center">
           <div
-            className="h-screen max-h-screen flex flex-col pt-7 gap-5
-            w-[350px] mx-auto
-            sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:gap-0 sm:pb-10 sm:w-[560px]
-            md:w-[700px] md:pt-10
-            lg:w-[900px] lg:pt-0 lg:pb-0 lg:mt-14 lg:mb-18
-            xl:w-[1100px] xl:grid-cols-[5fr_3fr]
-            2xl:w-[1400px] 2xl:grid-cols-[5fr_4fr] 2xl:mt-18 2xl:mb-20
-            3xl:w-[1660px] 3xl:mb-28"
+            className="h-screen main-width max-h-screen flex flex-col pt-7 gap-5 mx-auto
+            sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:gap-0 sm:pb-10 
+            md:pt-10
+            lg:pt-0 lg:pb-0 lg:mt-14 lg:mb-18
+            xl:grid-cols-[5fr_3fr]
+            2xl:grid-cols-[5fr_4fr] 2xl:mt-18 2xl:mb-20
+            3xl:mb-28"
           >
             <div className="flex flex-col gap-5 2xl:gap-7 3xl:gap-10">
               <div className="font-heading title-font-size text-medium-pink flex flex-col">
@@ -41,25 +40,16 @@ const MojePrace = () => {
                 a svobodný Internet, kde není prolamováno
                 soukromí běžných občanů.
               </div>
-
             </div>
-
-            <Image
-              src="/marketa-icon-large.png"
-              height={309}
-              width={309}
-              alt="Markéta large icon"
-              className="block mx-auto sm:hidden md:block md:ml-2 md:mt-1 md:w-[270px] md:h-[270px] lg:w-[360px] lg:h-[360px] lg:ml-0 lg:mt-2 xl:h-[410px] xl:w-[410px] 2xl:w-[520px] 2xl:h-[520px] 2xl:ml-22  3xl:w-[642px] 3xl:h-[642px]"
-              unoptimized
-            />
-            <Image
-              src="/marketa-icon-large.png"
-              height={220}
-              width={220}
-              alt="Markéta large icon"
-              className="hidden sm:block md:hidden mt-4 sm:mr-4"
-              unoptimized
-            />
+            <div className="mx-auto w-78 mt-4 sm:w-58 md:w-70 md:mr-2 md:mt-2 lg:w-94 lg:ml-0 lg:mt-2 xl:w-110 2xl:w-136 2xl:ml-22 3xl:w-160">
+              <Image
+                src="/marketa-icon-large.png"
+                height={642}
+                width={642}
+                alt="Markéta large icon"
+                unoptimized
+              />
+            </div>
           </div>
         </div>
 

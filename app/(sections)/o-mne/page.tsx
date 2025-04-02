@@ -54,7 +54,7 @@ const OMne = () => {
         </div>
 
         <div className="bg-beige text-medium-pink pt-6 pb-6 sm:pt-10 sm:pb-10">
-          <div className="main-width grid grid-cols-[2fr_3fr] sm:mx-auto sm:grid-cols-[1fr_3fr] sm:gap-3 md:grid-cols-[1fr_2fr_2fr] md:gap-6">
+          <div className="main-width grid grid-cols-[2fr_3fr] sm:mx-auto sm:grid-cols-[1fr_3fr] sm:gap-3 md:grid-cols-[1fr_2fr_2fr] md:gap-6 lg:grid-cols-[1fr_3fr_2fr]">
             <div className="pt-10 pb-12 grid grid-cols-2 relative">
               <div className="flex flex-col h-240 pb-12 absolute top-8 left-6 
               sm:justify-between sm:top-12 sm:left-6 sm:pb-40 md:left-2 lg:h-310 lg:left-0">
@@ -63,7 +63,7 @@ const OMne = () => {
                 <TimelineBulletPoint shape="ellipse" styles="mt-60 sm:mt-0" />
                 <TimelineBulletPoint shape="circle" styles="mt-20 sm:mt-0" />
               </div>
-              <div className="w-1 h-240 bg-red-pink absolute left-28 relative sm:left-32 sm:h-260 lg:h-350 lg:left-37">
+              <div className="w-1 h-240 bg-red-pink absolute left-28 relative sm:left-32 sm:h-260 lg:h-350 lg:left-38">
                 <div className="w-6 absolute -top-5 -left-2.5 sm:w-8 sm:-left-3.5 lg:w-10 lg:-top-10 lg:-left-4.5">
                   <Image
                     src="/cat-timeline-icon.svg"
@@ -84,21 +84,21 @@ const OMne = () => {
               </div>
             </div>
 
-            <div className="flex flex-col h-260 justify-around pt-5 pb-14 sm:pt-14 md:ml-5">
+            <div className="flex flex-col h-260 justify-around pt-5 pb-14 sm:pt-14 md:ml-5 lg:h-370 lg:pt-6 lg:pb-22">
               <TimelineEvent
                 eventName="Vstup do České pirátské strany"
                 eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
-                styles="sm:mb-36 md:mb-34"
+                styles="sm:mb-36 md:mb-34 lg:mb-36"
               />
               <TimelineEvent
                 eventName="Lorem ipsum stup do České pirátské strany"
                 eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
-                styles="sm:mb-16 md:mb-4"
+                styles="sm:mb-16 md:mb-4 lg:mb-0"
               />
               <TimelineEvent
                 eventName="Vstup do České pirátské strany"
                 eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
-                styles="sm:mb-32 md:mb-32"
+                styles="sm:mb-32 md:mb-32 lg:mb-34"
               />
               <TimelineEvent
                 eventName="Lorem ipsum stup do České pirátské strany"
@@ -107,17 +107,17 @@ const OMne = () => {
               />
             </div>
 
-            <div className="hidden md:flex flex-col justify-around md:mb-20">
-              <div className="md:w-52">
+            <div className="hidden md:flex flex-col justify-around md:mb-20 lg:mb-40">
+              <div className="md:w-52 lg:w-78">
                 <Image src="/timeline-placeholder-image-odd.png" height={277.36} width={458.16} alt="timeline image" />
               </div>
-              <div>
+              <div className="md:w-52 lg:w-78">
                 <Image src="/timeline-placeholder-image-even.png" height={277.36} width={458.16} alt="timeline image" />
               </div>
-              <div>
+              <div className="md:w-52 lg:w-78">
                 <Image src="/timeline-placeholder-image-odd.png" height={277.36} width={458.16} alt="timeline image" />
               </div>
-              <div>
+              <div className="md:w-52 lg:w-78">
                 <Image src="/timeline-placeholder-image-even.png" height={277.36} width={458.16} alt="timeline image" />
               </div>
             </div>

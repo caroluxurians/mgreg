@@ -4,7 +4,7 @@ import Image from "next/image";
 const TimelineBulletPoint = ({ shape, styles = "" }: { shape: string, styles?: string }) => {
   return (
     <div className={classNames(`flex items-center h-20 ${styles}`)}>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center gap-3 lg:gap-4">
         <div className="font-heading text-[30px] sm:text-[34px] md:text-[40px] lg:text-[56px]">
           2012
         </div>

@@ -4,19 +4,25 @@ import SocialsSet from "./SocialsSet";
 export const sectionsMobile = ["Pro média", "Moje práce", "O mně", "Videa", "Články"];
 const sectionsDesktop = ["Pro média", "Moje práce", "O mně", "Archiv"];
 
-const Header = ({ titleColor = "text-medium-pink", sectionsColor = "text-medium-pink", colorTheme = "dark" }: { titleColor?: string, sectionsColor?: string, colorTheme?: string }) => {
+type HeaderProps = {
+  titleColor?: string
+  sectionsColor?: string
+  colorTheme?: string
+};
+
+const Header = ({ titleColor = "text-medium-pink", sectionsColor = "text-medium-pink", colorTheme = "dark" }: HeaderProps) => {
   return (
     <header className="w-full hidden md:flex">
       <div
-        className="flex flex-col md:flex-row
-        justify-between items-center
+        className="main-width flex flex-row
+        justify-between items-baseline
         relative font-heading bg-transparent
         mx-5 mt-9 gap-3
         sm:mt-7
-        md:mt-6 md:mx-auto md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1400px] 3xl:w-[1660px]
+        md:mt-6 md:mx-auto
         lg:pt-0
         xl:h-auto
-       2xl:mx-auto 2xl:px-0"
+        2xl:mx-auto 2xl:px-0"
       >
         <div
           className={classNames(`${titleColor} text-[62px] tracking-[0.62px]
@@ -56,11 +62,3 @@ const Header = ({ titleColor = "text-medium-pink", sectionsColor = "text-medium-
 };
 
 export default Header;
-
-/*
-<div className="text-[40px] absolute left-[130px] top-[38px]">Markéta Gregorová</div>
-<div
- className="flex absolute left-[726px] top-[30px] gap-[40px] h-[49px] w-[477px] px-[30px] py-[21px]"
-      >
-         <div className="flex items-center justify-center w-auto h-auto">
-*/

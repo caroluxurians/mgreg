@@ -8,10 +8,10 @@ const HeaderLanding = () => {
     <header className="flex justify-center bg-light-pink">
       <div
         className="flex flex-col md:flex-row
-        justify-between items-center
+        justify-between items-baseline
         relative font-heading bg-transparent text-medium-pink
         mx-5 mt-9 gap-3
-        sm:mt-7
+        sm:mt-6
         md:mx-10 md:w-full
         lg:pt-0
         xl:h-auto
@@ -28,10 +28,10 @@ const HeaderLanding = () => {
         </div>
 
         <div
-          className="flex items-center leading-none
+          className="flex leading-none
         text-[24px] tracking-[0.48px]
-        gap-[11px] sm:gap-4
-        md:gap-6 md:items-end md:text-[30px] md:tracking-[0.6px]
+        gap-[11px] mx-auto sm:gap-4
+        md:gap-6 md:items-end md:mx-0 md:text-[30px] md:tracking-[0.6px]
         lg:gap-6 lg:text-[26px] lg:tracking-[0.6px]
         xl:gap-7 xl:text-[30px] xl:tracking-[0.8px]
         2xl:text-[30px] 2xl:tracking-[0.3px] 2xl:gap-10
@@ -54,11 +54,3 @@ const HeaderLanding = () => {
 };
 
 export default HeaderLanding;
-
-/*
-<div className="text-[40px] absolute left-[130px] top-[38px]">Markéta Gregorová</div>
-<div
- className="flex absolute left-[726px] top-[30px] gap-[40px] h-[49px] w-[477px] px-[30px] py-[21px]"
-      >
-         <div className="flex items-center justify-center w-auto h-auto">
-*/

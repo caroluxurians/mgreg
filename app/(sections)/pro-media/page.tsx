@@ -20,20 +20,11 @@ const ProMedia = () => {
           </div>
 
           <div className="md:flex md:gap-4 lg:gap-7 2xl:gap-28">
-            <div className="text-[14px]/[24px] mb-18 sm:text-[16px]/[26px] sm:mb-8 md:hidden">
-              Fusce aliquam vestibulum ipsum. Quis autem vel<br />
-              eum iure repreh enderit qui in ea voluptate velit<br />
-              esse quam nihil molestiae consequatur, vel illum<br />
-              qui dolorem eum fugiat.<br />
-            </div>
-            <div className="hidden md:block text-[16px]/[26px] w-55 lg:w-80 lg:pr-7 xl:text-[20px]/[30px] xl:w-90 xl:mr-10 2xl:text-[22px]/[34px] 2xl:w-120 3xl:text-[24px]/[35px]">
-              Fusce aliquam vestibulum ipsum. Quis autem vel
-              eum iure repreh enderit qui in ea voluptate velit
-              esse quam nihil molestiae consequatur, vel illum
-              qui dolorem eum fugiat.
+            <div className="paragraph-font-size w-66 mb-26 sm:mb-8 sm:w-76 md:w-56 lg:w-74 lg:pr-7 xl:w-94 xl:mr-10 2xl:mr-0 2xl:w-104 3xl:w-120">
+              Potřebujete mě kontaktovat? Napište mi na e-mail uvedený po najetí na kartu kontaktu. Pokud jde o mediální vystoupení či komentář, neváhejte se obrátit na PR specialistu Tomáše Poláka.
             </div>
             <div className="flex flex-col gap-6 mb-8 sm:flex-row md:mb-0 md:mt-1 lg:mt-2 xl:gap-8">
-              <div className="flex absolute z-3 right-10 top-42 sm:top-7 sm:right-7 md:top-17 md:right-10 lg:top-16 lg:right-7 xl:top-22 xl:right-10 2xl:right-20 3xl:right-40">
+              <div className="flex absolute z-3 right-10 top-50 sm:top-7 sm:right-7 md:top-17 md:right-10 lg:top-16 lg:right-12 xl:top-22 xl:right-6 2xl:right-44 3xl:right-40">
                 <Sticker
                   backgroundColor="bg-medium-pink"
                   textColor="text-beige"

@@ -17,9 +17,10 @@ const OMne = () => {
             md:mt-10 md:mb-12
             lg:mt-14 lg:mb-18
             xl:mt-16 xl:mb-20
-            2xl:mt-20 2xl:mb-24">
+            2xl:mt-20 2xl:mb-24
+            3xl:mt-28 3xl:mb-32">
             <div>
-              <div className="font-heading title-font-size text-red-pink-light mb-3 lg:mb-4 2xl:mb-3">
+              <div className="font-heading title-font-size text-red-pink-light mb-3 lg:mb-4 2xl:mb-3 3xl:mb-3.5">
                 Jsem Markéta Gregorová.< br />Členkou České pirátské strany< br /> jsem od roku 2012,
               </div>
               <div className="w-60 flex ml-25 mb-6 sm:hidden">
@@ -31,7 +32,7 @@ const OMne = () => {
                   alt="image of Marketa standing by the lectern"
                 />
               </div>
-              <div className="text-white paragraph-font-size flex flex-col w-76 gap-4 sm:w-70 md:w-88 lg:w-110 xl:w-120 2xl:w-156 2xl:gap-6 3xl:w-170">
+              <div className="text-white paragraph-font-size flex flex-col w-76 gap-4 sm:w-70 md:w-88 lg:w-110 xl:w-120 2xl:w-156 2xl:gap-6 3xl:w-170 3xl:gap-7">
                 <div>
                   v letech 2018 až 2020 jsem působila jako předsedkyně Evropské pirátské strany. Od roku 2019 pracuji jako poslankyně Evropského parlamentu. V roce 2024 jsem svůj mandát obhájila.
                 </div>
@@ -43,7 +44,7 @@ const OMne = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden w-64 flex pt-10 sm:block md:w-70 md:mr-4 lg:w-94 lg:mr-2 xl:w-110 xl:mr-0 2xl:w-136 3xl:w-160">
+            <div className="hidden w-64 flex pt-10 sm:block md:w-70 md:mr-4 lg:w-94 lg:mr-2 xl:w-110 xl:mr-0 2xl:w-136 3xl:w-170">
               <Image
                 src="/o-mne-marketa.png"
                 height={681}
@@ -55,17 +56,17 @@ const OMne = () => {
           </div>
         </div>
 
-        <div className="bg-beige text-medium-pink pt-6 pb-6 sm:pt-10 sm:pb-10 lg:pb-16 xl:pt-20 xl:pb-18 2xl:pt-24 2xl:pb-28">
-          <div className="main-width grid grid-cols-[2fr_3fr] sm:mx-auto sm:grid-cols-[1fr_3fr] sm:gap-3 md:grid-cols-[1fr_2fr_2fr] md:gap-6 lg:grid-cols-[1fr_3fr_2fr] 2xl:px-20">
+        <div className="bg-beige text-medium-pink pt-6 pb-6 sm:pt-10 sm:pb-10 lg:pb-16 xl:pt-20 xl:pb-18 2xl:pt-24 2xl:pb-28 3xl:pt-25 3xl:pb-29">
+          <div className="main-width grid grid-cols-[2fr_3fr] sm:mx-auto sm:grid-cols-[1fr_3fr] sm:gap-3 md:grid-cols-[1fr_2fr_2fr] md:gap-6 lg:grid-cols-[1fr_3fr_2fr] 2xl:px-20 3xl:px-26">
             <div className="pt-10 pb-12 grid grid-cols-2 relative">
               <div className="flex flex-col h-240 pb-12 absolute top-8 left-6 
-              sm:justify-between sm:top-12 sm:left-6 sm:pb-40 md:left-2 lg:h-310 lg:left-0">
+              sm:justify-between sm:top-12 sm:left-6 sm:pb-40 md:left-2 lg:h-310 lg:left-0 3xl:h-340 3xl:top-16">
                 <TimelineBulletPoint shape="ellipse" />
                 <TimelineBulletPoint shape="circle" styles="mt-22 sm:mt-0" />
                 <TimelineBulletPoint shape="ellipse" styles="mt-60 sm:mt-0" />
                 <TimelineBulletPoint shape="circle" styles="mt-20 sm:mt-0" />
               </div>
-              <div className="w-1 h-240 bg-red-pink absolute left-28 relative sm:left-32 sm:h-260 lg:h-350 lg:left-38 xl:left-42 2xl:left-54">
+              <div className="w-1 h-240 bg-red-pink absolute left-28 relative sm:left-32 sm:h-260 lg:h-350 lg:left-38 xl:left-42 2xl:left-54 3xl:left-62 3xl:h-400">
                 <div className="w-6 absolute -top-5 -left-2.5 sm:w-8 sm:-left-3.5 lg:w-10 lg:-top-10 lg:-left-4.5 2xl:w-12 2xl:-left-5.5 2xl:-top-12">
                   <Image
                     src="/cat-timeline-icon.svg"
@@ -85,30 +86,30 @@ const OMne = () => {
               </div>
             </div>
 
-            <div className="flex flex-col h-260 justify-around pt-5 pb-14 sm:pt-14 md:ml-5 lg:h-370 lg:pt-6 lg:pb-22 2xl:ml-8 3xl:ml-9">
+            <div className="flex flex-col h-260 justify-around pt-5 pb-14 sm:pt-14 md:ml-5 lg:h-370 lg:pt-6 lg:pb-22 2xl:ml-8 3xl:h-400 3xl:ml-9 3xl:pt-9">
               <TimelineEvent
                 eventName="Vstup do České pirátské strany"
                 eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
-                styles="sm:mb-36 md:mb-34 lg:mb-36"
+                styles="sm:mb-36 md:mb-34 lg:mb-36 3xl:mb-40 3xl:gap-7"
               />
               <TimelineEvent
                 eventName="Lorem ipsum stup do České pirátské strany"
                 eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
-                styles="sm:mb-16 md:mb-4 lg:mb-0"
+                styles="sm:mb-16 md:mb-4 lg:mb-0 3xl:mb-5 3xl:gap-3"
               />
               <TimelineEvent
                 eventName="Vstup do České pirátské strany"
                 eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
-                styles="sm:mb-32 md:mb-32 lg:mb-34"
+                styles="sm:mb-32 md:mb-32 lg:mb-34 3xl:gap-7 3xl:mb-38"
               />
               <TimelineEvent
                 eventName="Lorem ipsum stup do České pirátské strany"
                 eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
-                styles="sm:mb-8"
+                styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
               />
             </div>
 
-            <div className="hidden md:flex flex-col justify-around md:mb-20 lg:mb-40 2xl:mb-26">
+            <div className="hidden md:flex flex-col justify-around md:mb-20 lg:mb-40 2xl:mb-26 3xl:h-360 3xl:mb-0 3xl:mt-5">
               <div className="md:w-52 lg:w-78 xl:w-88 2xl:w-108 3xl:w-115">
                 <Image src="/timeline-placeholder-image-odd.png" height={277.36} width={458.16} alt="timeline image" />
               </div>

@@ -108,16 +108,16 @@ const OMne = () => {
             </div>
 
             <div className="hidden md:flex flex-col justify-around md:mb-20 lg:mb-40">
-              <div className="md:w-52 lg:w-78">
+              <div className="md:w-52 lg:w-78 xl:w-88">
                 <Image src="/timeline-placeholder-image-odd.png" height={277.36} width={458.16} alt="timeline image" />
               </div>
-              <div className="md:w-52 lg:w-78">
+              <div className="md:w-52 lg:w-78 xl:w-88">
                 <Image src="/timeline-placeholder-image-even.png" height={277.36} width={458.16} alt="timeline image" />
               </div>
-              <div className="md:w-52 lg:w-78">
+              <div className="md:w-52 lg:w-78 xl:w-88">
                 <Image src="/timeline-placeholder-image-odd.png" height={277.36} width={458.16} alt="timeline image" />
               </div>
-              <div className="md:w-52 lg:w-78">
+              <div className="md:w-52 lg:w-78 xl:w-88">
                 <Image src="/timeline-placeholder-image-even.png" height={277.36} width={458.16} alt="timeline image" />
               </div>
             </div>

@@ -124,8 +124,8 @@ const OMne = () => {
           </div>
         </div>
 
-        <div className="bg-red-pink pt-22 pb-66 relative overflow-hidden sm:pt-26 sm:pb-76 md:pb-84 lg:pb-26">
-          <div className="w-20 absolute top-0 left-0 sm:w-36 md:w-40 lg:w-36 lg:left-14">
+        <div className="bg-red-pink pt-22 pb-66 relative overflow-hidden sm:pt-26 sm:pb-76 md:pb-84 lg:pb-26 xl:pb-30">
+          <div className="w-20 absolute top-0 left-0 sm:w-36 md:w-40 lg:w-36 lg:left-14 xl:w-48 xl:left-12">
             <Image
               src="/cat-curious-upsidedown.svg"
               height={223.04}
@@ -134,8 +134,8 @@ const OMne = () => {
               className="absolute -top-3 left-10 overflow-hidden sm:-top-5"
             />
           </div>
-          <div className="main-width text-light-pink mx-auto flex flex-col items-center gap-4 relative  sm:gap-6">
-            <div className="font-heading text-red-pink-light text-[30px]/[30px] sm:text-[40px] md:text-[46px]">
+          <div className="main-width text-light-pink mx-auto flex flex-col items-center gap-4 relative sm:gap-6">
+            <div className="font-heading text-red-pink-light text-[30px] sm:text-[40px] md:text-[46px] lg:text-[50px]/[46px] xl:text-[70px]/[72px]">
               Finance
             </div>
             <div className="text-center paragraph-font-size">
@@ -146,7 +146,7 @@ const OMne = () => {
             </div>
             <LabelDark content="stránkách Pirátů" />
           </div>
-          <div className="w-40 absolute right-7 bottom-6 sm:w-52 sm:bottom-7 sm:right-11 md:w-58 md:bottom-8 md:right-14 lg:w-52 lg:top-20 lg:right-10">
+          <div className="w-40 absolute right-7 bottom-6 sm:w-52 sm:bottom-7 sm:right-11 md:w-58 md:bottom-8 md:right-14 lg:w-52 lg:top-20 lg:right-10 xl:w-70 xl:right-14">
             <Image
               src="/cat-transparency.svg"
               height={463}

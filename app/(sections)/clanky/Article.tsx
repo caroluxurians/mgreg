@@ -13,7 +13,7 @@ const Article = () => {
           height={281}
           alt="article cover image"
           unoptimized
-          className="rounded-[40]"
+          className="rounded-[36]"
         />
       </div>
       <div className="text-[14px] w-40">
@@ -21,7 +21,7 @@ const Article = () => {
         československých feministických dějin,
         politička a novinářka Františka Plamínková..
       </div>
-      <div className="place-self-start ml-4 italic flex flex-col items-center text-[14px] gap-1">
+      <div className="place-self-start ml-2 italic flex flex-col items-center text-[14px] gap-1 -mt-2">
         <div>
           2. 5. 2024
         </div>
@@ -31,7 +31,7 @@ const Article = () => {
           </div>
         </div>
       </div>
-      <div className="bg-medium-pink rounded-full text-white font-semibold italic text-center w-fit h-fit place-self-end px-4 py-1 mr-6 3xl:px-7 3xl:py-2.5">
+      <div className="bg-medium-pink rounded-full text-[14px] text-white font-semibold italic text-center w-fit h-fit place-self-end px-4 py-1 mr-6 3xl:px-7 3xl:py-2.5">
         číst
       </div>
     </div>

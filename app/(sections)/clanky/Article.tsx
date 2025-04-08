@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const Article = () => {
   return (
-    <div className="text-medium-pink grid grid-cols-2 gap-3 border-b border-light-pink pb-6">
+    <div className="text-medium-pink grid grid-cols-2 gap-3 border-b border-light-pink pb-6 md:flex">
       <div className="font-black col-span-2 text-[15px]/[18px]">
         Odkaz Františky Plamínkové: Proč bychom se měly hrdě označovat za feministky
       </div>
-      <div className="w-40 place-self-center">
+      <div className="w-40 place-self-center md:order-1">
         <Image
           src="/article-placeholder-image.png"
           width={420}

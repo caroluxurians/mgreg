@@ -53,10 +53,7 @@ const Header = ({ titleColor = "text-medium-pink", sectionsColor = "text-medium-
           ))}
         </div>
         <SocialsSet color={colorTheme} classNames="hidden lg:flex 2xl:pr-0" />
-
-
       </div>
-
     </header>
   );
 };

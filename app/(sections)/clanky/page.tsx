@@ -1,0 +1,24 @@
+import Header from "@/app/components/Header";
+import HeaderMobile from "@/app/components/HeaderMobile";
+
+const Clanky = () => {
+  return (
+    <div className="bg-beige">
+      <HeaderMobile />
+      <Header />
+      <main className="flex flex-col">
+        <div className="main-width mx-auto">
+          <div className="font-heading title-font-size text-medium-pink border-b border-light-pink my-7 pb-3">
+            Moje články
+          </div>
+          <div>
+            clanek
+            clanek
+          </div>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default Clanky;

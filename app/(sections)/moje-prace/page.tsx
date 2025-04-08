@@ -14,7 +14,7 @@ const MojePrace = () => {
         <div className="sm:flex sm:justify-center">
           <div
             className="h-screen main-width max-h-screen flex flex-col mt-7 gap-5 mx-auto -mb-20
-            sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:gap-0 sm:mb-10 
+            sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:gap-0 sm:mb-10
             md:mt-10
             lg:mt-14 lg:mb-18
             xl:grid-cols-[5fr_3fr]

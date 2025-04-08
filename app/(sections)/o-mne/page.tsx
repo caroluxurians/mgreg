@@ -1,9 +1,9 @@
 import Header from "@/app/components/Header";
 import HeaderMobile from "@/app/components/HeaderMobile";
 import Image from "next/image";
+import LabelDark from "@/app/components/LabelDark";
 import TimelineBulletPoint from "./TimelineBulletPoint";
 import TimelineEvent from "./TimelineEvent";
-import LabelDark from "@/app/components/LabelDark";
 
 const OMne = () => {
   return (
@@ -12,16 +12,17 @@ const OMne = () => {
       <Header titleColor="text-beige" sectionsColor="text-light-pink" colorTheme="light" />
       <main>
         <div>
-          <div className="main-width mx-auto mt-5 mb-8 flex     flex-col sm:grid sm:grid-cols-[3fr_2fr] 
+          <div className="main-width mx-auto mt-5 mb-8 flex     flex-col sm:grid sm:grid-cols-[3fr_2fr]
             sm:mt-7 sm:mb-10
             md:mt-10 md:mb-12
             lg:mt-14 lg:mb-18
             xl:mt-16 xl:mb-20
             2xl:mt-20 2xl:mb-24
-            3xl:mt-28 3xl:mb-32">
+            3xl:mt-28 3xl:mb-32"
+          >
             <div>
               <div className="font-heading title-font-size text-red-pink-light mb-3 lg:mb-4 2xl:mb-3 3xl:mb-3.5">
-                Jsem Markéta Gregorová.< br />Členkou České pirátské strany< br /> jsem od roku 2012,
+                Jsem Markéta Gregorová.<br />Členkou České pirátské strany<br /> jsem od roku 2012,
               </div>
               <div className="w-60 flex ml-25 mb-6 sm:hidden">
                 <Image
@@ -34,13 +35,25 @@ const OMne = () => {
               </div>
               <div className="text-white paragraph-font-size flex flex-col w-76 gap-4 sm:w-70 md:w-88 lg:w-110 xl:w-120 2xl:w-156 2xl:gap-6 3xl:w-170 3xl:gap-7">
                 <div>
-                  v letech 2018 až 2020 jsem působila jako předsedkyně Evropské pirátské strany. Od roku 2019 pracuji jako poslankyně Evropského parlamentu. V roce 2024 jsem svůj mandát obhájila.
+                  v letech 2018 až 2020 jsem působila jako
+                  předsedkyně Evropské pirátské strany. Od roku
+                  2019 pracuji jako poslankyně Evropského
+                  parlamentu. V roce 2024 jsem svůj mandát
+                  obhájila.
                 </div>
                 <div>
-                  Vystudovala jsem bakalářské studium Mezinárodních vztahů a Evropských studií a magisterské studium Veřejné správy a Bezpečnostních studií. Pracovala jsem jako testerka webových aplikací či markeťačka ve středních i menších firmách, stejně jako v neziskovém sektoru a na vlastní triko.
+                  Vystudovala jsem bakalářské studium
+                  Mezinárodních vztahů a Evropských studií a
+                  magisterské studium Veřejné správy a
+                  Bezpečnostních studií. Pracovala jsem jako
+                  testerka webových aplikací či markeťačka ve
+                  středních i menších firmách, stejně jako v
+                  neziskovém sektoru a na vlastní triko.
                 </div>
                 <div>
-                  Zpívám v kapele Definitivní ententýk, miluji svou kočku Kočku a největší radost mi dělá, když lidé volí informovaně.
+                  Zpívám v kapele Definitivní ententýk, miluji
+                  svou kočku Kočku a největší radost mi dělá,
+                  když lidé volí informovaně.
                 </div>
               </div>
             </div>
@@ -59,8 +72,9 @@ const OMne = () => {
         <div className="bg-beige text-medium-pink pt-6 pb-6 sm:pt-10 sm:pb-10 lg:pb-16 xl:pt-20 xl:pb-18 2xl:pt-24 2xl:pb-28 3xl:pt-25 3xl:pb-29">
           <div className="main-width grid grid-cols-[2fr_3fr] sm:mx-auto sm:grid-cols-[1fr_3fr] sm:gap-3 md:grid-cols-[1fr_2fr_2fr] md:gap-6 lg:grid-cols-[1fr_3fr_2fr] 2xl:px-20 3xl:px-26">
             <div className="pt-10 pb-12 grid grid-cols-2 relative">
-              <div className="flex flex-col h-240 pb-12 absolute top-8 left-6 
-              sm:justify-between sm:top-12 sm:left-6 sm:pb-40 md:left-2 lg:h-310 lg:left-0 3xl:h-340 3xl:top-16">
+              <div className="flex flex-col h-240 pb-12 absolute top-8 left-6
+              sm:justify-between sm:top-12 sm:left-6 sm:pb-40 md:left-2 lg:h-310 lg:left-0 3xl:h-340 3xl:top-16"
+              >
                 <TimelineBulletPoint shape="ellipse" />
                 <TimelineBulletPoint shape="circle" styles="mt-22 sm:mt-0" />
                 <TimelineBulletPoint shape="ellipse" styles="mt-60 sm:mt-0" />
@@ -142,8 +156,9 @@ const OMne = () => {
             </div>
             <div className="text-center paragraph-font-size 2xl:mb-2">
               Naše delegace Pirátů v Evropském parlamentu byla,<br />
-              je a bude ohledně svých výdajů vždy absolutně< br /> transparentní. K čemu je rozpočet na všeobecné< br />
-              výdaje, jak ho využíváme a jaké je aktuální čerpání?< br />
+              je a bude ohledně svých výdajů vždy absolutně<br />
+              transparentní. K čemu je rozpočet na všeobecné<br />
+              výdaje, jak ho využíváme a jaké je aktuální čerpání?<br />
               Vše naleznete přehledně na
             </div>
             <LabelDark content="stránkách Pirátů" />

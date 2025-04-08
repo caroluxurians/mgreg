@@ -22,10 +22,13 @@ const ProMedia = () => {
 
           <div className="md:flex md:gap-4 lg:gap-7 2xl:gap-28">
             <div className="paragraph-font-size w-66 mb-24 sm:mb-8 sm:w-76 md:w-56 lg:w-74 lg:pr-7 xl:w-94 xl:mr-10 2xl:mr-0 2xl:w-104 3xl:w-120">
-              Potřebujete mě kontaktovat? Napište mi na e-mail uvedený po najetí na kartu kontaktu. Pokud jde o mediální vystoupení či komentář, neváhejte se obrátit na PR specialistu Tomáše Poláka.
+              Potřebujete mě kontaktovat? Napište mi na e-mail
+              uvedený po najetí na kartu kontaktu. Pokud jde o
+              mediální vystoupení či komentář, neváhejte se
+              obrátit na PR specialistu Tomáše Poláka.
             </div>
             <div className="flex flex-col gap-6 mb-8 sm:flex-row md:mb-0 md:mt-1 lg:mt-2 xl:gap-8">
-              <div className="flex absolute z-3 right-10 top-44 sm:top-7 sm:right-7 md:top-6 md:right-10 lg:top-16 lg:right-12 xl:top-22 xl:right-6 2xl:right-44 3xl:right-40">
+              <div className="flex absolute z-3 right-10 top-44 sm:top-7 sm:right-7 md:top-6 md:right-10 lg:top-8 lg:right-13 xl:top-11 xl:right-6 2xl:right-44 3xl:right-40">
                 <Sticker
                   backgroundColor="bg-medium-pink"
                   textColor="text-beige"

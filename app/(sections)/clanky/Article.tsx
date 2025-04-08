@@ -1,10 +1,12 @@
+import ArticleType from "@/app/types/article";
 import Image from "next/image";
+import Link from "next/link";
 
-const Article = () => {
+const Article = ({ article }: { article: ArticleType }) => {
   return (
     <div className="text-medium-pink grid grid-cols-2 gap-3 border-b border-light-pink pb-6 md:flex">
       <div className="font-black col-span-2 text-[15px]/[18px]">
-        Odkaz Františky Plamínkové: Proč bychom se měly hrdě označovat za feministky
+        {article.title}
       </div>
       <div className="w-40 place-self-center md:order-1">
         <Image
@@ -17,23 +19,26 @@ const Article = () => {
         />
       </div>
       <div className="text-[14px] w-40">
-        Před 149 lety se narodila ikona nejen
-        československých feministických dějin,
-        politička a novinářka Františka Plamínková..
+        {article.perex}
       </div>
       <div className="place-self-start ml-2 italic flex flex-col items-center text-[14px] gap-1 -mt-2">
         <div>
-          2. 5. 2024
+          {article.date}
         </div>
+        {/*
         <div>
           <div className="border border-light-pink rounded-full text-center w-fit px-4">
             lidská práva
           </div>
         </div>
+        */}
       </div>
-      <div className="bg-medium-pink rounded-full text-[14px] text-white font-semibold italic text-center w-fit h-fit place-self-end px-4 py-1 mr-6 3xl:px-7 3xl:py-2.5">
+      <Link
+        href={`/clanky${article.link}`}
+        className="bg-medium-pink rounded-full text-[14px] text-white font-semibold italic text-center w-fit h-fit place-self-end px-4 py-1 mr-6 3xl:px-7 3xl:py-2.5"
+      >
         číst
-      </div>
+      </Link>
     </div>
   );
 };

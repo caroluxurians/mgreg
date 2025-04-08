@@ -1,0 +1,61 @@
+import * as cheerio from 'cheerio';
+import { createWriteStream } from 'fs';
+import { writeFile } from 'fs/promises';
+import { Readable } from 'stream';
+import { finished } from 'stream/promises';
+
+const scrapeLinks = async () => {
+  const links = [];
+
+  for (let i = 1; i <= 12; i++) {
+    const res = await fetch(`https://gregorova.eu/nazory/?page=${i}`);
+    const html = await res.text();
+    const $ = cheerio.load(html);
+    $("article > a").each((i, el) => {
+      const href = $(el).attr("href");
+      if (href.startsWith("/")) {
+        links.push(href);
+      }
+    });
+  }
+
+  return links;
+}
+
+//const links = await scrapeLinks();
+//console.log(links)
+
+const scrapeArticle = async (link, index) => {
+  const res = await fetch(`https://gregorova.eu${link}`);
+  const html = await res.text();
+  const $ = cheerio.load(html);
+
+  return {
+    id: index,
+    link,
+    img: $("article > .article-image").attr("style").replace(/.*url\((.*)\).*/, "$1"),
+    date: $(".article-content > header .date").text(),
+    title: $(".article-content > header h1").text(),
+    perex: $(".article-content > header > p").text(),
+    content: $(".article-content > section").html(),
+  };
+}
+
+const articles = [];
+//articles.push(await scrapeArticle("/europoslankyne-testuje-ai-aplikace-ktere-jsou-fajn-a-na-ktere-si-dat-pozor/", 0))
+//articles.push(await scrapeArticle("/umela-inteligence-aneb-smirovani-na-steroidech/", 1))
+//console.log(articles);
+
+//writeFile("./articles.json", JSON.stringify(articles, null, 2), "utf-8")
+
+const downloadImage = async (link) => {
+  const { body } = await fetch(`https://gregorova.eu${link}`);
+  const filename = link.split("/").pop();
+  //todo držet strukturu v public
+  const stream = createWriteStream(filename);
+  await finished(Readable.fromWeb(body).pipe(stream));
+  console.log(`Downloaded ${filename}`);
+  return filename;
+};
+
+downloadImage("/tmp/images/PisesetoAI_family_walking_down_pedestrian_cros.width-800.png");

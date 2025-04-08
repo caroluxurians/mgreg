@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const ContactCardTomasNew = () => {
   return (
-    <div className="bg-medium-pink overflow-hidden rounded-3xl flex w-[270px] h-[359px] relative mx-auto md:w-[200px] md:h-[266px] lg:w-[250px] lg:h-[332px] xl:w-[300px] xl:h-[399px] 2xl:w-[325px]">
-      <div className="absolute -bottom-18 w-82 -right-9 md:w-62 md:-bottom-14 md:-right-8 lg:w-74 xl:w-86">
+    <div className="bg-medium-pink overflow-hidden rounded-3xl flex w-[270px] h-[359px] relative mx-auto md:w-[200px] md:h-[266px] lg:w-[250px] lg:h-[332px] xl:w-[300px] xl:h-[399px] 2xl:w-[325px] 2xl:h-[432px]">
+      <div className="absolute -bottom-18 w-82 -right-9 md:w-62 md:-bottom-14 md:-right-8 lg:w-74 xl:w-86 2xl:w-94 2xl:-right-10 2xl:-bottom-16">
         <Image
           src="/tomas-contact-card-new.png"
           height={432}

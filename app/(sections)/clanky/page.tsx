@@ -1,8 +1,8 @@
 import { readFile } from "fs/promises";
 import Header from "@/app/components/Header";
 import HeaderMobile from "@/app/components/HeaderMobile";
-import Article from "./Article";
 import ArticleType from "@/app/types/article";
+import ArticlePreview from "./ArticlePreview";
 
 const Clanky = async () => {
   const file = await readFile(`${process.cwd()}/articles.json`, "utf8");
@@ -20,7 +20,7 @@ const Clanky = async () => {
           </div>
           <div className="flex flex-col gap-6 mb-6 mx-1">
             {data.map((article: ArticleType) => (
-              <Article key={article.id} article={article} />
+              <ArticlePreview key={article.id} article={article} />
             ))}
           </div>
           <div className="mb-10 flex justify-center">1 2 3 4 5 6</div>

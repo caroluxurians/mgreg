@@ -1,8 +1,8 @@
-import ArticleType from "@/app/types/article";
 import Image from "next/image";
 import Link from "next/link";
+import ArticleType from "@/app/types/article";
 
-const Article = ({ article }: { article: ArticleType }) => {
+const ArticlePreview = ({ article }: { article: ArticleType }) => {
   return (
     <div className="text-medium-pink grid grid-cols-2 gap-3 border-b border-light-pink pb-6 md:flex">
       <div className="font-black col-span-2 text-[15px]/[18px]">
@@ -43,4 +43,4 @@ const Article = ({ article }: { article: ArticleType }) => {
   );
 };
 
-export default Article;
+export default ArticlePreview;

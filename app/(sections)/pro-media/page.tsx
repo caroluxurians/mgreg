@@ -85,6 +85,7 @@ const ProMedia = () => {
               <Sticker
                 backgroundColor="bg-[#005F66]"
                 textColor="text-light-pink"
+                borderColor="border-#005F66]"
                 content={(
                   <>
                     volně ke<br />

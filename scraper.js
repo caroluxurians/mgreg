@@ -1,8 +1,8 @@
-import * as cheerio from 'cheerio';
-import { createWriteStream } from 'fs';
-import { writeFile } from 'fs/promises';
-import { Readable } from 'stream';
-import { finished } from 'stream/promises';
+import * as cheerio from "cheerio";
+import { createWriteStream } from "fs";
+import { writeFile, mkdir } from "fs/promises";
+import { Readable } from "stream";
+import { finished } from "stream/promises";
 
 const scrapeLinks = async () => {
   const links = [];
@@ -20,7 +20,7 @@ const scrapeLinks = async () => {
   }
 
   return links;
-}
+};
 
 //const links = await scrapeLinks();
 //console.log(links)
@@ -33,13 +33,15 @@ const scrapeArticle = async (link, index) => {
   return {
     id: index,
     link,
-    img: $("article > .article-image").attr("style").replace(/.*url\((.*)\).*/, "$1"),
+    img: $("article > .article-image")
+      .attr("style")
+      .replace(/.*url\((.*)\).*/, "$1"),
     date: $(".article-content > header .date").text(),
     title: $(".article-content > header h1").text(),
     perex: $(".article-content > header > p").text(),
     content: $(".article-content > section").html(),
   };
-}
+};
 
 const articles = [];
 //articles.push(await scrapeArticle("/europoslankyne-testuje-ai-aplikace-ktere-jsou-fajn-a-na-ktere-si-dat-pozor/", 0))
@@ -50,12 +52,19 @@ const articles = [];
 
 const downloadImage = async (link) => {
   const { body } = await fetch(`https://gregorova.eu${link}`);
-  const filename = link.split("/").pop();
+  const pathArr = link.split("/");
+
+  const filename = pathArr[pathArr.length - 1];
+  const path = pathArr.slice(1, -1).join("/");
   //todo držet strukturu v public
-  const stream = createWriteStream(filename);
+  await mkdir(`public/${path}`, { recursive: true });
+
+  const stream = createWriteStream(`public/${path}/${filename}`);
   await finished(Readable.fromWeb(body).pipe(stream));
   console.log(`Downloaded ${filename}`);
   return filename;
 };
 
-downloadImage("/tmp/images/PisesetoAI_family_walking_down_pedestrian_cros.width-800.png");
+downloadImage(
+  "/tmp/images/PisesetoAI_family_walking_down_pedestrian_cros.width-800.png"
+);

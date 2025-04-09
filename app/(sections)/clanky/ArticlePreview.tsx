@@ -3,28 +3,31 @@ import Link from "next/link";
 import ArticleType from "@/app/types/article";
 
 const ArticlePreview = ({ article }: { article: ArticleType }) => {
-  const perexPreview = (text: string, maxLength: number = 150) => {
+  const perexPreview = (text: string, maxLength: number = 150): string => {
     if (!text) return "";
-    return text.length > maxLength
-      ? `${text.slice(0, maxLength).trimEnd()}...`
-      : text;
+
+    if (text.length <= maxLength) return text;
+
+    const sliced = text.slice(0, maxLength);
+    const lastSpace = sliced.lastIndexOf(" ");
+
+    return lastSpace > 0 ? `${sliced.slice(0, lastSpace)}…` : `${sliced}…`;
   };
   const preview = perexPreview(article.perex);
-  console.log(preview);
 
   return (
     <div className="text-medium-pink grid grid-cols-2 gap-3 border-b border-light-pink pb-6 md:flex">
       <div className="font-black col-span-2 text-[15px]/[18px]">
         {article.title}
       </div>
-      <div className="w-40 place-self-center md:order-1">
+      <div className="place-self-center md:order-1">
         <Image
           src={article.img}
           width={420}
           height={281}
           alt="article cover image"
           unoptimized
-          className="rounded-[36]"
+          className="rounded-[34] w-40 h-30 object-cover object-top"
         />
       </div>
       <div className="text-[14px] w-40">

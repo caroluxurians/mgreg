@@ -31,7 +31,7 @@ const downloadImage = async (link) => {
 
   const filename = pathArr[pathArr.length - 1];
   const path = pathArr.slice(1, -1).join("/");
-  //todo držet strukturu v public
+
   await mkdir(`public/${path}`, { recursive: true });
 
   const stream = createWriteStream(`public/${path}/${filename}`);
@@ -67,14 +67,14 @@ const scrapeArticle = async (link, index) => {
 
 const articles = [];
 
-/*for (let i = 0; i < links.length; i++) {
+for (let i = 0; i < links.length; i++) {
   const article = await scrapeArticle(links[i], i);
   articles.push(article);
 }
 
-await writeFile("./articles.json", JSON.stringify(articles, null, 2), "utf-8");*/
+await writeFile("./articles.json", JSON.stringify(articles, null, 2), "utf-8");
 
-articles.push(
+/*articles.push(
   await scrapeArticle(
     "/europoslankyne-testuje-ai-aplikace-ktere-jsou-fajn-a-na-ktere-si-dat-pozor/",
     0
@@ -82,7 +82,7 @@ articles.push(
 );
 articles.push(
   await scrapeArticle("/umela-inteligence-aneb-smirovani-na-steroidech/", 1)
-);
+);*/
 //console.log(articles);
 
-writeFile("./articles.json", JSON.stringify(articles, null, 2), "utf-8");
+// writeFile("./articles.json", JSON.stringify(articles, null, 2), "utf-8");

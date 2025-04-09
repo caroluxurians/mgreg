@@ -22,33 +22,8 @@ const scrapeLinks = async () => {
   return links;
 };
 
-//const links = await scrapeLinks();
-//console.log(links)
-
-const scrapeArticle = async (link, index) => {
-  const res = await fetch(`https://gregorova.eu${link}`);
-  const html = await res.text();
-  const $ = cheerio.load(html);
-
-  return {
-    id: index,
-    link,
-    img: $("article > .article-image")
-      .attr("style")
-      .replace(/.*url\((.*)\).*/, "$1"),
-    date: $(".article-content > header .date").text(),
-    title: $(".article-content > header h1").text(),
-    perex: $(".article-content > header > p").text(),
-    content: $(".article-content > section").html(),
-  };
-};
-
-const articles = [];
-//articles.push(await scrapeArticle("/europoslankyne-testuje-ai-aplikace-ktere-jsou-fajn-a-na-ktere-si-dat-pozor/", 0))
-//articles.push(await scrapeArticle("/umela-inteligence-aneb-smirovani-na-steroidech/", 1))
-//console.log(articles);
-
-//writeFile("./articles.json", JSON.stringify(articles, null, 2), "utf-8")
+const links = await scrapeLinks();
+console.log(links);
 
 const downloadImage = async (link) => {
   const { body } = await fetch(`https://gregorova.eu${link}`);
@@ -65,6 +40,49 @@ const downloadImage = async (link) => {
   return filename;
 };
 
-downloadImage(
-  "/tmp/images/PisesetoAI_family_walking_down_pedestrian_cros.width-800.png"
+const scrapeArticle = async (link, index) => {
+  const res = await fetch(`https://gregorova.eu${link}`);
+  const html = await res.text();
+  const $ = cheerio.load(html);
+  const coverImage = $("article > .article-image")
+    .attr("style")
+    .replace(/.*url\((.*)\).*/, "$1");
+  await downloadImage(coverImage);
+
+  $(".article-content > section > img").each((i, el) => {
+    const imgSrc = $(el).attr("src");
+    downloadImage(imgSrc);
+  });
+
+  return {
+    id: index,
+    link,
+    img: coverImage,
+    date: $(".article-content > header .date").text(),
+    title: $(".article-content > header h1").text(),
+    perex: $(".article-content > header > p").text(),
+    content: $(".article-content > section").html(),
+  };
+};
+
+const articles = [];
+
+/*for (let i = 0; i < links.length; i++) {
+  const article = await scrapeArticle(links[i], i);
+  articles.push(article);
+}
+
+await writeFile("./articles.json", JSON.stringify(articles, null, 2), "utf-8");*/
+
+articles.push(
+  await scrapeArticle(
+    "/europoslankyne-testuje-ai-aplikace-ktere-jsou-fajn-a-na-ktere-si-dat-pozor/",
+    0
+  )
 );
+articles.push(
+  await scrapeArticle("/umela-inteligence-aneb-smirovani-na-steroidech/", 1)
+);
+//console.log(articles);
+
+writeFile("./articles.json", JSON.stringify(articles, null, 2), "utf-8");

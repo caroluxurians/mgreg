@@ -10,7 +10,7 @@ const ArticlePreview = ({ article }: { article: ArticleType }) => {
       </div>
       <div className="w-40 place-self-center md:order-1">
         <Image
-          src="/article-placeholder-image.png"
+          src={article.img}
           width={420}
           height={281}
           alt="article cover image"

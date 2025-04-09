@@ -58,7 +58,15 @@ const scrapeArticle = async (link, index) => {
     id: index,
     link,
     img: coverImage,
-    date: $(".article-content > header .date").text(),
+    date:
+      $(".article-content > header .date")
+        .text()
+        .match(/\d{2}\.\d{2}\.\d{4}/)?.[0]
+        ?.replace(
+          /^(\d{2})\.(\d{2})\.(\d{4})$/,
+          (_, d, m, y) => `${parseInt(d)}. ${parseInt(m)}. ${y}`
+        ) || "",
+
     title: $(".article-content > header h1").text(),
     perex: $(".article-content > header > p").text(),
     content: $(".article-content > section").html(),
@@ -73,16 +81,3 @@ for (let i = 0; i < links.length; i++) {
 }
 
 await writeFile("./articles.json", JSON.stringify(articles, null, 2), "utf-8");
-
-/*articles.push(
-  await scrapeArticle(
-    "/europoslankyne-testuje-ai-aplikace-ktere-jsou-fajn-a-na-ktere-si-dat-pozor/",
-    0
-  )
-);
-articles.push(
-  await scrapeArticle("/umela-inteligence-aneb-smirovani-na-steroidech/", 1)
-);*/
-//console.log(articles);
-
-// writeFile("./articles.json", JSON.stringify(articles, null, 2), "utf-8");

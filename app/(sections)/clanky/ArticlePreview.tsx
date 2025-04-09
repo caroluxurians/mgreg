@@ -3,6 +3,15 @@ import Link from "next/link";
 import ArticleType from "@/app/types/article";
 
 const ArticlePreview = ({ article }: { article: ArticleType }) => {
+  const perexPreview = (text: string, maxLength: number = 150) => {
+    if (!text) return "";
+    return text.length > maxLength
+      ? `${text.slice(0, maxLength).trimEnd()}...`
+      : text;
+  };
+  const preview = perexPreview(article.perex);
+  console.log(preview);
+
   return (
     <div className="text-medium-pink grid grid-cols-2 gap-3 border-b border-light-pink pb-6 md:flex">
       <div className="font-black col-span-2 text-[15px]/[18px]">
@@ -19,7 +28,7 @@ const ArticlePreview = ({ article }: { article: ArticleType }) => {
         />
       </div>
       <div className="text-[14px] w-40">
-        {article.perex}
+        {preview}
       </div>
       <div className="place-self-start ml-2 italic flex flex-col items-center text-[14px] gap-1 -mt-2">
         <div>

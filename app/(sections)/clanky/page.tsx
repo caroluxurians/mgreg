@@ -15,24 +15,26 @@ const Clanky = async () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="main-width mx-auto">
+        <div className="main-width mx-auto relative">
           <div className="font-heading title-font-size text-medium-pink border-b border-light-pink my-7 pb-3">
             Moje články
           </div>
-          <Sticker
-            backgroundColor="bg-[#FCDBB4]"
-            textColor="text-[#8D134A]"
-            outlineColor="outline-[#FCDBB4]"
-            rotate="-rotate-30"
-            textSize="text-[22px]/[22px] tracking-wide"
-            additionalStyles="pt-1"
-            content={(
-              <>
-                Nejnovější <br />
-                článek
-              </>
-            )}
-          />
+          <div className="absolute top-38 -left-2 sm:top-42">
+            <Sticker
+              backgroundColor="bg-[#FCDBB4]"
+              textColor="text-[#8D134A]"
+              outlineColor="outline-[#FCDBB4]"
+              rotate="-rotate-30"
+              textSize="text-[22px]/[22px] tracking-wide"
+              additionalStyles="pt-1 w-14"
+              content={(
+                <>
+                  Nejnovější <br />
+                  článek
+                </>
+              )}
+            />
+          </div>
           <div className="flex flex-col gap-6 mb-6 mx-1">
             {data.map((article: ArticleType) => (
               <ArticlePreview key={article.id} article={article} />

@@ -16,10 +16,10 @@ const Clanky = async () => {
       <Header />
       <main className="flex flex-col">
         <div className="main-width mx-auto relative">
-          <div className="font-heading title-font-size text-medium-pink border-b border-light-pink my-7 pb-3">
+          <div className="font-heading title-font-size text-medium-pink border-b border-light-pink my-7 pb-3 md:pb-4 lg:mt-9 lg:mb-8 lg:pb-6">
             Moje články
           </div>
-          <div className="absolute top-38 -left-2 sm:top-42 md:top-26">
+          <div className="absolute top-38 -left-2 sm:top-42 md:top-26 lg:top-32 lg:-left-5">
             <Sticker
               backgroundColor="bg-[#FCDBB4]"
               textColor="text-[#8D134A]"

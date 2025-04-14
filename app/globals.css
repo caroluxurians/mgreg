@@ -58,12 +58,21 @@
 
   .article {
     a {
-      @apply underline
+      @apply underline decoration-medium-pink
     }
 
     a b {
-      @apply font-normal
+      @apply font-normal text-[20px]/[40px]
     }
+
+    p {
+      @apply mb-4
+    }
+
+    img {
+      @apply mt-6 mb-6
+    }
+
   }
 }
 

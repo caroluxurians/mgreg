@@ -19,7 +19,7 @@ const Clanky = async () => {
           <div className="font-heading title-font-size text-medium-pink border-b border-light-pink my-7 pb-3 md:pb-4 lg:mt-9 lg:mb-8 lg:pb-6">
             Moje články
           </div>
-          <div className="absolute top-38 -left-2 sm:top-42 md:top-26 lg:top-32 lg:-left-5 xl:top-35 xl:-left-11 2xl:top-42">
+          <div className="absolute top-38 -left-2 sm:top-42 md:top-26 lg:top-32 lg:-left-5 xl:top-35 xl:-left-11 2xl:top-42 3xl:top-46">
             <Sticker
               backgroundColor="bg-[#FCDBB4]"
               textColor="text-[#8D134A]"

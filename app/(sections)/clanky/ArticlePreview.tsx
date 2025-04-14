@@ -18,7 +18,7 @@ const ArticlePreview = ({ article }: { article: ArticleType }) => {
   const previewL = perexPreview(article.perex, 100);
 
   return (
-    <div className="text-medium-pink grid grid-cols-2 gap-3 border-b border-light-pink pb-6 sm:gap-4 sm:pb-6 md:flex md:justify-between lg:w-200 xl:w-210 2xl:w-250 2xl:pb-8 2xl:pt-1">
+    <div className="text-medium-pink grid grid-cols-2 gap-3 border-b border-light-pink pb-6 sm:gap-4 sm:pb-6 md:flex md:justify-between lg:w-200 xl:w-210 2xl:w-250 2xl:pb-8 2xl:pt-1 3xl:w-270">
       <div className="font-black col-span-2 text-[15px]/[20px] sm:text-[18px]/[26px] sm:ml-3 md:hidden">
         {article.title}
       </div>
@@ -38,21 +38,21 @@ const ArticlePreview = ({ article }: { article: ArticleType }) => {
       <div className="text-[16px]/[24px] w-60 hidden sm:flex md:hidden">
         {previewS}
       </div>
-      <div className="place-self-start self-end ml-2 italic flex flex-col items-center text-[14px] gap-1 sm:text-[16px] md:self-start xl:text-[18px] 2xl:text-[19px]">
+      <div className="place-self-start self-end ml-2 italic flex flex-col items-center text-[14px] gap-1 sm:text-[16px] md:self-start xl:text-[18px] 2xl:text-[19px] 3xl:text-[20px]">
         {article.date}
       </div>
-      <div className="hidden md:flex flex-col w-70 gap-2 lg:w-74 xl:w-82 2xl:w-90 2xl:gap-4 2xl:mr-14">
-        <div className="hidden md:flex font-black text-[16px]/[22px] lg:w-70 lg:text-[18px]/[24px] xl:text-[20px]/[26px] xl:w-74 2xl:text-[22px]/[28px] 2xl:w-98">
+      <div className="hidden md:flex flex-col w-70 gap-2 lg:w-74 xl:w-82 2xl:w-90 2xl:gap-4 2xl:mr-14 3xl:w-auto 3xl:mr-0">
+        <div className="hidden md:flex font-black text-[16px]/[22px] lg:w-70 lg:text-[18px]/[24px] xl:text-[20px]/[26px] xl:w-74 2xl:text-[22px]/[28px] 2xl:w-98 3xl:text-[24px]/[30px] 3xl:w-100">
           {article.title}
         </div>
         <div className="hidden md:flex lg:hidden text-[15px]/[22px]">
           {preview}
         </div>
-        <div className="hidden lg:flex text-[16px] w-74 xl:w-82 xl:text-[18px]/[25px] 2xl:text-[19px]">{previewL}</div>
+        <div className="hidden lg:flex text-[16px] w-74 xl:w-82 xl:text-[18px]/[25px] 2xl:text-[19px] 3xl:text-[20px]/[27px] 3xl:w-110">{previewL}</div>
       </div>
       <Link
         href={`/clanky${article.link}`}
-        className="bg-medium-pink rounded-full text-[14px] text-white font-semibold italic text-center w-fit h-fit place-self-end pr-4 pl-3.5 py-1 mr-6 sm:text-[16px] md:self-start lg:mt-1 xl:text-[17px] xl:mt-0 xl:pr-4.5 xl:pl-4 xl:px-4.5 2xl:text-[19px] 2xl:mt-1 3xl:px-7 3xl:py-2.5"
+        className="bg-medium-pink rounded-full text-[14px] text-white font-semibold italic text-center w-fit h-fit place-self-end pr-4 pl-3.5 py-1 mr-6 sm:text-[16px] md:self-start lg:mt-1 xl:text-[17px] xl:mt-0 xl:pr-4.5 xl:pl-4 xl:px-4.5 2xl:text-[19px] 2xl:mt-1 3xl:text-[20px] 3xl:px-7 3xl:py-2.5 3xl:mt-0"
       >
         číst
       </Link>

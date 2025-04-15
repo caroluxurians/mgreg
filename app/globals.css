@@ -62,15 +62,15 @@
     }
 
     a b {
-      @apply font-normal text-[20px]/[40px]
+      @apply font-normal text-[20px]/[40px] md:text-[24px]/[48px]
     }
 
     p {
-      @apply mb-4
+      @apply mb-4 text-base sm:w-94 sm:mx-auto md:w-110
     }
 
     img {
-      @apply mt-6 mb-6
+      @apply mt-6 mb-6 sm:mx-auto md:mb-8
     }
 
   }

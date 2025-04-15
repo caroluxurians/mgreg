@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type XShareButtonProps = {
   url: string
   text?: string
@@ -15,13 +17,12 @@ const XShareButton = ({ url, text = "" }: XShareButtonProps) => {
       href={shareUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 px-4 py-2 rounded bg-blue-500 text-white font-semibold hover:bg-blue-600"
+      className="flex"
       aria-label="Share on X"
     >
-      <svg width="20" height="20" fill="currentColor" aria-hidden="true">
-        <use xlinkHref="#icon-x" />
-      </svg>
-      Share on X
+      <div>Share on</div>
+      <Image src="/x-light.svg" width={20} height={20} alt="share on X button" />
+
     </a>
   );
 };

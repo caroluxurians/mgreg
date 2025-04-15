@@ -3,7 +3,19 @@ import HeaderMobile from "@/app/components/HeaderMobile";
 import { readFile } from "fs/promises";
 import Link from "next/link";
 import ArticleType from "@/app/types/article";
-import XShareButton from "./XShareButton";
+import { Metadata } from "next";
+
+export async function generateMetadata(
+  { params }: { params: { slug: string } },
+): Promise<Metadata> {
+  const file = await readFile(`${process.cwd()}/articles.json`, "utf8");
+  const data = JSON.parse(file);
+  const article = data.find((obj: ArticleType) => obj.link.includes(params.slug));
+  return {
+    title: article?.title || "Markéta Gregorová",
+    description: article?.perex,
+  };
+}
 
 const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const file = await readFile(`${process.cwd()}/articles.json`, "utf8");
@@ -14,6 +26,7 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const baseUrl = "www.gregorova.eu";
   const urlForXSharing = `${baseUrl}${article.link}`;
   console.log(urlForXSharing);
+
   return (
     <div className="bg-beige">
       <HeaderMobile />
@@ -38,7 +51,8 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
           >
             zpět na články
           </Link>
-          <XShareButton url={urlForXSharing} text={article.title} />
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" className="twitter-share-button" data-show-count="false">Tweet</a>
+          <script async src="https://platform.twitter.com/widgets.js" />
         </div>
       </main>
 

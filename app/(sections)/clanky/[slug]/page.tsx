@@ -3,6 +3,7 @@ import HeaderMobile from "@/app/components/HeaderMobile";
 import { readFile } from "fs/promises";
 import Link from "next/link";
 import ArticleType from "@/app/types/article";
+import XShareButton from "./XShareButton";
 
 const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const file = await readFile(`${process.cwd()}/articles.json`, "utf8");
@@ -10,7 +11,9 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
   const article = data.find((obj: ArticleType) => obj.link.includes(slug));
   const markup = { __html: article.content };
-
+  const baseUrl = "www.gregorova.eu";
+  const urlForXSharing = `${baseUrl}${article.link}`;
+  console.log(urlForXSharing);
   return (
     <div className="bg-beige">
       <HeaderMobile />
@@ -35,6 +38,7 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
           >
             zpět na články
           </Link>
+          <XShareButton url={urlForXSharing} text={article.title} />
         </div>
       </main>
 

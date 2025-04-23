@@ -1,6 +1,12 @@
+import Link from "next/link";
 import SocialsSet from "./SocialsSet";
 
-export const sections = ["Pro média", "Moje práce", "O mně", "Články"];
+export const sections = [
+  { sectionName: "Pro média", sectionHref: "pro-media" },
+  { sectionName: "Moje práce", sectionHref: "moje-prace" },
+  { sectionName: "O mně", sectionHref: "o-mne" },
+  { sectionName: "Články", sectionHref: "clanky" },
+];
 
 const HeaderLanding = () => {
   return (
@@ -37,7 +43,11 @@ const HeaderLanding = () => {
         3xl:"
         >
           {sections.map((section) => (
-            <div className="flex" key={section}>{section}</div>
+            <Link href={section.sectionHref}>
+              <div className="flex hover:text-white" key={section.sectionName}>
+                {section.sectionName}
+              </div>
+            </Link>
           ))}
 
         </div>

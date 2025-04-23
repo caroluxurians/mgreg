@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import classNames from "classnames";
 import useCloseOnOutsideClick from "@/hooks/useCloseOnOutsideClick";
+import Link from "next/link";
 import { sections } from "./Header";
 
 const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: string }) => {
@@ -41,7 +42,10 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
       <div className={classNames(!isOpen && "hidden", "absolute z-5 right-5 top-17 font-heading text-medium-pink text-[17px] tracking-[0.34px] flex flex-col text-end")}>
         <div>
           {sections.map((section) => (
-            <div key={section} className="hover:text-white">{section}</div>
+            <Link href={section.sectionHref}>
+              <div key={section.sectionName} className="hover:text-white">{section.sectionName}
+              </div>
+            </Link>
           ))}
         </div>
 

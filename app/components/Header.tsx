@@ -1,7 +1,13 @@
 import classNames from "classnames";
+import Link from "next/link";
 import SocialsSet from "./SocialsSet";
 
-export const sections = ["Pro média", "Moje práce", "O mně", "Články"];
+export const sections = [
+  { sectionName: "Pro média", sectionHref: "pro-media" },
+  { sectionName: "Moje práce", sectionHref: "moje-prace" },
+  { sectionName: "O mně", sectionHref: "o-mne" },
+  { sectionName: "Články", sectionHref: "clanky" },
+];
 
 type HeaderProps = {
   titleColor?: string
@@ -44,7 +50,11 @@ const Header = ({ titleColor = "text-medium-pink", sectionsColor = "text-medium-
         3xl:`)}
         >
           {sections.map((section) => (
-            <div className="flex" key={section}>{section}</div>
+            <Link href={section.sectionHref}>
+              <div className="flex" key={section.sectionName}>
+                {section.sectionName}
+              </div>
+            </Link>
           ))}
         </div>
         <SocialsSet color={colorTheme} classNames="hidden lg:flex 2xl:pr-0" />

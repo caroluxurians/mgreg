@@ -1,8 +1,7 @@
 import classNames from "classnames";
 import SocialsSet from "./SocialsSet";
 
-export const sectionsMobile = ["Pro média", "Moje práce", "O mně", "Videa", "Články"];
-const sectionsDesktop = ["Pro média", "Moje práce", "O mně", "Archiv"];
+export const sections = ["Pro média", "Moje práce", "O mně", "Články"];
 
 type HeaderProps = {
   titleColor?: string
@@ -44,12 +43,8 @@ const Header = ({ titleColor = "text-medium-pink", sectionsColor = "text-medium-
         2xl:text-[30px] 2xl:tracking-[0.3px] 2xl:gap-10
         3xl:`)}
         >
-          {sectionsMobile.map((section) => (
-            <div className="flex md:hidden" key={section}>{section}</div>
-          ))}
-
-          {sectionsDesktop.map((section) => (
-            <div className="hidden md:flex" key={section}>{section}</div>
+          {sections.map((section) => (
+            <div className="flex" key={section}>{section}</div>
           ))}
         </div>
         <SocialsSet color={colorTheme} classNames="hidden lg:flex 2xl:pr-0" />

@@ -1,5 +1,8 @@
+"use client";
+
 import classNames from "classnames";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import SocialsSet from "./SocialsSet";
 
 export const sections = [
@@ -9,13 +12,10 @@ export const sections = [
   { sectionName: "Články", sectionHref: "clanky" },
 ];
 
-type HeaderProps = {
-  titleColor?: string
-  sectionsColor?: string
-  colorTheme?: string
-};
+const Header = () => {
+  const pathname = usePathname();
+  const colorTheme = pathname === "/o-mne" ? "light" : "dark";
 
-const Header = ({ titleColor = "text-medium-pink", sectionsColor = "text-medium-pink", colorTheme = "dark" }: HeaderProps) => {
   return (
     <header className="w-full hidden md:flex">
       <div
@@ -30,7 +30,7 @@ const Header = ({ titleColor = "text-medium-pink", sectionsColor = "text-medium-
         2xl:mx-auto 2xl:px-0"
       >
         <div
-          className={classNames(`${titleColor} text-[62px] tracking-[0.62px]
+          className={classNames(pathname === "/o-mne" ? "text-beige" : "text-medium-pink", `text-[62px] tracking-[0.62px]
           sm:text-[68px] sm:tracking-[0.68px]
           md:text-[30px] md:tracking-[0.3px] xl:text-[40px] xl:tracking-[0.4px]
           2xl:mx-0
@@ -40,7 +40,7 @@ const Header = ({ titleColor = "text-medium-pink", sectionsColor = "text-medium-
         </div>
 
         <div
-          className={classNames(`${sectionsColor} flex items-center leading-none
+          className={classNames(pathname === "/o-mne" ? "text-light-pink" : "text-medium-pink", `flex items-center leading-none
         text-[24px] tracking-[0.48px]
         gap-[11px] sm:gap-4
         md:gap-6 md:items-end md:text-[25px] md:tracking-[0.5px]
@@ -51,7 +51,7 @@ const Header = ({ titleColor = "text-medium-pink", sectionsColor = "text-medium-
         >
           {sections.map((section) => (
             <Link href={section.sectionHref}>
-              <div className="flex" key={section.sectionName}>
+              <div className={classNames("flex", pathname === "/clanky" ? "hover:text-light-pink" : "hover:text-white")} key={section.sectionName}>
                 {section.sectionName}
               </div>
             </Link>

@@ -25,7 +25,7 @@ const Clanky = async ({ searchParams }: { searchParams: { page?: string } }) => 
       <Header />
       <main className="flex flex-col">
         <div className="main-width mx-auto relative">
-          <div className="font-heading title-font-size text-medium-pink border-b border-light-pink my-7 pb-3 md:pb-4 lg:mt-9 lg:mb-8 lg:pb-6">
+          <div className="font-heading title-font-size text-medium-pink border-b border-light-pink mt-5 mb-7 pb-3 md:pb-4 md:mt-6 lg:mt-9 lg:mb-8 lg:pb-6">
             Moje články
           </div>
           {page === 1
@@ -48,7 +48,7 @@ const Clanky = async ({ searchParams }: { searchParams: { page?: string } }) => 
                 />
               </div>
             )}
-          <div className="flex flex-col gap-6 mb-7 mx-1">
+          <div className="flex flex-col gap-6 mb-7 mx-1 sm:mb-8 md:mb-10 2xl:mb-12">
             {paginatedArticles.map((article: ArticleType) => (
               <ArticlePreview key={article.id} article={article} />
             ))}

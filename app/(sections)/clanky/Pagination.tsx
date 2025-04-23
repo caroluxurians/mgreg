@@ -39,7 +39,7 @@ const Pagination = ({ numberOfArticles, perPage = 10 }: PaginationProps) => {
   const visiblePages = arrayOfPages.slice(start - 1, end);
 
   return (
-    <div className="mb-10 flex justify-center gap-2">
+    <div className="mb-10 flex justify-center gap-2 sm:mb-16 md:mb-20 xl:mb-22">
       {currentPage > 1 && (
         <button
           type="button"
@@ -51,6 +51,7 @@ const Pagination = ({ numberOfArticles, perPage = 10 }: PaginationProps) => {
             height={25}
             width={25}
             alt="arrow back"
+            className="sm:w-7"
           />
         </button>
       )}
@@ -59,7 +60,7 @@ const Pagination = ({ numberOfArticles, perPage = 10 }: PaginationProps) => {
           type="button"
           key={num}
           onClick={() => handlePageClick(num)}
-          className={`font-heading text-3xl px-2 ${num === currentPage
+          className={`font-heading text-3xl w-6 sm:w-7 sm:text-4xl ${num === currentPage
             ? "bg-medium-pink text-white"
             : "text-medium-pink"} hover:bg-light-pink transition duration-200 cursor-pointer`}
         >
@@ -77,7 +78,7 @@ const Pagination = ({ numberOfArticles, perPage = 10 }: PaginationProps) => {
             height={25}
             width={25}
             alt="arrow forward"
-            className="transition-transform rotate-180"
+            className="transition-transform rotate-180 sm:w-7"
           />
         </button>
       )}

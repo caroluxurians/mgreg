@@ -15,6 +15,7 @@ export const sections = [
 const Header = () => {
   const pathname = usePathname();
   const colorTheme = pathname === "/o-mne" ? "light" : "dark";
+  const isClanky = pathname === "/clanky";
 
   return (
     <header className="w-full hidden md:flex">
@@ -51,7 +52,16 @@ const Header = () => {
         >
           {sections.map((section) => (
             <Link href={section.sectionHref}>
-              <div className={classNames("flex", pathname === "/clanky" ? "hover:text-light-pink" : "hover:text-white")} key={section.sectionName}>
+              <div
+                className={classNames(
+                  "flex",
+                  isClanky ? "hover:text-light-pink" : "hover:text-white",
+                  pathname === `/${section.sectionHref}`
+                    ? (isClanky ? "text-light-pink" : "text-white")
+                    : "",
+                )}
+                key={section.sectionName}
+              >
                 {section.sectionName}
               </div>
             </Link>

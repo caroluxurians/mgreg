@@ -55,7 +55,7 @@ const Header = () => {
               <div
                 className={classNames(
                   "flex",
-                  isClanky ? "hover:text-light-pink" : "hover:text-white",
+                  "hover:text-[#DF7AAE]",
                   pathname === `/${section.sectionHref}`
                     ? (isClanky ? "text-light-pink" : "text-white")
                     : "",

@@ -4,11 +4,20 @@ import HeaderMobile from "@/app/components/HeaderMobile";
 import ArticleType from "@/app/types/article";
 import ArticlePreview from "./ArticlePreview";
 import Sticker from "../pro-media/Sticker";
+import Pagination from "./Pagination";
 
-const Clanky = async () => {
+const Clanky = async ({ searchParams }: { searchParams: { page?: string } }) => {
   const file = await readFile(`${process.cwd()}/articles.json`, "utf8");
   const data = JSON.parse(file);
-  console.log(data);
+
+  const numberOfArticles = data.length;
+  const page = Number(searchParams.page) || 1;
+  const perPage = 10;
+
+  const start = (page - 1) * perPage;
+  const end = start + perPage;
+
+  const paginatedArticles = data.slice(start, end);
 
   return (
     <div className="bg-beige">
@@ -36,11 +45,11 @@ const Clanky = async () => {
             />
           </div>
           <div className="flex flex-col gap-6 mb-6 mx-1">
-            {data.map((article: ArticleType) => (
+            {paginatedArticles.map((article: ArticleType) => (
               <ArticlePreview key={article.id} article={article} />
             ))}
           </div>
-          <div className="mb-10 flex justify-center">1 2 3 4 5 6</div>
+          <Pagination numberOfArticles={numberOfArticles} />
         </div>
       </main>
     </div>

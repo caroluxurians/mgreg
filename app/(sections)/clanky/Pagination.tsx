@@ -26,7 +26,6 @@ const Pagination = ({ numberOfArticles, perPage = 10 }: PaginationProps) => {
   };
 
   const arrayOfPages = Array.from({ length: numberOfPages }, (_, i) => i + 1);
-  console.log(arrayOfPages);
 
   const maxVisible = 7;
   let start = Math.max(1, currentPage - Math.floor(maxVisible / 2));
@@ -45,7 +44,7 @@ const Pagination = ({ numberOfArticles, perPage = 10 }: PaginationProps) => {
         <button
           type="button"
           onClick={() => handlePageClick(currentPage - 1)}
-          className="px-3 text-2xl text-medium-pink hover:text-white hover:bg-medium-pink rounded"
+          className="px-2 hover:bg-light-pink transition duration-200"
         >
           <Image
             src="/arrow-pagination.svg"
@@ -62,7 +61,7 @@ const Pagination = ({ numberOfArticles, perPage = 10 }: PaginationProps) => {
           onClick={() => handlePageClick(num)}
           className={`font-heading text-3xl px-2 ${num === currentPage
             ? "bg-medium-pink text-white"
-            : "text-medium-pink"} hover:bg-pink-200 transition cursor-pointer`}
+            : "text-medium-pink"} hover:bg-light-pink transition duration-200 cursor-pointer`}
         >
           {num}
         </button>
@@ -71,7 +70,7 @@ const Pagination = ({ numberOfArticles, perPage = 10 }: PaginationProps) => {
         <button
           type="button"
           onClick={() => handlePageClick(currentPage + 1)}
-          className="px-3 text-2xl text-medium-pink hover:text-white hover:bg-medium-pink rounded"
+          className="px-2 hover:bg-light-pink transition duration-200"
         >
           <Image
             src="/arrow-pagination.svg"

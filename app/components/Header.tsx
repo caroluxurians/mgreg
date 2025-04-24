@@ -53,7 +53,7 @@ const Header = () => {
         3xl:`)}
         >
           {sections.map((section) => (
-            <Link href={section.sectionHref}>
+            <Link href={`/${section.sectionHref}`} key={section.sectionName}>
               <div
                 className={classNames(
                   "flex",

@@ -66,7 +66,7 @@ const ProMedia = () => {
               <PressRelease index={3} />
               <PressRelease index={4} />
             </div>
-            <div className="text-white bg-medium-pink  hover:text-medium-pink hover:bg-light-pink transition-colors duration-100 rounded-full italic font-semibold text-[13px] text-center w-fit pl-4 pr-5 py-1 mx-auto sm:text-[16px] sm:pl-5 sm:pr-6 sm:py-1.5 md:text-[18px] md:pr-8 md:pl-6 2xl:text-[20px] 2xl:pl-7 2xl:pr-9 2xl:py-2">
+            <div className="text-white bg-medium-pink hover:text-medium-pink hover:bg-light-pink transition-colors duration-100 rounded-full italic font-semibold text-[13px] text-center w-fit pl-4 pr-5 py-1 mx-auto sm:text-[16px] sm:pl-5 sm:pr-6 sm:py-1.5 md:text-[18px] md:pr-8 md:pl-6 2xl:text-[20px] 2xl:pl-7 2xl:pr-9 2xl:py-2">
               více tiskových zpráv
             </div>
           </div>

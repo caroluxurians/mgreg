@@ -61,10 +61,22 @@ const MojePrace = () => {
           </div>
           <div className="text-white lg:mx-auto mx-4 sm:gap-4 md:mx-auto lg:gap-0">
             <div className="flex flex-col items-center md:flex-row md:flex-wrap justify-center md:w-[700px] lg:w-[770px] gap-3 xl:gap-5 2xl:gap-6 xl:w-[900px]">
-              <LabelDark content="INTA — Mezinárodní obchod" />
-              <LabelDark content="ITRE — Průmysl, energetika a obchod" />
-              <LabelDark content=" AFCO — Ústavní záležitosti" />
-              <LabelDark content=" LIBE — Občanské svobody a spravedlnost" />
+              <LabelDark
+                content="INTA — Mezinárodní obchod"
+                link="https://www.europarl.europa.eu/committees/cs/inta/home/highlights"
+              />
+              <LabelDark
+                content="ITRE — Průmysl, energetika a obchod"
+                link="https://www.europarl.europa.eu/committees/cs/itre/home/highlights"
+              />
+              <LabelDark
+                content="AFCO — Ústavní záležitosti"
+                link="https://www.europarl.europa.eu/committees/cs/afco/home/highlights"
+              />
+              <LabelDark
+                content="LIBE — Občanské svobody a spravedlnost"
+                link="https://www.europarl.europa.eu/committees/cs/libe/home/highlights"
+              />
             </div>
 
           </div>

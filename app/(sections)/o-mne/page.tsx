@@ -161,7 +161,10 @@ const OMne = () => {
               výdaje, jak ho využíváme a jaké je aktuální čerpání?<br />
               Vše naleznete přehledně na
             </div>
-            <LabelDark content="stránkách Pirátů" />
+            <LabelDark
+              content="stránkách Pirátů"
+              link="https://europarlament.pirati.cz/hospodareni-v-evropskem-parlamentu/"
+            />
           </div>
           <div className="w-40 absolute right-7 bottom-6 sm:w-52 sm:bottom-7 sm:right-11 md:w-58 md:bottom-8 md:right-14 lg:w-52 lg:top-20 lg:right-10 xl:w-70 xl:right-14 2xl:w-110 2xl:right-0 3xl:w-115 3xl:right-10 3xl:top-24">
             <Image

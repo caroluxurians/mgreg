@@ -74,7 +74,6 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
               href="/clanky"
               className="text-white bg-medium-pink hover:text-medium-pink hover:bg-light-pink transition-colors duration-100 rounded-full text-sm  font-semibold italic text-center w-fit h-fit px-4 py-1 mr-6 md:text-base lg:text-lg 2xl:text-xl 3xl:px-7 3xl:py-2.5"
             >
-
               zpět na články
             </Link>
             <div className="flex items-center gap-4">

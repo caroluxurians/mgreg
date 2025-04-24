@@ -19,9 +19,9 @@ const ArticlePreview = ({ article }: { article: ArticleType }) => {
 
   return (
     <div className="text-medium-pink grid grid-cols-2 gap-3 border-b border-light-pink pb-6 sm:gap-4 sm:pb-6 md:flex md:justify-between lg:w-200 xl:w-210 2xl:w-250 2xl:pb-8 2xl:pt-1 3xl:w-270">
-      <div className="font-black col-span-2 text-[15px]/[20px] sm:text-[18px]/[26px] sm:ml-3 md:hidden">
+      <Link href={`/clanky${article.link}`} className="font-black col-span-2 text-[15px]/[20px] hover:underline decoration-medium-pink sm:text-[18px]/[26px] sm:ml-3 md:hidden">
         {article.title}
-      </div>
+      </Link>
       <div className="place-self-center md:place-self-start">
         <Image
           src={article.img}
@@ -42,9 +42,9 @@ const ArticlePreview = ({ article }: { article: ArticleType }) => {
         {article.date}
       </div>
       <div className="hidden md:flex flex-col w-70 gap-2 lg:w-74 xl:w-82 2xl:w-90 2xl:gap-4 2xl:mr-14 3xl:w-auto 3xl:mr-0">
-        <div className="hidden md:flex font-black text-[16px]/[22px] lg:w-70 lg:text-[18px]/[24px] xl:text-[20px]/[26px] xl:w-74 2xl:text-[22px]/[28px] 2xl:w-98 3xl:text-[24px]/[30px] 3xl:w-100">
+        <Link href={`/clanky${article.link}`} className="hidden md:flex font-black text-[16px]/[22px] hover:underline decoration-medium-pink lg:w-70 lg:text-[18px]/[24px] xl:text-[20px]/[26px] xl:w-74 2xl:text-[22px]/[28px] 2xl:w-98 3xl:text-[24px]/[30px] 3xl:w-100">
           {article.title}
-        </div>
+        </Link>
         <div className="hidden md:flex lg:hidden text-[15px]/[22px]">
           {preview}
         </div>

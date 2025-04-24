@@ -13,8 +13,8 @@ const SocialsSet = ({ color = "dark", classNames = "" }: { color?: string, class
         ? (
           <>
             <InstagramIcon className={classNameDark} />
-            <TwitterIcon />
-            <YoutubeIcon />
+            <TwitterIcon className={classNameDark} />
+            <YoutubeIcon className={classNameDark} />
             <FacebookIcon className={classNameDark} />
 
           </>
@@ -22,8 +22,8 @@ const SocialsSet = ({ color = "dark", classNames = "" }: { color?: string, class
         : (
           <>
             <InstagramIcon className={classNameLight} />
-            <TwitterIcon theme="light" />
-            <YoutubeIcon theme="light" />
+            <TwitterIcon className={classNameLight} />
+            <YoutubeIcon className={classNameLight} />
             <FacebookIcon className={classNameLight} />
           </>
         )}

@@ -30,15 +30,17 @@ const Header = () => {
         xl:h-auto
         2xl:mx-auto 2xl:px-0"
       >
-        <div
-          className={classNames(pathname === "/o-mne" ? "text-beige" : "text-medium-pink", `text-[62px] tracking-[0.62px]
+        <Link href="/">
+          <div
+            className={classNames(pathname === "/o-mne" ? "text-beige" : "text-medium-pink", `hover:text-[#DF7AAE] text-[62px] tracking-[0.62px]
           sm:text-[68px] sm:tracking-[0.68px]
           md:text-[30px] md:tracking-[0.3px] xl:text-[40px] xl:tracking-[0.4px]
           2xl:mx-0
           leading-none`)}
-        >
-          Markéta Gregorová
-        </div>
+          >
+            Markéta Gregorová
+          </div>
+        </Link>
 
         <div
           className={classNames(pathname === "/o-mne" ? "text-light-pink" : "text-medium-pink", `flex items-center leading-none

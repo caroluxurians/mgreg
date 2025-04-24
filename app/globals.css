@@ -12,6 +12,7 @@
   /* bonusová reddish pink pro lineární oddělovače ale rozhodně ne všechny*/
   --color-red-pink-light: #E4A2C9;
   --color-beige: #F4DFDF;
+  --color-header-hover-pink: #DF7AAE;
   --breakpoint-3xl: 120rem;
 
 }

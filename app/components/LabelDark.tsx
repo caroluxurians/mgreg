@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const LabelDark = ({ content, link = "" }: { content: string, link?: string }) => {
+const LabelDark = ({ content, link }: { content: string, link: string }) => {
   return (
     <Link href={link} target="_blank">
       <div

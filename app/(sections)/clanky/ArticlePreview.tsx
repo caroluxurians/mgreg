@@ -52,7 +52,7 @@ const ArticlePreview = ({ article }: { article: ArticleType }) => {
       </div>
       <Link
         href={`/clanky${article.link}`}
-        className="bg-medium-pink rounded-full text-[14px] text-white font-semibold italic text-center w-fit h-fit place-self-end pr-4 pl-3.5 py-1 mr-6 sm:text-[16px] md:self-start lg:mt-1 xl:text-[17px] xl:mt-0 xl:pr-4.5 xl:pl-4 xl:px-4.5 2xl:text-[19px] 2xl:mt-1 3xl:text-[20px] 3xl:px-7 3xl:py-2.5 3xl:mt-0"
+        className="text-white bg-medium-pink hover:text-medium-pink hover:bg-light-pink transition-colors duration-100 rounded-full text-[14px] font-semibold italic text-center w-fit h-fit place-self-end pr-4 pl-3.5 py-1 mr-6 sm:text-[16px] md:self-start lg:mt-1 xl:text-[17px] xl:mt-0 xl:pr-4.5 xl:pl-4 xl:px-4.5 2xl:text-[19px] 2xl:mt-1 3xl:text-[20px] 3xl:px-7 3xl:py-2.5 3xl:mt-0"
       >
         číst
       </Link>

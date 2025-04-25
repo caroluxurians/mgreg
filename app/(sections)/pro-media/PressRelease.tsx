@@ -8,7 +8,7 @@ const PressRelease = ({ index }: { index: number }) => {
         „Pravda bolí“ – startuje kampaň europoslankyně Gregorové věnovaná dezinformacím
       </div>
       <div className="flex flex-col text-[12px] italic w-25 items-end gap-2 sm:text-[16px] pr-1 md:hidden lg:flex lg:mt-3 lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 2xl:mb-6 2xl:gap-3 3xl:text-[20px] 3xl:w-auto 3xl:gap-5 3xl:mt-10">
-        <div className="bg-medium-pink rounded-full text-white font-semibold text-center w-fit px-4 py-1 3xl:px-7 3xl:py-2.5">
+        <div className="text-white bg-medium-pink hover:text-medium-pink hover:bg-light-pink transition-colors duration-100 rounded-full font-semibold text-center w-fit px-4 py-1 3xl:px-7 3xl:py-2.5">
           číst
         </div>
         <div>

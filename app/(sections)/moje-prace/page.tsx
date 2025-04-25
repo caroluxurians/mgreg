@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import LabelDark from "../../components/LabelDark";
 import LabelTransparent from "../../components/LabelTransparent";
 import Header from "../../components/Header";
@@ -104,7 +105,15 @@ const MojePrace = () => {
             a členkou delegací pro vztahy s Ruskem, Běloruskem, Arménií,<br />
             Azerbajdžánem a Gruzií. Výstupy na plénu, odpracovanou<br />
             legislativu i interpelace na Komisi či Radu si můžete<br />
-            prohlédnout na mém p<span className="underline decoration-medium-pink">rofilu</span>.<br />
+            prohlédnout na mém p
+            <Link
+              href="https://www.europarl.europa.eu/meps/cs/197549/MARKETA_GREGOROVA/home"
+              target="_blank"
+            >
+              <span className="underline decoration-medium-pink">rofilu</span>
+            </Link>
+
+            .<br />
           </div>
         </div>
       </main>

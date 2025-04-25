@@ -62,7 +62,7 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
               {article.date}
             </div>
           </div>
-          <h1 className="font-heading text-4xl mb-3 sm:text-5xl sm:w-110ěwqsačšesrěqšwečěwšeč+ěěeeěšěě sm:mx-auto md:text-6xl md:w-162 md:mb-4 lg:text-7xl lg:w-196 2xl:text-8xl 2xl:w-270 3xl:text-9xl 3xl:w-350 3xl:mb-8">
+          <h1 className="font-heading text-4xl mb-3 sm:text-5xl sm:w-110 sm:mx-auto md:text-6xl md:w-162 md:mb-4 lg:text-7xl lg:w-196 2xl:text-8xl 2xl:w-270 3xl:text-9xl 3xl:w-350 3xl:mb-8">
             {article.title}
           </h1>
           <div className="font-bold leading-[1.39] mb-2 text-lg sm:w-94 sm:mx-auto sm:mb-1 md:w-110 md:text-xl md:w-120 md:mb-2 lg:text-2xl lg:w-144 2xl:text-3xl 2xl:w-180 3xl:text-4xl 3xl:w-210">

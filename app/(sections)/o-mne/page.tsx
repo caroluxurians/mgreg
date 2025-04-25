@@ -2,6 +2,7 @@ import Header from "@/app/components/Header";
 import HeaderMobile from "@/app/components/HeaderMobile";
 import Image from "next/image";
 import LabelDark from "@/app/components/LabelDark";
+import Link from "next/link";
 import TimelineBulletPoint from "./TimelineBulletPoint";
 import TimelineEvent from "./TimelineEvent";
 
@@ -36,7 +37,7 @@ const OMne = () => {
               <div className="text-white paragraph-font-size flex flex-col w-76 gap-4 sm:w-70 md:w-88 lg:w-110 xl:w-120 2xl:w-156 2xl:gap-6 3xl:w-170 3xl:gap-7">
                 <div>
                   v letech 2018 až 2020 jsem působila jako
-                  předsedkyně Evropské pirátské strany. Od roku
+                  předsedkyně <Link href="https://european-pirateparty.eu" target="_blank" className="underline">Evropské pirátské strany</Link>. Od roku
                   2019 pracuji jako poslankyně Evropského
                   parlamentu. V roce 2024 jsem svůj mandát
                   obhájila.

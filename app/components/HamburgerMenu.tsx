@@ -5,9 +5,12 @@ import { useState } from "react";
 import classNames from "classnames";
 import useCloseOnOutsideClick from "@/hooks/useCloseOnOutsideClick";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { sections } from "./Header";
 
 const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: string }) => {
+  const pathname = usePathname();
+  const isOMne = pathname === "/o-mne";
   const id = "hamburger-menu";
   const [isOpen, setOpen] = useState(false);
   useCloseOnOutsideClick(id, setOpen);
@@ -39,11 +42,12 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
           )}
 
       </button>
-      <div className={classNames(!isOpen && "hidden", "absolute z-5 right-5 top-17 font-heading text-medium-pink text-[17px] tracking-[0.34px] flex flex-col text-end")}>
+      <div className={classNames(!isOpen && "hidden", "font-heading text-[17px] tracking-[0.34px] absolute z-5 right-5 top-17 flex flex-col text-end")}>
         <div>
           {sections.map((section) => (
-            <Link href={section.sectionHref}>
-              <div key={section.sectionName} className="hover:text-white">{section.sectionName}
+            <Link href={`/${section.sectionHref}`} key={section.sectionName}>
+              <div className={classNames(isOMne ? "text-white" : "text-medium-pink", "hover:text-[#DF7AAE]")}>
+                {section.sectionName}
               </div>
             </Link>
           ))}

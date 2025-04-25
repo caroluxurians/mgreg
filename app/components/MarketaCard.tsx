@@ -3,7 +3,7 @@ import Image from "next/image";
 const MarketaCard = () => {
   return (
     <div className="md:order-1 flex gap-[21px] leading-[25px] font-light pt-10 lg:pt-7 xl:gap-3 xl:pt-5 2xl:gap-6">
-      <div className="h-[65px] w-[65px] sm:h-[70px] sm:w-[70px] xl:w-[65px] xl:h-[65px] 2xl:h-[80px] 2xl:w-[80px] 2xl:mt-2">
+      <div className="w-[65px] sm:w-[70px] xl:w-[65px] 2xl:w-[80px] 2xl:mt-2">
         <Image
           src="/marketa-footer-icon-cropped.png"
           height={80}

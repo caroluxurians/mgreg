@@ -3,14 +3,12 @@ import Image from "next/image";
 const TomasCard = () => {
   return (
     <div className="md:order-3 flex gap-[21px] text-[20px] leading-[25px] font-light xl:gap-3 xl:pt-5 xl:pl-4 2xl:mr-6 2xl:gap-6">
-      <div>
+      <div className="w-[65px] sm:w-[70px] xl:w-[65px] 2xl:w-[80px] 2xl:mt-2">
         <Image
-          src="/tomas-icon.png"
+          src="/tomas-footer-icon.png"
           height={80}
           width={80}
           alt="ikona Tomáše"
-          className="h-[65px] w-[65px] sm:h-[70px] sm:w-[70px]
-          xl:w-[65px] xl:h-[65px] 2xl:h-[80px] 2xl:w-[80px] 2xl:mt-2"
           unoptimized
         />
       </div>

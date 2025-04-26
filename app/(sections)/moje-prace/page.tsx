@@ -105,14 +105,14 @@ const MojePrace = () => {
             a členkou delegací pro vztahy s Ruskem, Běloruskem, Arménií,<br />
             Azerbajdžánem a Gruzií. Výstupy na plénu, odpracovanou<br />
             legislativu i interpelace na Komisi či Radu si můžete<br />
-            prohlédnout na mém p
+            prohlédnout na mém{" "}
             <Link
               href="https://www.europarl.europa.eu/meps/cs/197549/MARKETA_GREGOROVA/home"
               target="_blank"
+              className="underline decoration-medium-pink"
             >
-              <span className="underline decoration-medium-pink">rofilu</span>
+              profilu
             </Link>
-
             .<br />
           </div>
         </div>

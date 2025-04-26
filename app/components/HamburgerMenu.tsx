@@ -11,13 +11,14 @@ import { sections } from "./Header";
 const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: string }) => {
   const pathname = usePathname();
   const isOMne = pathname === "/o-mne";
+  const isClanky = pathname.includes("/clanky");
   const id = "hamburger-menu";
   const [isOpen, setOpen] = useState(false);
   useCloseOnOutsideClick(id, setOpen);
 
   return (
-    <div id={id} className="flex flex-col">
-      <button type="button" onClick={() => setOpen(!isOpen)}>
+    <div id={id} className="flex flex-col relative">
+      <button type="button" onClick={() => setOpen(!isOpen)} className="cursor-pointer">
         {borderColor === "border-medium-pink"
           && (
             <Image
@@ -42,8 +43,16 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
           )}
 
       </button>
-      <div className={classNames(!isOpen && "hidden", "font-heading text-[17px] tracking-[0.34px] absolute z-5 right-5 top-17 flex flex-col text-end")}>
-        <div>
+      <div
+        className={classNames(
+          !isOpen && "hidden",
+          "font-heading w-16 text-[17px] tracking-[0.34px] absolute z-5 right-0 top-6 flex flex-col text-end",
+          isOMne && "bg-medium-pink",
+          isClanky && "bg-beige",
+          !isOMne && !isClanky && "bg-light-pink",
+        )}
+      >
+        <nav>
           {sections.map((section) => (
             <Link href={`/${section.sectionHref}`} key={section.sectionName}>
               <div className={classNames(isOMne ? "text-white" : "text-medium-pink", "hover:text-[#DF7AAE]")}>
@@ -51,8 +60,7 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
               </div>
             </Link>
           ))}
-        </div>
-
+        </nav>
       </div>
     </div>
   );

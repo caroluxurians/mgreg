@@ -18,7 +18,6 @@ const HeaderMobile = ({ textColor = "text-medium-pink", borderColor = "border-me
         </Link>
         <HamburgerMenu borderColor={borderColor} />
       </div>
-
     </div>
   );
 };

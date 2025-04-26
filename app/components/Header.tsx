@@ -42,7 +42,7 @@ const Header = () => {
           </div>
         </Link>
 
-        <div
+        <nav
           className={classNames(pathname === "/o-mne" ? "text-light-pink" : "text-medium-pink", `flex items-center leading-none
         text-[24px] tracking-[0.48px]
         gap-[11px] sm:gap-4
@@ -68,7 +68,7 @@ const Header = () => {
               </div>
             </Link>
           ))}
-        </div>
+        </nav>
         <SocialsSet color={colorTheme} classNames="hidden lg:flex 2xl:pr-0" />
       </div>
     </header>

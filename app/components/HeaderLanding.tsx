@@ -32,7 +32,7 @@ const HeaderLanding = () => {
           Markéta Gregorová
         </div>
 
-        <div
+        <nav
           className="flex leading-none
         text-[24px] tracking-[0.48px]
         gap-[11px] mx-auto sm:gap-4
@@ -47,8 +47,7 @@ const HeaderLanding = () => {
               {section.sectionName}
             </Link>
           ))}
-
-        </div>
+        </nav>
 
         <SocialsSet color="dark" classNames="hidden lg:flex 2xl:pr-0" />
       </div>

@@ -22,7 +22,6 @@ const XShareButton = ({ url, text = "" }: XShareButtonProps) => {
     >
       <div>Share on</div>
       <Image src="/x-light.svg" width={20} height={20} alt="share on X button" />
-
     </a>
   );
 };

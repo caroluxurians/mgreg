@@ -4,13 +4,15 @@ import { readFile } from "fs/promises";
 import Link from "next/link";
 import ArticleType from "@/app/types/article";
 import { Metadata } from "next";
+import XShareButton from "./XShareButton";
 
 export async function generateMetadata(
-  { params }: { params: { slug: string } },
+  { params }: { params: Promise<{ slug: string }> },
 ): Promise<Metadata> {
+  const { slug } = await params;
   const file = await readFile(`${process.cwd()}/articles.json`, "utf8");
   const data = JSON.parse(file);
-  const article = data.find((obj: ArticleType) => obj.link.includes(params.slug));
+  const article = data.find((obj: ArticleType) => obj.link.includes(slug));
   return {
     title: article?.title || "Markéta Gregorová",
     description: article?.perex,
@@ -45,11 +47,7 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
       <HeaderMobile />
       <Header />
       <main className="text-medium-pink mt-4 sm:mt-6">
-
-        <script async src="https://platform.twitter.com/widgets.js" />
         <div id="fb-root" />
-        <script async defer crossOrigin="anonymous" src="https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v22.0" />
-
         <div className="flex flex-col main-width mx-auto mb-10 sm:mb-12 md:mb-16 2xl:mb-20 3xl:mb-26">
           <div className="flex flex-col gap-1 border-b border-light-pink pb-4 mb-3 sm:pb-5 lg:mb-5 lg:mt-5 lg:gap-2 2xl:gap-3 2xl:mb-6 2xl:pb-8">
             <Link
@@ -77,33 +75,15 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
               zpět na články
             </Link>
             <div className="flex items-center gap-4">
-              <div>
-                <a
-                  href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                  className="twitter-share-button"
-                  data-show-count="false"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Tweet
-                </a>
-              </div>
-
-              <div
-                className="fb-share-button self-center"
-                data-href="https://www.gregorova.eu"
-                data-layout=""
-                data-size=""
+              <XShareButton url={urlForSharing} text={article.title} />
+              <a
+                target="_blank"
+                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(urlForSharing)}`}
+                className="fb-xfbml-parse-ignore"
+                rel="noreferrer"
               >
-                <a
-                  target="_blank"
-                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(urlForSharing)}`}
-                  className="fb-xfbml-parse-ignore"
-                  rel="noreferrer"
-                >
-                  Sdílet
-                </a>
-              </div>
+                Sdílet
+              </a>
 
             </div>
           </div>

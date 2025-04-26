@@ -60,6 +60,7 @@ const ProMedia = () => {
                 Tiskové zprávy
               </h2>
             </div>
+            {/* TODO tahat odsud: https://www.pirati.cz/jak-pirati-pracuji/?tag_id=216 */}
             <div className="mb-8 main-width px-2 sm:mb-10 sm:px-10 md:grid md:grid-cols-2 md:gap-x-8 md:mb-12 lg:gap-x-16 xl:mb-16 2xl:mb-20 3xl:gap-x-22">
               <PressRelease index={1} />
               <PressRelease index={2} />
@@ -75,7 +76,7 @@ const ProMedia = () => {
         <div className="main-width mx-auto mb-10 relative  sm:mb-16 lg:mb-20 xl:mb-32">
 
           <div className="border-b border-red-pink mb-8 sm:mb-10 relative md:mb-8 lg:mb-8 xl:mb-10">
-            <h2 className="font-heading title-font-size pb-2  lg:pb-2">
+            <h2 className="font-heading title-font-size pb-2 lg:pb-2">
               Galerie
             </h2>
           </div>

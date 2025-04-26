@@ -100,10 +100,6 @@ const ProMedia = () => {
               <GalleryTemplate title="Evropský parlament" />
               <GalleryTemplate title="Delší sdělení na dva řádky" />
               <GalleryTemplate title="Delší sdělení na dva řádky" />
-              <GalleryTemplate title="Delší sdělení na dva řádky" />
-              <GalleryTemplate title="Delší sdělení na dva řádky" />
-              <GalleryTemplate title="Delší sdělení na dva řádky" styles="hidden lg:flex" />
-              <GalleryTemplate title="Delší sdělení na dva řádky" styles="hidden lg:flex" />
             </div>
           </div>
         </div>

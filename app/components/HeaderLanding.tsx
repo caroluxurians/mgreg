@@ -43,10 +43,8 @@ const HeaderLanding = () => {
         3xl:"
         >
           {sections.map((section) => (
-            <Link href={section.sectionHref}>
-              <div className="flex hover:text-white" key={section.sectionName}>
-                {section.sectionName}
-              </div>
+            <Link href={section.sectionHref} key={section.sectionName} className="flex hover:text-white">
+              {section.sectionName}
             </Link>
           ))}
 

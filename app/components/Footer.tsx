@@ -1,7 +1,6 @@
 import classNames from "classnames";
 import MarketaCard from "./MarketaCard";
 import SocialsSet from "./SocialsSet";
-import SocialsSetSmall from "./SocialsSetSmall";
 import TomasCard from "./TomasCard";
 
 const Footer = ({ background = "bg-medium-pink" }: { background?: string }) => {
@@ -19,7 +18,6 @@ const Footer = ({ background = "bg-medium-pink" }: { background?: string }) => {
       >
         <MarketaCard />
         <TomasCard />
-        <SocialsSet color="light" classNames="flex xl:hidden pl-22 md:pl-0 md:order-4 lg:pl-10" />
         <div
           className="md:order-2 xl:order-3 grid
           text-[14px]/[19px] sm:text-[17px]/[22px] xl:text-[16px]/[22px] 2xl:text-[18px]/[23px]
@@ -31,8 +29,7 @@ const Footer = ({ background = "bg-medium-pink" }: { background?: string }) => {
           <span>60, rue Wiertz / Wiertzstraat 60</span>
           <span>B-1047 Bruxelles/Brussel</span>
           <span>tel: 0032 2 28 38334 (kancelář)</span>
-          <SocialsSetSmall color="light" classNames="hidden xl:flex 2xl:hidden mt-3" />
-          <SocialsSet color="light" classNames="hidden 2xl:flex mt-3" />
+          <SocialsSet color="light" classNames="flex mt-3" />
         </div>
       </div>
 

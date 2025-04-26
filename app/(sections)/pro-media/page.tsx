@@ -35,12 +35,14 @@ const ProMedia = () => {
                   additionalStyles="pt-1"
                   content={(
                     <>
+                      {/* TODO mělo by otočit obě karty */}
                       klikněte <br />
                       na nás
                     </>
                   )}
                 />
               </div>
+              {/* TODO flip cards: https://www.w3schools.com/howto/howto_css_flip_card.asp */}
               <ContactCard
                 imageSrc="/marketa-contact-card.png"
                 name="Markéta Gregorová"
@@ -87,6 +89,7 @@ const ProMedia = () => {
                 backgroundColor="bg-[#005F66]"
                 textColor="text-light-pink"
                 borderColor="border-#005F66]"
+                additionalStyles="select-none"
                 content={(
                   <>
                     volně ke<br />

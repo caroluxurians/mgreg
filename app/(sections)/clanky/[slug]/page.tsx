@@ -70,7 +70,7 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
           <div className="flex justify-between items-center sm:w-100 sm:mx-auto sm:mt-2 md:w-120 md:mt-4 lg:w-144 2xl:w-174 3xl:w-214">
             <Link
               href="/clanky"
-              className="text-white bg-medium-pink hover:text-medium-pink hover:bg-light-pink transition-colors duration-100 rounded-full text-sm  font-semibold italic text-center w-fit h-fit px-4 py-1 mr-6 md:text-base lg:text-lg 2xl:text-xl 3xl:px-7 3xl:py-2.5"
+              className="text-white bg-medium-pink hover:text-medium-pink hover:bg-light-pink transition-colors duration-100 rounded-full text-sm font-semibold italic text-center w-fit h-fit px-4 py-1 mr-6 md:text-base lg:text-lg 2xl:text-xl 3xl:px-7 3xl:py-2.5"
             >
               zpět na články
             </Link>

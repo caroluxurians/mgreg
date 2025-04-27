@@ -17,10 +17,10 @@ const XShareButton = ({ url, text = "" }: XShareButtonProps) => {
       href={shareUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex"
+      className="flex gap-2 text-white bg-medium-pink hover:text-medium-pink hover:bg-light-pink text-sm md:text-base lg:text-lg font-semibold italic rounded-full px-4 py-1"
       aria-label="Share on X"
     >
-      <div>Share on</div>
+      <div>sdílet na</div>
       <Image src="/x-light.svg" width={20} height={20} alt="share on X button" />
     </a>
   );

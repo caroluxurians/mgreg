@@ -5,6 +5,7 @@ import Link from "next/link";
 import ArticleType from "@/app/types/article";
 import { Metadata } from "next";
 import XShareButton from "./XShareButton";
+import FacebookShareButton from "./FacebookShareButton";
 
 export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> },
@@ -76,14 +77,7 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
             </Link>
             <div className="flex items-center gap-4">
               <XShareButton url={urlForSharing} text={article.title} />
-              <a
-                target="_blank"
-                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(urlForSharing)}`}
-                className="fb-xfbml-parse-ignore"
-                rel="noreferrer"
-              >
-                Sdílet
-              </a>
+              <FacebookShareButton url={urlForSharing} />
 
             </div>
           </div>

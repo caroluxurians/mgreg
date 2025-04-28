@@ -113,7 +113,7 @@ const ProMedia = () => {
               />
               <GallerySectionCard
                 imageSrc="/gallery/cover-photos/stare.png"
-                gallerySectionName="Staré"
+                gallerySectionName="Starší"
               />
             </div>
           </div>

@@ -3,8 +3,8 @@ import HeaderMobile from "../../components/HeaderMobile";
 import ContactCard from "./ContactCard";
 import PressRelease from "./PressRelease";
 import Sticker from "./Sticker";
-import GalleryTemplate from "./GalleryTemplate";
 import ContactCardTomasNew from "./ContactCardTomasNew";
+import GallerySectionCard from "./GallerySectionCard";
 
 const ProMedia = () => {
   return (
@@ -77,7 +77,7 @@ const ProMedia = () => {
 
         <div className="main-width mx-auto mb-10 relative  sm:mb-16 lg:mb-20 xl:mb-32">
 
-          <div className="border-b border-red-pink mb-8 sm:mb-10 relative md:mb-8 lg:mb-8 xl:mb-10">
+          <div className="border-b border-red-pink mb-6 relative md:mb-8 lg:mb-8 xl:mb-10">
             <h2 className="font-heading title-font-size pb-2 lg:pb-2">
               Galerie
             </h2>
@@ -98,11 +98,23 @@ const ProMedia = () => {
                 )}
               />
             </div>
-            <div className="flex flex-col gap-4 mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:grid-cols-4 xl:gap-5 2xl:gap-7">
-              <GalleryTemplate title="Ukrajina" />
-              <GalleryTemplate title="Evropský parlament" />
-              <GalleryTemplate title="Delší sdělení na dva řádky" />
-              <GalleryTemplate title="Delší sdělení na dva řádky" />
+            <div className="flex flex-col gap-4 mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:gap-8 xl:flex xl:flex-row xl:gap-5 2xl:gap-7">
+              <GallerySectionCard
+                imageSrc="/gallery/cover-photos/akce.png"
+                gallerySectionName="Akce"
+              />
+              <GallerySectionCard
+                imageSrc="/gallery/cover-photos/aktualni-portret.png"
+                gallerySectionName="Aktuální portrét"
+              />
+              <GallerySectionCard
+                imageSrc="/gallery/cover-photos/evropsky-parlament.png"
+                gallerySectionName="Evropský parlament"
+              />
+              <GallerySectionCard
+                imageSrc="/gallery/cover-photos/stare.png"
+                gallerySectionName="Staré"
+              />
             </div>
           </div>
         </div>

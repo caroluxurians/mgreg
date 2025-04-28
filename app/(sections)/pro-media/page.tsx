@@ -102,18 +102,22 @@ const ProMedia = () => {
               <GallerySectionCard
                 imageSrc="/gallery/cover-photos/akce.png"
                 gallerySectionName="Akce"
+                urlName="akce"
               />
               <GallerySectionCard
                 imageSrc="/gallery/cover-photos/aktualni-portret.png"
                 gallerySectionName="Aktuální portrét"
+                urlName="aktualni-portret"
               />
               <GallerySectionCard
                 imageSrc="/gallery/cover-photos/evropsky-parlament.png"
                 gallerySectionName="Evropský parlament"
+                urlName="evropsky-parlament"
               />
               <GallerySectionCard
                 imageSrc="/gallery/cover-photos/stare.png"
                 gallerySectionName="Starší"
+                urlName="starsi"
               />
             </div>
           </div>

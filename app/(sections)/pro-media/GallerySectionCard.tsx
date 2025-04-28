@@ -18,7 +18,7 @@ const GallerySectionCard = ({ styles = "", imageSrc = "", gallerySectionName = "
         unoptimized
         className="rounded-2xl"
       />
-      <div className="text-white font-heading text-4xl leading-none absolute bottom-4 left-6 max-w-35 lg:text-5xl lg:max-w-26 lg:left-6 lg:bottom-5 xl:text-[34px]/[34px] xl:max-w-34 xl:bottom-4 2xl:text-[44px]/[44px] 2xl:max-w-44 2xl:bottom-5 2xl:left-6 3xl:text-[50px]/[50px] 3xl:max-w-50 3xl:bottom-6.5 3xl:left-9">
+      <div className="text-white font-heading text-4xl leading-none absolute bottom-4 left-6 max-w-22 lg:text-5xl lg:max-w-30 lg:left-6 lg:bottom-5 xl:text-4xl xl:max-w-28 xl:left-4 xl:bottom-4 2xl:text-5xl 2xl:leading-[0.9] 2xl:max-w-36 2xl:bottom-4 2xl:left-6 3xl:text-6xl 3xl:max-w-50 3xl:bottom-6 3xl:left-7">
         {gallerySectionName}
       </div>
     </div>

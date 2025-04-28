@@ -9,7 +9,7 @@ type GallerySectionCardProps = {
 
 const GallerySectionCard = ({ styles = "", imageSrc = "", gallerySectionName = "" }: GallerySectionCardProps) => {
   return (
-    <div className={classNames(`flex w-68 h-auto relative sm:w-65 md:w-84 lg:w-96 xl:w-64 2xl:w-81 3xl:w-97 ${styles}`)}>
+    <div className={classNames(`flex w-68 h-auto relative sm:w-65 md:w-84 lg:w-96 xl:w-64 2xl:w-81 3xl:w-97 hover:grayscale-50 ${styles}`)}>
       <Image
         src={imageSrc}
         height={265}

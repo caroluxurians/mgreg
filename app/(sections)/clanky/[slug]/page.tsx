@@ -67,6 +67,7 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
           <div className="font-bold leading-[1.39] mb-2 text-lg sm:w-94 sm:mx-auto sm:mb-1 md:w-110 md:text-xl md:w-120 md:mb-2 lg:text-2xl lg:w-144 2xl:text-3xl 2xl:w-180 3xl:text-4xl 3xl:w-210">
             {article.perex}
           </div>
+          {/* eslint-disable-next-line react/no-danger */}
           <article dangerouslySetInnerHTML={markup} className="article" />
           <div className="flex justify-between items-center sm:w-100 sm:mx-auto sm:mt-2 md:w-120 md:mt-4 lg:w-144 2xl:w-174 3xl:w-214">
             <Link

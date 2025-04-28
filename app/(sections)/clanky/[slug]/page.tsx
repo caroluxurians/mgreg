@@ -1,7 +1,6 @@
 import { headers } from "next/headers";
 import Header from "@/app/components/Header";
 import HeaderMobile from "@/app/components/HeaderMobile";
-import { readFile } from "fs/promises";
 import Link from "next/link";
 import ArticleType from "@/app/types/article";
 import { Metadata } from "next";

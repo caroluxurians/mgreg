@@ -41,7 +41,7 @@ const images = [
   "IMG_4137.JPG",
   "IMG_4157.JPG",
   "IMG_4163.JPG",
-  "MarkÃ?Â©ta GregorovÃ?Â¡.jpg",
+  "marketa-gregorova.jpg",
   "P1299588.jpg",
   "P1299630.jpg",
   "P1299691.jpg",
@@ -54,10 +54,21 @@ const Akce = () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="main-width mx-auto">
+        <div className="main-width mx-auto mb-12">
           <h2 className="font-heading title-font-size pb-2  lg:pb-1 xl:pb-2 3xl:pb-3">Akce</h2>
-          <div>
-            <Image src="/gallery/akce/9Q9A1187.jpg" height={100} width={200} alt="photo" />
+          <div className="flex flex-col items-center gap-2">
+            {images.map((image) => (
+              <div className="w-70">
+                <Image
+                  src={`/gallery/akce/${image}`}
+                  height={200}
+                  width={400}
+                  alt="akce photo"
+                  className="rounded-lg"
+                />
+              </div>
+            ))}
+
           </div>
         </div>
       </main>

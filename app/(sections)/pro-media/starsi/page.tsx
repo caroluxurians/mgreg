@@ -34,15 +34,21 @@ const Starsi = () => {
           <h2 className="font-heading title-font-size pb-2  lg:pb-1 xl:pb-2 3xl:pb-3">Starší</h2>
           <div className="flex flex-col items-center gap-2">
             {images.map((image) => (
-              <div className="w-70">
-                <Image
-                  src={`/gallery/starsi/${image}`}
-                  height={200}
-                  width={400}
-                  alt="older photo"
-                  className="rounded-lg"
-                />
-              </div>
+              <a
+                href={`/gallery/starsi/${image}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="w-70">
+                  <Image
+                    src={`/gallery/starsi/${image}`}
+                    height={200}
+                    width={400}
+                    alt="older photo"
+                    className="rounded-lg"
+                  />
+                </div>
+              </a>
             ))}
 
           </div>

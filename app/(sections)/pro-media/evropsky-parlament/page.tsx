@@ -66,15 +66,21 @@ const EvropskyParlament = () => {
           <h2 className="font-heading title-font-size pb-2  lg:pb-1 xl:pb-2 3xl:pb-3">Evropský parlament</h2>
           <div className="flex flex-col items-center gap-2">
             {images.map((image) => (
-              <div className="w-70">
-                <Image
-                  src={`/gallery/evropsky-parlament/${image}`}
-                  height={200}
-                  width={400}
-                  alt="european parliament photo"
-                  className="rounded-lg"
-                />
-              </div>
+              <a
+                href={`/gallery/evropsky-parlament/${image}`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <div className="w-70">
+                  <Image
+                    src={`/gallery/evropsky-parlament/${image}`}
+                    height={200}
+                    width={400}
+                    alt="european parliament photo"
+                    className="rounded-lg"
+                  />
+                </div>
+              </a>
             ))}
 
           </div>

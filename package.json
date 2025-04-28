@@ -30,5 +30,10 @@
     "postcss": "^8.5.2",
     "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3"
+  },
+  "overrides": {
+    "eslint-config-airbnb": {
+      "eslint-plugin-react-hooks": "5"
+    }
   }
 }

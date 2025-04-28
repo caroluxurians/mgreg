@@ -1,3 +1,4 @@
+import { headers } from "next/headers";
 import Header from "@/app/components/Header";
 import HeaderMobile from "@/app/components/HeaderMobile";
 import { readFile } from "fs/promises";
@@ -7,12 +8,17 @@ import { Metadata } from "next";
 import XShareButton from "./XShareButton";
 import FacebookShareButton from "./FacebookShareButton";
 
+export const runtime = "edge";
+
 export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> },
 ): Promise<Metadata> {
   const { slug } = await params;
-  const file = await readFile(`${process.cwd()}/articles.json`, "utf8");
-  const data = JSON.parse(file);
+  const headersList = await headers();
+  const protocol = headersList.get("x-forwarded-proto");
+  const host = headersList.get("x-forwarded-host");
+  const file = await fetch(`${protocol}://${host}/articles.json`);
+  const data = await file.json();
   const article = data.find((obj: ArticleType) => obj.link.includes(slug));
   return {
     title: article?.title || "Markéta Gregorová",
@@ -35,8 +41,11 @@ export async function generateMetadata(
 }
 
 const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
-  const file = await readFile(`${process.cwd()}/articles.json`, "utf8");
-  const data = JSON.parse(file);
+  const headersList = await headers();
+  const protocol = headersList.get("x-forwarded-proto");
+  const host = headersList.get("x-forwarded-host");
+  const file = await fetch(`${protocol}://${host}/articles.json`);
+  const data = await file.json();
   const { slug } = await params;
   const article = data.find((obj: ArticleType) => obj.link.includes(slug));
   const markup = { __html: article.content };

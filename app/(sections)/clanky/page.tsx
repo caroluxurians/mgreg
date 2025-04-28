@@ -1,4 +1,4 @@
-import { readFile } from "fs/promises";
+import { headers } from "next/headers";
 import Header from "@/app/components/Header";
 import HeaderMobile from "@/app/components/HeaderMobile";
 import ArticleType from "@/app/types/article";
@@ -6,10 +6,15 @@ import ArticlePreview from "./ArticlePreview";
 import Sticker from "../pro-media/Sticker";
 import Pagination from "./Pagination";
 
+export const runtime = "edge";
+
 const Clanky = async ({ searchParams }: { searchParams: Promise<{ page?: string }> }) => {
+  const headersList = await headers();
+  const protocol = headersList.get("x-forwarded-proto");
+  const host = headersList.get("x-forwarded-host");
   const { page: pageParam } = await searchParams;
-  const file = await readFile(`${process.cwd()}/articles.json`, "utf8");
-  const data = JSON.parse(file);
+  const file = await fetch(`${protocol}://${host}/articles.json`);
+  const data = await file.json();
 
   const numberOfArticles = data.length;
   const page = Number(pageParam) || 1;

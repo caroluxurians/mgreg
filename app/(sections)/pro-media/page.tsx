@@ -1,10 +1,10 @@
 import Header from "../../components/Header";
 import HeaderMobile from "../../components/HeaderMobile";
 import ContactCard from "./ContactCard";
-import PressRelease from "./PressRelease";
 import Sticker from "./Sticker";
 import ContactCardTomasNew from "./ContactCardTomasNew";
 import GallerySectionCard from "./GallerySectionCard";
+import PressReleases from "./PressReleases";
 
 const ProMedia = () => {
   return (
@@ -62,12 +62,8 @@ const ProMedia = () => {
                 Tiskové zprávy
               </h2>
             </div>
-            {/* TODO tahat odsud: https://www.pirati.cz/jak-pirati-pracuji/?tag_id=216 */}
             <div className="mb-8 main-width px-2 sm:mb-10 sm:px-10 md:grid md:grid-cols-2 md:gap-x-8 md:mb-12 lg:gap-x-16 xl:mb-16 2xl:mb-20 3xl:gap-x-22">
-              <PressRelease index={1} />
-              <PressRelease index={2} />
-              <PressRelease index={3} />
-              <PressRelease index={4} />
+              <PressReleases />
             </div>
             <div className="text-white bg-medium-pink hover:text-medium-pink hover:bg-light-pink transition-colors duration-100 rounded-full italic font-semibold text-[13px] text-center w-fit pl-4 pr-5 py-1 mx-auto sm:text-[16px] sm:pl-5 sm:pr-6 sm:py-1.5 md:text-[18px] md:pr-8 md:pl-6 2xl:text-[20px] 2xl:pl-7 2xl:pr-9 2xl:py-2">
               více tiskových zpráv

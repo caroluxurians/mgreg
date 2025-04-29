@@ -27,7 +27,7 @@ const OMne = () => {
               </div>
               <div className="w-60 flex ml-25 mb-6 sm:hidden">
                 <Image
-                  src="/o-mne-marketa.png"
+                  src="/marketa-o-mne.png"
                   height={681}
                   width={681}
                   unoptimized
@@ -60,7 +60,7 @@ const OMne = () => {
             </div>
             <div className="hidden w-64 flex pt-10 sm:block md:w-70 md:mr-4 lg:w-94 lg:mr-2 xl:w-110 xl:mr-0 2xl:w-136 3xl:w-170">
               <Image
-                src="/o-mne-marketa.png"
+                src="/marketa-o-mne.png"
                 height={681}
                 width={681}
                 unoptimized

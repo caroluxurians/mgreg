@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Header from "@/app/components/Header";
 import HeaderMobile from "@/app/components/HeaderMobile";
+import BackToGalleryButton from "../BackToGalleryButton";
+import DownloadPhotosButton from "../DownloadPhotosButton";
 
 const images = [
   "1647515680476_20220317_EP-128267A_PB9_099.jpg",
@@ -62,9 +64,13 @@ const EvropskyParlament = () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="main-width mx-auto mb-12">
-          <h2 className="font-heading title-font-size pb-2  lg:pb-1 xl:pb-2 3xl:pb-3">Evropský parlament</h2>
-          <div className="flex flex-col items-center gap-2">
+        <div className="main-width mx-auto mt-5 mb-14">
+          <div className="flex justify-between mb-4">
+            <BackToGalleryButton />
+            <DownloadPhotosButton />
+          </div>
+          <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 lg:pb-1 xl:pb-2 3xl:pb-3">Evropský parlament</h2>
+          <div className="flex flex-col items-center gap-2 mb-8">
             {images.map((image) => (
               <a
                 href={`/gallery/evropsky-parlament/${image}`}
@@ -78,12 +84,15 @@ const EvropskyParlament = () => {
                     height={200}
                     width={400}
                     alt="european parliament photo"
-                    className="rounded-lg"
+                    className="rounded-lg transition-transform hover:scale-105 duration-300"
                   />
                 </div>
               </a>
             ))}
-
+          </div>
+          <div className="flex justify-between">
+            <BackToGalleryButton />
+            <DownloadPhotosButton />
           </div>
         </div>
       </main>

@@ -83,7 +83,7 @@ const AktualniPortret = () => {
                     height={200}
                     width={400}
                     alt="current portrait photo"
-                    className="rounded-lg"
+                    className="rounded-lg transition-transform hover:scale-105 duration-300"
                   />
                 </div>
               </a>

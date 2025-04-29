@@ -44,7 +44,7 @@ const MojePrace = () => {
             </div>
             <div className="mx-auto w-78 mt-4 sm:w-58 md:w-70 md:mr-2 md:mt-2 lg:w-94 lg:ml-0 lg:mt-2 xl:w-110 2xl:w-136 2xl:ml-22 3xl:w-160">
               <Image
-                src="/marketa-icon-large.png"
+                src="/marketa-moje-prace.png"
                 height={642}
                 width={642}
                 alt="Markéta large icon"

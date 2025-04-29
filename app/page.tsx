@@ -17,33 +17,35 @@ const Home = () => {
             <span>v Evropském parlamentu,</span>
             <span>chránící vaše občanské svobody.</span>
           </div>
-          <Image
-            src="/marketa-small.png"
-            height={686}
-            width={389}
-            alt="Markéta Gregorová foto sm"
-            className="ml-2 lg:ml-16 z-3 xl:hidden"
-            unoptimized
-          />
+          <div className="w-150 ml-8 -mt-6 lg:ml-16 z-3 xl:hidden">
+            <Image
+              src="/marketa-landing-cropped.png"
+              height={1400}
+              width={1120}
+              alt="Markéta Gregorová foto sm"
+              unoptimized
+            />
+          </div>
 
           <div className="absolute bg-light-pink z-2 rounded-full top-10 lg:top-4 lg:ml-4 xl:ml-2 2xl:mr-15 w-[516px] h-[516px] lg:w-[380px] lg:h-[380px] xl:w-[370px] xl:h-[370px] 2xl:w-[410px] 2xl:h-[410px] shadow-[0_0_40px_rgba(119,14,61,0.4)] md:shadow-[0_0_40px_rgba(119,14,61,0.8)]" />
-
-          <Image
-            src="/marketa-small.png"
-            height={679}
-            width={385}
-            alt="Markéta Gregorová foto md"
-            className="ml-14 z-3 hidden xl:block 2xl:hidden"
-            unoptimized
-          />
-          <Image
-            src="/marketa-large.png"
-            height={800}
-            width={453}
-            alt="Markéta Gregorová foto lg"
-            className="hidden 2xl:block ml-2 z-3"
-            unoptimized
-          />
+          <div className="w-190 ml-14 -mt-10 z-3 hidden xl:block 2xl:hidden">
+            <Image
+              src="/marketa-landing-cropped.png"
+              height={1400}
+              width={1120}
+              alt="Markéta Gregorová foto"
+              unoptimized
+            />
+          </div>
+          <div className="hidden 2xl:block w-180 ml-2 z-3">
+            <Image
+              src="/marketa-landing-cropped.png"
+              height={1400}
+              width={1120}
+              alt="Markéta Gregorová foto lg"
+              unoptimized
+            />
+          </div>
           {/* <Image
           src="/cat-happy.svg"
           width={65}

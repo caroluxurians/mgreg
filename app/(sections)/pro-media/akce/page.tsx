@@ -45,7 +45,7 @@ const images = [
   "P1299588.jpg",
   "P1299630.jpg",
   "P1299691.jpg",
-  "Untitled design-3-2.png",
+  "Untitled design-3-2.jpg",
 ];
 
 const Akce = () => {

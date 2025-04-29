@@ -100,22 +100,22 @@ const ProMedia = () => {
             </div>
             <div className="flex flex-col gap-4 mx-auto sm:grid sm:grid-cols-2 sm:gap-4 lg:gap-8 xl:flex xl:flex-row xl:gap-5 2xl:gap-7">
               <GallerySectionCard
-                imageSrc="/gallery/cover-photos/akce.png"
+                imageSrc="/gallery/cover-photos/akce.jpg"
                 gallerySectionName="Akce"
                 urlName="akce"
               />
               <GallerySectionCard
-                imageSrc="/gallery/cover-photos/aktualni-portret.png"
+                imageSrc="/gallery/cover-photos/aktualni-portret.jpg"
                 gallerySectionName="Aktuální portrét"
                 urlName="aktualni-portret"
               />
               <GallerySectionCard
-                imageSrc="/gallery/cover-photos/evropsky-parlament.png"
+                imageSrc="/gallery/cover-photos/evropsky-parlament.jpg"
                 gallerySectionName="Evropský parlament"
                 urlName="evropsky-parlament"
               />
               <GallerySectionCard
-                imageSrc="/gallery/cover-photos/stare.png"
+                imageSrc="/gallery/cover-photos/stare.jpg"
                 gallerySectionName="Starší"
                 urlName="starsi"
               />

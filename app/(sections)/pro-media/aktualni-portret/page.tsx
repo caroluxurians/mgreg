@@ -61,12 +61,12 @@ const AktualniPortret = () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="main-width mx-auto mt-5 mb-14">
-          <div className="flex justify-between mb-4">
+        <div className="main-width mx-auto mt-5 mb-14 md:mt-7 lg:mt-10 lg:mb-18 xl:mt-10 2xl:mt-14 2xl:mb-20">
+          <div className="flex justify-between mb-4 lg:mb-5 xl:mb-6 2xl:mb-8">
             <BackToGalleryButton />
             <DownloadPhotosButton />
           </div>
-          <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 lg:pb-1 xl:pb-2 3xl:pb-3">
+          <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 sm:pb-2 sm:mb-5 lg:pb-3 xl:pb-2 3xl:pb-3">
             Aktuální portrét
           </h2>
           <div className="flex flex-col items-center gap-3 mb-8 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7">
@@ -76,7 +76,7 @@ const AktualniPortret = () => {
                 target="_blank"
                 rel="noreferrer"
                 key={image}
-                className="relative w-60 sm:w-68 sm:h-100 md:w-56 md:h-80 lg:w-54 xl:w-52 2xl:w-56 2xl:h-84"
+                className="relative w-60 h-90 sm:w-68 sm:h-100 md:w-56 md:h-80 lg:w-54 xl:w-52 2xl:w-56 2xl:h-84"
               >
                 <Image
                   src={`/gallery/aktualni-portret/${image}`}

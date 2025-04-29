@@ -41,9 +41,9 @@ const images = [
   "IMG_4037.JPG",
   "IMG_4038.JPG",
   "IMG_4137.JPG",
-  "IMG_4157.JPG",
   "IMG_4163.JPG",
   "marketa-gregorova.jpg",
+  "IMG_4157.JPG",
   "P1299588.jpg",
   "P1299630.jpg",
   "P1299691.jpg",
@@ -64,23 +64,24 @@ const Akce = () => {
           <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 sm:pb-6 lg:pb-1 xl:pb-2 3xl:pb-3">
             Akce
           </h2>
-          <div className="flex flex-col items-center gap-3 mb-8">
+          <div className="flex flex-col items-center gap-3 mb-8 sm:grid grid-cols-2 sm:gap-4 md:grid-cols-3 xl:grid-cols-4 3xl:grid-cols-5">
             {images.map((image) => (
               <a
                 href={`/gallery/akce/${image}`}
                 target="_blank"
                 rel="noreferrer"
                 key={image}
+                className="w-70 sm:w-68 sm:self-end md:w-56 lg:w-72 xl:w-66 2xl:w-84 3xl:w-80"
               >
-                <div className="w-70">
-                  <Image
-                    src={`/gallery/akce/${image}`}
-                    height={200}
-                    width={400}
-                    alt="akce photo"
-                    className="rounded-lg transition-transform hover:scale-105 duration-300"
-                  />
-                </div>
+
+                <Image
+                  src={`/gallery/akce/${image}`}
+                  height={200}
+                  width={400}
+                  alt="akce photo"
+                  className="rounded-lg transition-transform hover:scale-105 duration-300"
+                />
+
               </a>
             ))}
           </div>

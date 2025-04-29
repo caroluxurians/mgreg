@@ -40,7 +40,7 @@ const Starsi = () => {
           <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 lg:pb-1 xl:pb-2 3xl:pb-3">
             Starší
           </h2>
-          <div className="flex flex-col items-center gap-2 mb-8">
+          <div className="flex flex-col items-center gap-3 mb-8">
             {images.map((image) => (
               <a
                 href={`/gallery/starsi/${image}`}

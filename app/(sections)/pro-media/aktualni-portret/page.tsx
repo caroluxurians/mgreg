@@ -69,7 +69,7 @@ const AktualniPortret = () => {
           <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 lg:pb-1 xl:pb-2 3xl:pb-3">
             Aktuální portrét
           </h2>
-          <div className="flex flex-col items-center gap-2 mb-8">
+          <div className="flex flex-col items-center gap-3 mb-8">
             {images.map((image) => (
               <a
                 href={`/gallery/aktualni-portret/${image}`}
@@ -83,7 +83,7 @@ const AktualniPortret = () => {
                     height={200}
                     width={400}
                     alt="current portrait photo"
-                    className="rounded-lg transition-transform hover:scale-105 duration-300"
+                    className="rounded-lg transition-transform hover:scale-104 duration-300"
                   />
                 </div>
               </a>

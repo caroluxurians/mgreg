@@ -1,10 +1,11 @@
 import Header from "../../components/Header";
 import HeaderMobile from "../../components/HeaderMobile";
-import ContactCard from "./ContactCard";
 import Sticker from "./Sticker";
-import ContactCardTomasNew from "./ContactCardTomasNew";
+
 import GallerySectionCard from "./GallerySectionCard";
 import PressReleases from "./PressReleases";
+import ContactCardMarketa from "./ContactCardMarketa";
+import ContactCardTomas from "./ContactCardTomas";
 
 const ProMedia = () => {
   return (
@@ -43,13 +44,8 @@ const ProMedia = () => {
                 />
               </div>
               {/* TODO flip cards: https://www.w3schools.com/howto/howto_css_flip_card.asp */}
-              <ContactCard
-                imageSrc="/marketa-contact-card.png"
-                name="Markéta Gregorová"
-                title="Europoslankyně"
-                alt="Markéta kontaktní karta"
-              />
-              <ContactCardTomasNew />
+              <ContactCardMarketa />
+              <ContactCardTomas />
             </div>
           </div>
         </div>

@@ -79,14 +79,12 @@ const EvropskyParlament = () => {
                 key={image}
                 className="relative w-70 h-46 sm:w-68 sm:h-44 md:w-56 md:h-34 lg:w-72 lg:h-48 xl:w-66 xl:h-42 2xl:w-84 2xl:h-56 3xl:w-80 3xl:h-52"
               >
-                <div className="w-70">
-                  <Image
-                    src={`/gallery/evropsky-parlament/${image}`}
-                    fill
-                    alt="european parliament photo"
-                    className="rounded-lg transition-transform hover:scale-105 duration-300 object-cover"
-                  />
-                </div>
+                <Image
+                  src={`/gallery/evropsky-parlament/${image}`}
+                  fill
+                  alt="european parliament photo"
+                  className="rounded-lg transition-transform hover:scale-105 duration-300 object-cover"
+                />
               </a>
             ))}
           </div>

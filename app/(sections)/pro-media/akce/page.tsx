@@ -56,30 +56,29 @@ const Akce = () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="main-width mx-auto mt-5 mb-14">
+        <div className="main-width mx-auto mt-5 mb-14 md:mt-7 lg:mt-9 lg:mb-18 xl:mt-10 2xl:mt-12 2xl:mb-20">
           <div className="flex justify-between mb-4">
             <BackToGalleryButton />
             <DownloadPhotosButton />
           </div>
-          <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 sm:pb-6 lg:pb-1 xl:pb-2 3xl:pb-3">
+          <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 sm:pb-3 sm:mb-5 lg:pb-1 xl:pb-2 3xl:pb-3">
             Akce
           </h2>
-          <div className="flex flex-col items-center gap-3 mb-8 sm:grid grid-cols-2 sm:gap-4 md:grid-cols-3 xl:grid-cols-4 3xl:grid-cols-5">
+          <div className="flex flex-col items-center gap-3 mb-8 sm:grid grid-cols-2 sm:gap-4 md:grid-cols-3 lg:mb-10 xl:grid-cols-4 3xl:grid-cols-5">
             {images.map((image) => (
               <a
                 href={`/gallery/akce/${image}`}
                 target="_blank"
                 rel="noreferrer"
                 key={image}
-                className="w-70 sm:w-68 sm:self-end md:w-56 lg:w-72 xl:w-66 2xl:w-84 3xl:w-80"
+                className="relative w-70 h-46 sm:w-68 sm:h-44 md:w-56 md:h-34 lg:w-72 lg:h-48 xl:w-66 xl:h-42 2xl:w-84 2xl:h-56 3xl:w-80 3xl:h-52"
               >
 
                 <Image
                   src={`/gallery/akce/${image}`}
-                  height={200}
-                  width={400}
+                  fill
                   alt="akce photo"
-                  className="rounded-lg transition-transform hover:scale-105 duration-300"
+                  className="rounded-lg transition-transform hover:scale-105 duration-300 object-cover"
                 />
 
               </a>

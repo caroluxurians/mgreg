@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Download from "@/app/components/svg/Download";
 
-const DownloadPhotosButton = ({ fileSize = "40 Mb" }: { fileSize?: string }) => {
+const DownloadPhotosButton = ({ fileSize = "40 MB" }: { fileSize?: string }) => {
   return (
     <Link
       href="/pro-media#gallery"

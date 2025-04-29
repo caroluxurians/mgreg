@@ -69,23 +69,21 @@ const AktualniPortret = () => {
           <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 lg:pb-1 xl:pb-2 3xl:pb-3">
             Aktuální portrét
           </h2>
-          <div className="flex flex-col items-center gap-3 mb-8">
+          <div className="flex flex-col items-center gap-3 mb-8 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 3xl:grid-cols-7">
             {images.map((image) => (
               <a
                 href={`/gallery/aktualni-portret/${image}`}
                 target="_blank"
                 rel="noreferrer"
                 key={image}
+                className="relative w-60 sm:w-68 sm:h-100 md:w-56 md:h-80 lg:w-54 xl:w-52 2xl:w-56 2xl:h-84"
               >
-                <div className="w-70">
-                  <Image
-                    src={`/gallery/aktualni-portret/${image}`}
-                    height={200}
-                    width={400}
-                    alt="current portrait photo"
-                    className="rounded-lg transition-transform hover:scale-104 duration-300"
-                  />
-                </div>
+                <Image
+                  src={`/gallery/aktualni-portret/${image}`}
+                  fill
+                  alt="current portrait photo"
+                  className="rounded-lg transition-transform hover:scale-104 duration-300 object-cover"
+                />
               </a>
             ))}
           </div>

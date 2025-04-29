@@ -76,10 +76,16 @@ const OMne = () => {
               <div className="flex flex-col h-240 pb-12 absolute top-8 left-6
               sm:justify-between sm:top-12 sm:left-6 sm:pb-40 md:left-2 lg:h-310 lg:left-0 3xl:h-340 3xl:top-16"
               >
-                <TimelineBulletPoint shape="ellipse" />
-                <TimelineBulletPoint shape="circle" styles="mt-22 sm:mt-0" />
-                <TimelineBulletPoint shape="ellipse" styles="mt-60 sm:mt-0" />
-                <TimelineBulletPoint shape="circle" styles="mt-20 sm:mt-0" />
+                <TimelineBulletPoint shape="ellipse" year="2019" />
+                <TimelineBulletPoint shape="circle" year="2021" styles="mt-22 sm:mt-0" />
+                <TimelineBulletPoint shape="ellipse" year="2021" styles="mt-60 sm:mt-0" />
+                <TimelineBulletPoint shape="circle" year="2022" styles="mt-20 sm:mt-0" />
+                <TimelineBulletPoint shape="ellipse" year="2023" styles="mt-60 sm:mt-0" />
+                <TimelineBulletPoint shape="circle" year="2024" styles="mt-20 sm:mt-0" />
+                <TimelineBulletPoint shape="ellipse" year="2024" styles="mt-60 sm:mt-0" />
+                <TimelineBulletPoint shape="circle" year="2024" styles="mt-20 sm:mt-0" />
+                <TimelineBulletPoint shape="ellipse" year="2025" styles="mt-60 sm:mt-0" />
+
               </div>
               <div className="w-1 h-240 bg-red-pink absolute left-28 relative sm:left-32 sm:h-260 lg:h-350 lg:left-38 xl:left-42 2xl:left-54 3xl:left-62 3xl:h-400">
                 <div className="w-6 absolute -top-5 -left-2.5 sm:w-8 sm:-left-3.5 lg:w-10 lg:-top-10 lg:-left-4.5 2xl:w-12 2xl:-left-5.5 2xl:-top-12">
@@ -103,23 +109,40 @@ const OMne = () => {
 
             <div className="flex flex-col h-260 justify-around pt-5 pb-14 sm:pt-14 md:ml-5 lg:h-370 lg:pt-6 lg:pb-22 2xl:ml-8 3xl:h-400 3xl:ml-9 3xl:pt-9">
               <TimelineEvent
-                eventName="Vstup do České pirátské strany"
-                eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
+                eventName="Zvolení do Evropského parlamentu"
                 styles="sm:mb-36 md:mb-34 lg:mb-36 3xl:mb-40 3xl:gap-7"
               />
               <TimelineEvent
-                eventName="Lorem ipsum stup do České pirátské strany"
-                eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
+                eventName="Iniciovala jsem historicky první misi europarlamentu na Taiwan"
                 styles="sm:mb-16 md:mb-4 lg:mb-0 3xl:mb-5 3xl:gap-3"
               />
               <TimelineEvent
-                eventName="Vstup do České pirátské strany"
-                eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
+                eventName="Celý mandát jsem produkovala kampaně o dezinformacích, kyberbezpečnosti, AI a inkluzivitě v politice"
                 styles="sm:mb-32 md:mb-32 lg:mb-34 3xl:gap-7 3xl:mb-38"
               />
+
               <TimelineEvent
-                eventName="Lorem ipsum stup do České pirátské strany"
-                eventDescription="Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012.Markéta Gregorová se stala členkou České pirátské strany v roce 2012."
+                eventName="Výstava zakázaného čínského umělce a aktivisty Badiucaa"
+                styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
+              />
+              <TimelineEvent
+                eventName="Výstava dokumentující ruské válečné zločiny na Ukrajině"
+                styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
+              />
+              <TimelineEvent
+                eventName="Křest Sborníku o eurofederalismu, Vize pro Evropu"
+                styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
+              />
+              <TimelineEvent
+                eventName="Znovuzvolení do Evropského parlamentu"
+                styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
+              />
+              <TimelineEvent
+                eventName="Můj nominant na Sacharovovu cenu Dr. Gubad Ibadoghlu se dostal do finále"
+                styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
+              />
+              <TimelineEvent
+                eventName="Stovky dopisů politickým vězňům z řad Ukrajinců, Krymčanů a Krymských Tatarů"
                 styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
               />
             </div>

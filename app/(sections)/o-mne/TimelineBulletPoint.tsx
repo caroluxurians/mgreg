@@ -1,12 +1,18 @@
 import classNames from "classnames";
 import Image from "next/image";
 
-const TimelineBulletPoint = ({ shape, styles = "" }: { shape: string, styles?: string }) => {
+type TimelineBulletPointProps = {
+  shape: string,
+  year?: string,
+  styles?: string,
+};
+
+const TimelineBulletPoint = ({ shape, styles = "", year = "2018" }: TimelineBulletPointProps) => {
   return (
     <div className={classNames(`flex items-center h-20 ${styles} relative`)}>
       <div className={classNames("flex gap-3 lg:gap-4 2xl:gap-7", shape === "ellipse" ? "items-baseline mb-2 sm:mb-2.5 md:mb-3.5 lg:mb-6.5 2xl:mb-10 3xl:mb-11" : "items-center")}>
         <div className="font-heading text-[30px] sm:text-[34px] md:text-[40px] lg:text-[56px] xl:text-[66px] 2xl:text-[88px] 3xl:text-[100px]">
-          2012
+          {year}
         </div>
         <div className="w-2.5 z-2 xl:w-4 3xl:w-5">
           {shape === "ellipse"

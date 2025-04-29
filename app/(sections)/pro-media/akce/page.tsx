@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Header from "@/app/components/Header";
 import HeaderMobile from "@/app/components/HeaderMobile";
+import BackToGalleryButton from "../BackToGalleryButton";
+import DownloadPhotosButton from "../DownloadPhotosButton";
 
 const images = [
   "1281-1920-max.jpg",
@@ -54,8 +56,14 @@ const Akce = () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="main-width mx-auto mb-12">
-          <h2 className="font-heading title-font-size pb-2  lg:pb-1 xl:pb-2 3xl:pb-3">Akce</h2>
+        <div className="main-width mx-auto mt-3 mb-14">
+          <div className="flex justify-between">
+            <BackToGalleryButton />
+            <DownloadPhotosButton />
+          </div>
+          <h2 className="font-heading title-font-size pb-4 sm:pb-6 lg:pb-1 xl:pb-2 3xl:pb-3">
+            Akce
+          </h2>
           <div className="flex flex-col items-center gap-2">
             {images.map((image) => (
               <a
@@ -70,7 +78,7 @@ const Akce = () => {
                     height={200}
                     width={400}
                     alt="akce photo"
-                    className="rounded-lg"
+                    className="rounded-lg transition-transform hover:scale-105 duration-300"
                   />
                 </div>
               </a>

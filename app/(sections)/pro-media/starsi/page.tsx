@@ -38,6 +38,7 @@ const Starsi = () => {
                 href={`/gallery/starsi/${image}`}
                 target="_blank"
                 rel="noreferrer"
+                key={image}
               >
                 <div className="w-70">
                   <Image

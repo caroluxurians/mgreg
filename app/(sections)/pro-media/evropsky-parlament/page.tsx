@@ -70,6 +70,7 @@ const EvropskyParlament = () => {
                 href={`/gallery/evropsky-parlament/${image}`}
                 target="_blank"
                 rel="noreferrer"
+                key={image}
               >
                 <div className="w-70">
                   <Image

@@ -62,6 +62,7 @@ const Akce = () => {
                 href={`/gallery/akce/${image}`}
                 target="_blank"
                 rel="noreferrer"
+                key={image}
               >
                 <div className="w-70">
                   <Image

@@ -67,6 +67,7 @@ const AktualniPortret = () => {
                 href={`/gallery/aktualni-portret/${image}`}
                 target="_blank"
                 rel="noreferrer"
+                key={image}
               >
                 <div className="w-70">
                   <Image

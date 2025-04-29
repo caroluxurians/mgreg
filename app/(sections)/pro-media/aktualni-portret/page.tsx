@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Header from "@/app/components/Header";
 import HeaderMobile from "@/app/components/HeaderMobile";
+import BackToGalleryButton from "../BackToGalleryButton";
+import DownloadPhotosButton from "../DownloadPhotosButton";
 
 const images = [
   "Gregorova-046.jpg",
@@ -59,9 +61,15 @@ const AktualniPortret = () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="main-width mx-auto mb-12">
-          <h2 className="font-heading title-font-size pb-2  lg:pb-1 xl:pb-2 3xl:pb-3">Aktuální portrét</h2>
-          <div className="flex flex-col items-center gap-2">
+        <div className="main-width mx-auto mt-5 mb-14">
+          <div className="flex justify-between mb-4">
+            <BackToGalleryButton />
+            <DownloadPhotosButton />
+          </div>
+          <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 lg:pb-1 xl:pb-2 3xl:pb-3">
+            Aktuální portrét
+          </h2>
+          <div className="flex flex-col items-center gap-2 mb-8">
             {images.map((image) => (
               <a
                 href={`/gallery/aktualni-portret/${image}`}
@@ -80,7 +88,10 @@ const AktualniPortret = () => {
                 </div>
               </a>
             ))}
-
+          </div>
+          <div className="flex justify-between">
+            <BackToGalleryButton />
+            <DownloadPhotosButton />
           </div>
         </div>
       </main>

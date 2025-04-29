@@ -56,12 +56,12 @@ const Akce = () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="main-width mx-auto mt-5 mb-14 md:mt-7 lg:mt-9 lg:mb-18 xl:mt-10 2xl:mt-12 2xl:mb-20">
-          <div className="flex justify-between mb-4">
+        <div className="main-width mx-auto mt-5 mb-14 md:mt-7 lg:mt-10 lg:mb-18 xl:mt-10 2xl:mt-14 2xl:mb-20">
+          <div className="flex justify-between mb-4 lg:mb-5 xl:mb-6 2xl:mb-8">
             <BackToGalleryButton />
             <DownloadPhotosButton />
           </div>
-          <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 sm:pb-3 sm:mb-5 lg:pb-1 xl:pb-2 3xl:pb-3">
+          <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 sm:pb-2 sm:mb-5 lg:pb-3 xl:pb-2 3xl:pb-3">
             Akce
           </h2>
           <div className="flex flex-col items-center gap-3 mb-8 sm:grid grid-cols-2 sm:gap-4 md:grid-cols-3 lg:mb-10 xl:grid-cols-4 3xl:grid-cols-5">

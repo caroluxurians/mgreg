@@ -15,7 +15,7 @@ const ProMedia = () => {
         <div className="main-width mx-auto mt-4 mb-4 sm:mt-0 relative sm:mb-10 md:mb-16 xl:mb-26 2xl:mb-32">
 
           <div className="border-b border-red-pink mb-4 sm:mt-6 sm:mb-4 relative md:mb-5 lg:mb-4 xl:mb-6 2xl:mb-8 3xl:mb-10">
-            <h2 className="font-heading title-font-size pb-2  lg:pb-1 xl:pb-2 3xl:pb-3">
+            <h2 className="font-heading title-font-size pb-2 lg:pb-1 xl:pb-2 3xl:pb-3">
               Kontakty
             </h2>
           </div>

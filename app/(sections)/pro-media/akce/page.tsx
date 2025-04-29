@@ -56,15 +56,15 @@ const Akce = () => {
       <HeaderMobile />
       <Header />
       <main className="flex flex-col">
-        <div className="main-width mx-auto mt-3 mb-14">
-          <div className="flex justify-between">
+        <div className="main-width mx-auto mt-5 mb-14">
+          <div className="flex justify-between mb-4">
             <BackToGalleryButton />
             <DownloadPhotosButton />
           </div>
-          <h2 className="font-heading title-font-size pb-4 sm:pb-6 lg:pb-1 xl:pb-2 3xl:pb-3">
+          <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 sm:pb-6 lg:pb-1 xl:pb-2 3xl:pb-3">
             Akce
           </h2>
-          <div className="flex flex-col items-center gap-2">
+          <div className="flex flex-col items-center gap-2 mb-8">
             {images.map((image) => (
               <a
                 href={`/gallery/akce/${image}`}
@@ -83,7 +83,10 @@ const Akce = () => {
                 </div>
               </a>
             ))}
-
+          </div>
+          <div className="flex justify-between">
+            <BackToGalleryButton />
+            <DownloadPhotosButton />
           </div>
         </div>
       </main>

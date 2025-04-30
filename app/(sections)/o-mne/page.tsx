@@ -158,21 +158,21 @@ const OMne = () => {
               />
               <TimelineEvent
                 eventName="Výstava dokumentující ruské válečné zločiny na Ukrajině"
-                imageSrc="/tl/vystava-ukrajina.jpg"
+                imageSrc="/tl/vystava-ukrajina.JPG"
                 alt="fotka z výstavy dokumentující ruské válečné zločiny na Ukrajině"
                 styles=""
                 rotate="md:-rotate-4"
               />
               <TimelineEvent
                 eventName="Křest Sborníku o eurofederalismu, Vize pro Evropu"
-                imageSrc="/tl/sbornik.jpg"
+                imageSrc="/tl/sbornik.JPG"
                 alt="fotka ze křtu Sborníku o eurofederalismu, Vize pro Evropu"
                 styles=""
                 rotate="md:rotate-4"
               />
               <TimelineEvent
                 eventName="Znovuzvolení do Evropského parlamentu"
-                imageSrc="/tl/znovuzvoleni.jpeg"
+                imageSrc="/tl/znovuzvoleni.JPEG"
                 alt="fotka znovuzvolení Markéty do Evropského parlamentu"
                 styles=""
                 rotate="md:-rotate-4"

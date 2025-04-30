@@ -79,8 +79,8 @@ const OMne = () => {
           <div
             className="main-width grid grid-cols-[2fr_3fr]
             sm:mx-auto sm:grid-cols-[1fr_3fr] sm:gap-3
-            md:grid-cols-[1fr_3fr] md:gap-0
-            lg:grid-cols-[1fr_3fr] 2xl:px-20 3xl:px-26"
+            md:gap-0
+            2xl:px-20 3xl:px-26"
           >
             <div className="pt-10 pb-12 grid grid-cols-2 relative">
               <div
@@ -89,6 +89,7 @@ const OMne = () => {
                 sm:h-576 sm:top-12 sm:left-6 sm:pb-40
                 md:h-480 md:left-2
                 lg:h-530 lg:left-0
+                xl:h-584 xl:-left-2
                 3xl:h-340 3xl:top-16"
               >
                 <TimelineBulletPoint shape="ellipse" year="2019" />
@@ -106,7 +107,7 @@ const OMne = () => {
                   sm:left-32 sm:h-610
                   md:h-470
                   lg:h-526 lg:left-38
-                  xl:left-42 2xl:left-54
+                  xl:h-580 xl:left-42 2xl:left-54
                   3xl:left-62 3xl:h-400"
               >
                 <div className="w-6 absolute -top-5 -left-2.5 sm:w-8 sm:-left-3.5 lg:w-10 lg:-top-10 lg:-left-4.5 2xl:w-12 2xl:-left-5.5 2xl:-top-12">
@@ -132,6 +133,7 @@ const OMne = () => {
               className="flex flex-col h-550 justify-between mt-12
               sm:h-590 sm:mt-14 md:h-450 md:mt-16 md:-ml-4
               lg:h-510 lg:-ml-12 lg:mt-14
+              xl:h-560 xl:-ml-18
               2xl:ml-8 3xl:h-400 3xl:ml-9 3xl:pt-9"
             >
               <TimelineEvent

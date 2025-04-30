@@ -16,7 +16,7 @@ const TimelineBulletPoint = ({ shape, styles = "", year = "2018" }: TimelineBull
         </div>
         <div className="w-2.5 z-2 xl:w-4 3xl:w-5">
           {shape === "ellipse"
-            ? <Image src="/ellipse-timeline.svg" height={25.598} width={20} alt="ellipse bullet point on timeline" className="sm:ml-0.5" />
+            ? <Image src="/ellipse-timeline.svg" height={25.598} width={20} alt="ellipse bullet point on timeline" className="sm:mb-0.25 md:ml-0.5" />
             : <div className="w-2.5 h-2.5 rounded-full bg-medium-pink xl:w-4 xl:h-4 3xl:w-5 3xl:h-5" />}
         </div>
       </div>

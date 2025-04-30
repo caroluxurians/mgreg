@@ -84,7 +84,7 @@ const OMne = () => {
           >
             <div className="pt-10 pb-12 grid grid-cols-2 relative">
               <div className="flex flex-col h-520 pb-12 absolute top-8 left-6
-              justify-between sm:top-12 sm:left-6 sm:pb-40 md:left-2 lg:h-310 lg:left-0 3xl:h-340 3xl:top-16"
+              justify-between sm:h-576 sm:top-12 sm:left-6 sm:pb-40 md:left-2 lg:h-310 lg:left-0 3xl:h-340 3xl:top-16"
               >
                 <TimelineBulletPoint shape="ellipse" year="2019" />
                 <TimelineBulletPoint shape="circle" year="2021" />
@@ -94,9 +94,9 @@ const OMne = () => {
                 <TimelineBulletPoint shape="circle" year="2024" />
                 <TimelineBulletPoint shape="ellipse" year="2024" />
                 <TimelineBulletPoint shape="circle" year="2024" />
-                <TimelineBulletPoint shape="ellipse" year="2025" styles="pt-12" />
+                <TimelineBulletPoint shape="ellipse" year="2025" styles="pt-16 sm:pt-18" />
               </div>
-              <div className="w-1 h-570 bg-red-pink absolute left-28 relative sm:left-32 sm:h-260 lg:h-350 lg:left-38 xl:left-42 2xl:left-54 3xl:left-62 3xl:h-400">
+              <div className="w-1 h-570 bg-red-pink absolute left-28 relative sm:left-32 sm:h-610 lg:h-350 lg:left-38 xl:left-42 2xl:left-54 3xl:left-62 3xl:h-400">
                 <div className="w-6 absolute -top-5 -left-2.5 sm:w-8 sm:-left-3.5 lg:w-10 lg:-top-10 lg:-left-4.5 2xl:w-12 2xl:-left-5.5 2xl:-top-12">
                   <Image
                     src="/cat-timeline-icon.svg"
@@ -116,61 +116,61 @@ const OMne = () => {
               </div>
             </div>
 
-            <div className="flex flex-col h-550 justify-between mt-12 sm:pt-14 md:ml-5 lg:h-370 lg:pt-6 lg:pb-22 2xl:ml-8 3xl:h-400 3xl:ml-9 3xl:pt-9">
+            <div className="flex flex-col h-550 justify-between mt-12 sm:h-590 sm:mt-14 md:ml-5 lg:h-370 lg:pt-6 lg:pb-22 2xl:ml-8 3xl:h-400 3xl:ml-9 3xl:pt-9">
               <TimelineEvent
                 eventName="Zvolení do Evropského parlamentu"
                 imageSrc="/tl/zvoleni.jpeg"
                 alt="fotka zvolení Markéty do Evropského parlamentu"
-                styles="sm:mb-36 md:mb-34 lg:mb-36 3xl:mb-40 3xl:gap-7"
+                styles=" md:mb-34 lg:mb-36 3xl:mb-40 3xl:gap-7"
               />
               <TimelineEvent
                 eventName="Iniciovala jsem historicky první misi europarlamentu na Taiwan"
                 imageSrc="/tl/taiwan.jpg"
                 alt="fotka historicky první mise europarlamentu na Taiwan"
-                styles="sm:mb-16 md:mb-4 lg:mb-0 3xl:mb-5 3xl:gap-3"
+                styles="md:mb-4 lg:mb-0 3xl:mb-5 3xl:gap-3"
               />
               <TimelineEventLarge
                 eventName="Celý mandát jsem produkovala kampaně o dezinformacích, kyberbezpečnosti, AI a inkluzivitě v politice"
                 imageSrc="/tl/4.png"
                 alt="fotka loga kampaně o dezinformacích, kyberbezpečnosti, AI a inkluzivitě v politice"
-                styles="sm:mb-32 md:mb-32 lg:mb-34 3xl:gap-7 3xl:mb-38"
+                styles="md:mb-32 lg:mb-34 3xl:gap-7 3xl:mb-38"
               />
 
               <TimelineEvent
                 eventName="Výstava zakázaného čínského umělce a aktivisty Badiucaa"
                 imageSrc="/tl/cinsky-umelec.jpeg"
                 alt="fotka z výstavy zakázaného čínského umělce a aktivisty Badiucaa"
-                styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
+                styles="3xl:gap-3 3xl:mb-0"
               />
               <TimelineEvent
                 eventName="Výstava dokumentující ruské válečné zločiny na Ukrajině"
                 imageSrc="/tl/vystava-ukrajina.jpg"
                 alt="fotka z výstavy dokumentující ruské válečné zločiny na Ukrajině"
-                styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
+                styles="3xl:gap-3 3xl:mb-0"
               />
               <TimelineEvent
                 eventName="Křest Sborníku o eurofederalismu, Vize pro Evropu"
                 imageSrc="/tl/sbornik.jpg"
                 alt="fotka ze křtu Sborníku o eurofederalismu, Vize pro Evropu"
-                styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
+                styles="3xl:gap-3 3xl:mb-0"
               />
               <TimelineEvent
                 eventName="Znovuzvolení do Evropského parlamentu"
                 imageSrc="/tl/znovuzvoleni.jpeg"
                 alt="fotka znovuzvolení Markéty do Evropského parlamentu"
-                styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
+                styles="3xl:gap-3 3xl:mb-0"
               />
               <TimelineEvent
                 eventName="Můj nominant na Sacharovovu cenu Dr. Gubad Ibadoghlu se dostal do finále"
                 imageSrc="/tl/sacharova-cena.jpg"
                 alt="fotka Markéty a Bayram/Zhala Bayramova (lidskoprávní právník a dítě Dr. Gubad Ibadoghlua)"
-                styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
+                styles="3xl:gap-3 3xl:mb-0"
               />
               <TimelineEvent
                 eventName="Stovky dopisů politickým vězňům z řad Ukrajinců, Krymčanů a Krymských Tatarů"
                 imageSrc="/tl/dopisy.jpg"
                 alt="fotka ze psaní Stovky dopisů politickým vězňům z řad Ukrajinců, Krymčanů a Krymských Tatarů"
-                styles="sm:mb-8 3xl:gap-3 3xl:mb-0"
+                styles="3xl:gap-3 3xl:mb-0"
               />
             </div>
 

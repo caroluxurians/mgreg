@@ -15,7 +15,7 @@ const TimelineEvent = ({ eventName, eventDescription = "", imageSrc = "", alt = 
       <div className="font-heading text-2xl leading-[1.2] w-56 sm:text-3xl sm:w-70 lg:text-4xl lg:w-84 xl:text-5xl xl:w-106 2xl:text-6xl 2xl:w-122 3xl:w-140">
         {eventName}
       </div>
-      <div className="relative w-50 h-30">
+      <div className="relative w-50 h-30 sm:w-54 sm:h-34">
         <Image src={imageSrc} fill alt={alt} className="object-cover rounded-lg" />
       </div>
 

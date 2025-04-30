@@ -5,6 +5,7 @@ import LabelDark from "@/app/components/LabelDark";
 import Link from "next/link";
 import TimelineBulletPoint from "./TimelineBulletPoint";
 import TimelineEvent from "./TimelineEvent";
+import TimelineEventLarge from "./TimelineEventLarge";
 
 const OMne = () => {
   return (
@@ -82,7 +83,7 @@ const OMne = () => {
             lg:grid-cols-[1fr_3fr_2fr] 2xl:px-20 3xl:px-26"
           >
             <div className="pt-10 pb-12 grid grid-cols-2 relative">
-              <div className="flex flex-col h-500 pb-12 absolute top-8 left-6
+              <div className="flex flex-col h-520 pb-12 absolute top-8 left-6
               justify-between sm:top-12 sm:left-6 sm:pb-40 md:left-2 lg:h-310 lg:left-0 3xl:h-340 3xl:top-16"
               >
                 <TimelineBulletPoint shape="ellipse" year="2019" />
@@ -93,10 +94,9 @@ const OMne = () => {
                 <TimelineBulletPoint shape="circle" year="2024" />
                 <TimelineBulletPoint shape="ellipse" year="2024" />
                 <TimelineBulletPoint shape="circle" year="2024" />
-                <TimelineBulletPoint shape="ellipse" year="2025" />
-
+                <TimelineBulletPoint shape="ellipse" year="2025" styles="pt-12" />
               </div>
-              <div className="w-1 h-500 bg-red-pink absolute left-28 relative sm:left-32 sm:h-260 lg:h-350 lg:left-38 xl:left-42 2xl:left-54 3xl:left-62 3xl:h-400">
+              <div className="w-1 h-570 bg-red-pink absolute left-28 relative sm:left-32 sm:h-260 lg:h-350 lg:left-38 xl:left-42 2xl:left-54 3xl:left-62 3xl:h-400">
                 <div className="w-6 absolute -top-5 -left-2.5 sm:w-8 sm:-left-3.5 lg:w-10 lg:-top-10 lg:-left-4.5 2xl:w-12 2xl:-left-5.5 2xl:-top-12">
                   <Image
                     src="/cat-timeline-icon.svg"
@@ -116,7 +116,7 @@ const OMne = () => {
               </div>
             </div>
 
-            <div className="flex flex-col h-560 justify-between mt-14 pb-14 sm:pt-14 md:ml-5 lg:h-370 lg:pt-6 lg:pb-22 2xl:ml-8 3xl:h-400 3xl:ml-9 3xl:pt-9">
+            <div className="flex flex-col h-550 justify-between mt-12 sm:pt-14 md:ml-5 lg:h-370 lg:pt-6 lg:pb-22 2xl:ml-8 3xl:h-400 3xl:ml-9 3xl:pt-9">
               <TimelineEvent
                 eventName="Zvolení do Evropského parlamentu"
                 imageSrc="/tl/zvoleni.jpeg"
@@ -129,7 +129,7 @@ const OMne = () => {
                 alt="fotka historicky první mise europarlamentu na Taiwan"
                 styles="sm:mb-16 md:mb-4 lg:mb-0 3xl:mb-5 3xl:gap-3"
               />
-              <TimelineEvent
+              <TimelineEventLarge
                 eventName="Celý mandát jsem produkovala kampaně o dezinformacích, kyberbezpečnosti, AI a inkluzivitě v politice"
                 imageSrc="/tl/4.png"
                 alt="fotka loga kampaně o dezinformacích, kyberbezpečnosti, AI a inkluzivitě v politice"

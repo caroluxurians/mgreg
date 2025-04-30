@@ -10,7 +10,7 @@ type TimelineEventProps = {
 
 const TimelineEventLarge = ({ eventName, imageSrc = "", alt = "", styles = "" }: TimelineEventProps) => {
   return (
-    <div className={classNames(`flex flex-col gap-2 md:flex-row 2xl:gap-5 ${styles}`)}>
+    <div className={classNames(`flex flex-col gap-2 md:flex-row md:gap-6 2xl:gap-5 ${styles}`)}>
       <div className="font-heading text-2xl leading-[1.2] w-56 sm:text-3xl sm:w-70 lg:text-4xl lg:w-84 xl:text-5xl xl:w-106 2xl:text-6xl 2xl:w-122 3xl:w-140">
         {eventName}
       </div>

@@ -80,7 +80,7 @@ const OMne = () => {
             className="main-width grid grid-cols-[2fr_3fr]
             sm:mx-auto sm:grid-cols-[1fr_3fr] sm:gap-3
             md:grid-cols-[1fr_3fr] md:gap-0
-            lg:grid-cols-[1fr_3fr_2fr] 2xl:px-20 3xl:px-26"
+            lg:grid-cols-[1fr_3fr] 2xl:px-20 3xl:px-26"
           >
             <div className="pt-10 pb-12 grid grid-cols-2 relative">
               <div
@@ -88,7 +88,8 @@ const OMne = () => {
                 justify-between
                 sm:h-576 sm:top-12 sm:left-6 sm:pb-40
                 md:h-480 md:left-2
-                lg:h-310 lg:left-0 3xl:h-340 3xl:top-16"
+                lg:h-530 lg:left-0
+                3xl:h-340 3xl:top-16"
               >
                 <TimelineBulletPoint shape="ellipse" year="2019" />
                 <TimelineBulletPoint shape="circle" year="2021" />
@@ -104,7 +105,7 @@ const OMne = () => {
                 className="w-1 h-570 bg-red-pink absolute left-28 relative
                   sm:left-32 sm:h-610
                   md:h-470
-                  lg:h-350 lg:left-38
+                  lg:h-526 lg:left-38
                   xl:left-42 2xl:left-54
                   3xl:left-62 3xl:h-400"
               >
@@ -127,7 +128,12 @@ const OMne = () => {
               </div>
             </div>
 
-            <div className="flex flex-col h-550 justify-between mt-12 sm:h-590 sm:mt-14 md:h-450 md:mt-16 md:-ml-4 lg:h-370 lg:pt-6 lg:pb-22 2xl:ml-8 3xl:h-400 3xl:ml-9 3xl:pt-9">
+            <div
+              className="flex flex-col h-550 justify-between mt-12
+              sm:h-590 sm:mt-14 md:h-450 md:mt-16 md:-ml-4
+              lg:h-510 lg:-ml-12 lg:mt-14
+              2xl:ml-8 3xl:h-400 3xl:ml-9 3xl:pt-9"
+            >
               <TimelineEvent
                 eventName="Zvolení do Evropského parlamentu"
                 imageSrc="/tl/zvoleni.jpeg"

@@ -19,11 +19,10 @@ const OMne = () => {
             md:mt-10 md:mb-12
             lg:mt-14 lg:mb-18
             xl:mt-16 xl:mb-20
-            2xl:mt-20 2xl:mb-24
-            3xl:mt-28 3xl:mb-32"
+            2xl:mt-20 2xl:mb-24"
           >
             <div>
-              <div className="font-heading title-font-size text-red-pink-light mb-3 lg:mb-4 2xl:mb-3 3xl:mb-3.5">
+              <div className="font-heading title-font-size text-red-pink-light mb-3 lg:mb-4 2xl:mb-3">
                 Jsem Markéta Gregorová.<br />Členkou České pirátské strany<br /> jsem od roku 2012,
               </div>
               <div className="w-60 flex ml-25 mb-6 sm:hidden">
@@ -35,7 +34,7 @@ const OMne = () => {
                   alt="image of Marketa standing by the lectern"
                 />
               </div>
-              <div className="text-white paragraph-font-size flex flex-col w-76 gap-4 sm:w-70 md:w-88 lg:w-110 xl:w-120 2xl:w-156 2xl:gap-6 3xl:w-170 3xl:gap-7">
+              <div className="text-white paragraph-font-size flex flex-col w-76 gap-4 sm:w-70 md:w-88 lg:w-110 xl:w-120 2xl:w-156 2xl:gap-6">
                 <div>
                   v letech 2018 až 2020 jsem působila jako
                   předsedkyně <Link href="https://european-pirateparty.eu" target="_blank" className="underline">Evropské pirátské strany</Link>. Od roku
@@ -59,7 +58,7 @@ const OMne = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden w-64 flex pt-10 sm:block md:w-70 md:mr-4 lg:w-94 lg:mr-2 xl:w-110 xl:mr-0 2xl:w-136 3xl:w-170">
+            <div className="hidden w-64 flex pt-10 sm:block md:w-70 md:mr-4 lg:w-94 lg:mr-2 xl:w-110 xl:mr-0 2xl:w-136">
               <Image
                 src="/marketa-o-mne.png"
                 height={681}
@@ -74,13 +73,13 @@ const OMne = () => {
         <div
           className="bg-beige text-medium-pink pt-6 pb-6
           sm:pt-10 sm:pb-10 lg:pb-16 xl:pt-20 xl:pb-18
-          2xl:pt-24 2xl:pb-28 3xl:pt-25 3xl:pb-29"
+          2xl:pt-24 2xl:pb-28"
         >
           <div
             className="main-width grid grid-cols-[2fr_3fr]
             sm:mx-auto sm:grid-cols-[1fr_3fr] sm:gap-3
             md:gap-0
-            2xl:px-20 3xl:px-26"
+            2xl:px-20"
           >
             <div className="pt-10 pb-12 grid grid-cols-2 relative">
               <div
@@ -90,8 +89,7 @@ const OMne = () => {
                 md:h-480 md:left-2
                 lg:h-530 lg:left-0
                 xl:h-584 xl:-left-2
-                2xl:h-610 2xl:top-16
-                3xl:h-340 3xl:top-16"
+                2xl:h-610 2xl:top-16"
               >
                 <TimelineBulletPoint shape="ellipse" year="2019" />
                 <TimelineBulletPoint shape="circle" year="2021" />
@@ -109,8 +107,7 @@ const OMne = () => {
                   md:h-470
                   lg:h-526 lg:left-38
                   xl:h-580 xl:left-42
-                  2xl:h-618 2xl:left-50
-                  3xl:left-62 3xl:h-400"
+                  2xl:h-618 2xl:left-50"
               >
                 <div className="w-6 absolute -top-5 -left-2.5 sm:w-8 sm:-left-3.5 lg:w-10 lg:-top-10 lg:-left-4.5 2xl:w-12 2xl:-left-5.5 2xl:-top-12">
                   <Image
@@ -137,7 +134,7 @@ const OMne = () => {
               lg:h-510 lg:-ml-12 lg:mt-14
               xl:h-560 xl:-ml-18
               2xl:h-590
-              3xl:h-400 3xl:ml-9 3xl:pt-9"
+              3xl:-ml-32"
             >
               <TimelineEvent
                 eventName="Zvolení do Evropského parlamentu"

@@ -17,8 +17,7 @@ const TimelineEvent = ({ eventName, imageSrc = "", alt = "", styles = "", rotate
         sm:text-3xl sm:w-70 md:w-74
         lg:text-4xl lg:w-90
         xl:text-5xl xl:w-116 xl:leading-[1.1]
-        2xl:text-6xl 2xl:w-146 2xl:leading-[1]
-         3xl:w-140"
+        2xl:text-6xl 2xl:w-146 2xl:leading-[1]"
       >
         {eventName}
       </div>

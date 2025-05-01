@@ -11,17 +11,18 @@ type TimelineEventProps = {
 
 const TimelineEvent = ({ eventName, imageSrc = "", alt = "", styles = "", rotate = "" }: TimelineEventProps) => {
   return (
-    <div className={classNames(`flex flex-col gap-2 md:flex-row md:gap-6 lg:gap-8 xl:gap-12 2xl:gap-5 ${styles}`)}>
+    <div className={classNames(`flex flex-col gap-2 md:flex-row md:gap-6 lg:gap-8 xl:gap-12 2xl:gap-14 ${styles}`)}>
       <div
         className="font-heading text-2xl leading-[1.2] w-56
         sm:text-3xl sm:w-70 md:w-74
         lg:text-4xl lg:w-90
         xl:text-5xl xl:w-116 xl:leading-[1.1]
-        2xl:text-6xl 2xl:w-122 3xl:w-140"
+        2xl:text-6xl 2xl:w-146 2xl:leading-[1]
+         3xl:w-140"
       >
         {eventName}
       </div>
-      <div className="relative w-50 h-30 sm:w-54 sm:h-34 lg:w-70 lg:h-42 xl:w-80 xl:h-48">
+      <div className="relative w-50 h-30 sm:w-54 sm:h-34 lg:w-70 lg:h-42 xl:w-80 xl:h-48 2xl:w-84 2xl:h-52">
         <Image src={imageSrc} fill alt={alt} className={classNames(`object-cover rounded-xl md:rounded-2xl ${rotate}`)} />
       </div>
 

@@ -90,6 +90,7 @@ const OMne = () => {
                 md:h-480 md:left-2
                 lg:h-530 lg:left-0
                 xl:h-584 xl:-left-2
+                2xl:h-610 2xl:top-16
                 3xl:h-340 3xl:top-16"
               >
                 <TimelineBulletPoint shape="ellipse" year="2019" />
@@ -107,7 +108,8 @@ const OMne = () => {
                   sm:left-32 sm:h-610
                   md:h-470
                   lg:h-526 lg:left-38
-                  xl:h-580 xl:left-42 2xl:left-54
+                  xl:h-580 xl:left-42
+                  2xl:h-618 2xl:left-50
                   3xl:left-62 3xl:h-400"
               >
                 <div className="w-6 absolute -top-5 -left-2.5 sm:w-8 sm:-left-3.5 lg:w-10 lg:-top-10 lg:-left-4.5 2xl:w-12 2xl:-left-5.5 2xl:-top-12">
@@ -134,7 +136,8 @@ const OMne = () => {
               sm:h-590 sm:mt-14 md:h-450 md:mt-16 md:-ml-4
               lg:h-510 lg:-ml-12 lg:mt-14
               xl:h-560 xl:-ml-18
-              2xl:ml-8 3xl:h-400 3xl:ml-9 3xl:pt-9"
+              2xl:h-590
+              3xl:h-400 3xl:ml-9 3xl:pt-9"
             >
               <TimelineEvent
                 eventName="Zvolení do Evropského parlamentu"

@@ -1,10 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const ContactCardMarketa = () => {
   const [flipped, setFlipped] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setFlipped(false);
+  }, [pathname]);
 
   return (
     <button

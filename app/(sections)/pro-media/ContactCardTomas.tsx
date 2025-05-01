@@ -58,12 +58,12 @@ const ContactCardTomas = () => {
               PR specialist
             </div>
           </div>
-          <div className="flex flex-col absolute top-36 left-6 md:top-25 md:left-4 lg:top-32 xl:top-40 xl:left-6 2xl:left-7 2xl:top-42">
+          <div className="flex flex-col absolute top-36 left-6 md:top-23 md:left-4 lg:top-32 xl:top-40 xl:left-6 2xl:left-7 2xl:top-42">
             <div
               className="text-white text-left mb-10 w-60
-                md:text-sm md:mb-2 md:w-42
-                lg:text-base lg:w-auto lg:mb-14
-                xl:text-lg xl:mb-16 2xl:text-xl 2xl:mb-20"
+                md:text-sm md:mb-4 md:w-42
+                lg:text-base lg:w-auto lg:mb-5
+                xl:text-lg xl:mb-8 2xl:text-xl 2xl:mb-11"
             >
               Potřebujete mě kontaktovat?
               Rád odpovím na vaše
@@ -74,7 +74,7 @@ const ContactCardTomas = () => {
                 href="mailto:tomas.polak@europarl.europa.eu"
                 onClick={(e) => e.stopPropagation()}
               >
-                <div className="text-white font-black text-base flex flex-col text-left hover:underline md:text-sm lg:text-lg 2xl:text-xl">
+                <div className="text-white font-black text-base flex flex-col text-left hover:underline md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
                   <span>tomas.polak</span>
                   <span>@europarl.europa.eu</span>
                 </div>
@@ -83,7 +83,7 @@ const ContactCardTomas = () => {
                 href="tel:+420728035059"
                 onClick={(e) => e.stopPropagation()}
               >
-                <div className="text-white font-black text-base text-left hover:underline md:text-sm lg:text-lg 2xl:text-xl">
+                <div className="text-white font-black text-base text-left hover:underline md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
                   +420 728 035 059
                 </div>
               </a>

@@ -51,8 +51,13 @@ const ContactCardMarketa = () => {
               Europoslankyně
             </div>
           </div>
-          <div className="flex flex-col absolute top-36 left-6 md:top-25 md:left-4">
-            <div className="text-white text-left md:text-sm lg:text-base xl:text-lg 2xl:text-xl mb-16 md:mb-6 md:w-44">
+          <div className="flex flex-col absolute top-36 left-6 md:top-25 md:left-4 lg:top-32">
+            <div
+              className="text-white text-left mb-16
+                md:text-sm md:mb-6 md:w-44
+                lg:text-base lg:w-auto lg:mb-14
+                xl:text-lg 2xl:text-xl"
+            >
               Potřebujete mě kontaktovat?
               Ráda odpovím na vaše
               dotazy nebo připomínky.
@@ -61,7 +66,7 @@ const ContactCardMarketa = () => {
               href="mailto:marketa.gregorova@europarl.europa.eu"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="text-white font-black text-base flex flex-col text-left hover:underline md:text-sm">
+              <div className="text-white font-black text-base flex flex-col text-left hover:underline md:text-sm lg:text-base">
                 <span>marketa.gregorova</span>
                 <span>@europarl.europa.eu</span>
               </div>

@@ -1,28 +1,74 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 const ContactCardMarketa = () => {
+  const [flipped, setFlipped] = useState(false);
+
   return (
-    <div className="bg-medium-pink overflow-hidden rounded-3xl flex w-[270px] h-[359px] relative mx-auto md:w-[200px] md:h-[266px] lg:w-[250px] lg:h-[332px] xl:w-[300px] xl:h-[399px] 2xl:w-[325px] 2xl:h-[432px]">
-      <div className="absolute -bottom-38 w-82 -right-7 md:w-62 md:-bottom-29 md:-right-6 lg:w-74 lg:-bottom-34 lg:-right-5 xl:w-87 xl:-bottom-40 xl:-right-4 2xl:w-94 2xl:-right-5 2xl:-bottom-43">
-        <Image
-          src="/marketa-contact-card-new.png"
-          height={432}
-          width={325}
-          alt="Markéta kontaktní karta"
-          unoptimized
-          className="rounded-[30px] w-full h-auto md:rounded-[20px]"
-        />
-      </div>
-      <div className="absolute top-5 left-6 flex flex-col md:top-4 md:left-4 xl:top-5 xl:left-6 2xl:top-6 2xl:left-7">
-        <div className="font-heading text-beige text-[40px]/[40px] md:text-[30px]/[30px] lg:text-[38px]/[38px] xl:text-[46px]/[46px] 2xl:text-[50px]/[50px]">
-          Markéta Gregorová
+    <button
+      type="button"
+      className="relative w-68 h-90 md:w-50 md:h-67 lg:w-62 lg:h-83 xl:w-75 xl:h-100 2xl:w-81 2xl:h-108 [perspective:1000px] mx-auto bg-transparent"
+      onClick={() => setFlipped(!flipped)}
+      aria-pressed={flipped}
+      tabIndex={0}
+    >
+      <div
+        className={`
+          relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d]
+          ${flipped ? "[transform:rotateY(180deg)]" : ""}
+        `}
+      >
+        {/* Front Face */}
+        <div className="absolute bg-medium-pink w-full h-full overflow-hidden rounded-3xl flex [backface-visibility:hidden]">
+          <div className="absolute -bottom-38 w-82 -right-7 md:w-62 md:-bottom-29 md:-right-6 lg:w-74 lg:-bottom-34 lg:-right-5 xl:w-87 xl:-bottom-40 xl:-right-4 2xl:w-94 2xl:-right-5 2xl:-bottom-43">
+            <Image
+              src="/marketa-contact-card-new.png"
+              height={432}
+              width={325}
+              alt="Markéta kontaktní karta"
+              unoptimized
+              className="w-full h-auto"
+            />
+          </div>
+          <div className="absolute top-5 left-6 flex flex-col md:top-4 md:left-4 xl:top-5 xl:left-6 2xl:top-6 2xl:left-7">
+            <div className="font-heading text-beige text-4xl md:text-3xl lg:text-4xl xl:text-5xl">
+              Markéta Gregorová
+            </div>
+            <div className="text-light-pink text-left text-lg md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+              Europoslankyně
+            </div>
+          </div>
         </div>
-        <div className="text-light-pink text-[18px]/[22px] md:text-[14px]/[16px] lg:text-[16px]/[18px] xl:text-[18px]/[24px] 2xl:text-[20px]/[30px]">
-          Europoslankyně
+        {/* Back Face */}
+        <div className="absolute inset-0 w-full h-full bg-medium-pink rounded-3xl flex flex-col items-center justify-center [backface-visibility:hidden] [transform:rotateY(180deg)]">
+          <div className="absolute top-5 left-6 flex flex-col md:top-4 md:left-4 xl:top-5 xl:left-6 2xl:top-6 2xl:left-7">
+            <div className="font-heading text-beige text-4xl md:text-3xl lg:text-4xl xl:text-5xl">
+              Markéta Gregorová
+            </div>
+            <div className="text-light-pink text-left font-medium text-lg md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
+              Europoslankyně
+            </div>
+          </div>
+          <div className="flex flex-col absolute top-36">
+            <div className="flex flex-col text-white text-left md:text-sm lg:text-base xl:text-lg 2xl:text-xl mb-16">
+              <span>Potřebujete mě kontaktovat?</span>
+              <span>Ráda odpovím na vaše</span>
+              <span>dotazy nebo připomínky.</span>
+            </div>
+            <div className="text-white font-black text-md flex flex-col text-left">
+              <span>marketa.gregorova</span>
+              <span>@europarl.europa.eu</span>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </button>
   );
 };
 
 export default ContactCardMarketa;
+
+/*  w-[270px] h-[359px]  md:w-[200px] md:h-[266px]
+lg:w-[250px] lg:h-[332px] xl:w-[300px] xl:h-[399px] 2xl:w-[325px] 2xl:h-[432px] */

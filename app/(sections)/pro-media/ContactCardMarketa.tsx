@@ -57,10 +57,15 @@ const ContactCardMarketa = () => {
               <span>Ráda odpovím na vaše</span>
               <span>dotazy nebo připomínky.</span>
             </div>
-            <div className="text-white font-black text-md flex flex-col text-left">
-              <span>marketa.gregorova</span>
-              <span>@europarl.europa.eu</span>
-            </div>
+            <a
+              href="mailto:marketa.gregorova@europarl.europa.eu"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="text-white font-black text-md flex flex-col text-left hover:underline">
+                <span>marketa.gregorova</span>
+                <span>@europarl.europa.eu</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>

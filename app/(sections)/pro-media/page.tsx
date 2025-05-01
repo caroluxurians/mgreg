@@ -24,7 +24,7 @@ const ProMedia = () => {
           <div className="md:flex md:gap-4 lg:gap-7 2xl:gap-28">
             <div className="paragraph-font-size w-66 mb-24 sm:mb-8 sm:w-76 md:w-56 lg:w-74 lg:pr-7 xl:w-94 xl:mr-10 2xl:mr-0 2xl:w-104 3xl:w-120">
               Potřebujete mě kontaktovat? Napište mi na e-mail
-              uvedený po najetí na kartu kontaktu. Pokud jde o
+              uvedený po kliknutí na kartu kontaktu. Pokud jde o
               mediální vystoupení či komentář, neváhejte se
               obrátit na PR specialistu Tomáše Poláka.
             </div>

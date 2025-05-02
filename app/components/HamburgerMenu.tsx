@@ -46,20 +46,35 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
       <div
         className={classNames(
           !isOpen && "hidden",
-          "font-heading w-16 text-[17px] tracking-[0.34px] absolute z-5 right-0 top-6 flex flex-col text-end",
+          "font-heading w-16 text-xl tracking-[0.34px] absolute z-5 right-0 top-6 flex flex-col text-end",
           isOMne && "bg-medium-pink",
           isClanky && "bg-beige",
           !isOMne && !isClanky && "bg-light-pink",
         )}
       >
         <nav>
-          {sections.map((section) => (
-            <Link href={`/${section.sectionHref}`} key={section.sectionName}>
-              <div className={classNames(isOMne ? "text-white" : "text-medium-pink", "hover:text-[#DF7AAE]")}>
-                {section.sectionName}
-              </div>
-            </Link>
-          ))}
+          {sections.map((section) => {
+            const isActive = pathname === `/${section.sectionHref}`;
+            return (
+              <Link href={`/${section.sectionHref}`} key={section.sectionName}>
+                <div
+                  className={classNames(
+                    isActive
+                      ? isOMne
+                        ? "text-light-pink"
+                        : "text-white"
+                      : isOMne
+                        ? "text-white"
+                        : "text-medium-pink",
+                    "hover:text-[#DF7AAE]",
+                    "mb-0.5",
+                  )}
+                >
+                  {section.sectionName}
+                </div>
+              </Link>
+            );
+          })}
         </nav>
       </div>
     </div>

@@ -16,7 +16,6 @@ const HeaderLanding = () => {
         justify-between items-baseline
         relative font-heading bg-transparent text-medium-pink
         mx-auto mt-5 gap-3
-        sm:mt-6
         md:mx-10 md:w-full
         lg:pt-0
         xl:h-auto
@@ -34,7 +33,7 @@ const HeaderLanding = () => {
         <nav
           className="flex leading-none
           text-2xl tracking-[0.02em]
-          gap-4 mx-auto sm:gap-4
+          gap-4 mx-auto sm:gap-4 sm:text-3xl
           md:gap-6 md:items-end md:mx-0 md:text-3xl md:tracking-[0.02em]
           lg:gap-6 xl:gap-7 2xl:gap-10"
         >

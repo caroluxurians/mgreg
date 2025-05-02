@@ -17,7 +17,7 @@ const Home = () => {
             <span>v Evropském parlamentu,</span>
             <span>chránící vaše občanské svobody.</span>
           </div>
-          <div className="w-150 h-150 overflow-hidden ml-5 -mt-6 lg:ml-16 z-3 xl:hidden">
+          <div className="w-150 overflow-hidden ml-5 -mt-6 sm:w-190 sm:-mt-5 lg:ml-16 z-3 xl:hidden">
             <Image
               src="/marketa-landing-cropped.png"
               height={1400}
@@ -59,7 +59,7 @@ const Home = () => {
             Markéta Gregorová
           </div>
           <div className="font-medium text-dark-pink text-center lg:hidden bg-light-pink h-30 flex items-center mb-4
-          text-base sm:text-xl md:text-2xl
+          text-base sm:text-xl sm:h-42 sm:mb-7 md:text-2xl
           md:pt-6 md:mb-12"
           >
             Pirátská poslankyně v Evropském parlamentu,<br />

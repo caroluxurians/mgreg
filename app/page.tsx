@@ -60,8 +60,8 @@ const Home = () => {
           </div>
         </main>
         <div className="font-medium text-dark-pink text-center lg:hidden bg-light-pink pt-4 mb-8
-      text-[15px] sm:text-[19px] md:text-[22px]
-      md:pt-6 md:mb-12"
+        text-base sm:text-xl md:text-2xl
+        md:pt-6 md:mb-12"
         >
           Pirátská poslankyně v Evropském parlamentu,<br />
           chránící vaše občanské svobody.

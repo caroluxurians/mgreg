@@ -17,19 +17,11 @@ const czechMonthMap: { [key: string]: number } = {
 };
 
 const parseCzechDate = (dateStr: string): string => {
-  const regex = /(\d{1,2})\.\s(\w+)\s(\d{4})/;
-  const match = dateStr.match(regex);
-
-  if (!match) return dateStr;
-
-  const day = match[1];
-  const monthName = match[2];
-  const year = match[3];
-
+  const [day, monthName, year] = dateStr.trim().split(" ");
   const month = czechMonthMap[monthName];
   if (!month) return dateStr;
 
-  return `${day}. ${month}. ${year}`;
+  return `${day} ${month}. ${year}`;
 };
 
 type Release = {

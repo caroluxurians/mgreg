@@ -54,13 +54,13 @@ const PressReleases = async () => {
     <>
       {releases.map((release) => (
         <div
-          className="flex items-center h-30 border-b border-red-pink justify-between md:pl-2 md:pb-4 xl:h-38 3xl:h-44 3xl:pb-5"
+          className="flex items-center h-30 border-b border-red-pink justify-between md:h-34 xl:h-38 2xl:h-48 3xl:h-44"
           key={release.id}
         >
-          <div className="font-heading text-center text-7xl ml-2 mr-7 w-4 sm:text-8xl md:text-8xl md:w-5 xl:text-8xl xl:w-10 2xl:mr-2 2xl:mb-4">
+          <div className="font-heading flex justify-center text-7xl w-14 mr-2 sm:text-8xl md:text-8xl md:w-14 md:mr-4 xl:text-8xl xl:w-10">
             {release.id + 1}
           </div>
-          <div className="text-sm font-bold w-80 sm:text-base sm:leading-[1.4] md:text-base xl:text-lg xl:w-90 2xl:text-2xl 2xl:w-110 3xl:w-140">
+          <div className="text-sm font-bold w-80 sm:text-base sm:leading-[1.4] sm:w-84 md:text-base xl:text-lg xl:w-110 2xl:text-2xl 2xl:w-116 3xl:w-134">
             <a
               href={release.href}
               target="_blank"
@@ -75,7 +75,7 @@ const PressReleases = async () => {
               href={release.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white bg-medium-pink hover:text-medium-pink hover:bg-light-pink transition-colors duration-100 rounded-full font-semibold text-center w-fit px-3 py-1 3xl:px-7 3xl:py-2.5"
+              className="text-white bg-medium-pink hover:text-medium-pink hover:bg-light-pink transition-colors duration-100 rounded-full font-semibold text-center w-fit px-3 py-1 sm:px-4 3xl:px-7 3xl:py-2.5"
             >
               číst
             </a>

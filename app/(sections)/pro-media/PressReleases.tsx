@@ -61,7 +61,14 @@ const PressReleases = async () => {
             {release.id + 1}
           </div>
           <div className="text-[14px] font-bold w-80 sm:text-[18px] md:text-[16px] xl:text-[18px] xl:w-90 2xl:text-[24px]/[34px] 2xl:w-110 3xl:w-140">
-            {release.title}
+            <a
+              href={release.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              {release.title}
+            </a>
           </div>
           <div className="flex flex-col text-[12px] italic w-25 items-end gap-2 sm:text-[16px] pr-1 md:hidden lg:flex lg:mt-3 lg:text-[14px] xl:text-[16px] 2xl:text-[18px] 2xl:mb-6 2xl:gap-3 3xl:text-[20px] 3xl:w-auto 3xl:gap-5 3xl:mt-10">
             <a

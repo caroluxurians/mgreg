@@ -2,17 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 import ArticleType from "@/app/types/article";
 
+export const perexPreview = (text: string, maxLength: number = 120): string => {
+  if (!text) return "";
+
+  if (text.length <= maxLength) return text;
+
+  const sliced = text.slice(0, maxLength);
+  const lastSpace = sliced.lastIndexOf(" ");
+
+  return lastSpace > 0 ? `${sliced.slice(0, lastSpace)}…` : `${sliced}…`;
+};
+
 const ArticlePreview = ({ article }: { article: ArticleType }) => {
-  const perexPreview = (text: string, maxLength: number = 120): string => {
-    if (!text) return "";
-
-    if (text.length <= maxLength) return text;
-
-    const sliced = text.slice(0, maxLength);
-    const lastSpace = sliced.lastIndexOf(" ");
-
-    return lastSpace > 0 ? `${sliced.slice(0, lastSpace)}…` : `${sliced}…`;
-  };
   const preview = perexPreview(article.perex);
   const previewS = perexPreview(article.perex, 200);
   const previewL = perexPreview(article.perex, 100);

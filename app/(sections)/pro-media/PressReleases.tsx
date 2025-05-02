@@ -1,4 +1,5 @@
 import * as cheerio from "cheerio";
+import { perexPreview as titlePreview } from "../clanky/ArticlePreview";
 
 // TODO tahat odsud: https://www.pirati.cz/jak-pirati-pracuji/?tag_id=216
 const czechMonthMap: { [key: string]: number } = {
@@ -44,7 +45,7 @@ const PressReleases = async () => {
         id: i,
         href: loadedEl("a").attr("href")!,
         time: parseCzechDate(loadedEl(".text-grey-350").text()),
-        title: loadedEl("h2").text(),
+        title: titlePreview(loadedEl("h2").text(), 120),
       });
     }
   });

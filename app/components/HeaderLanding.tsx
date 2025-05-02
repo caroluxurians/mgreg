@@ -15,7 +15,7 @@ const HeaderLanding = () => {
         className="flex flex-col md:flex-row
         justify-between items-baseline
         relative font-heading bg-transparent text-medium-pink
-        mx-auto mt-7 gap-3
+        mx-auto mt-5 gap-3
         sm:mt-6
         md:mx-10 md:w-full
         lg:pt-0

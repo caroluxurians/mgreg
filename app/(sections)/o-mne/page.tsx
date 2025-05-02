@@ -14,7 +14,7 @@ const OMne = () => {
       <Header />
       <main>
         <div>
-          <div className="main-width mx-auto mt-5 mb-8 flex     flex-col sm:grid sm:grid-cols-[3fr_2fr]
+          <div className="main-width mx-auto mt-5 mb-8 flex flex-col sm:grid sm:grid-cols-[3fr_2fr]
             sm:mt-7 sm:mb-10
             md:mt-10 md:mb-12
             lg:mt-14 lg:mb-18
@@ -58,7 +58,7 @@ const OMne = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden w-64 flex pt-10 sm:block md:w-70 md:mr-4 lg:w-94 lg:mr-2 xl:w-110 xl:mr-0 2xl:w-136">
+            <div className="hidden w-63 flex pt-10 sm:block md:w-66 md:mr-4 lg:w-94 lg:mr-2 xl:w-110 xl:mr-0 2xl:w-136">
               <Image
                 src="/marketa-o-mne.png"
                 height={681}

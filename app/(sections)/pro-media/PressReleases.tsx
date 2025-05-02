@@ -1,6 +1,36 @@
 import * as cheerio from "cheerio";
 
 // TODO tahat odsud: https://www.pirati.cz/jak-pirati-pracuji/?tag_id=216
+const czechMonthMap: { [key: string]: number } = {
+  ledna: 1,
+  února: 2,
+  března: 3,
+  dubna: 4,
+  května: 5,
+  června: 6,
+  července: 7,
+  srpna: 8,
+  září: 9,
+  října: 10,
+  listopadu: 11,
+  prosince: 12,
+};
+
+const parseCzechDate = (dateStr: string): string => {
+  const regex = /(\d{1,2})\.\s(\w+)\s(\d{4})/;
+  const match = dateStr.match(regex);
+
+  if (!match) return dateStr;
+
+  const day = match[1];
+  const monthName = match[2];
+  const year = match[3];
+
+  const month = czechMonthMap[monthName];
+  if (!month) return dateStr;
+
+  return `${day}. ${month}. ${year}`;
+};
 
 type Release = {
   id: number
@@ -21,7 +51,7 @@ const PressReleases = async () => {
       releases.push({
         id: i,
         href: loadedEl("a").attr("href")!,
-        time: loadedEl(".text-grey-350").text(),
+        time: parseCzechDate(loadedEl(".text-grey-350").text()),
         title: loadedEl("h2").text(),
       });
     }

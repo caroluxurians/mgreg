@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <HeaderLanding />
-      <div className="h-screen max-h-screen lg:h-[620px] xl:h-[600px] 2xl:h-[660px] flex flex-col bg-light-pink">
+      <div className="h-screen max-h-screen lg:h-155 xl:h-150 2xl:h-[660px] flex flex-col bg-light-pink">
         <main
           className="relative flex-1 flex flex-col justify-start items-center mb-3 lg:mb-0 overflow-hidden pt-14 lg:pt-12 2xl:pt-10 2xl:w-[1267px] 2xl:mx-auto"
         >

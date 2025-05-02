@@ -6,12 +6,12 @@ const Home = () => {
   return (
     <>
       <HeaderLanding />
-      <div className="h-screen max-h-screen lg:h-155 xl:h-150 2xl:h-[660px] flex flex-col bg-light-pink">
+      <div className="h-screen max-h-screen lg:h-155 xl:h-150 2xl:h-165 flex flex-col bg-light-pink">
         <main
           className="relative flex-1 flex flex-col justify-start items-center mb-3 lg:mb-0 overflow-hidden pt-14 lg:pt-12 2xl:pt-10 2xl:w-[1267px] 2xl:mx-auto"
         >
           <div className="hidden lg:flex lg:flex-col text-white
-         font-medium leading-none text-[17px] 2xl:text-[22px] absolute top-44 left-8 gap-1.5 xl:left-28 2xl:left-0"
+         font-medium leading-none text-base xl:text-lg 2xl:text-xl absolute top-44 left-8 gap-1.5 xl:left-28 2xl:left-0"
           >
             <span>Pirátská poslankyně</span>
             <span>v Evropském parlamentu,</span>
@@ -27,7 +27,8 @@ const Home = () => {
             />
           </div>
 
-          <div className="absolute bg-light-pink z-2 rounded-full top-10 lg:top-4 lg:ml-4 xl:ml-2 2xl:mr-15 w-[516px] h-[516px] lg:w-[380px] lg:h-[380px] xl:w-[370px] xl:h-[370px] 2xl:w-[410px] 2xl:h-[410px] shadow-[0_0_40px_rgba(119,14,61,0.4)] md:shadow-[0_0_40px_rgba(119,14,61,0.8)]" />
+          <div className="absolute bg-light-pink z-2 rounded-full top-10 lg:top-4 lg:ml-4 xl:ml-2 2xl:mr-15 w-129 h-129 lg:w-95 lg:h-95 xl:w-93 xl:h-93 2xl:w-103 2xl:h-103 shadow-[0_0_40px_rgba(119,14,61,0.4)] md:shadow-[0_0_40px_rgba(119,14,61,0.8)]" />
+
           <div className="w-190 ml-14 -mt-10 z-3 hidden xl:block 2xl:hidden">
             <Image
               src="/marketa-landing-cropped.png"

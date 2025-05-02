@@ -23,8 +23,8 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
           && (
             <Image
               src="/hamburger.svg"
-              width={25}
-              height={10}
+              width={30}
+              height={12}
               alt="hamburger-menu-icon"
               className="mb-2.5"
               unoptimized

@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <HeaderLanding />
-      <div className="max-h-screen h-184 lg:h-155 xl:h-150 2xl:h-165 flex flex-col bg-light-pink">
+      <div className="max-h-screen h-184 md:h-screen lg:h-155 xl:h-150 2xl:h-165 flex flex-col bg-light-pink">
         <main
           className="relative flex-1 flex flex-col justify-start items-center lg:mb-0 overflow-hidden pt-14 lg:pt-12 2xl:pt-10 2xl:w-[1267px] 2xl:mx-auto"
         >
@@ -17,7 +17,7 @@ const Home = () => {
             <span>v Evropském parlamentu,</span>
             <span>chránící vaše občanské svobody.</span>
           </div>
-          <div className="w-150 overflow-hidden ml-5 -mt-6 sm:w-190 sm:-mt-5 lg:ml-16 z-3 xl:hidden">
+          <div className="w-150 overflow-hidden ml-5 -mt-6 sm:w-190 sm:-mt-5 md:-mt-4 lg:ml-16 z-3 xl:hidden">
             <Image
               src="/marketa-landing-cropped.png"
               height={1400}
@@ -27,7 +27,7 @@ const Home = () => {
             />
           </div>
 
-          <div className="absolute bg-light-pink z-2 rounded-full top-10 lg:top-4 lg:ml-4 xl:ml-2 2xl:mr-15 w-129 h-129 lg:w-95 lg:h-95 xl:w-93 xl:h-93 2xl:w-103 2xl:h-103 shadow-[0_0_40px_rgba(119,14,61,0.4)] md:shadow-[0_0_40px_rgba(119,14,61,0.8)]" />
+          <div className="absolute bg-light-pink z-2 rounded-full top-10 md:top-12 lg:top-4 lg:ml-4 xl:ml-2 2xl:mr-15 w-129 h-129 lg:w-95 lg:h-95 xl:w-93 xl:h-93 2xl:w-103 2xl:h-103 shadow-[0_0_40px_rgba(119,14,61,0.4)] lg:shadow-[0_0_40px_rgba(119,14,61,0.8)]" />
 
           <div className="w-190 ml-14 -mt-10 z-3 hidden xl:block 2xl:hidden">
             <Image
@@ -60,7 +60,7 @@ const Home = () => {
           </div>
           <div className="font-medium text-dark-pink text-center lg:hidden bg-light-pink h-30 flex items-center mb-4
           text-base sm:text-xl sm:h-42 sm:mb-7 md:text-2xl
-          md:pt-6 md:mb-12"
+          md:absolute md:-bottom-7 md:z-3 md:h-42 md:pb-4"
           >
             Pirátská poslankyně v Evropském parlamentu,<br />
             chránící vaše občanské svobody.

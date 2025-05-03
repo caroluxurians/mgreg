@@ -17,7 +17,7 @@ const HeaderLanding = () => {
         relative font-heading bg-transparent text-medium-pink
         mx-auto mt-5 gap-3
         md:mx-10 md:w-full
-        lg:pt-0
+        lg:pt-0 lg:mt-2
         xl:h-auto
         2xl:w-[1267px] 2xl:mx-auto 2xl:px-0"
       >

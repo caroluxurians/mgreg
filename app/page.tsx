@@ -55,12 +55,12 @@ const Home = () => {
           className="absolute top-8 right-18 rotate-30 z-1"
           unoptimized
         /> */}
-          <div className="hidden lg:block text-[150px] xl:text-[198px] 2xl:text-[235px] font-heading text-medium-pink whitespace-nowrap z-5 absolute top-80 xl:top-70 2xl:top-75">
+          <div className="hidden lg:block text-[150px] xl:text-[198px] 2xl:text-[235px] font-heading text-medium-pink whitespace-nowrap z-5 absolute top-104 xl:top-70 2xl:top-75">
             Markéta Gregorová
           </div>
           <div className="font-medium text-dark-pink text-center lg:hidden bg-light-pink h-30 flex items-center mb-4
           text-base sm:text-xl sm:h-42 sm:mb-7 md:text-2xl
-          md:absolute md:-bottom-7 md:z-3 md:h-42 md:pb-4"
+          md:absolute md:-bottom-7 md:z-4 md:h-42 md:pb-4"
           >
             Pirátská poslankyně v Evropském parlamentu,<br />
             chránící vaše občanské svobody.

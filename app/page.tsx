@@ -5,18 +5,18 @@ import Footer from "./components/Footer";
 const Home = () => {
   return (
     <div>
-      <div className="h-screen min-h-screen flex flex-col">
+      <div className="h-screen flex flex-col">
         <HeaderLanding />
-        <main className="flex grow flex-col items-center justify-end">
-          <div
-            className="w-150"
-          >
+        <main className="flex-1 overflow-hidden relative">
+          blep
+          <div className="flex justify-center">
             <Image
               src="/marketa-landing-cropped.png"
-              height={1400}
-              width={1120}
+              height={400}
+              width={320}
               alt="Markéta Gregorová foto sm"
               unoptimized
+              className="absolute top-[calc(100%-300px)]"
             />
           </div>
         </main>

@@ -3,10 +3,10 @@ import MarketaCard from "./MarketaCard";
 import SocialsSet from "./SocialsSet";
 import TomasCard from "./TomasCard";
 
-const Footer = ({ background = "bg-medium-pink" }: { background?: string }) => {
+const Footer = ({ styles = "bg-medium-pink" }: { styles?: string }) => {
   return (
     <footer
-      className={classNames(`${background} w-full h-full`)}
+      className={classNames(`${styles}`)}
     >
       <div
         className="flex flex-col gap-9 items-start text-light-pink pb-10 pl-7 sm:pl-14

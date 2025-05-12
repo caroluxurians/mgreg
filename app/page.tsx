@@ -8,7 +8,6 @@ const Home = () => {
       <div className="h-screen flex flex-col">
         <HeaderLanding />
         <main className="flex-1 overflow-hidden relative">
-          blep
           <div className="flex justify-center">
             <Image
               src="/marketa-landing-cropped.png"

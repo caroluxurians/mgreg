@@ -1,21 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 
-const ContactCardMarketa = () => {
-  const [flipped, setFlipped] = useState(false);
-  const pathname = usePathname();
-
-  useEffect(() => {
-    setFlipped(false);
-  }, [pathname]);
-
+const ContactCardMarketa = ({ flipped, setFlipped }: {
+  flipped: boolean, setFlipped: Dispatch<SetStateAction<boolean>>
+}) => {
   return (
     <button
       type="button"
-      className="relative w-68 h-90 md:w-50 md:h-67 lg:w-62 lg:h-83 xl:w-75 xl:h-100 2xl:w-81 2xl:h-108 [perspective:1000px] mx-auto bg-transparent"
+      className="relative w-68 h-90 md:w-50 md:h-67 lg:w-62 lg:h-83 xl:w-75 xl:h-100 2xl:w-81 2xl:h-108 [perspective:1000px] mx-auto bg-transparent cursor-pointer"
       onClick={() => setFlipped(!flipped)}
       aria-pressed={flipped}
       tabIndex={0}

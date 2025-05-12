@@ -14,7 +14,7 @@ const MojePrace = () => {
 
         <div className="sm:flex sm:justify-center">
           <div
-            className="h-screen main-width max-h-screen flex flex-col mt-7 gap-5 mx-auto -mb-20
+            className="main-width flex flex-col mt-7 gap-5 mx-auto mb-10
             sm:h-auto sm:grid sm:grid-cols-[3fr_2fr] sm:gap-0 sm:mb-10
             md:mt-10
             lg:mt-14 lg:mb-18
@@ -42,15 +42,14 @@ const MojePrace = () => {
                 soukromí běžných občanů.
               </div>
             </div>
-            <div className="mx-auto w-78 mt-4 sm:w-58 md:w-70 md:mr-2 md:mt-2 lg:w-94 lg:ml-0 lg:mt-2 xl:w-110 2xl:w-136 2xl:ml-22 3xl:w-160">
-              <Image
-                src="/marketa-moje-prace.png"
-                height={642}
-                width={642}
-                alt="Markéta large icon"
-                unoptimized
-              />
-            </div>
+            <Image
+              src="/marketa-moje-prace.png"
+              height={642}
+              width={642}
+              className="mx-auto w-46 mt-4 sm:w-58 md:w-70 md:mr-2 md:mt-2 lg:w-94 lg:ml-0 lg:mt-2 xl:w-110 2xl:w-136 2xl:ml-22 3xl:w-160"
+              alt="Markéta large icon"
+              unoptimized
+            />
           </div>
         </div>
 

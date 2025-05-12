@@ -59,7 +59,7 @@ const Akce = () => {
         <div className="main-width mx-auto mt-5 mb-14 md:mt-7 lg:mt-10 lg:mb-18 xl:mt-10 2xl:mt-14 2xl:mb-20">
           <div className="flex justify-between mb-4 lg:mb-5 xl:mb-6 2xl:mb-8">
             <BackToGalleryButton />
-            <DownloadPhotosButton />
+            <DownloadPhotosButton fileSize="26 MB" href="https://mrak.pirati.cz/s/LKgZ68jBSYKwtLF" />
           </div>
           <h2 className="font-heading title-font-size border-b border-red-pink pb-2 mb-4 sm:pb-2 sm:mb-5 lg:pb-3 xl:pb-2 3xl:pb-3">
             Akce
@@ -86,7 +86,7 @@ const Akce = () => {
           </div>
           <div className="flex justify-between">
             <BackToGalleryButton />
-            <DownloadPhotosButton />
+            <DownloadPhotosButton fileSize="26 MB" href="https://mrak.pirati.cz/s/LKgZ68jBSYKwtLF" />
           </div>
         </div>
       </main>

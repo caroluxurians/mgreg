@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <div className="h-screen flex flex-col">
         <HeaderLanding />
-        <main className="flex-1 overflow-hidden relative">
+        <main className="flex-1 overflow-hidden relative bg-light-pink">
           <div className="flex justify-center">
             <Image
               src="/marketa-landing-cropped.png"

@@ -1,7 +1,6 @@
 import * as cheerio from "cheerio";
 import { perexPreview as titlePreview } from "../clanky/ArticlePreview";
 
-// TODO tahat odsud: https://www.pirati.cz/jak-pirati-pracuji/?tag_id=216
 const czechMonthMap: { [key: string]: number } = {
   ledna: 1,
   února: 2,
@@ -33,7 +32,7 @@ type Release = {
 };
 
 const PressReleases = async () => {
-  const data = fetch("https://www.pirati.cz/jak-pirati-pracuji/?tag_id=761");
+  const data = fetch("https://www.pirati.cz/jak-pirati-pracuji/?tag_id=216");
   const html = await (await data).text();
   const $ = cheerio.load(html);
 

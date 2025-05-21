@@ -24,7 +24,7 @@ const ContactCardMarketa = ({ flipped, setFlipped }: {
         <div className="absolute bg-medium-pink w-full h-full overflow-hidden rounded-3xl flex [backface-visibility:hidden]">
           <div className="absolute -bottom-38 w-82 -right-7 md:w-62 md:-bottom-29 md:-right-6 lg:w-74 lg:-bottom-34 lg:-right-5 xl:w-87 xl:-bottom-40 xl:-right-4 2xl:w-94 2xl:-right-5 2xl:-bottom-43">
             <Image
-              src="/marketa-contact-card-new.png"
+              src="/marketa-contact-card.png"
               height={432}
               width={325}
               alt="Markéta kontaktní karta"

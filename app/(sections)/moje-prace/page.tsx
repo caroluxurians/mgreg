@@ -24,21 +24,21 @@ const MojePrace = () => {
           >
             <div className="flex flex-col gap-5 2xl:gap-7 3xl:gap-10">
               <div className="font-heading title-font-size text-medium-pink flex flex-col">
-                <span>Ve svém mandátu se zaměřuji</span>
-                <span>především na naši bezpečnost</span>
-                <span>a naše digitální svobody.</span>
+                Ve svém mandátu se&nbsp;zaměřuji
+                především na&nbsp;naši bezpečnost
+                a&nbsp;naše digitální svobody.
               </div>
               <div className="text-dark-pink paragraph-font-size w-68 sm:w-76 md:w-88 lg:w-110 xl:w-130 2xl:w-156 3xl:w-170">
                 Od roku 2019 se věnuji region
                 Východního partnerství, včetně Ukrajiny,
-                hájím lidská práva ve světě a zaměřuji
+                hájím lidská práva ve světě a&nbsp;zaměřuji
                 se na stále ještě opomíjený vliv nových
-                technologií na naši bezpečnost a demokracii:
+                technologií na naši bezpečnost a&nbsp;demokracii:
                 ať již v podobě zbraní dvojího užití,
                 dezinformací, cizího vměšování
                 či umělé inteligence. Zároveň se snažím
                 uhájit decentralizovaný, anonymní
-                a svobodný Internet, kde není prolamováno
+                a&nbsp;svobodný Internet, kde není prolamováno
                 soukromí běžných občanů.
               </div>
             </div>
@@ -60,7 +60,7 @@ const MojePrace = () => {
             působím v následujících výborech:<br />
           </div>
           <div className="text-white lg:mx-auto mx-4 sm:gap-4 md:mx-auto lg:gap-0">
-            <div className="flex flex-col items-center md:flex-row md:flex-wrap justify-center md:w-[700px] lg:w-[770px] gap-3 xl:gap-5 2xl:gap-6 xl:w-[900px]">
+            <div className="flex flex-col items-center md:flex-row md:flex-wrap justify-center md:w-[700px] lg:w-[770px] gap-3 xl:gap-5 2xl:gap-6 xl:w-[900px] text-center">
               <LabelDark
                 content="INTA — Mezinárodní obchod"
                 link="https://www.europarl.europa.eu/committees/cs/inta/home/highlights"
@@ -76,6 +76,10 @@ const MojePrace = () => {
               <LabelDark
                 content="LIBE — Občanské svobody a spravedlnost"
                 link="https://www.europarl.europa.eu/committees/cs/libe/home/highlights"
+              />
+              <LabelDark
+                content="EUDS — Zvláštní výbor pro Evropský štít pro demokracii"
+                link="https://www.europarl.europa.eu/committees/en/euds/home/highlights"
               />
             </div>
 

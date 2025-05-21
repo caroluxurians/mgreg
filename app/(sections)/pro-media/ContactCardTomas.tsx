@@ -24,7 +24,7 @@ const ContactCardTomas = ({ flipped, setFlipped }: {
         <div className="absolute bg-medium-pink w-full h-full overflow-hidden rounded-3xl flex [backface-visibility:hidden]">
           <div className="absolute -bottom-18 w-82 -right-9 md:w-62 md:-bottom-14 md:-right-8 lg:w-74 xl:w-82 xl:-bottom-14 2xl:w-94 2xl:-right-10 2xl:-bottom-18">
             <Image
-              src="/tomas-contact-card-new.png"
+              src="/tomas-contact-card.png"
               height={432}
               width={325}
               alt="Tomas Polak contact card"

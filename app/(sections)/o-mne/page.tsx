@@ -23,7 +23,7 @@ const OMne = () => {
           >
             <div>
               <div className="font-heading title-font-size text-red-pink-light mb-3 lg:mb-4 2xl:mb-3">
-                Jsem Markéta Gregorová.<br />Členkou České pirátské strany<br /> jsem od roku 2012,
+                Jsem Markéta Gregorová. Členkou České pirátské strany jsem od roku 2012,
               </div>
               <div className="w-60 flex ml-25 mb-6 sm:hidden">
                 <Image
@@ -39,21 +39,20 @@ const OMne = () => {
                   v letech 2018 až 2020 jsem působila jako
                   předsedkyně <Link href="https://european-pirateparty.eu" target="_blank" className="underline">Evropské pirátské strany</Link>. Od roku
                   2019 pracuji jako poslankyně Evropského
-                  parlamentu. V roce 2024 jsem svůj mandát
+                  parlamentu. V&nbsp;roce 2024 jsem svůj mandát
                   obhájila.
                 </div>
                 <div>
                   Vystudovala jsem bakalářské studium
-                  Mezinárodních vztahů a Evropských studií a
-                  magisterské studium Veřejné správy a
-                  Bezpečnostních studií. Pracovala jsem jako
+                  Mezinárodních vztahů a&nbsp;Evropských studií a&nbsp;magisterské
+                  studium Veřejné správy a&nbsp;Bezpečnostních studií. Pracovala jsem jako
                   testerka webových aplikací či markeťačka ve
-                  středních i menších firmách, stejně jako v
-                  neziskovém sektoru a na vlastní triko.
+                  středních i&nbsp;menších firmách, stejně jako v&nbsp;neziskovém
+                  sektoru a&nbsp;na vlastní triko.
                 </div>
                 <div>
                   Zpívám v kapele Definitivní ententýk, miluji
-                  svou kočku Kočku a největší radost mi dělá,
+                  svou kočku Kočku a&nbsp;největší radost mi dělá,
                   když lidé volí informovaně.
                 </div>
               </div>
@@ -193,7 +192,7 @@ const OMne = () => {
                 rotate="md:rotate-4"
               />
               <TimelineEvent
-                eventName="Stovky dopisů politickým vězňům z řad Ukrajinců, Krymčanů a Krymských Tatarů"
+                eventName="Stovky dopisů politickým vězňům z&nbsp;řad Ukrajinců, Krymčanů a&nbsp;Krymských Tatarů"
                 imageSrc="/tl/dopisy.jpg"
                 alt="fotka ze psaní Stovky dopisů politickým vězňům z řad Ukrajinců, Krymčanů a Krymských Tatarů"
                 styles=""

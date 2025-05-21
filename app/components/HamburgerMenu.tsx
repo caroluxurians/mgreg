@@ -46,7 +46,7 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
       <div
         className={classNames(
           !isOpen && "hidden",
-          "font-heading w-16 text-xl tracking-[0.34px] absolute z-5 right-0 top-6 flex flex-col text-end rounded-lg sm:w-20 sm:top-8",
+          "font-heading w-17 text-xl tracking-[0.34px] absolute z-5 right-0 top-6 flex flex-col text-end rounded-lg sm:w-20 sm:top-8",
           isOMne && "bg-medium-pink",
           isClanky && "bg-beige",
           !isOMne && !isClanky && "bg-light-pink",
@@ -66,8 +66,7 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
                       : isOMne
                         ? "text-white"
                         : "text-medium-pink",
-                    "hover:text-[#DF7AAE]",
-                    "mb-0.5",
+                    "hover:text-[#DF7AAE] mb-0.5",
                   )}
                 >
                   {section.sectionName}

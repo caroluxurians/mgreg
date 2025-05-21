@@ -24,7 +24,7 @@ const ProMedia = () => {
               Potřebujete mě kontaktovat? Napište mi na e-mail
               uvedený po kliknutí na kartu kontaktu. Pokud jde o
               mediální vystoupení či komentář, neváhejte se
-              obrátit na PR specialistu Tomáše Poláka.
+              obrátit na PR manažera Tomáše Poláka.
             </div>
             <ContactCards />
           </div>

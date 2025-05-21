@@ -5,7 +5,7 @@ const MarketaCard = () => {
     <div className="md:order-1 flex gap-[21px] leading-[25px] font-light pt-10 lg:pt-7 xl:gap-3 xl:pt-5 2xl:gap-6">
       <div className="w-[65px] sm:w-[70px] xl:w-[65px] 2xl:w-[80px] 2xl:mt-2">
         <Image
-          src="/marketa-footer-icon-cropped.png"
+          src="/marketa-footer-icon.png"
           height={80}
           width={80}
           alt="ikona Markéty"
@@ -22,10 +22,12 @@ const MarketaCard = () => {
           </div>
         </div>
         <div className="flex flex-col text-[14px]/[20px] sm:text-[17px]/[22px] xl:text-[16px]/[22px] 2xl:text-[18px]/[23px] underline">
-          <div>
+          <a href="mailto:marketa.gregorova@europarl.europa.eu">
             marketa.gregorova@europarl.europa.eu
-          </div>
-          <div>marketa.gregorova@pirati.cz</div>
+          </a>
+          <a href="mailto:marketa.gregorova@pirati.cz">
+            marketa.gregorova@pirati.cz
+          </a>
         </div>
 
       </div>

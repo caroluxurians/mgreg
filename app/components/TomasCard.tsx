@@ -20,7 +20,7 @@ const TomasCard = () => {
           <div className="text-[14px]/[19px] sm:text-[17px]/[25px]
           xl:text-[17px]/[25px] 2xl:text-[20px]/[25px]"
           >
-            PR specialista
+            PR manažer
           </div>
         </div>
         <div className="text-[14px]/[25px] sm:text-[17px]/[27px] xl:text-[16px]/[22px] 2xl:text-[18px]/[23px]">
@@ -28,7 +28,7 @@ const TomasCard = () => {
         </div>
         <div className="text-[14px]/[19px] sm:text-[17px]/[23px] xl:text-[16px]/[22px] 2xl:text-[18px]/[23px] underline">
           <div>
-            tomas.Polak@europarl.europa.eu
+            tomas.polak@europarl.europa.eu
           </div>
           <div>
             +420 728 035 059

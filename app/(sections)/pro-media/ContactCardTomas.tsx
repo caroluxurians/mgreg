@@ -38,7 +38,7 @@ const ContactCardTomas = ({ flipped, setFlipped }: {
               Tomáš Polák
             </div>
             <div className="text-light-pink text-left text-lg md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
-              PR specialist
+              PR manažer
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ const ContactCardTomas = ({ flipped, setFlipped }: {
               Tomáš Polák
             </div>
             <div className="text-light-pink text-left font-medium text-lg md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
-              PR specialist
+              PR manažer
             </div>
           </div>
           <div className="flex flex-col absolute top-36 left-6 md:top-23 md:left-4 lg:top-32 xl:top-40 xl:left-6 2xl:left-7 2xl:top-42">
@@ -66,20 +66,18 @@ const ContactCardTomas = ({ flipped, setFlipped }: {
             <div className="flex flex-col gap-3 md:gap-2">
               <a
                 href="mailto:tomas.polak@europarl.europa.eu"
+                className="text-white font-black text-base flex flex-col text-left hover:underline md:text-sm lg:text-base xl:text-lg 2xl:text-xl"
                 onClick={(e) => e.stopPropagation()}
               >
-                <div className="text-white font-black text-base flex flex-col text-left hover:underline md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
-                  <span>tomas.polak</span>
-                  <span>@europarl.europa.eu</span>
-                </div>
+                <span>tomas.polak</span>
+                <span>@europarl.europa.eu</span>
               </a>
               <a
                 href="tel:+420728035059"
+                className="text-white font-black text-base text-left hover:underline md:text-sm lg:text-base xl:text-lg 2xl:text-xl"
                 onClick={(e) => e.stopPropagation()}
               >
-                <div className="text-white font-black text-base text-left hover:underline md:text-sm lg:text-base xl:text-lg 2xl:text-xl">
-                  +420 728 035 059
-                </div>
+                +420 728 035 059
               </a>
             </div>
           </div>

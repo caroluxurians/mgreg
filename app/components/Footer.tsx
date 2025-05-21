@@ -28,7 +28,7 @@ const Footer = ({ styles = "bg-medium-pink" }: { styles?: string }) => {
           <span>Bât. Altiero Spinelli, 08G101</span>
           <span>60, rue Wiertz / Wiertzstraat 60</span>
           <span>B-1047 Bruxelles/Brussel</span>
-          <span>tel: 0032 2 28 38334 (kancelář)</span>
+          <span>tel: +32 2 28 38334 (kancelář)</span>
           <SocialsSet color="light" classNames="flex mt-3" />
         </div>
       </div>

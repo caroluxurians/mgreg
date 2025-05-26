@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const TomasCard = () => {
   return (
-    <div className="md:order-3 flex gap-[21px] text-[20px] leading-[25px] font-light xl:gap-3 xl:pt-5 xl:pl-4 2xl:mr-6 2xl:gap-6">
-      <div className="w-[65px] sm:w-[70px] xl:w-[65px] 2xl:w-[80px] 2xl:mt-2">
+    <div className="md:order-3 flex gap-[21px] text-[20px] leading-[25px] font-light xl:gap-3 2xl:gap-6">
+      <div className="lg:hidden xl:block w-[65px] sm:w-[70px] xl:w-[65px] 2xl:w-[80px] 2xl:mt-2">
         <Image
           src="/tomas-footer-icon.png"
           height={80}
@@ -22,9 +22,9 @@ const TomasCard = () => {
           >
             PR manažer
           </div>
-        </div>
-        <div className="text-[14px]/[25px] sm:text-[17px]/[27px] xl:text-[16px]/[22px] 2xl:text-[18px]/[23px]">
-          mediální vystoupení a komentáře
+          <div className="text-[14px]/[25px] sm:text-[17px]/[27px] xl:text-[16px]/[22px] 2xl:text-[18px]/[23px]">
+            mediální vystoupení a komentáře
+          </div>
         </div>
         <div className="text-[14px]/[19px] sm:text-[17px]/[23px] xl:text-[16px]/[22px] 2xl:text-[18px]/[23px] underline">
           <div>

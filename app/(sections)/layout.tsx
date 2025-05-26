@@ -7,10 +7,10 @@ const SectionsLayout = ({
   children: React.ReactNode;
 }>) => {
   return (
-    <>
+    <div className="bg-medium-pink">
       {children}
       <Footer />
-    </>
+    </div>
   );
 };
 

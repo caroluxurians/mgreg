@@ -19,7 +19,7 @@ const HeaderLanding = () => {
         md:mx-10 md:w-full
         lg:pt-0 lg:mt-2
         xl:h-auto
-        2xl:w-[1267px] 2xl:mx-auto 2xl:px-0"
+        2xl:w-[1267px] 2xl:mx-auto"
       >
         <div
           className="text-6xl tracking-[0.01em]

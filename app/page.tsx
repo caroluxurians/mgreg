@@ -5,10 +5,10 @@ import Footer from "./components/Footer";
 const Home = () => {
   return (
     <div className="bg-dark-pink">
-      <div className="flex flex-col">
+      <div className="flex flex-col min-h-screen">
         <HeaderLanding />
-        <main className="md:flex-1 overflow-hidden relative bg-light-pink">
-          <div className="flex justify-center">
+        <main className="md:flex-1 relative bg-light-pink flex">
+          <div className="flex grow justify-center items-end">
             <Image
               src="/marketa-landing-cropped.png"
               height={800}
@@ -17,11 +17,9 @@ const Home = () => {
               unoptimized
             />
           </div>
-          <div className="flex justify-center">
-            <h1 className="hidden md:block absolute bottom-0 text-[120px] lg:text-[170px] xl:text-[220px] leading-[1.2] font-heading text-dark-pink whitespace-nowrap">
-              Markéta Gregorová
-            </h1>
-          </div>
+          <h1 className="hidden md:block absolute text-center left-1/2 -translate-x-1/2 bottom-0 text-[120px] lg:text-[170px] xl:text-[220px] leading-[1.2] font-heading text-dark-pink whitespace-nowrap">
+            Markéta Gregorová
+          </h1>
           <div className="hidden md:block absolute top-[20%] left-[70px] text-[25px]">
             Pirátská poslankyně<br />
             v Evropském parlamentu,<br />

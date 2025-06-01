@@ -25,7 +25,7 @@ const Home = () => {
               width={900}
               alt="Markéta Gregorová foto sm"
               unoptimized
-              className="hidden xl:block xl:w-140
+              className="hidden xl:block xl:w-140 2xl:w-[900px]
               "
             />
           </div>

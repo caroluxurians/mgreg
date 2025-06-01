@@ -16,7 +16,7 @@ const Home = () => {
               bottom-[60px] mr-[15px] size-100
               sm:bottom-[225px] sm:mr-[15px] sm:size-120
               md:bottom-[270px] md:mr-[15px] md:size-130
-              lg:bottom-[408px] lg:mr-[20px] lg:size-90
+              lg:bottom-[420px] lg:mr-[20px] lg:size-90
               xl:bottom-[220px] xl:mr-[25px] xl:size-90
               2xl:bottom-[255px] 2xl:mr-[30px] 2xl:size-170
               shadow-[0_0_40px_rgba(119,14,61,0.4)]
@@ -42,7 +42,10 @@ const Home = () => {
           <h1 className="hidden lg:block absolute text-center left-1/2 -translate-x-1/2 bottom-0 text-[120px] lg:text-[167px] xl:text-[204px] 2xl:text-[260px] 3xl:text-[308px] leading-[1.2] font-heading text-dark-pink whitespace-nowrap z-2">
             Markéta Gregorová
           </h1>
-          <div className="hidden lg:block absolute top-[15%] 2xl:top-[15%] left-0 text-xl xl:text-2xl text-white">
+          <div
+            className="hidden lg:block absolute text-white
+            lg:bottom-[380px] lg:right-0 xl:right-auto xl:bottom-[220px] 2xl:bottom-[280px] 3xl:bottom-[580px] left-0 lg:left-auto text-xl xl:text-2xl"
+          >
             Pirátská poslankyně
             <br />
             v Evropském parlamentu,

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const MarketaCard = () => {
   return (
-    <div className="md:order-1 flex gap-[21px] leading-[25px] font-light xl:gap-3 2xl:gap-6">
+    <div className="md:order-1 flex gap-[21px] leading-[25px] font-light xl:gap-3 2xl:gap-6 max-w-[400px]">
       <div className="lg:hidden xl:block w-[65px] sm:w-[70px] xl:w-[65px] 2xl:w-[80px] 2xl:mt-2">
         <Image
           src="/marketa-footer-icon.png"

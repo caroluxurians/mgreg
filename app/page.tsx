@@ -29,7 +29,7 @@ const Home = () => {
           <h1 className="hidden lg:block absolute text-center left-1/2 -translate-x-1/2 bottom-0 text-[120px] lg:text-[170px] xl:text-[220px] leading-[1.2] font-heading text-dark-pink whitespace-nowrap">
             Markéta Gregorová
           </h1>
-          <div className="hidden lg:block absolute top-[20%] md:left-10 2xl:left-0 text-2xl 2xl:text-3xl">
+          <div className="hidden lg:block absolute top-[25%] md:left-10 2xl:left-0 text-xl xl:text-2xl text-white">
             Pirátská poslankyně
             <br />
             v Evropském parlamentu,
@@ -43,7 +43,7 @@ const Home = () => {
           chránící vaše občanské svobody.
         </div>
         <div className="bg-dark-pink">
-          <Footer styles="hidden lg:grid !py-6" />
+          <Footer styles="hidden lg:flex lg:justify-between max-w-[1260px] !py-6" />
         </div>
       </div>
       <Footer styles="bg-dark-pink lg:hidden" />

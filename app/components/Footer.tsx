@@ -7,7 +7,8 @@ const Footer = ({ styles = "bg-medium-pink" }: { styles?: string }) => {
   return (
     <footer
       className={classNames(`${styles}
-         main-width mx-auto py-6 md:py-10
+        2xl:w-[1267px] mx-auto"
+     py-6 md:py-10
        items-start text-light-pink
       grid gap-6
       md:grid-cols-[3fr_2fr]
@@ -16,7 +17,7 @@ const Footer = ({ styles = "bg-medium-pink" }: { styles?: string }) => {
       <MarketaCard />
       <TomasCard />
       <div
-        className="md:order-2 lg:order-3 grid
+        className="md:order-2 lg:order-3 flex flex-col
         pl-[85px] sm:pl-[90px] md:pl-0
           text-[14px]/[19px] sm:text-[17px]/[22px] xl:text-[16px]/[22px] 2xl:text-[18px]/[23px]"
       >
@@ -24,7 +25,7 @@ const Footer = ({ styles = "bg-medium-pink" }: { styles?: string }) => {
         <span>Bât. Altiero Spinelli, 08G101</span>
         <span>60, rue Wiertz/Wiertzstraat 60</span>
         <span>B-1047 Bruxelles/Brussel</span>
-        <span>tel: +32 2 28 38334 (kancelář)</span>
+        <span>tel: <a href="tel:+3222838334" className="underline">+32 2 28 38334</a> (kancelář)</span>
         <SocialsSet color="light" classNames="flex mt-3" />
       </div>
     </footer>

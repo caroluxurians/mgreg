@@ -26,15 +26,14 @@ const TomasCard = () => {
             mediální vystoupení a komentáře
           </div>
         </div>
-        <div className="text-[14px]/[19px] sm:text-[17px]/[23px] xl:text-[16px]/[22px] 2xl:text-[18px]/[23px] underline">
-          <div>
+        <div className="flex flex-col text-[14px]/[19px] sm:text-[17px]/[23px] xl:text-[16px]/[22px] 2xl:text-[18px]/[23px] underline">
+          <a href="mailto:tomas.polak@europarl.europa.eu">
             tomas.polak@europarl.europa.eu
-          </div>
-          <div>
+          </a>
+          <a href="tel:+420728035059">
             +420 728 035 059
-          </div>
+          </a>
         </div>
-
       </div>
     </div>
   );

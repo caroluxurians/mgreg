@@ -18,39 +18,30 @@ const Header = () => {
   const isClanky = pathname === "/clanky";
 
   return (
-    <header className="w-full hidden md:flex">
+    <header className="hidden md:flex">
       <div
-        className="main-width flex flex-row
-        justify-between items-baseline
-        relative font-heading bg-transparent
-        mx-5 mt-9 gap-3
-        sm:mt-7
-        md:mt-6 md:mx-auto
-        lg:pt-0
-        xl:h-auto
-        2xl:mx-auto 2xl:px-0"
+        className="main-width mt-6 mx-auto
+        flex justify-between items-baseline
+        font-heading"
       >
         <Link href="/">
           <div
-            className={classNames(pathname === "/o-mne" ? "text-beige" : "text-medium-pink", `hover:text-[#DF7AAE] text-[62px] tracking-[0.62px]
-          sm:text-[68px] sm:tracking-[0.68px]
-          md:text-[30px] md:tracking-[0.3px] xl:text-[40px] xl:tracking-[0.4px]
-          2xl:mx-0
-          leading-none`)}
+            className={classNames(
+              pathname === "/o-mne" ? "text-beige" : "text-medium-pink",
+              `hover:text-[#DF7AAE] 
+              leading-none text-[30px] tracking-[0.3px] xl:text-[40px] xl:tracking-[0.4px]`,
+            )}
           >
             Markéta Gregorová
           </div>
         </Link>
 
         <nav
-          className={classNames(pathname === "/o-mne" ? "text-light-pink" : "text-medium-pink", `flex items-center leading-none
-        text-[24px] tracking-[0.48px]
-        gap-[11px] sm:gap-4
-        md:gap-6 md:items-end md:text-[25px] md:tracking-[0.5px]
-        lg:gap-6 lg:text-[26px] lg:tracking-[0.6px]
+          className={classNames(pathname === "/o-mne" ? "text-light-pink" : "text-medium-pink", `flex leading-none
+        gap-6 text-[25px] tracking-[0.5px]
+        lg:text-[26px] lg:tracking-[0.6px]
         xl:gap-7 xl:text-[30px] xl:tracking-[0.8px]
-        2xl:text-[30px] 2xl:tracking-[0.3px] 2xl:gap-10
-        3xl:`)}
+        2xl:gap-10 2xl:tracking-[0.3px]`)}
         >
           {sections.map((section) => (
             <Link href={`/${section.sectionHref}`} key={section.sectionName}>
@@ -69,7 +60,7 @@ const Header = () => {
             </Link>
           ))}
         </nav>
-        <SocialsSet color={colorTheme} classNames="hidden lg:flex 2xl:pr-0" />
+        <SocialsSet color={colorTheme} classNames="hidden lg:flex" />
       </div>
     </header>
   );

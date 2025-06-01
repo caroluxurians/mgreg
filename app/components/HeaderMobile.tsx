@@ -9,8 +9,8 @@ type HeaderMobileProps = {
 
 const HeaderMobile = ({ textColor = "text-medium-pink", borderColor = "border-medium-pink" }: HeaderMobileProps) => {
   return (
-    <div className="sm:flex sm:justify-center md:hidden">
-      <div className={classNames(`flex justify-between items-end w-[350px] mx-auto mt-7 border-b ${borderColor} sm:w-[560px] sm:mx-0 mt-0`)}>
+    <header className="flex md:hidden">
+      <div className={classNames(`flex justify-between items-center w-[350px] sm:w-[560px] mt-4 mx-auto border-b ${borderColor}`)}>
         <Link href="/">
           <div className={classNames(`font-heading hover:text-[#DF7AAE] ${textColor} text-[25px] tracking-[0.25px] sm:text-[30px]`)}>
             Markéta Gregorová
@@ -18,7 +18,7 @@ const HeaderMobile = ({ textColor = "text-medium-pink", borderColor = "border-me
         </Link>
         <HamburgerMenu borderColor={borderColor} />
       </div>
-    </div>
+    </header>
   );
 };
 

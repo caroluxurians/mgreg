@@ -26,7 +26,6 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
               width={30}
               height={12}
               alt="hamburger-menu-icon"
-              className="mb-2.5"
               unoptimized
             />
           )}
@@ -37,7 +36,6 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
               width={25}
               height={10}
               alt="hamburger-menu-icon"
-              className="mb-2.5"
               unoptimized
             />
           )}

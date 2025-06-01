@@ -17,7 +17,7 @@ const Home = () => {
               width={640}
               alt="Markéta Gregorová foto sm"
               unoptimized
-              className="2xl:hidden"
+              className="xl:hidden"
             />
             <Image
               src="/marketa-landing-cropped-3.png"
@@ -25,7 +25,8 @@ const Home = () => {
               width={900}
               alt="Markéta Gregorová foto sm"
               unoptimized
-              className="hidden 2xl:block"
+              className="hidden xl:block xl:w-140
+              "
             />
           </div>
           <h1 className="hidden lg:block absolute text-center left-1/2 -translate-x-1/2 bottom-0 text-[120px] lg:text-[170px] xl:text-[220px] leading-[1.2] font-heading text-dark-pink whitespace-nowrap">

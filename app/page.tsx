@@ -9,7 +9,7 @@ const Home = () => {
       <div className="flex flex-col lg:min-h-screen bg-light-pink">
         <Header />
         <HeaderMobileLanding />
-        <main className="lg:flex-1 relative bg-light-pink flex 2xl:w-[1267px] 2xl:mx-auto">
+        <main className="lg:flex-1 relative bg-light-pink flex main-width mx-auto">
           <div className="flex grow justify-center items-end">
             <Image
               src="/marketa-landing-cropped.png"
@@ -31,7 +31,7 @@ const Home = () => {
           <h1 className="hidden lg:block absolute text-center left-1/2 -translate-x-1/2 bottom-0 text-[120px] lg:text-[170px] xl:text-[220px] leading-[1.2] font-heading text-dark-pink whitespace-nowrap">
             Markéta Gregorová
           </h1>
-          <div className="hidden lg:block absolute top-[25%] md:left-10 2xl:left-0 text-xl xl:text-2xl text-white">
+          <div className="hidden lg:block absolute top-[20%] 2xl:top-[25%] left-0 text-xl xl:text-2xl text-white">
             Pirátská poslankyně
             <br />
             v Evropském parlamentu,

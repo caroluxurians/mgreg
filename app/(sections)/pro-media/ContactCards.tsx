@@ -21,10 +21,15 @@ const ContactCards = () => {
         <Sticker
           backgroundColor="bg-medium-pink"
           textColor="text-beige"
-          additionalStyles="pt-1 cursor-pointer"
+          additionalStyles="pt-1 cursor-pointer select-none"
           onClick={() => {
-            setFlippedMarketa(true);
-            setFlippedTomas(true);
+            if (flippedMarketa && flippedTomas) {
+              setFlippedMarketa(false);
+              setFlippedTomas(false);
+            } else {
+              setFlippedMarketa(true);
+              setFlippedTomas(true);
+            }
           }}
           content={(
             <>

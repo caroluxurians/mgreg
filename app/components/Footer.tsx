@@ -12,7 +12,7 @@ const Footer = ({ styles = "bg-medium-pink" }: { styles?: string }) => {
        items-start text-light-pink
       grid gap-6
       md:grid-cols-[3fr_2fr]
-      lg:grid-cols-3"
+      lg:grid-cols-[4fr_4fr_3fr]"
       >
         <MarketaCard />
         <TomasCard />

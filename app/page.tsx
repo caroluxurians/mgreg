@@ -15,19 +15,31 @@ const Home = () => {
               width={640}
               alt="Markéta Gregorová foto sm"
               unoptimized
+              className="2xl:hidden"
+            />
+            <Image
+              src="/marketa-landing-cropped-3.png"
+              height={1200}
+              width={900}
+              alt="Markéta Gregorová foto sm"
+              unoptimized
+              className="hidden 2xl:block"
             />
           </div>
           <h1 className="hidden lg:block absolute text-center left-1/2 -translate-x-1/2 bottom-0 text-[120px] lg:text-[170px] xl:text-[220px] leading-[1.2] font-heading text-dark-pink whitespace-nowrap">
             Markéta Gregorová
           </h1>
           <div className="hidden lg:block absolute top-[20%] md:left-10 2xl:left-0 text-2xl 2xl:text-3xl">
-            Pirátská poslankyně<br />
-            v Evropském parlamentu,<br />
+            Pirátská poslankyně
+            <br />
+            v Evropském parlamentu,
+            <br />
             chránící vaše občanské svobody.
           </div>
         </main>
         <div className="bg-light-pink text-dark-pink pt-8 pb-10 px-4 sm:text-2xl text-center lg:hidden">
-          Pirátská poslankyně v Evropském parlamentu,<br />
+          Pirátská poslankyně v Evropském parlamentu,
+          <br />
           chránící vaše občanské svobody.
         </div>
         <div className="bg-dark-pink">

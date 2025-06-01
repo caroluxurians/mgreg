@@ -14,7 +14,7 @@ const SocialsSet = ({ color = "dark", classNames = "" }: { color?: string, class
   const facebookLink = "https://www.facebook.com/gregorova.marketka";
 
   return (
-    <div className={`${classNames} gap-[30px]`}>
+    <div className={`${classNames} gap-[30px] items-center`}>
       {color === "dark"
         ? (
           <>

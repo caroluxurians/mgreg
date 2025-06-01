@@ -1,12 +1,14 @@
 import Image from "next/image";
-import HeaderLanding from "./components/HeaderLanding";
+import HeaderMobileLanding from "./components/HeaderMobileLanding";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 const Home = () => {
   return (
     <div className="bg-dark-pink">
       <div className="flex flex-col lg:min-h-screen bg-light-pink">
-        <HeaderLanding />
+        <Header />
+        <HeaderMobileLanding />
         <main className="lg:flex-1 relative bg-light-pink flex 2xl:w-[1267px] 2xl:mx-auto">
           <div className="flex grow justify-center items-end">
             <Image
@@ -43,10 +45,10 @@ const Home = () => {
           chránící vaše občanské svobody.
         </div>
         <div className="bg-dark-pink">
-          <Footer styles="hidden lg:flex lg:justify-between max-w-[1260px] !py-6" />
+          <Footer styles="hidden lg:flex" />
         </div>
       </div>
-      <Footer styles="bg-dark-pink lg:hidden" />
+      <Footer styles="lg:hidden" />
     </div>
   );
 };

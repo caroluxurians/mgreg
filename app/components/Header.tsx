@@ -22,7 +22,7 @@ const Header = () => {
       <div
         className="main-width mt-6 mx-auto
         flex justify-between items-baseline
-        font-heading"
+        font-heading z-2"
       >
         <Link href="/">
           <div

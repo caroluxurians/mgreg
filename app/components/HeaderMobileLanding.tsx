@@ -9,7 +9,7 @@ export const sections = [
 
 const HeaderMobileLanding = () => {
   return (
-    <header className="flex md:hidden justify-center bg-light-pink">
+    <header className="flex md:hidden justify-center bg-light-pink mb-10">
       <div
         className="mt-5 flex flex-col gap-3
         font-heading text-medium-pink"

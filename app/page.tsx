@@ -13,7 +13,7 @@ const Home = () => {
           <div className="flex grow justify-center items-end">
             <div
               className="absolute bg-light-pink z-0 rounded-full
-              bottom-[60px] mr-[15px] size-100
+              bottom-[60px] size-100
               sm:bottom-[225px] sm:mr-[15px] sm:size-120
               md:bottom-[270px] md:mr-[15px] md:size-130
               lg:bottom-[420px] lg:mr-[20px] lg:size-90

@@ -9,7 +9,7 @@ const ContactCardMarketa = ({ flipped, setFlipped }: {
   return (
     <button
       type="button"
-      className="relative w-68 h-90 md:w-50 md:h-67 lg:w-62 lg:h-83 xl:w-75 xl:h-100 2xl:w-81 2xl:h-108 [perspective:1000px] mx-auto bg-transparent cursor-pointer"
+      className="relative w-68 h-90 md:w-50 md:h-67 lg:w-62 lg:h-83 xl:w-75 xl:h-100 2xl:w-81 2xl:h-108 [perspective:1000px] mx-auto bg-transparent cursor-pointer hover:scale-102 transition-transform duration-200"
       onClick={() => setFlipped(!flipped)}
       aria-pressed={flipped}
       tabIndex={0}

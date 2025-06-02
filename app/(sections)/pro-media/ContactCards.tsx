@@ -21,7 +21,7 @@ const ContactCards = () => {
         <Sticker
           backgroundColor="bg-medium-pink"
           textColor="text-beige"
-          additionalStyles="pt-1 cursor-pointer select-none"
+          additionalStyles="pt-1 cursor-pointer select-none hover:scale-105 transition-transform duration-200"
           onClick={() => {
             if (flippedMarketa && flippedTomas) {
               setFlippedMarketa(false);

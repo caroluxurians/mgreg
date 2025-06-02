@@ -1,8 +1,8 @@
 import Link from "next/link";
-import FacebookIcon from "./svg/FacebookIcon";
 import InstagramIcon from "./svg/InstagramIcon";
 import TwitterIcon from "./svg/TwitterIcon";
 import YoutubeIcon from "./svg/YoutubeIcon";
+import BlueskyIcon from "./svg/BlueskyIcon";
 
 const SocialsSet = ({ color = "dark", classNames = "" }: { color?: string, classNames?: string }) => {
   const classNameDark = "text-medium-pink hover:text-header-hover-pink transition-colors duration-100";
@@ -11,7 +11,7 @@ const SocialsSet = ({ color = "dark", classNames = "" }: { color?: string, class
   const instagramLink = "https://www.instagram.com/ruzovarebelka/";
   const twitterLink = "https://x.com/marketkag";
   const youtubeLink = "https://www.youtube.com/channel/UCcf12G_5igxOSZBFSt4eEAQ";
-  const facebookLink = "https://www.facebook.com/gregorova.marketka";
+  const blueskyLink = "https://bsky.app/profile/marketkag.bsky.social";
 
   return (
     <div className={`${classNames} gap-[30px] items-center`}>
@@ -27,8 +27,8 @@ const SocialsSet = ({ color = "dark", classNames = "" }: { color?: string, class
             <Link href={youtubeLink} target="_blank">
               <YoutubeIcon className={classNameDark} />
             </Link>
-            <Link href={facebookLink} target="_blank">
-              <FacebookIcon className={classNameDark} />
+            <Link href={blueskyLink} target="_blank">
+              <BlueskyIcon className={classNameDark} />
             </Link>
           </>
         )
@@ -43,8 +43,8 @@ const SocialsSet = ({ color = "dark", classNames = "" }: { color?: string, class
             <Link href={youtubeLink} target="_blank">
               <YoutubeIcon className={classNameLight} />
             </Link>
-            <Link href={facebookLink} target="_blank">
-              <FacebookIcon className={classNameLight} />
+            <Link href={blueskyLink} target="_blank">
+              <BlueskyIcon className={classNameLight} />
             </Link>
           </>
         )}

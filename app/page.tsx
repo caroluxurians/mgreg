@@ -5,7 +5,7 @@ import Header from "./components/Header";
 
 const Home = () => {
   return (
-    <div className="bg-dark-pink">
+    <div className="bg-dark-pink overflow-x-hidden">
       <div className="flex flex-col lg:min-h-screen bg-light-pink">
         <Header />
         <HeaderMobileLanding />

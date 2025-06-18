@@ -32,7 +32,7 @@ type Release = {
 };
 
 const PressReleases = async () => {
-  const data = fetch("https://www.pirati.cz/jak-pirati-pracuji/?tag_id=216");
+  const data = fetch("https://www.pirati.cz/jak-pirati-pracuji/?tag_id=216", { next: { revalidate: 3600 } });
   const html = await (await data).text();
   const $ = cheerio.load(html);
 

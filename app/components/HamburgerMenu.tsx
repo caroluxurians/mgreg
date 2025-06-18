@@ -26,7 +26,6 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
               width={30}
               height={12}
               alt="hamburger-menu-icon"
-              className="mb-2.5"
               unoptimized
             />
           )}
@@ -37,7 +36,6 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
               width={25}
               height={10}
               alt="hamburger-menu-icon"
-              className="mb-2.5"
               unoptimized
             />
           )}
@@ -46,7 +44,7 @@ const HamburgerMenu = ({ borderColor = "border-medium-pink" }: { borderColor?: s
       <div
         className={classNames(
           !isOpen && "hidden",
-          "font-heading w-17 text-xl tracking-[0.34px] absolute z-5 right-0 top-6 flex flex-col text-end rounded-lg sm:w-20 sm:top-8",
+          "font-heading w-22 text-2xl tracking-[0.34px] absolute z-5 right-0 top-6 flex flex-col text-end rounded-lg sm:top-8",
           isOMne && "bg-medium-pink",
           isClanky && "bg-beige",
           !isOMne && !isClanky && "bg-light-pink",

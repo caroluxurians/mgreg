@@ -44,7 +44,7 @@ const Pagination = ({ numberOfArticles, perPage = 10 }: PaginationProps) => {
         <button
           type="button"
           onClick={() => handlePageClick(currentPage - 1)}
-          className="px-2 hover:bg-light-pink transition duration-200"
+          className="px-2 hover:bg-light-pink transition duration-200 cursor-pointer"
         >
           <Image
             src="/arrow-pagination.svg"
@@ -71,7 +71,7 @@ const Pagination = ({ numberOfArticles, perPage = 10 }: PaginationProps) => {
         <button
           type="button"
           onClick={() => handlePageClick(currentPage + 1)}
-          className="px-2 hover:bg-light-pink transition duration-200"
+          className="px-2 hover:bg-light-pink transition duration-200 cursor-pointer"
         >
           <Image
             src="/arrow-pagination.svg"

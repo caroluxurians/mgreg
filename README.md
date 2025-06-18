@@ -3,7 +3,7 @@
 ## O projektu
 
 Webová prezentace Markéty Gregorové, jedná se o novou verzi [stávajícího webu](https://gregorova.eu). 
-Web je statický a aktuálně rozpracovaný podle dodaného designu ve Figmě.
+Web je z velké části statický a vyhotovený podle designu ve Figmě.
 
 ## Stack
 - Frontend je napsaný v [Reactu](https://react.dev) a [Next.js 15](https://nextjs.org) s použitím [app routeru](https://nextjs.org/docs/app).

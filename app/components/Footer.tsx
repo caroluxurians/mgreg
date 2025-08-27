@@ -22,7 +22,7 @@ const Footer = ({ styles = "bg-medium-pink" }: { styles?: string }) => {
           text-[14px]/[19px] sm:text-[17px]/[22px] xl:text-[16px]/[22px] 2xl:text-[18px]/[23px]"
         >
           <span>Parlement européen</span>
-          <span>Bât. Altiero Spinelli, 08G101</span>
+          <span>Bât. Altiero Spinelli, 04E264</span>
           <span>60, rue Wiertz/Wiertzstraat 60</span>
           <span>B-1047 Bruxelles/Brussel</span>
           <span>tel: <a href="tel:+3222838334">+32 2 28 38334</a> (kancelář)</span>

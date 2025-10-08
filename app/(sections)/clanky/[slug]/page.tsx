@@ -1,38 +1,31 @@
-import { headers } from "next/headers";
 import Header from "@/app/components/Header";
 import HeaderMobile from "@/app/components/HeaderMobile";
 import Link from "next/link";
 import ArticleType from "@/app/types/article";
 import { Metadata } from "next";
+import data from "@/app/articleData";
 import XShareButton from "./XShareButton";
 import FacebookShareButton from "./FacebookShareButton";
-
-export const runtime = "edge";
 
 export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> },
 ): Promise<Metadata> {
   const { slug } = await params;
-  const headersList = await headers();
-  const protocol = headersList.get("x-forwarded-proto");
-  const host = headersList.get("x-forwarded-host");
-  const file = await fetch(`${protocol}://${host}/articles.json`);
-  const data = await file.json();
   const article = data.find((obj: ArticleType) => obj.link.includes(slug));
   return {
-    title: article?.title || "Markéta Gregorová",
-    description: article?.perex,
+    title: article!.title || "Markéta Gregorová",
+    description: article!.perex,
     openGraph: {
-      title: article.title,
-      description: article.perex,
-      url: `https://www.gregorova.eu${article.link}`,
+      title: article!.title,
+      description: article!.perex,
+      url: `https://www.gregorova.eu${article!.link}`,
       type: "article",
       images: [
         {
-          url: `https://www.gregorova.eu${article.img}`,
+          url: `https://www.gregorova.eu${article!.img}`,
           width: 1200,
           height: 630,
-          alt: article.title,
+          alt: article!.title,
         },
       ],
     },
@@ -40,16 +33,11 @@ export async function generateMetadata(
 }
 
 const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
-  const headersList = await headers();
-  const protocol = headersList.get("x-forwarded-proto");
-  const host = headersList.get("x-forwarded-host");
-  const file = await fetch(`${protocol}://${host}/articles.json`);
-  const data = await file.json();
   const { slug } = await params;
   const article = data.find((obj: ArticleType) => obj.link.includes(slug));
-  const markup = { __html: article.content };
+  const markup = { __html: article!.content };
   const baseUrl = "www.gregorova.eu";
-  const urlForSharing = `${baseUrl}${article.link}`;
+  const urlForSharing = `${baseUrl}${article!.link}`;
 
   return (
     <div className="bg-beige">
@@ -66,14 +54,14 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
               zpět na články
             </Link>
             <div className="ml-4 italic text-sm md:text-base lg:text-lg 2xl:text-xl">
-              {article.date}
+              {article!.date}
             </div>
           </div>
           <h1 className="font-heading text-4xl mb-3 sm:text-5xl sm:w-110 sm:mx-auto md:text-6xl md:w-162 md:mb-4 lg:text-7xl lg:w-196 2xl:text-8xl 2xl:w-270 3xl:text-9xl 3xl:w-350 3xl:mb-8">
-            {article.title}
+            {article!.title}
           </h1>
           <div className="font-bold leading-[1.39] mb-2 text-lg sm:w-94 sm:mx-auto sm:mb-1 md:w-110 md:text-xl md:w-120 md:mb-2 lg:text-2xl lg:w-144 2xl:text-3xl 2xl:w-180 3xl:text-4xl 3xl:w-210">
-            {article.perex}
+            {article!.perex}
           </div>
           {/* eslint-disable-next-line react/no-danger */}
           <article dangerouslySetInnerHTML={markup} className="article" />
@@ -85,7 +73,7 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
               zpět na články
             </Link>
             <div className="flex flex-col sm:flex-row items-center gap-4">
-              <XShareButton url={urlForSharing} text={article.title} />
+              <XShareButton url={urlForSharing} text={article!.title} />
               <FacebookShareButton url={urlForSharing} />
             </div>
           </div>

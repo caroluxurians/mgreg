@@ -6,6 +6,8 @@ import ArticlePreview from "./ArticlePreview";
 import Sticker from "../pro-media/Sticker";
 import Pagination from "./Pagination";
 
+export const runtime = "edge";
+
 const Clanky = async ({ searchParams }: { searchParams: Promise<{ page?: string }> }) => {
   const { page: pageParam } = await searchParams;
 

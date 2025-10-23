@@ -59,7 +59,7 @@
 
   .article {
     a {
-      @apply underline decoration-medium-pink
+      @apply underline decoration-medium-pink hover:no-underline
     }
 
     a b {
@@ -70,10 +70,55 @@
       @apply mb-4 text-base leading-[1.45] sm:w-94 sm:mx-auto md:w-120 md:mb-5 lg:text-lg lg:w-144 lg:mb-6 2xl:text-xl 2xl:w-172 2xl:mb-7 3xl:text-2xl 3xl:w-210 3xl:mb-10
     }
 
-    img {
-      @apply mt-6 mb-6 sm:mx-auto md:mb-8 lg:mb-9
+    p a b {
+      @apply font-bold text-base leading-[1.45] lg:text-lg  2xl:text-xl   3xl:text-2xl
     }
 
+    /* p strong je jen další typ nadpisu typu h2-h3 ALE někde je to fakt jen p strong*/
+
+    p strong {
+      @apply font-bold text-lg leading-[1.45] sm:w-94 sm:mx-auto md:w-120 lg:text-xl lg:w-144 2xl:text-2xl 2xl:w-172 3xl:text-3xl 3xl:w-210
+    }
+
+    h1 {
+      @apply font-bold mt-5 mb-2 text-lg leading-[1.45] sm:w-94 sm:mx-auto md:w-120 md:mt-6 lg:text-xl lg:w-144 lg:mt-6 2xl:text-2xl 2xl:w-172 2xl:mt-7 3xl:text-3xl 3xl:w-210 3xl:mb-3
+    }
+
+    img {
+      @apply mt-6 mb-6 sm:max-w-94 sm:mx-auto md:max-w-120 md:mb-8 lg:max-w-144 lg:mb-9 2xl:max-w-172 3xl:max-w-210
+    }
+
+    h2 {
+      @apply font-bold mt-5 mb-2 text-lg leading-[1.45] sm:w-94 sm:mx-auto md:w-120 md:mt-6 lg:text-xl lg:w-144 lg:mt-6 2xl:text-2xl 2xl:w-172 2xl:mt-7 3xl:text-3xl 3xl:w-210 3xl:mb-3
+    }
+
+    h3 {
+      @apply font-bold mt-1 mb-2 text-lg leading-[1.45] sm:w-94 sm:mx-auto md:w-120 lg:text-xl lg:w-144 lg:mt-2 lg:mb-3 2xl:text-2xl 2xl:w-172 2xl:mt-4 2xl:mb-3 3xl:text-3xl 3xl:w-210 3xl:mb-4
+    }
+
+    ol {
+      @apply list-decimal list-outside ml-3 mb-4 text-base leading-[1.45] sm:w-94 sm:mx-auto sm:pl-4 md:w-120 md:mb-5 lg:text-lg lg:w-144 lg:mb-6 lg:pl-5 2xl:text-xl 2xl:w-172 2xl:mb-7 2xl:pl-6 3xl:text-2xl 3xl:w-210 3xl:mb-10 3xl:pl-8
+    }
+    
+    ol li {
+      @apply mb-4 2xl:mb-6
+    }
+
+    ol li a b {
+      @apply font-bold text-base leading-[1.45] lg:text-lg  2xl:text-xl   3xl:text-2xl
+    }
+
+    ul {
+      @apply list-disc ml-3 mb-4 text-base leading-[1.45] sm:w-94 sm:mx-auto sm:pl-4 md:w-120 md:mb-5 lg:text-lg lg:w-144 lg:mb-6 lg:pl-5 2xl:text-xl 2xl:w-172 2xl:mb-7 2xl:pl-6 3xl:text-2xl 3xl:w-210 3xl:mb-10 3xl:pl-8
+    }
+
+    ul li {
+      @apply mb-4 2xl:mb-6
+    }
+
+    blockquote {
+      @apply italic mb-4 text-base leading-[1.45] sm:w-94 sm:mx-auto md:w-120 md:mb-5 lg:text-lg lg:w-144 lg:mb-6 2xl:text-xl 2xl:w-172 2xl:mb-7 3xl:text-2xl 3xl:w-210 3xl:mb-10
+    }
   }
 }
 

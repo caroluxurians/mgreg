@@ -1,17 +1,19 @@
 import Header from "@/app/components/Header";
 import HeaderMobile from "@/app/components/HeaderMobile";
-import Link from "next/link";
 import ArticleType from "@/app/types/article";
 import { Metadata } from "next";
 import data from "@/app/articleData";
 import XShareButton from "./XShareButton";
 import FacebookShareButton from "./FacebookShareButton";
+import { BackToArticlesButton } from "./BackToArticlesButton";
 
 export const runtime = "edge";
 
-export async function generateMetadata(
-  { params }: { params: Promise<{ slug: string }> },
-): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
   const { slug } = await params;
   const article = data.find((obj: ArticleType) => obj.link.includes(slug));
   return {
@@ -49,12 +51,7 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
         <div id="fb-root" />
         <div className="flex flex-col main-width mx-auto mb-10 sm:mb-12 md:mb-16 2xl:mb-20 3xl:mb-26">
           <div className="flex flex-col gap-2 border-b border-light-pink pb-3 mb-3 lg:mb-5 lg:mt-5 lg:gap-2 2xl:gap-3 2xl:mb-6 2xl:pb-8">
-            <Link
-              href="/clanky"
-              className="flex items-center justify-center text-white bg-medium-pink hover:text-medium-pink hover:bg-light-pink transition-colors duration-100 rounded-full text-sm font-semibold italic text-center h-8 w-32 md:w-38 md:h-9 lg:w-44 lg:h-10.5 2xl:w-48 2xl:h-12 md:text-base lg:text-lg 2xl:text-xl"
-            >
-              zpět na články
-            </Link>
+            <BackToArticlesButton />
             <div className="ml-4 italic text-sm md:text-base lg:text-lg 2xl:text-xl">
               {article!.date}
             </div>
@@ -68,21 +65,14 @@ const Article = async ({ params }: { params: Promise<{ slug: string }> }) => {
           {/* eslint-disable-next-line react/no-danger */}
           <article dangerouslySetInnerHTML={markup} className="article" />
           <div className="flex justify-between items-start sm:items-center sm:w-106 sm:mx-auto sm:mt-2 md:w-126 md:mt-4 lg:w-150 2xl:w-180 3xl:w-218">
-            <Link
-              href="/clanky"
-              className="flex items-center justify-center text-white bg-medium-pink hover:text-medium-pink hover:bg-light-pink transition-colors duration-100 rounded-full text-sm font-semibold italic text-center h-8 w-32 md:w-38 md:h-9 lg:w-44 lg:h-10.5 2xl:w-48 2xl:h-12 md:text-base lg:text-lg 2xl:text-xl"
-            >
-              zpět na články
-            </Link>
+            <BackToArticlesButton />
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <XShareButton url={urlForSharing} text={article!.title} />
               <FacebookShareButton url={urlForSharing} />
             </div>
           </div>
-
         </div>
       </main>
-
     </div>
   );
 };
